@@ -381,11 +381,11 @@
                     </view>
                     <connections>
                         <outlet property="iPadHoursLbl" destination="eYX-Nd-B6t" id="xHa-cB-XQz"/>
-                        <outlet property="iPadTitleView" destination="BeC-uC-gMA" id="zxM-ye-FSN"/>
                         <outlet property="iPadYesNoLbl" destination="qKr-do-Tih" id="dgw-4F-0j4"/>
                         <outlet property="iPhoneHoursLbl" destination="6Iz-FE-luE" id="57j-ca-waZ"/>
-                        <outlet property="iPhoneTitleView" destination="osx-y4-pSU" id="TwW-VZ-x97"/>
                         <outlet property="iPhoneYesNoLbl" destination="2ns-I8-6Oe" id="qQs-hZ-QHH"/>
+                        <outlet property="landscapeHoursLbl" destination="Sgz-BN-vgN" id="eYd-ni-WI8"/>
+                        <outlet property="landscapeYesNoLbl" destination="eM0-yk-gjz" id="txp-CM-Rxa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

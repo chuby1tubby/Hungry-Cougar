@@ -19,10 +19,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var iPhoneYesNoLbl: UILabel!
     @IBOutlet weak var iPhoneHoursLbl: UILabel!
-    @IBOutlet weak var iPhoneTitleView: UIView!
     @IBOutlet weak var iPadYesNoLbl: UILabel!
     @IBOutlet weak var iPadHoursLbl: UILabel!
-    @IBOutlet weak var iPadTitleView: UIView!
+    @IBOutlet weak var landscapeYesNoLbl: UILabel!
+    @IBOutlet weak var landscapeHoursLbl: UILabel!
     
     // Initialized Days
     var Sunday: Day = Day(openingHour: 17, closingHour: 24)
@@ -88,10 +88,12 @@ class ViewController: UIViewController {
             Today.closeHour = Saturday.closeHour
             iPhoneYesNoLbl.text = "NO"
             iPadYesNoLbl.text = "NO"
+            landscapeYesNoLbl.text = "NO"
             storeIsOpen = false
         default:
-            iPhoneYesNoLbl.text = "a"
-            iPadYesNoLbl.text = "a"
+            iPhoneYesNoLbl.text = "ERR"
+            iPadYesNoLbl.text = "ERR"
+            landscapeYesNoLbl.text = "ERR"
             storeIsOpen = true
         }
     }
@@ -100,10 +102,12 @@ class ViewController: UIViewController {
         if currentHour > Today.closeHour && currentHour < Today.openHour {
             iPhoneYesNoLbl.text = "NO"
             iPadYesNoLbl.text = "NO"
+            landscapeYesNoLbl.text = "NO"
             storeIsOpen = false
         } else {
             iPhoneYesNoLbl.text = "YES"
             iPadYesNoLbl.text = "YES"
+            landscapeYesNoLbl.text = "YES"
             storeIsOpen = true
         }
         calculateTimeUntilOpen()
@@ -115,9 +119,11 @@ class ViewController: UIViewController {
         if storeIsOpen == false {
             iPhoneHoursLbl.text = String("Opening in \(timeUntilOpen) hours")
             iPadHoursLbl.text = String("Opening in \(timeUntilOpen) hours")
+            landscapeHoursLbl.text = String("Opening in \(timeUntilOpen) hours")
         } else {
             iPhoneHoursLbl.text = "Closing in \(timeUntilClose) hours"
             iPadHoursLbl.text = "Closing in \(timeUntilClose) hours"
+            landscapeHoursLbl.text = "Closing in \(timeUntilClose) hours"
         }
     }
 }
