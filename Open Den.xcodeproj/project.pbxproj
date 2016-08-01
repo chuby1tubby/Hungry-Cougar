@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF35985B1D4EF79400AF28B3 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF35985A1D4EF79400AF28B3 /* Day.swift */; };
 		BFECDD3B1D4EE5B100E626D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECDD3A1D4EE5B100E626D3 /* AppDelegate.swift */; };
 		BFECDD3D1D4EE5B100E626D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECDD3C1D4EE5B100E626D3 /* ViewController.swift */; };
 		BFECDD401D4EE5B100E626D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFECDD3E1D4EE5B100E626D3 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF35985A1D4EF79400AF28B3 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		BFECDD371D4EE5B100E626D3 /* Open Den.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open Den.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFECDD3A1D4EE5B100E626D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFECDD3C1D4EE5B100E626D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				BFECDD411D4EE5B100E626D3 /* Assets.xcassets */,
 				BFECDD431D4EE5B100E626D3 /* LaunchScreen.storyboard */,
 				BFECDD461D4EE5B100E626D3 /* Info.plist */,
+				BF35985A1D4EF79400AF28B3 /* Day.swift */,
 			);
 			path = "Open Den";
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 			files = (
 				BFECDD3D1D4EE5B100E626D3 /* ViewController.swift in Sources */,
 				BFECDD3B1D4EE5B100E626D3 /* AppDelegate.swift in Sources */,
+				BF35985B1D4EF79400AF28B3 /* Day.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +507,7 @@
 				BFECDD611D4EE5B100E626D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFECDD621D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Open DenTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +516,7 @@
 				BFECDD641D4EE5B100E626D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFECDD651D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Open DenUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +525,7 @@
 				BFECDD671D4EE5B100E626D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
