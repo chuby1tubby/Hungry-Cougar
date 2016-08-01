@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFECDD3B1D4EE5B100E626D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECDD3A1D4EE5B100E626D3 /* AppDelegate.swift */; };
+		BFECDD3D1D4EE5B100E626D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECDD3C1D4EE5B100E626D3 /* ViewController.swift */; };
+		BFECDD401D4EE5B100E626D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFECDD3E1D4EE5B100E626D3 /* Main.storyboard */; };
+		BFECDD421D4EE5B100E626D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFECDD411D4EE5B100E626D3 /* Assets.xcassets */; };
+		BFECDD451D4EE5B100E626D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFECDD431D4EE5B100E626D3 /* LaunchScreen.storyboard */; };
+		BFECDD501D4EE5B100E626D3 /* Open_DenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECDD4F1D4EE5B100E626D3 /* Open_DenTests.swift */; };
+		BFECDD5B1D4EE5B100E626D3 /* Open_DenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECDD5A1D4EE5B100E626D3 /* Open_DenUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFECDD4C1D4EE5B100E626D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFECDD2F1D4EE5B000E626D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFECDD361D4EE5B000E626D3;
+			remoteInfo = "Open Den";
+		};
+		BFECDD571D4EE5B100E626D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFECDD2F1D4EE5B000E626D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFECDD361D4EE5B000E626D3;
+			remoteInfo = "Open Den";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BFECDD371D4EE5B100E626D3 /* Open Den.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open Den.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFECDD3A1D4EE5B100E626D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BFECDD3C1D4EE5B100E626D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFECDD3F1D4EE5B100E626D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFECDD411D4EE5B100E626D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BFECDD441D4EE5B100E626D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BFECDD461D4EE5B100E626D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFECDD4B1D4EE5B100E626D3 /* Open DenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Open DenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFECDD4F1D4EE5B100E626D3 /* Open_DenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Open_DenTests.swift; sourceTree = "<group>"; };
+		BFECDD511D4EE5B100E626D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFECDD561D4EE5B100E626D3 /* Open DenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Open DenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFECDD5A1D4EE5B100E626D3 /* Open_DenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Open_DenUITests.swift; sourceTree = "<group>"; };
+		BFECDD5C1D4EE5B100E626D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFECDD341D4EE5B000E626D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFECDD481D4EE5B100E626D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFECDD531D4EE5B100E626D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFECDD2E1D4EE5B000E626D3 = {
+			isa = PBXGroup;
+			children = (
+				BFECDD391D4EE5B100E626D3 /* Open Den */,
+				BFECDD4E1D4EE5B100E626D3 /* Open DenTests */,
+				BFECDD591D4EE5B100E626D3 /* Open DenUITests */,
+				BFECDD381D4EE5B100E626D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFECDD381D4EE5B100E626D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFECDD371D4EE5B100E626D3 /* Open Den.app */,
+				BFECDD4B1D4EE5B100E626D3 /* Open DenTests.xctest */,
+				BFECDD561D4EE5B100E626D3 /* Open DenUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFECDD391D4EE5B100E626D3 /* Open Den */ = {
+			isa = PBXGroup;
+			children = (
+				BFECDD3A1D4EE5B100E626D3 /* AppDelegate.swift */,
+				BFECDD3C1D4EE5B100E626D3 /* ViewController.swift */,
+				BFECDD3E1D4EE5B100E626D3 /* Main.storyboard */,
+				BFECDD411D4EE5B100E626D3 /* Assets.xcassets */,
+				BFECDD431D4EE5B100E626D3 /* LaunchScreen.storyboard */,
+				BFECDD461D4EE5B100E626D3 /* Info.plist */,
+			);
+			path = "Open Den";
+			sourceTree = "<group>";
+		};
+		BFECDD4E1D4EE5B100E626D3 /* Open DenTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFECDD4F1D4EE5B100E626D3 /* Open_DenTests.swift */,
+				BFECDD511D4EE5B100E626D3 /* Info.plist */,
+			);
+			path = "Open DenTests";
+			sourceTree = "<group>";
+		};
+		BFECDD591D4EE5B100E626D3 /* Open DenUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BFECDD5A1D4EE5B100E626D3 /* Open_DenUITests.swift */,
+				BFECDD5C1D4EE5B100E626D3 /* Info.plist */,
+			);
+			path = "Open DenUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFECDD361D4EE5B000E626D3 /* Open Den */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFECDD5F1D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Open Den" */;
+			buildPhases = (
+				BFECDD331D4EE5B000E626D3 /* Sources */,
+				BFECDD341D4EE5B000E626D3 /* Frameworks */,
+				BFECDD351D4EE5B000E626D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Open Den";
+			productName = "Open Den";
+			productReference = BFECDD371D4EE5B100E626D3 /* Open Den.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFECDD4A1D4EE5B100E626D3 /* Open DenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFECDD621D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Open DenTests" */;
+			buildPhases = (
+				BFECDD471D4EE5B100E626D3 /* Sources */,
+				BFECDD481D4EE5B100E626D3 /* Frameworks */,
+				BFECDD491D4EE5B100E626D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFECDD4D1D4EE5B100E626D3 /* PBXTargetDependency */,
+			);
+			name = "Open DenTests";
+			productName = "Open DenTests";
+			productReference = BFECDD4B1D4EE5B100E626D3 /* Open DenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BFECDD551D4EE5B100E626D3 /* Open DenUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFECDD651D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Open DenUITests" */;
+			buildPhases = (
+				BFECDD521D4EE5B100E626D3 /* Sources */,
+				BFECDD531D4EE5B100E626D3 /* Frameworks */,
+				BFECDD541D4EE5B100E626D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFECDD581D4EE5B100E626D3 /* PBXTargetDependency */,
+			);
+			name = "Open DenUITests";
+			productName = "Open DenUITests";
+			productReference = BFECDD561D4EE5B100E626D3 /* Open DenUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFECDD2F1D4EE5B000E626D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Kyle Nakamura";
+				TargetAttributes = {
+					BFECDD361D4EE5B000E626D3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7GDSF452LB;
+						DevelopmentTeamName = "Kyle Nakamura";
+						ProvisioningStyle = Automatic;
+					};
+					BFECDD4A1D4EE5B100E626D3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7GDSF452LB;
+						DevelopmentTeamName = "Kyle Nakamura";
+						ProvisioningStyle = Automatic;
+						TestTargetID = BFECDD361D4EE5B000E626D3;
+					};
+					BFECDD551D4EE5B100E626D3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7GDSF452LB;
+						DevelopmentTeamName = "Kyle Nakamura";
+						ProvisioningStyle = Automatic;
+						TestTargetID = BFECDD361D4EE5B000E626D3;
+					};
+				};
+			};
+			buildConfigurationList = BFECDD321D4EE5B000E626D3 /* Build configuration list for PBXProject "Open Den" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFECDD2E1D4EE5B000E626D3;
+			productRefGroup = BFECDD381D4EE5B100E626D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFECDD361D4EE5B000E626D3 /* Open Den */,
+				BFECDD4A1D4EE5B100E626D3 /* Open DenTests */,
+				BFECDD551D4EE5B100E626D3 /* Open DenUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFECDD351D4EE5B000E626D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFECDD451D4EE5B100E626D3 /* LaunchScreen.storyboard in Resources */,
+				BFECDD421D4EE5B100E626D3 /* Assets.xcassets in Resources */,
+				BFECDD401D4EE5B100E626D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFECDD491D4EE5B100E626D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFECDD541D4EE5B100E626D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFECDD331D4EE5B000E626D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFECDD3D1D4EE5B100E626D3 /* ViewController.swift in Sources */,
+				BFECDD3B1D4EE5B100E626D3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFECDD471D4EE5B100E626D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFECDD501D4EE5B100E626D3 /* Open_DenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFECDD521D4EE5B100E626D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFECDD5B1D4EE5B100E626D3 /* Open_DenUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFECDD4D1D4EE5B100E626D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFECDD361D4EE5B000E626D3 /* Open Den */;
+			targetProxy = BFECDD4C1D4EE5B100E626D3 /* PBXContainerItemProxy */;
+		};
+		BFECDD581D4EE5B100E626D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFECDD361D4EE5B000E626D3 /* Open Den */;
+			targetProxy = BFECDD571D4EE5B100E626D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFECDD3E1D4EE5B100E626D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFECDD3F1D4EE5B100E626D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFECDD431D4EE5B100E626D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFECDD441D4EE5B100E626D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFECDD5D1D4EE5B100E626D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BFECDD5E1D4EE5B100E626D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFECDD601D4EE5B100E626D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Open Den/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyleNakamura.Open-Den";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BFECDD611D4EE5B100E626D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Open Den/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyleNakamura.Open-Den";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BFECDD631D4EE5B100E626D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Open DenTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyleNakamura.Open-DenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Open Den.app/Open Den";
+			};
+			name = Debug;
+		};
+		BFECDD641D4EE5B100E626D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Open DenTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyleNakamura.Open-DenTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Open Den.app/Open Den";
+			};
+			name = Release;
+		};
+		BFECDD661D4EE5B100E626D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Open DenUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyleNakamura.Open-DenUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Open Den";
+			};
+			name = Debug;
+		};
+		BFECDD671D4EE5B100E626D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Open DenUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kyleNakamura.Open-DenUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Open Den";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFECDD321D4EE5B000E626D3 /* Build configuration list for PBXProject "Open Den" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFECDD5D1D4EE5B100E626D3 /* Debug */,
+				BFECDD5E1D4EE5B100E626D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFECDD5F1D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Open Den" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFECDD601D4EE5B100E626D3 /* Debug */,
+				BFECDD611D4EE5B100E626D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BFECDD621D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Open DenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFECDD631D4EE5B100E626D3 /* Debug */,
+				BFECDD641D4EE5B100E626D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BFECDD651D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Open DenUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFECDD661D4EE5B100E626D3 /* Debug */,
+				BFECDD671D4EE5B100E626D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFECDD2F1D4EE5B000E626D3 /* Project object */;
+}
