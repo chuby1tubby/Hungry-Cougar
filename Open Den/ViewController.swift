@@ -14,9 +14,12 @@ class ViewController: UIViewController {
     var currentHour: Int = 0
     var currentMinute: Int = 0
     var storeIsOpen: Bool = false
-    var timeUntilOpen: Int = 0
-    var timeUntilClose: Int = 0
+    var hoursUntilOpen: Int = 0
+    var hoursUntilClose: Int = 0
+    var minutesLeft: Int = 0
+    var minutesUntilClose: Int = 0
     
+    // IBOutlets
     @IBOutlet weak var iPhoneYesNoLbl: UILabel!
     @IBOutlet weak var iPhoneHoursLbl: UILabel!
     @IBOutlet weak var iPadYesNoLbl: UILabel!
@@ -43,13 +46,15 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         loadCurrentDateTime()
     }
+    
+    func loadDateTime() {
+        
+    }
 
     func loadCurrentDateTime() {
         let date = NSDate()
         let calendar = Calendar.current
         let components = calendar.components([.minute, .hour, .weekday], from: date as Date)
-        
-        // Set time and day
         let weekday = components.weekday
         let hour = components.hour
         let minute = components.minute
@@ -84,8 +89,6 @@ class ViewController: UIViewController {
             checkIfOpen()
         case 7:
             // Saturday closed all day
-            Today.openHour = Saturday.openHour
-            Today.closeHour = Saturday.closeHour
             iPhoneYesNoLbl.text = "NO"
             iPadYesNoLbl.text = "NO"
             landscapeYesNoLbl.text = "NO"
@@ -99,7 +102,7 @@ class ViewController: UIViewController {
     }
     
     func checkIfOpen() {
-        if currentHour > Today.closeHour && currentHour < Today.openHour {
+        if currentHour > Today.closeHour || currentHour < Today.openHour {
             iPhoneYesNoLbl.text = "NO"
             iPadYesNoLbl.text = "NO"
             landscapeYesNoLbl.text = "NO"
@@ -114,16 +117,31 @@ class ViewController: UIViewController {
     }
     
     func calculateTimeUntilOpen() {
-        timeUntilOpen = Today.openHour - currentHour
-        timeUntilClose = Today.closeHour - currentHour
+        hoursUntilOpen = Today.openHour - currentHour - 1
+        hoursUntilClose = Today.closeHour - currentHour - 1
+        
+        minutesLeft = 60 - currentMinute
+        
         if storeIsOpen == false {
-            iPhoneHoursLbl.text = String("Opening in \(timeUntilOpen) hours")
-            iPadHoursLbl.text = String("Opening in \(timeUntilOpen) hours")
-            landscapeHoursLbl.text = String("Opening in \(timeUntilOpen) hours")
+            if hoursUntilOpen > 0 {
+                iPhoneHoursLbl.text = "Opening in \(hoursUntilOpen) hours \(minutesLeft) minutes"
+                iPadHoursLbl.text = "Opening in \(hoursUntilOpen) hours \(minutesLeft) minutes"
+                landscapeHoursLbl.text = "Opening in \(hoursUntilOpen) hours \(minutesLeft) minutes"
+            } else if hoursUntilOpen <= 0 {
+                iPhoneHoursLbl.text = "Opening in \(minutesLeft) minutes"
+                iPadHoursLbl.text = "Opening in \(minutesLeft) minutes"
+                landscapeHoursLbl.text = "Opening in \(minutesLeft) minutes"
+            }
         } else {
-            iPhoneHoursLbl.text = "Closing in \(timeUntilClose) hours"
-            iPadHoursLbl.text = "Closing in \(timeUntilClose) hours"
-            landscapeHoursLbl.text = "Closing in \(timeUntilClose) hours"
+            if hoursUntilClose > 0 {
+                iPhoneHoursLbl.text = "Closing in \(hoursUntilClose) hours \(minutesLeft) minutes"
+                iPadHoursLbl.text = "Closing in \(hoursUntilClose) hours \(minutesLeft) minutes"
+                landscapeHoursLbl.text = "Closing in \(hoursUntilClose) hours \(minutesLeft) minutes"
+            } else if hoursUntilClose <= 0 {
+                iPhoneHoursLbl.text = "Closing in \(minutesLeft) minutes"
+                iPadHoursLbl.text = "Closing in \(minutesLeft) minutes"
+                landscapeHoursLbl.text = "Closing in \(minutesLeft) minutes"
+            }
         }
     }
 }

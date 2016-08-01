@@ -20,27 +20,6 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWY-zS-EHH">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening in 24 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Iz-FE-luE" userLabel="iPhone hours label">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="176" id="Ioz-v6-VxK"/>
-                                            <constraint firstAttribute="height" constant="21" id="Vsw-rG-MvA"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="18"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="Ioz-v6-VxK"/>
-                                                <exclude reference="Vsw-rG-MvA"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="Ioz-v6-VxK"/>
-                                                <include reference="Vsw-rG-MvA"/>
-                                            </mask>
-                                        </variation>
-                                    </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="osx-y4-pSU" userLabel="iPhone top view">
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Cougar's Den open right now?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJf-1x-f9Q" userLabel="iPhone Cougar label">
@@ -97,11 +76,6 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKr-do-Tih" userLabel="iPad Yes No">
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="110"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening in 12 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYX-Nd-B6t" userLabel="iPad hours label">
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="36"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BeC-uC-gMA" userLabel="iPad top view">
@@ -181,27 +155,6 @@
                                             </mask>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closing in 2 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgz-BN-vgN">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="gKH-P9-LCM"/>
-                                            <constraint firstAttribute="width" constant="176" id="s94-bQ-xwr"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="18"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="gKH-P9-LCM"/>
-                                                <exclude reference="s94-bQ-xwr"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="gKH-P9-LCM"/>
-                                                <include reference="s94-bQ-xwr"/>
-                                            </mask>
-                                        </variation>
-                                    </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t8v-WI-641">
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Cougar's Den open right now?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6m-V5-7FI">
@@ -258,6 +211,72 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening in 00 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Iz-FE-luE" userLabel="iPhone hours label">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="176" id="Ioz-v6-VxK">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="300"/>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="21" id="Vsw-rG-MvA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Ioz-v6-VxK"/>
+                                                <exclude reference="Vsw-rG-MvA"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="Ioz-v6-VxK"/>
+                                                <include reference="Vsw-rG-MvA"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closing in 00 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgz-BN-vgN">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="gKH-P9-LCM"/>
+                                            <constraint firstAttribute="width" constant="176" id="s94-bQ-xwr">
+                                                <variation key="heightClass=compact" constant="350"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="18"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="gKH-P9-LCM"/>
+                                                <exclude reference="s94-bQ-xwr"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="gKH-P9-LCM"/>
+                                                <include reference="s94-bQ-xwr"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening in 00 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYX-Nd-B6t" userLabel="iPad hours label">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="550" id="DxJ-JK-1kr">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="800"/>
+                                            </constraint>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="36"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="DxJ-JK-1kr"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="DxJ-JK-1kr"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.58883208036422729" green="0.14367103576660156" blue="0.13592371344566345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -285,88 +304,88 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
-                                        <exclude reference="6Iz-FE-luE"/>
                                         <exclude reference="osx-y4-pSU"/>
                                         <exclude reference="qKr-do-Tih"/>
-                                        <exclude reference="eYX-Nd-B6t"/>
                                         <exclude reference="BeC-uC-gMA"/>
                                         <exclude reference="2ns-I8-6Oe"/>
                                         <exclude reference="eM0-yk-gjz"/>
-                                        <exclude reference="Sgz-BN-vgN"/>
                                         <exclude reference="t8v-WI-641"/>
                                         <exclude reference="thL-ZT-fec"/>
+                                        <exclude reference="6Iz-FE-luE"/>
+                                        <exclude reference="Sgz-BN-vgN"/>
+                                        <exclude reference="eYX-Nd-B6t"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <exclude reference="KmQ-fu-lFr"/>
-                                        <exclude reference="cB2-95-nRi"/>
-                                        <exclude reference="g9k-YJ-uFf"/>
-                                        <exclude reference="UX1-yF-IAC"/>
-                                        <exclude reference="WJ5-g6-Nf8"/>
-                                        <exclude reference="hPV-Yg-yu0"/>
                                         <exclude reference="K2v-XO-zhU"/>
                                         <exclude reference="zz4-5N-BHk"/>
                                         <exclude reference="WjT-k5-lEa"/>
                                         <exclude reference="yGU-eF-Sc7"/>
-                                        <exclude reference="9Jt-Oz-gJq"/>
-                                        <exclude reference="jva-0j-9Md"/>
+                                        <exclude reference="UX1-yF-IAC"/>
+                                        <exclude reference="WJ5-g6-Nf8"/>
+                                        <exclude reference="hPV-Yg-yu0"/>
+                                        <exclude reference="cew-Ce-3Xi"/>
+                                        <exclude reference="g75-Ra-wSV"/>
+                                        <exclude reference="dku-uO-Cgh"/>
+                                        <exclude reference="xSK-NH-WnY"/>
                                         <exclude reference="i2f-sJ-G5D"/>
                                         <exclude reference="knr-cy-CzX"/>
+                                        <exclude reference="KmQ-fu-lFr"/>
+                                        <exclude reference="cB2-95-nRi"/>
+                                        <exclude reference="g9k-YJ-uFf"/>
+                                        <exclude reference="9Jt-Oz-gJq"/>
+                                        <exclude reference="jva-0j-9Md"/>
                                         <exclude reference="Dbr-N6-soV"/>
                                         <exclude reference="HB6-Bj-Ziw"/>
                                         <exclude reference="r72-SZ-Y4q"/>
-                                        <exclude reference="dku-uO-Cgh"/>
-                                        <exclude reference="xSK-NH-WnY"/>
-                                        <exclude reference="cew-Ce-3Xi"/>
-                                        <exclude reference="g75-Ra-wSV"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=compact">
                                     <mask key="subviews">
                                         <include reference="eM0-yk-gjz"/>
-                                        <include reference="Sgz-BN-vgN"/>
                                         <include reference="t8v-WI-641"/>
                                         <exclude reference="thL-ZT-fec"/>
+                                        <include reference="Sgz-BN-vgN"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <include reference="cew-Ce-3Xi"/>
+                                        <include reference="g75-Ra-wSV"/>
+                                        <include reference="dku-uO-Cgh"/>
+                                        <include reference="xSK-NH-WnY"/>
                                         <include reference="Dbr-N6-soV"/>
                                         <include reference="HB6-Bj-Ziw"/>
                                         <include reference="r72-SZ-Y4q"/>
-                                        <include reference="dku-uO-Cgh"/>
-                                        <include reference="xSK-NH-WnY"/>
-                                        <include reference="cew-Ce-3Xi"/>
-                                        <include reference="g75-Ra-wSV"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact">
                                     <mask key="subviews">
-                                        <include reference="6Iz-FE-luE"/>
                                         <include reference="osx-y4-pSU"/>
                                         <include reference="2ns-I8-6Oe"/>
+                                        <include reference="6Iz-FE-luE"/>
                                     </mask>
                                     <mask key="constraints">
-                                        <include reference="KmQ-fu-lFr"/>
-                                        <include reference="cB2-95-nRi"/>
-                                        <include reference="g9k-YJ-uFf"/>
                                         <include reference="K2v-XO-zhU"/>
                                         <include reference="zz4-5N-BHk"/>
                                         <include reference="WjT-k5-lEa"/>
                                         <include reference="yGU-eF-Sc7"/>
+                                        <include reference="KmQ-fu-lFr"/>
+                                        <include reference="cB2-95-nRi"/>
+                                        <include reference="g9k-YJ-uFf"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <mask key="subviews">
                                         <include reference="qKr-do-Tih"/>
-                                        <include reference="eYX-Nd-B6t"/>
                                         <include reference="BeC-uC-gMA"/>
+                                        <include reference="eYX-Nd-B6t"/>
                                     </mask>
                                     <mask key="constraints">
                                         <include reference="UX1-yF-IAC"/>
                                         <include reference="WJ5-g6-Nf8"/>
                                         <include reference="hPV-Yg-yu0"/>
-                                        <include reference="9Jt-Oz-gJq"/>
-                                        <include reference="jva-0j-9Md"/>
                                         <include reference="i2f-sJ-G5D"/>
                                         <include reference="knr-cy-CzX"/>
+                                        <include reference="9Jt-Oz-gJq"/>
+                                        <include reference="jva-0j-9Md"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -390,7 +409,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="115.59220389805098" y="120.8"/>
+            <point key="canvasLocation" x="114.25781249999999" y="119.53125"/>
         </scene>
     </scenes>
 </document>
