@@ -137,14 +137,36 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DyY-YH-L7D" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTJ-7n-8xw">
+                                                                <connections>
+                                                                    <action selector="onCougarButtonPressed:" destination="ZWC-yi-dpU" eventType="touchUpInside" id="Mtt-lx-xnK"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="uTJ-7n-8xw" secondAttribute="bottom" id="0yV-XF-RYt"/>
                                                             <constraint firstAttribute="width" secondItem="DyY-YH-L7D" secondAttribute="height" multiplier="1:1" id="Mrp-E0-ZLL"/>
+                                                            <constraint firstItem="uTJ-7n-8xw" firstAttribute="leading" secondItem="DyY-YH-L7D" secondAttribute="leading" id="V7h-N3-3yS"/>
+                                                            <constraint firstItem="uTJ-7n-8xw" firstAttribute="top" secondItem="DyY-YH-L7D" secondAttribute="top" id="cYY-xK-8n5"/>
+                                                            <constraint firstAttribute="trailing" secondItem="uTJ-7n-8xw" secondAttribute="trailing" id="sgW-VV-NLg"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOA-TY-OoK" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88V-MH-qUY">
+                                                                <connections>
+                                                                    <action selector="onCougarButtonPressed:" destination="ZWC-yi-dpU" eventType="touchUpInside" id="iwd-ei-HtI"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstItem="88V-MH-qUY" firstAttribute="top" secondItem="TOA-TY-OoK" secondAttribute="top" id="0j5-b3-6PI"/>
+                                                            <constraint firstAttribute="trailing" secondItem="88V-MH-qUY" secondAttribute="trailing" id="82d-FM-c2R"/>
+                                                            <constraint firstItem="88V-MH-qUY" firstAttribute="leading" secondItem="TOA-TY-OoK" secondAttribute="leading" id="BfW-L1-f40"/>
+                                                            <constraint firstAttribute="bottom" secondItem="88V-MH-qUY" secondAttribute="bottom" id="UH4-bx-kp3"/>
                                                             <constraint firstAttribute="width" secondItem="TOA-TY-OoK" secondAttribute="height" multiplier="1:1" id="zyO-VX-ESj"/>
                                                         </constraints>
                                                     </view>
@@ -153,21 +175,54 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="z3L-d8-I2X">
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="osL-xg-YCX" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBc-IT-gko">
+                                                                <connections>
+                                                                    <action selector="onCougarButtonPressed:" destination="ZWC-yi-dpU" eventType="touchUpInside" id="TsZ-6d-5Qm"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="lBc-IT-gko" secondAttribute="bottom" id="5Bp-qb-A6M"/>
                                                             <constraint firstAttribute="width" secondItem="osL-xg-YCX" secondAttribute="height" multiplier="1:1" id="92D-Qo-PHo"/>
+                                                            <constraint firstItem="lBc-IT-gko" firstAttribute="leading" secondItem="osL-xg-YCX" secondAttribute="leading" id="HgY-fl-ZOy"/>
+                                                            <constraint firstItem="lBc-IT-gko" firstAttribute="top" secondItem="osL-xg-YCX" secondAttribute="top" id="Hjk-cA-7gL"/>
+                                                            <constraint firstAttribute="trailing" secondItem="lBc-IT-gko" secondAttribute="trailing" id="WWO-UI-Ole"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vbk-e4-3OC" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVc-Ad-CIS">
+                                                                <connections>
+                                                                    <action selector="onCougarButtonPressed:" destination="ZWC-yi-dpU" eventType="touchUpInside" id="5YD-yg-oB2"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="wVc-Ad-CIS" secondAttribute="bottom" id="B2H-ij-NNj"/>
                                                             <constraint firstAttribute="width" secondItem="Vbk-e4-3OC" secondAttribute="height" multiplier="1:1" id="EFL-vE-agS"/>
+                                                            <constraint firstItem="wVc-Ad-CIS" firstAttribute="leading" secondItem="Vbk-e4-3OC" secondAttribute="leading" id="G0b-yW-xZN"/>
+                                                            <constraint firstAttribute="trailing" secondItem="wVc-Ad-CIS" secondAttribute="trailing" id="Tbm-vA-JBP"/>
+                                                            <constraint firstItem="wVc-Ad-CIS" firstAttribute="top" secondItem="Vbk-e4-3OC" secondAttribute="top" id="eUp-LC-a2w"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GA5-Xi-XaZ" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jeY-Zp-fox">
+                                                                <connections>
+                                                                    <action selector="onCougarButtonPressed:" destination="ZWC-yi-dpU" eventType="touchUpInside" id="oU1-Ny-mUa"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="jeY-Zp-fox" secondAttribute="trailing" id="E9l-t2-8E1"/>
+                                                            <constraint firstItem="jeY-Zp-fox" firstAttribute="top" secondItem="GA5-Xi-XaZ" secondAttribute="top" id="K1V-Do-tH5"/>
+                                                            <constraint firstItem="jeY-Zp-fox" firstAttribute="leading" secondItem="GA5-Xi-XaZ" secondAttribute="leading" id="PL0-s7-gCn"/>
                                                             <constraint firstAttribute="width" secondItem="GA5-Xi-XaZ" secondAttribute="height" multiplier="1:1" id="ojN-4f-NJd"/>
+                                                            <constraint firstAttribute="bottom" secondItem="jeY-Zp-fox" secondAttribute="bottom" id="zks-b7-Z6V"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -175,21 +230,54 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="1hI-bJ-tQv">
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4K2-Mp-Uu2" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9n-rm-085">
+                                                                <connections>
+                                                                    <action selector="onCougarButtonPressed:" destination="ZWC-yi-dpU" eventType="touchUpInside" id="Pi1-dy-OdK"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstItem="u9n-rm-085" firstAttribute="leading" secondItem="4K2-Mp-Uu2" secondAttribute="leading" id="8x3-E9-Lyc"/>
+                                                            <constraint firstItem="u9n-rm-085" firstAttribute="top" secondItem="4K2-Mp-Uu2" secondAttribute="top" id="I4Z-xh-39E"/>
                                                             <constraint firstAttribute="width" secondItem="4K2-Mp-Uu2" secondAttribute="height" multiplier="1:1" id="UJB-ah-QxQ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="u9n-rm-085" secondAttribute="trailing" id="isP-pf-26i"/>
+                                                            <constraint firstAttribute="bottom" secondItem="u9n-rm-085" secondAttribute="bottom" id="lxs-IJ-TKh"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llP-4g-jIS" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hv-L6-WEN">
+                                                                <connections>
+                                                                    <action selector="onCougarButtonPressed:" destination="ZWC-yi-dpU" eventType="touchUpInside" id="rHT-U6-EVy"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="5hv-L6-WEN" secondAttribute="trailing" id="MDh-PG-wug"/>
+                                                            <constraint firstAttribute="bottom" secondItem="5hv-L6-WEN" secondAttribute="bottom" id="W75-tO-DQj"/>
                                                             <constraint firstAttribute="width" secondItem="llP-4g-jIS" secondAttribute="height" multiplier="1:1" id="Zys-ud-pdM"/>
+                                                            <constraint firstItem="5hv-L6-WEN" firstAttribute="leading" secondItem="llP-4g-jIS" secondAttribute="leading" id="iYb-Mz-rwo"/>
+                                                            <constraint firstItem="5hv-L6-WEN" firstAttribute="top" secondItem="llP-4g-jIS" secondAttribute="top" id="iog-XQ-1Dm"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Yb-Bc-qO5" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQc-ub-wAk">
+                                                                <connections>
+                                                                    <action selector="onCougarButtonPressed:" destination="ZWC-yi-dpU" eventType="touchUpInside" id="h45-dP-PHX"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstItem="bQc-ub-wAk" firstAttribute="leading" secondItem="9Yb-Bc-qO5" secondAttribute="leading" id="Mca-Ak-Fuo"/>
+                                                            <constraint firstItem="bQc-ub-wAk" firstAttribute="top" secondItem="9Yb-Bc-qO5" secondAttribute="top" id="XHH-bA-Igv"/>
+                                                            <constraint firstAttribute="trailing" secondItem="bQc-ub-wAk" secondAttribute="trailing" id="cey-kY-IWg"/>
                                                             <constraint firstAttribute="width" secondItem="9Yb-Bc-qO5" secondAttribute="height" multiplier="1:1" id="dom-1P-Zh1"/>
+                                                            <constraint firstAttribute="bottom" secondItem="bQc-ub-wAk" secondAttribute="bottom" id="yux-z5-Q9C"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -280,9 +368,12 @@
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sh8-N4-3mt" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTA-jh-QN2">
-                                                                <frame key="frameInset" width="191" height="191"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7zI-Fo-E1n">
+                                                                <frame key="frameInset" width="65" height="65"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <action selector="onCougarButtonPressed:" destination="ZWC-yi-dpU" eventType="touchUpInside" id="YSB-vT-R1u"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
@@ -291,37 +382,98 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NH2-b6-lWY" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3U-ou-G8o">
+                                                                <connections>
+                                                                    <action selector="onCougarButtonPressed:" destination="ZWC-yi-dpU" eventType="touchUpInside" id="gzB-G5-RGf"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="NH2-b6-lWY" secondAttribute="height" multiplier="1:1" id="HDG-lV-OVv"/>
+                                                            <constraint firstAttribute="bottom" secondItem="J3U-ou-G8o" secondAttribute="bottom" id="LqN-ZO-wXT"/>
+                                                            <constraint firstAttribute="trailing" secondItem="J3U-ou-G8o" secondAttribute="trailing" id="dOQ-qL-Lu0"/>
+                                                            <constraint firstItem="J3U-ou-G8o" firstAttribute="top" secondItem="NH2-b6-lWY" secondAttribute="top" id="nbW-oK-QnD"/>
+                                                            <constraint firstItem="J3U-ou-G8o" firstAttribute="leading" secondItem="NH2-b6-lWY" secondAttribute="leading" id="pwt-kw-aFY"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QiN-gl-NrA" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdn-z3-jwF">
+                                                                <connections>
+                                                                    <action selector="onCougarButtonPressed:" destination="ZWC-yi-dpU" eventType="touchUpInside" id="Qli-To-VSz"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstItem="bdn-z3-jwF" firstAttribute="top" secondItem="QiN-gl-NrA" secondAttribute="top" id="NZd-AY-Cx9"/>
+                                                            <constraint firstAttribute="bottom" secondItem="bdn-z3-jwF" secondAttribute="bottom" id="V1F-7r-FSs"/>
+                                                            <constraint firstAttribute="trailing" secondItem="bdn-z3-jwF" secondAttribute="trailing" id="kIZ-pj-bLp"/>
                                                             <constraint firstAttribute="width" secondItem="QiN-gl-NrA" secondAttribute="height" multiplier="1:1" id="lmc-Fb-nyZ"/>
+                                                            <constraint firstItem="bdn-z3-jwF" firstAttribute="leading" secondItem="QiN-gl-NrA" secondAttribute="leading" id="nLi-fn-KoH"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Sh8-N4-3mt" secondAttribute="bottom" id="DG2-E0-cGS"/>
+                                                    <constraint firstItem="NH2-b6-lWY" firstAttribute="leading" secondItem="Sh8-N4-3mt" secondAttribute="trailing" id="PfW-sB-ydF"/>
+                                                    <constraint firstItem="Sh8-N4-3mt" firstAttribute="top" secondItem="m0R-pz-zIA" secondAttribute="top" id="XZJ-iI-DuW"/>
+                                                    <constraint firstItem="Sh8-N4-3mt" firstAttribute="leading" secondItem="m0R-pz-zIA" secondAttribute="leading" id="tfg-8e-xaH"/>
+                                                </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="fBM-RT-mJl">
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUD-cx-xgh" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZw-yQ-ZyZ">
+                                                                <connections>
+                                                                    <action selector="onCougarButtonPressed:" destination="ZWC-yi-dpU" eventType="touchUpInside" id="f2a-7X-kP7"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstItem="DZw-yQ-ZyZ" firstAttribute="top" secondItem="HUD-cx-xgh" secondAttribute="top" id="REi-1M-Djg"/>
                                                             <constraint firstAttribute="width" secondItem="HUD-cx-xgh" secondAttribute="height" multiplier="1:1" id="guw-5f-TVu"/>
+                                                            <constraint firstAttribute="trailing" secondItem="DZw-yQ-ZyZ" secondAttribute="trailing" id="lSf-zy-rwX"/>
+                                                            <constraint firstAttribute="bottom" secondItem="DZw-yQ-ZyZ" secondAttribute="bottom" id="oKK-No-uA4"/>
+                                                            <constraint firstItem="DZw-yQ-ZyZ" firstAttribute="leading" secondItem="HUD-cx-xgh" secondAttribute="leading" id="sre-6S-0Ax"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aXc-Am-mHE" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ax-Q9-cZ6">
+                                                                <connections>
+                                                                    <action selector="onCougarButtonPressed:" destination="ZWC-yi-dpU" eventType="touchUpInside" id="Tgy-Ho-ffh"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="1ax-Q9-cZ6" secondAttribute="trailing" id="BJQ-QV-mbz"/>
                                                             <constraint firstAttribute="width" secondItem="aXc-Am-mHE" secondAttribute="height" multiplier="1:1" id="Pwq-Ul-5Nc"/>
+                                                            <constraint firstItem="1ax-Q9-cZ6" firstAttribute="top" secondItem="aXc-Am-mHE" secondAttribute="top" id="Qqu-wc-jLM"/>
+                                                            <constraint firstItem="1ax-Q9-cZ6" firstAttribute="leading" secondItem="aXc-Am-mHE" secondAttribute="leading" id="cY6-TY-fNp"/>
+                                                            <constraint firstAttribute="bottom" secondItem="1ax-Q9-cZ6" secondAttribute="bottom" id="xHB-Fc-lor"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xyD-h9-206" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jck-wI-lt1">
+                                                                <connections>
+                                                                    <action selector="onCougarButtonPressed:" destination="ZWC-yi-dpU" eventType="touchUpInside" id="giF-Hf-fhx"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstItem="jck-wI-lt1" firstAttribute="top" secondItem="xyD-h9-206" secondAttribute="top" id="AMX-vW-UO1"/>
+                                                            <constraint firstAttribute="trailing" secondItem="jck-wI-lt1" secondAttribute="trailing" id="SKX-fH-S9P"/>
                                                             <constraint firstAttribute="width" secondItem="xyD-h9-206" secondAttribute="height" multiplier="1:1" id="Ve2-ax-AkC"/>
+                                                            <constraint firstAttribute="bottom" secondItem="jck-wI-lt1" secondAttribute="bottom" id="q0f-aM-CxQ"/>
+                                                            <constraint firstItem="jck-wI-lt1" firstAttribute="leading" secondItem="xyD-h9-206" secondAttribute="leading" id="znP-5m-E5U"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -329,21 +481,54 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="27X-6q-ZkB">
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IyG-4e-jiI" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kt-bT-2D2">
+                                                                <connections>
+                                                                    <action selector="onCougarButtonPressed:" destination="ZWC-yi-dpU" eventType="touchUpInside" id="hz7-Gx-zo6"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstItem="1kt-bT-2D2" firstAttribute="leading" secondItem="IyG-4e-jiI" secondAttribute="leading" id="7Oj-B4-Erj"/>
+                                                            <constraint firstAttribute="trailing" secondItem="1kt-bT-2D2" secondAttribute="trailing" id="Nxt-N4-eVL"/>
                                                             <constraint firstAttribute="width" secondItem="IyG-4e-jiI" secondAttribute="height" multiplier="1:1" id="Pxc-Dr-ZfB"/>
+                                                            <constraint firstItem="1kt-bT-2D2" firstAttribute="top" secondItem="IyG-4e-jiI" secondAttribute="top" id="dy1-tR-dVR"/>
+                                                            <constraint firstAttribute="bottom" secondItem="1kt-bT-2D2" secondAttribute="bottom" id="z30-ln-hOn"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4o-k6-f7a" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7q-Ya-xkK">
+                                                                <connections>
+                                                                    <action selector="onCougarButtonPressed:" destination="ZWC-yi-dpU" eventType="touchUpInside" id="5YE-FM-mUF"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="T7q-Ya-xkK" secondAttribute="bottom" id="L2L-PP-GlQ"/>
+                                                            <constraint firstItem="T7q-Ya-xkK" firstAttribute="leading" secondItem="b4o-k6-f7a" secondAttribute="leading" id="Yj9-t2-4mH"/>
+                                                            <constraint firstAttribute="trailing" secondItem="T7q-Ya-xkK" secondAttribute="trailing" id="cMj-am-fh6"/>
+                                                            <constraint firstItem="T7q-Ya-xkK" firstAttribute="top" secondItem="b4o-k6-f7a" secondAttribute="top" id="mpV-lA-I7t"/>
                                                             <constraint firstAttribute="width" secondItem="b4o-k6-f7a" secondAttribute="height" multiplier="1:1" id="yYI-MG-iC0"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egP-Vn-8qD" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rH-JL-NL6">
+                                                                <connections>
+                                                                    <action selector="onCougarButtonPressed:" destination="ZWC-yi-dpU" eventType="touchUpInside" id="xuh-GD-8Jj"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="egP-Vn-8qD" secondAttribute="height" multiplier="1:1" id="8CA-KB-H2X"/>
+                                                            <constraint firstAttribute="bottom" secondItem="2rH-JL-NL6" secondAttribute="bottom" id="ZBx-BH-dMq"/>
+                                                            <constraint firstItem="2rH-JL-NL6" firstAttribute="top" secondItem="egP-Vn-8qD" secondAttribute="top" id="m8P-rF-DVX"/>
+                                                            <constraint firstAttribute="trailing" secondItem="2rH-JL-NL6" secondAttribute="trailing" id="s0E-TQ-ftD"/>
+                                                            <constraint firstItem="2rH-JL-NL6" firstAttribute="leading" secondItem="egP-Vn-8qD" secondAttribute="leading" id="yvz-B7-Ec2"/>
                                                         </constraints>
                                                     </view>
                                                 </subviews>
@@ -430,7 +615,7 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jY5-cB-yZV">
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Cougar's Den Café Open?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32S-Rp-i5M">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cougar's Den Café" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32S-Rp-i5M">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="33" id="EyX-s5-vUR"/>
                                                     <constraint firstAttribute="width" constant="286" id="JrX-oP-YML"/>
@@ -475,10 +660,10 @@
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3UD-x8-G89">
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="y/n" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojc-Un-ovC">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLOSED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojc-Un-ovC">
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="97" id="TW0-ST-AeX"/>
-                                                    <constraint firstAttribute="width" constant="188" id="eeJ-7m-Azr"/>
+                                                    <constraint firstAttribute="width" constant="350" id="eeJ-7m-Azr"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="68"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

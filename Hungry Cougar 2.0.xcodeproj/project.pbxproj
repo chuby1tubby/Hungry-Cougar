@@ -103,11 +103,18 @@
 			isa = PBXGroup;
 			children = (
 				BF35985A1D4EF79400AF28B3 /* Day.swift */,
-				BF8C1BC11D4FDCAF00E7B2B7 /* RoundCornersView.swift */,
-				BF21D39D1D55A138001A38F2 /* CircleView.swift */,
 				BF21D39F1D55C51D001A38F2 /* RestaurantHours.swift */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		BF819A751D5666B200420B55 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF8C1BC11D4FDCAF00E7B2B7 /* RoundCornersView.swift */,
+				BF21D39D1D55A138001A38F2 /* CircleView.swift */,
+			);
+			name = "Custom Views";
 			sourceTree = "<group>";
 		};
 		BFECDD2E1D4EE5B000E626D3 = {
@@ -133,6 +140,7 @@
 		BFECDD391D4EE5B100E626D3 /* Hungry Cougar 2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				BF819A751D5666B200420B55 /* Custom Views */,
 				BF21D3961D552A5A001A38F2 /* Controller */,
 				BF21D3981D552A78001A38F2 /* Data */,
 				BFECDD3E1D4EE5B100E626D3 /* Main.storyboard */,

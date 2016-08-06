@@ -26,17 +26,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var yesNoLbl: UILabel!
     @IBOutlet weak var hoursLbl: UILabel!
     
-    // Initialized Days
-    var Sunday: Day = Day(openingHour: 17, closingHour: 24)
-    var Monday: Day = Day(openingHour: 11, closingHour: 24)
-    var Tuesday: Day = Day(openingHour: 11, closingHour: 24)
-    var Wednesday: Day = Day(openingHour: 11, closingHour: 24)
-    var Thursday: Day = Day(openingHour: 11, closingHour: 24)
-    var Friday: Day = Day(openingHour: 11, closingHour: 19)
-    var Saturday: Day = Day(openingHour: 0, closingHour: 0)
-    var Today: Day = Day(openingHour: 0, closingHour: 0)
-    var Tomorrow: Day = Day(openingHour: 0, closingHour: 0)
-    
     // Loads when view appears
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,8 +33,9 @@ class ViewController: UIViewController {
     
     // Loads right before view appears
     override func viewWillAppear(_ animated: Bool) {
+        setHours()
         loadCurrentDateTime()
-        restaurantTitleLbl.text = "Is \(restaurantChoice) Open?"
+        restaurantTitleLbl.text = "\(restaurantChoice)"
     }
     
     func loadCurrentDateTime() {
@@ -114,18 +104,18 @@ class ViewController: UIViewController {
         if Today.closeHour >= 1 && Today.closeHour <= 3 {   // If open past midnight (coffeehouse)
             if currentHour >= Today.closeHour && currentHour < Today.openHour{
                 // Store is CLOSED
-                yesNoLbl.text = "NO"
+                yesNoLbl.text = "CLOSED"
                 storeIsOpen = false
             } else {
                 // Store is OPEN
-                yesNoLbl.text = "YES"
+                yesNoLbl.text = "OPEN"
                 storeIsOpen = true
             }
         } else if currentHour >= Today.closeHour || currentHour <= Today.openHour {
-            yesNoLbl.text = "NO"
+            yesNoLbl.text = "CLOSED"
             storeIsOpen = false
         } else {
-            yesNoLbl.text = "YES"
+            yesNoLbl.text = "OPEN"
             storeIsOpen = true
         }
         calculateTimeUntilOpen()
