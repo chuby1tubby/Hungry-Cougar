@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BFECDD361D4EE5B000E626D3"
-               BuildableName = "Open Den.app"
-               BlueprintName = "Open Den"
-               ReferencedContainer = "container:Open Den.xcodeproj">
+               BuildableName = "Hungry Cougar 2.0.app"
+               BlueprintName = "Hungry Cougar 2.0"
+               ReferencedContainer = "container:Hungry Cougar 2.0.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BFECDD4A1D4EE5B100E626D3"
-               BuildableName = "Open DenTests.xctest"
-               BlueprintName = "Open DenTests"
-               ReferencedContainer = "container:Open Den.xcodeproj">
+               BuildableName = "Hungry Cougar 2.0Tests.xctest"
+               BlueprintName = "Hungry Cougar 2.0Tests"
+               ReferencedContainer = "container:Hungry Cougar 2.0.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BFECDD551D4EE5B100E626D3"
-               BuildableName = "Open DenUITests.xctest"
-               BlueprintName = "Open DenUITests"
-               ReferencedContainer = "container:Open Den.xcodeproj">
+               BuildableName = "Hungry Cougar 2.0UITests.xctest"
+               BlueprintName = "Hungry Cougar 2.0UITests"
+               ReferencedContainer = "container:Hungry Cougar 2.0.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BFECDD361D4EE5B000E626D3"
-            BuildableName = "Open Den.app"
-            BlueprintName = "Open Den"
-            ReferencedContainer = "container:Open Den.xcodeproj">
+            BuildableName = "Hungry Cougar 2.0.app"
+            BlueprintName = "Hungry Cougar 2.0"
+            ReferencedContainer = "container:Hungry Cougar 2.0.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BFECDD361D4EE5B000E626D3"
-            BuildableName = "Open Den.app"
-            BlueprintName = "Open Den"
-            ReferencedContainer = "container:Open Den.xcodeproj">
+            BuildableName = "Hungry Cougar 2.0.app"
+            BlueprintName = "Hungry Cougar 2.0"
+            ReferencedContainer = "container:Hungry Cougar 2.0.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BFECDD361D4EE5B000E626D3"
-            BuildableName = "Open Den.app"
-            BlueprintName = "Open Den"
-            ReferencedContainer = "container:Open Den.xcodeproj">
+            BuildableName = "Hungry Cougar 2.0.app"
+            BlueprintName = "Hungry Cougar 2.0"
+            ReferencedContainer = "container:Hungry Cougar 2.0.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -1,15 +1,252 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="16A254g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11185.3" systemVersion="16A270f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gOg-31-csF">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11151.4"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--MenuVC-->
+        <scene sceneID="Tlb-0I-sDB">
+            <objects>
+                <viewController id="gOg-31-csF" customClass="MenuVC" customModule="Hungry_Cougar_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AYf-we-Pti"/>
+                        <viewControllerLayoutGuide type="bottom" id="aD4-LC-AFc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XXd-Rs-Bxe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ED6-DO-6u5">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UlR-ys-KD2">
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LU2-ro-OV5">
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APU Dining Venues" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzl-Ju-CmW">
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="269" id="8Ry-kY-W7P"/>
+                                                            <constraint firstAttribute="height" constant="34" id="jqp-JX-kNH"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.48417359590530396" green="0.11984846740961075" blue="0.11456999927759171" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="76" id="OXo-zX-QUa"/>
+                                                    <constraint firstItem="tzl-Ju-CmW" firstAttribute="centerY" secondItem="LU2-ro-OV5" secondAttribute="centerY" id="XOK-Vu-nCy"/>
+                                                    <constraint firstItem="tzl-Ju-CmW" firstAttribute="centerX" secondItem="LU2-ro-OV5" secondAttribute="centerX" id="Y7F-20-Bli"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="0Xt-gm-Dbn">
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G98-Ug-V8g">
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="194" id="3yb-gv-NsQ"/>
+                                                            <constraint firstAttribute="height" constant="115" id="dRf-FH-uTD"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                                        <state key="normal" title="East Campus">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="ZWC-yi-dpU" kind="show" id="spv-dH-4Mh"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sh-aj-JUC">
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="214" id="8qW-Pk-pqZ"/>
+                                                            <constraint firstAttribute="height" constant="115" id="sdv-DY-hgi"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                                        <state key="normal" title="West Campus">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <segue destination="G51-g3-f77" kind="showDetail" id="7gP-NC-YFE"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.58883208040000001" green="0.14367103580000001" blue="0.13592371340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="UlR-ys-KD2" firstAttribute="leading" secondItem="ED6-DO-6u5" secondAttribute="leading" id="EVE-GZ-oss"/>
+                                    <constraint firstAttribute="trailing" secondItem="UlR-ys-KD2" secondAttribute="trailing" id="c6s-MP-13q"/>
+                                    <constraint firstAttribute="bottom" secondItem="UlR-ys-KD2" secondAttribute="bottom" id="cdn-1j-MHL"/>
+                                    <constraint firstItem="UlR-ys-KD2" firstAttribute="top" secondItem="ED6-DO-6u5" secondAttribute="top" id="qaY-QB-aNm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ED6-DO-6u5" secondAttribute="trailing" id="Guo-v4-BpE"/>
+                            <constraint firstItem="ED6-DO-6u5" firstAttribute="top" secondItem="XXd-Rs-Bxe" secondAttribute="top" id="cn6-Gg-HKH"/>
+                            <constraint firstItem="ED6-DO-6u5" firstAttribute="leading" secondItem="XXd-Rs-Bxe" secondAttribute="leading" id="g6i-SX-Mgn"/>
+                            <constraint firstItem="aD4-LC-AFc" firstAttribute="top" secondItem="ED6-DO-6u5" secondAttribute="bottom" id="ymT-px-dM6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="noB-ys-rHW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-744.79999999999995" y="117.39130434782609"/>
+        </scene>
+        <!--East Campus Menu-->
+        <scene sceneID="crm-gj-9mr">
+            <objects>
+                <viewController title="East Campus Menu" id="ZWC-yi-dpU" customClass="EastVC" customModule="Hungry_Cougar_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lCM-OT-P7p"/>
+                        <viewControllerLayoutGuide type="bottom" id="xLL-QA-eWU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CIU-wu-5TH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWL-Nq-Mc6">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="htp-3N-8J7">
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="M1q-42-peY">
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTN-E9-OAM" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0s-aZ-1ly">
+                                                                <frame key="frameInset" width="191" height="191"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <connections>
+                                                                    <segue destination="BYZ-38-t0r" kind="show" id="N8b-u5-MrR"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.79894857355654492" green="0.81254047927461137" blue="0.74673880539153448" alpha="0.91612566021126762" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="BTN-E9-OAM" secondAttribute="height" multiplier="1:1" id="ojv-1X-8Vi"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DyY-YH-L7D" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="DyY-YH-L7D" secondAttribute="height" multiplier="1:1" id="Mrp-E0-ZLL"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOA-TY-OoK" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="TOA-TY-OoK" secondAttribute="height" multiplier="1:1" id="zyO-VX-ESj"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="z3L-d8-I2X">
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="osL-xg-YCX" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="osL-xg-YCX" secondAttribute="height" multiplier="1:1" id="92D-Qo-PHo"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vbk-e4-3OC" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Vbk-e4-3OC" secondAttribute="height" multiplier="1:1" id="EFL-vE-agS"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GA5-Xi-XaZ" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="GA5-Xi-XaZ" secondAttribute="height" multiplier="1:1" id="ojN-4f-NJd"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="1hI-bJ-tQv">
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4K2-Mp-Uu2" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="4K2-Mp-Uu2" secondAttribute="height" multiplier="1:1" id="UJB-ah-QxQ"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llP-4g-jIS" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="llP-4g-jIS" secondAttribute="height" multiplier="1:1" id="Zys-ud-pdM"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Yb-Bc-qO5" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="9Yb-Bc-qO5" secondAttribute="height" multiplier="1:1" id="dom-1P-Zh1"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.5888599753" green="0.1470975876" blue="0.13562121990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="htp-3N-8J7" firstAttribute="centerY" secondItem="IWL-Nq-Mc6" secondAttribute="centerY" id="5Lp-h6-KKA"/>
+                                    <constraint firstItem="htp-3N-8J7" firstAttribute="leading" secondItem="IWL-Nq-Mc6" secondAttribute="leadingMargin" constant="40" id="QPx-4n-KUT"/>
+                                    <constraint firstItem="htp-3N-8J7" firstAttribute="centerX" secondItem="IWL-Nq-Mc6" secondAttribute="centerX" id="Yqu-UM-4Jy"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="htp-3N-8J7" secondAttribute="trailing" constant="40" id="xRQ-Q7-nJ5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IWL-Nq-Mc6" firstAttribute="leading" secondItem="CIU-wu-5TH" secondAttribute="leading" id="49V-mz-gpP"/>
+                            <constraint firstItem="IWL-Nq-Mc6" firstAttribute="top" secondItem="CIU-wu-5TH" secondAttribute="top" id="A3o-YD-wm8"/>
+                            <constraint firstItem="xLL-QA-eWU" firstAttribute="top" secondItem="IWL-Nq-Mc6" secondAttribute="bottom" id="FdK-0w-BoZ"/>
+                            <constraint firstAttribute="trailing" secondItem="IWL-Nq-Mc6" secondAttribute="trailing" id="YAY-F8-OxF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Et-L6-cAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="219.53125" y="116.01562499999999"/>
+        </scene>
+        <!--West Campus Menu-->
+        <scene sceneID="Omx-em-fo7">
+            <objects>
+                <viewController title="West Campus Menu" id="G51-g3-f77" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JxN-gQ-Xcq"/>
+                        <viewControllerLayoutGuide type="bottom" id="rDg-5r-5wX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ObO-DL-q6x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HE7-k0-HDL">
+                                <color key="backgroundColor" red="0.5888599753" green="0.1470975876" blue="0.13562121990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HE7-k0-HDL" firstAttribute="leading" secondItem="ObO-DL-q6x" secondAttribute="leading" id="kVI-jQ-LCR"/>
+                            <constraint firstAttribute="trailing" secondItem="HE7-k0-HDL" secondAttribute="trailing" id="qK5-Dg-pWG"/>
+                            <constraint firstItem="rDg-5r-5wX" firstAttribute="top" secondItem="HE7-k0-HDL" secondAttribute="bottom" id="uYb-hE-MTz"/>
+                            <constraint firstItem="HE7-k0-HDL" firstAttribute="top" secondItem="ObO-DL-q6x" secondAttribute="top" id="wON-O4-qhS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1xE-dR-cAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="994" y="117"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Open_Den" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hungry_Cougar_2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -18,398 +255,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWY-zS-EHH">
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="osx-y4-pSU" userLabel="iPhone top view">
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Cougar's Den open right now?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJf-1x-f9Q" userLabel="iPhone Cougar label">
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="21" id="08N-uL-fzj">
-                                                        <variation key="heightClass=regular-widthClass=compact" constant="30"/>
-                                                    </constraint>
-                                                    <constraint firstAttribute="width" constant="281.5" id="TEI-58-jXC"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="08N-uL-fzj"/>
-                                                        <exclude reference="TEI-58-jXC"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=regular-widthClass=compact">
-                                                    <mask key="constraints">
-                                                        <include reference="08N-uL-fzj"/>
-                                                        <exclude reference="TEI-58-jXC"/>
-                                                    </mask>
-                                                </variation>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.48105601171137757" green="0.12000398477487298" blue="0.11521868249720418" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="qJf-1x-f9Q" firstAttribute="centerX" secondItem="osx-y4-pSU" secondAttribute="centerX" id="4Fh-xH-uYD"/>
-                                            <constraint firstItem="qJf-1x-f9Q" firstAttribute="centerY" secondItem="osx-y4-pSU" secondAttribute="centerY" id="C2f-hh-4d2"/>
-                                            <constraint firstAttribute="height" constant="76" id="GXc-oU-2EB"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="subviews">
-                                                <exclude reference="qJf-1x-f9Q"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <exclude reference="GXc-oU-2EB"/>
-                                                <exclude reference="4Fh-xH-uYD"/>
-                                                <exclude reference="C2f-hh-4d2"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact">
-                                            <mask key="subviews">
-                                                <include reference="qJf-1x-f9Q"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <include reference="GXc-oU-2EB"/>
-                                                <include reference="4Fh-xH-uYD"/>
-                                                <include reference="C2f-hh-4d2"/>
-                                            </mask>
-                                        </variation>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKr-do-Tih" userLabel="iPad Yes No">
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="110"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BeC-uC-gMA" userLabel="iPad top view">
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is the Cougar Den open right now?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmY-hQ-F7H" userLabel="iPad Cougar label">
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="45"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.48105601170000001" green="0.1200039848" blue="0.1152186825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="143" id="BSW-3Y-HAn"/>
-                                            <constraint firstItem="mmY-hQ-F7H" firstAttribute="centerX" secondItem="BeC-uC-gMA" secondAttribute="centerX" id="FsF-RP-k4z"/>
-                                            <constraint firstItem="mmY-hQ-F7H" firstAttribute="centerY" secondItem="BeC-uC-gMA" secondAttribute="centerY" id="bJp-d6-Sjv"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="subviews">
-                                                <exclude reference="mmY-hQ-F7H"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <exclude reference="BSW-3Y-HAn"/>
-                                                <exclude reference="FsF-RP-k4z"/>
-                                                <exclude reference="bJp-d6-Sjv"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <mask key="subviews">
-                                                <include reference="mmY-hQ-F7H"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <include reference="BSW-3Y-HAn"/>
-                                                <include reference="FsF-RP-k4z"/>
-                                                <include reference="bJp-d6-Sjv"/>
-                                            </mask>
-                                        </variation>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ns-I8-6Oe" userLabel="iPhone Yes No">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="130" id="enX-oO-vnL"/>
-                                            <constraint firstAttribute="height" constant="80" id="tL2-3v-2Sv"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="64"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="enX-oO-vnL"/>
-                                                <exclude reference="tL2-3v-2Sv"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="enX-oO-vnL"/>
-                                                <include reference="tL2-3v-2Sv"/>
-                                            </mask>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eM0-yk-gjz" userLabel="landscape Yes No">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="OaZ-pZ-ufG"/>
-                                            <constraint firstAttribute="width" constant="140" id="V85-M4-7Lu"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="64"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="OaZ-pZ-ufG"/>
-                                                <exclude reference="V85-M4-7Lu"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="OaZ-pZ-ufG"/>
-                                                <include reference="V85-M4-7Lu"/>
-                                            </mask>
-                                        </variation>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t8v-WI-641">
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Cougar's Den open right now?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6m-V5-7FI">
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="SRD-5Y-ZZN"/>
-                                                    <constraint firstAttribute="width" constant="490" id="Xk1-A5-V0a"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="SRD-5Y-ZZN"/>
-                                                        <exclude reference="Xk1-A5-V0a"/>
-                                                    </mask>
-                                                </variation>
-                                                <variation key="heightClass=compact">
-                                                    <mask key="constraints">
-                                                        <include reference="SRD-5Y-ZZN"/>
-                                                        <include reference="Xk1-A5-V0a"/>
-                                                    </mask>
-                                                </variation>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.48105601170000001" green="0.1200039848" blue="0.1152186825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="q6m-V5-7FI" firstAttribute="centerY" secondItem="t8v-WI-641" secondAttribute="centerY" id="Fmg-Ga-Unn"/>
-                                            <constraint firstItem="q6m-V5-7FI" firstAttribute="centerX" secondItem="t8v-WI-641" secondAttribute="centerX" id="ThA-Z4-mMI"/>
-                                            <constraint firstAttribute="height" constant="78" id="t1y-dh-qMX"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="subviews">
-                                                <exclude reference="q6m-V5-7FI"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <exclude reference="t1y-dh-qMX"/>
-                                                <exclude reference="Fmg-Ga-Unn"/>
-                                                <exclude reference="ThA-Z4-mMI"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=compact">
-                                            <mask key="subviews">
-                                                <include reference="q6m-V5-7FI"/>
-                                            </mask>
-                                            <mask key="constraints">
-                                                <include reference="t1y-dh-qMX"/>
-                                                <include reference="Fmg-Ga-Unn"/>
-                                                <include reference="ThA-Z4-mMI"/>
-                                            </mask>
-                                        </variation>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thL-ZT-fec">
-                                        <frame key="frameInset" minX="10" minY="10" width="240" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening in 00 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Iz-FE-luE" userLabel="iPhone hours label">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="176" id="Ioz-v6-VxK">
-                                                <variation key="heightClass=regular-widthClass=compact" constant="300"/>
-                                            </constraint>
-                                            <constraint firstAttribute="height" constant="21" id="Vsw-rG-MvA"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="18"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="Ioz-v6-VxK"/>
-                                                <exclude reference="Vsw-rG-MvA"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="Ioz-v6-VxK"/>
-                                                <include reference="Vsw-rG-MvA"/>
-                                            </mask>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closing in 00 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgz-BN-vgN">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="gKH-P9-LCM"/>
-                                            <constraint firstAttribute="width" constant="176" id="s94-bQ-xwr">
-                                                <variation key="heightClass=compact" constant="350"/>
-                                            </constraint>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="18"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="gKH-P9-LCM"/>
-                                                <exclude reference="s94-bQ-xwr"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="gKH-P9-LCM"/>
-                                                <include reference="s94-bQ-xwr"/>
-                                            </mask>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening in 00 hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYX-Nd-B6t" userLabel="iPad hours label">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="550" id="DxJ-JK-1kr">
-                                                <variation key="heightClass=regular-widthClass=regular" constant="800"/>
-                                            </constraint>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="36"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="DxJ-JK-1kr"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="heightClass=regular-widthClass=regular">
-                                            <mask key="constraints">
-                                                <include reference="DxJ-JK-1kr"/>
-                                            </mask>
-                                        </variation>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.58883208036422729" green="0.14367103576660156" blue="0.13592371344566345" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="qKr-do-Tih" firstAttribute="centerY" secondItem="EWY-zS-EHH" secondAttribute="centerY" id="9Jt-Oz-gJq"/>
-                                    <constraint firstItem="t8v-WI-641" firstAttribute="leading" secondItem="EWY-zS-EHH" secondAttribute="leading" id="Dbr-N6-soV"/>
-                                    <constraint firstItem="t8v-WI-641" firstAttribute="top" secondItem="EWY-zS-EHH" secondAttribute="top" id="HB6-Bj-Ziw"/>
-                                    <constraint firstItem="2ns-I8-6Oe" firstAttribute="centerY" secondItem="EWY-zS-EHH" secondAttribute="centerY" id="K2v-XO-zhU"/>
-                                    <constraint firstItem="osx-y4-pSU" firstAttribute="top" secondItem="EWY-zS-EHH" secondAttribute="top" id="KmQ-fu-lFr"/>
-                                    <constraint firstItem="BeC-uC-gMA" firstAttribute="top" secondItem="EWY-zS-EHH" secondAttribute="top" id="UX1-yF-IAC"/>
-                                    <constraint firstItem="BeC-uC-gMA" firstAttribute="leading" secondItem="EWY-zS-EHH" secondAttribute="leading" id="WJ5-g6-Nf8"/>
-                                    <constraint firstItem="6Iz-FE-luE" firstAttribute="top" secondItem="2ns-I8-6Oe" secondAttribute="bottom" constant="8" id="WjT-k5-lEa"/>
-                                    <constraint firstItem="osx-y4-pSU" firstAttribute="leading" secondItem="EWY-zS-EHH" secondAttribute="leading" id="cB2-95-nRi"/>
-                                    <constraint firstItem="Sgz-BN-vgN" firstAttribute="centerX" secondItem="EWY-zS-EHH" secondAttribute="centerX" id="cew-Ce-3Xi"/>
-                                    <constraint firstItem="eM0-yk-gjz" firstAttribute="centerX" secondItem="EWY-zS-EHH" secondAttribute="centerX" id="dku-uO-Cgh"/>
-                                    <constraint firstItem="Sgz-BN-vgN" firstAttribute="top" secondItem="eM0-yk-gjz" secondAttribute="bottom" constant="8" id="g75-Ra-wSV"/>
-                                    <constraint firstAttribute="trailing" secondItem="osx-y4-pSU" secondAttribute="trailing" id="g9k-YJ-uFf"/>
-                                    <constraint firstAttribute="trailing" secondItem="BeC-uC-gMA" secondAttribute="trailing" id="hPV-Yg-yu0"/>
-                                    <constraint firstItem="eYX-Nd-B6t" firstAttribute="top" secondItem="qKr-do-Tih" secondAttribute="bottom" constant="8" id="i2f-sJ-G5D"/>
-                                    <constraint firstItem="qKr-do-Tih" firstAttribute="centerX" secondItem="EWY-zS-EHH" secondAttribute="centerX" id="jva-0j-9Md"/>
-                                    <constraint firstItem="eYX-Nd-B6t" firstAttribute="centerX" secondItem="EWY-zS-EHH" secondAttribute="centerX" id="knr-cy-CzX"/>
-                                    <constraint firstAttribute="trailing" secondItem="t8v-WI-641" secondAttribute="trailing" id="r72-SZ-Y4q"/>
-                                    <constraint firstItem="eM0-yk-gjz" firstAttribute="centerY" secondItem="EWY-zS-EHH" secondAttribute="centerY" id="xSK-NH-WnY"/>
-                                    <constraint firstItem="6Iz-FE-luE" firstAttribute="centerX" secondItem="EWY-zS-EHH" secondAttribute="centerX" id="yGU-eF-Sc7"/>
-                                    <constraint firstItem="2ns-I8-6Oe" firstAttribute="centerX" secondItem="EWY-zS-EHH" secondAttribute="centerX" id="zz4-5N-BHk"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="osx-y4-pSU"/>
-                                        <exclude reference="qKr-do-Tih"/>
-                                        <exclude reference="BeC-uC-gMA"/>
-                                        <exclude reference="2ns-I8-6Oe"/>
-                                        <exclude reference="eM0-yk-gjz"/>
-                                        <exclude reference="t8v-WI-641"/>
-                                        <exclude reference="thL-ZT-fec"/>
-                                        <exclude reference="6Iz-FE-luE"/>
-                                        <exclude reference="Sgz-BN-vgN"/>
-                                        <exclude reference="eYX-Nd-B6t"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <exclude reference="K2v-XO-zhU"/>
-                                        <exclude reference="zz4-5N-BHk"/>
-                                        <exclude reference="WjT-k5-lEa"/>
-                                        <exclude reference="yGU-eF-Sc7"/>
-                                        <exclude reference="UX1-yF-IAC"/>
-                                        <exclude reference="WJ5-g6-Nf8"/>
-                                        <exclude reference="hPV-Yg-yu0"/>
-                                        <exclude reference="cew-Ce-3Xi"/>
-                                        <exclude reference="g75-Ra-wSV"/>
-                                        <exclude reference="dku-uO-Cgh"/>
-                                        <exclude reference="xSK-NH-WnY"/>
-                                        <exclude reference="i2f-sJ-G5D"/>
-                                        <exclude reference="knr-cy-CzX"/>
-                                        <exclude reference="KmQ-fu-lFr"/>
-                                        <exclude reference="cB2-95-nRi"/>
-                                        <exclude reference="g9k-YJ-uFf"/>
-                                        <exclude reference="9Jt-Oz-gJq"/>
-                                        <exclude reference="jva-0j-9Md"/>
-                                        <exclude reference="Dbr-N6-soV"/>
-                                        <exclude reference="HB6-Bj-Ziw"/>
-                                        <exclude reference="r72-SZ-Y4q"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact">
-                                    <mask key="subviews">
-                                        <include reference="eM0-yk-gjz"/>
-                                        <include reference="t8v-WI-641"/>
-                                        <exclude reference="thL-ZT-fec"/>
-                                        <include reference="Sgz-BN-vgN"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <include reference="cew-Ce-3Xi"/>
-                                        <include reference="g75-Ra-wSV"/>
-                                        <include reference="dku-uO-Cgh"/>
-                                        <include reference="xSK-NH-WnY"/>
-                                        <include reference="Dbr-N6-soV"/>
-                                        <include reference="HB6-Bj-Ziw"/>
-                                        <include reference="r72-SZ-Y4q"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="subviews">
-                                        <include reference="osx-y4-pSU"/>
-                                        <include reference="2ns-I8-6Oe"/>
-                                        <include reference="6Iz-FE-luE"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <include reference="K2v-XO-zhU"/>
-                                        <include reference="zz4-5N-BHk"/>
-                                        <include reference="WjT-k5-lEa"/>
-                                        <include reference="yGU-eF-Sc7"/>
-                                        <include reference="KmQ-fu-lFr"/>
-                                        <include reference="cB2-95-nRi"/>
-                                        <include reference="g9k-YJ-uFf"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <mask key="subviews">
-                                        <include reference="qKr-do-Tih"/>
-                                        <include reference="BeC-uC-gMA"/>
-                                        <include reference="eYX-Nd-B6t"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <include reference="UX1-yF-IAC"/>
-                                        <include reference="WJ5-g6-Nf8"/>
-                                        <include reference="hPV-Yg-yu0"/>
-                                        <include reference="i2f-sJ-G5D"/>
-                                        <include reference="knr-cy-CzX"/>
-                                        <include reference="9Jt-Oz-gJq"/>
-                                        <include reference="jva-0j-9Md"/>
-                                    </mask>
-                                </variation>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDV-st-NNq">
+                                <color key="backgroundColor" red="0.5888599753" green="0.1470975876" blue="0.13562121990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EWY-zS-EHH" secondAttribute="bottom" id="0sZ-U8-TNg"/>
-                            <constraint firstItem="EWY-zS-EHH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8aU-3B-mXd"/>
-                            <constraint firstItem="EWY-zS-EHH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="n7k-xk-OKu"/>
-                            <constraint firstAttribute="trailing" secondItem="EWY-zS-EHH" secondAttribute="trailing" id="s43-MU-cMl"/>
+                            <constraint firstItem="pDV-st-NNq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="A1Y-pi-c7h"/>
+                            <constraint firstAttribute="trailing" secondItem="pDV-st-NNq" secondAttribute="trailing" id="IT3-lr-5eh"/>
+                            <constraint firstItem="pDV-st-NNq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="KH6-Il-SRU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pDV-st-NNq" secondAttribute="bottom" id="h3N-E4-HFJ"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="iPadHoursLbl" destination="eYX-Nd-B6t" id="xHa-cB-XQz"/>
-                        <outlet property="iPadYesNoLbl" destination="qKr-do-Tih" id="dgw-4F-0j4"/>
-                        <outlet property="iPhoneHoursLbl" destination="6Iz-FE-luE" id="57j-ca-waZ"/>
-                        <outlet property="iPhoneYesNoLbl" destination="2ns-I8-6Oe" id="qQs-hZ-QHH"/>
-                        <outlet property="landscapeHoursLbl" destination="Sgz-BN-vgN" id="eYd-ni-WI8"/>
-                        <outlet property="landscapeYesNoLbl" destination="eM0-yk-gjz" id="txp-CM-Rxa"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="114.25781249999999" y="119.53125"/>
+            <point key="canvasLocation" x="216.80000000000001" y="852.3238380809596"/>
         </scene>
     </scenes>
 </document>

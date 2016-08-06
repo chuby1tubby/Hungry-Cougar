@@ -27,6 +27,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var landscapeYesNoLbl: UILabel!
     @IBOutlet weak var landscapeHoursLbl: UILabel!
     
+    // New outlets
+    
     // Initialized Days
     var Sunday: Day = Day(openingHour: 17, closingHour: 24)
     var Monday: Day = Day(openingHour: 11, closingHour: 24)
@@ -54,7 +56,7 @@ class ViewController: UIViewController {
     func loadCurrentDateTime() {
         let date = NSDate()
         let calendar = Calendar.current
-        let components = calendar.components([.minute, .hour, .weekday], from: date as Date)
+        let components = calendar.dateComponents([.minute, .hour, .weekday], from: date as Date)
         let weekday = components.weekday
         let hour = components.hour
         let minute = components.minute

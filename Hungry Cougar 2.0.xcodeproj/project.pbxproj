@@ -7,9 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF21D39A1D552B4F001A38F2 /* EastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF21D3991D552B4F001A38F2 /* EastVC.swift */; };
+		BF21D39C1D552C00001A38F2 /* WestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF21D39B1D552C00001A38F2 /* WestVC.swift */; };
+		BF21D39E1D55A138001A38F2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF21D39D1D55A138001A38F2 /* CircleView.swift */; };
 		BF35985B1D4EF79400AF28B3 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF35985A1D4EF79400AF28B3 /* Day.swift */; };
+		BF8C1BC01D4FDAD700E7B2B7 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8C1BBF1D4FDAD700E7B2B7 /* MenuVC.swift */; };
+		BF8C1BC21D4FDCAF00E7B2B7 /* RoundCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8C1BC11D4FDCAF00E7B2B7 /* RoundCornersView.swift */; };
 		BFECDD3B1D4EE5B100E626D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECDD3A1D4EE5B100E626D3 /* AppDelegate.swift */; };
-		BFECDD3D1D4EE5B100E626D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECDD3C1D4EE5B100E626D3 /* ViewController.swift */; };
+		BFECDD3D1D4EE5B100E626D3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECDD3C1D4EE5B100E626D3 /* MainVC.swift */; };
 		BFECDD401D4EE5B100E626D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFECDD3E1D4EE5B100E626D3 /* Main.storyboard */; };
 		BFECDD421D4EE5B100E626D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFECDD411D4EE5B100E626D3 /* Assets.xcassets */; };
 		BFECDD451D4EE5B100E626D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFECDD431D4EE5B100E626D3 /* LaunchScreen.storyboard */; };
@@ -35,18 +40,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF21D3991D552B4F001A38F2 /* EastVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EastVC.swift; sourceTree = "<group>"; };
+		BF21D39B1D552C00001A38F2 /* WestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WestVC.swift; sourceTree = "<group>"; };
+		BF21D39D1D55A138001A38F2 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		BF35985A1D4EF79400AF28B3 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
-		BFECDD371D4EE5B100E626D3 /* Open Den.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open Den.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8C1BBF1D4FDAD700E7B2B7 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		BF8C1BC11D4FDCAF00E7B2B7 /* RoundCornersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCornersView.swift; sourceTree = "<group>"; };
+		BFECDD371D4EE5B100E626D3 /* Hungry Cougar 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hungry Cougar 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFECDD3A1D4EE5B100E626D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFECDD3C1D4EE5B100E626D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFECDD3C1D4EE5B100E626D3 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		BFECDD3F1D4EE5B100E626D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFECDD411D4EE5B100E626D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFECDD441D4EE5B100E626D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFECDD461D4EE5B100E626D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFECDD4B1D4EE5B100E626D3 /* Open DenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Open DenTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFECDD4B1D4EE5B100E626D3 /* Hungry Cougar 2.0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hungry Cougar 2.0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFECDD4F1D4EE5B100E626D3 /* Open_DenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Open_DenTests.swift; sourceTree = "<group>"; };
 		BFECDD511D4EE5B100E626D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFECDD561D4EE5B100E626D3 /* Open DenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Open DenUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFECDD561D4EE5B100E626D3 /* Hungry Cougar 2.0UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hungry Cougar 2.0UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFECDD5A1D4EE5B100E626D3 /* Open_DenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Open_DenUITests.swift; sourceTree = "<group>"; };
 		BFECDD5C1D4EE5B100E626D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,10 +86,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF21D3961D552A5A001A38F2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFECDD3C1D4EE5B100E626D3 /* MainVC.swift */,
+				BF8C1BBF1D4FDAD700E7B2B7 /* MenuVC.swift */,
+				BF21D3991D552B4F001A38F2 /* EastVC.swift */,
+				BF21D39B1D552C00001A38F2 /* WestVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BF21D3981D552A78001A38F2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BF35985A1D4EF79400AF28B3 /* Day.swift */,
+				BF8C1BC11D4FDCAF00E7B2B7 /* RoundCornersView.swift */,
+				BF21D39D1D55A138001A38F2 /* CircleView.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		BFECDD2E1D4EE5B000E626D3 = {
 			isa = PBXGroup;
 			children = (
-				BFECDD391D4EE5B100E626D3 /* Open Den */,
+				BFECDD391D4EE5B100E626D3 /* Hungry Cougar 2.0 */,
 				BFECDD4E1D4EE5B100E626D3 /* Open DenTests */,
 				BFECDD591D4EE5B100E626D3 /* Open DenUITests */,
 				BFECDD381D4EE5B100E626D3 /* Products */,
@@ -89,24 +120,25 @@
 		BFECDD381D4EE5B100E626D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BFECDD371D4EE5B100E626D3 /* Open Den.app */,
-				BFECDD4B1D4EE5B100E626D3 /* Open DenTests.xctest */,
-				BFECDD561D4EE5B100E626D3 /* Open DenUITests.xctest */,
+				BFECDD371D4EE5B100E626D3 /* Hungry Cougar 2.0.app */,
+				BFECDD4B1D4EE5B100E626D3 /* Hungry Cougar 2.0Tests.xctest */,
+				BFECDD561D4EE5B100E626D3 /* Hungry Cougar 2.0UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BFECDD391D4EE5B100E626D3 /* Open Den */ = {
+		BFECDD391D4EE5B100E626D3 /* Hungry Cougar 2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				BFECDD3A1D4EE5B100E626D3 /* AppDelegate.swift */,
-				BFECDD3C1D4EE5B100E626D3 /* ViewController.swift */,
+				BF21D3961D552A5A001A38F2 /* Controller */,
+				BF21D3981D552A78001A38F2 /* Data */,
 				BFECDD3E1D4EE5B100E626D3 /* Main.storyboard */,
+				BFECDD3A1D4EE5B100E626D3 /* AppDelegate.swift */,
 				BFECDD411D4EE5B100E626D3 /* Assets.xcassets */,
 				BFECDD431D4EE5B100E626D3 /* LaunchScreen.storyboard */,
 				BFECDD461D4EE5B100E626D3 /* Info.plist */,
-				BF35985A1D4EF79400AF28B3 /* Day.swift */,
 			);
+			name = "Hungry Cougar 2.0";
 			path = "Open Den";
 			sourceTree = "<group>";
 		};
@@ -131,9 +163,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BFECDD361D4EE5B000E626D3 /* Open Den */ = {
+		BFECDD361D4EE5B000E626D3 /* Hungry Cougar 2.0 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFECDD5F1D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Open Den" */;
+			buildConfigurationList = BFECDD5F1D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Hungry Cougar 2.0" */;
 			buildPhases = (
 				BFECDD331D4EE5B000E626D3 /* Sources */,
 				BFECDD341D4EE5B000E626D3 /* Frameworks */,
@@ -143,14 +175,14 @@
 			);
 			dependencies = (
 			);
-			name = "Open Den";
+			name = "Hungry Cougar 2.0";
 			productName = "Open Den";
-			productReference = BFECDD371D4EE5B100E626D3 /* Open Den.app */;
+			productReference = BFECDD371D4EE5B100E626D3 /* Hungry Cougar 2.0.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BFECDD4A1D4EE5B100E626D3 /* Open DenTests */ = {
+		BFECDD4A1D4EE5B100E626D3 /* Hungry Cougar 2.0Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFECDD621D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Open DenTests" */;
+			buildConfigurationList = BFECDD621D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Hungry Cougar 2.0Tests" */;
 			buildPhases = (
 				BFECDD471D4EE5B100E626D3 /* Sources */,
 				BFECDD481D4EE5B100E626D3 /* Frameworks */,
@@ -161,14 +193,14 @@
 			dependencies = (
 				BFECDD4D1D4EE5B100E626D3 /* PBXTargetDependency */,
 			);
-			name = "Open DenTests";
+			name = "Hungry Cougar 2.0Tests";
 			productName = "Open DenTests";
-			productReference = BFECDD4B1D4EE5B100E626D3 /* Open DenTests.xctest */;
+			productReference = BFECDD4B1D4EE5B100E626D3 /* Hungry Cougar 2.0Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BFECDD551D4EE5B100E626D3 /* Open DenUITests */ = {
+		BFECDD551D4EE5B100E626D3 /* Hungry Cougar 2.0UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BFECDD651D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Open DenUITests" */;
+			buildConfigurationList = BFECDD651D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Hungry Cougar 2.0UITests" */;
 			buildPhases = (
 				BFECDD521D4EE5B100E626D3 /* Sources */,
 				BFECDD531D4EE5B100E626D3 /* Frameworks */,
@@ -179,9 +211,9 @@
 			dependencies = (
 				BFECDD581D4EE5B100E626D3 /* PBXTargetDependency */,
 			);
-			name = "Open DenUITests";
+			name = "Hungry Cougar 2.0UITests";
 			productName = "Open DenUITests";
-			productReference = BFECDD561D4EE5B100E626D3 /* Open DenUITests.xctest */;
+			productReference = BFECDD561D4EE5B100E626D3 /* Hungry Cougar 2.0UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +248,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BFECDD321D4EE5B000E626D3 /* Build configuration list for PBXProject "Open Den" */;
+			buildConfigurationList = BFECDD321D4EE5B000E626D3 /* Build configuration list for PBXProject "Hungry Cougar 2.0" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -229,9 +261,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BFECDD361D4EE5B000E626D3 /* Open Den */,
-				BFECDD4A1D4EE5B100E626D3 /* Open DenTests */,
-				BFECDD551D4EE5B100E626D3 /* Open DenUITests */,
+				BFECDD361D4EE5B000E626D3 /* Hungry Cougar 2.0 */,
+				BFECDD4A1D4EE5B100E626D3 /* Hungry Cougar 2.0Tests */,
+				BFECDD551D4EE5B100E626D3 /* Hungry Cougar 2.0UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -268,9 +300,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFECDD3D1D4EE5B100E626D3 /* ViewController.swift in Sources */,
+				BF21D39E1D55A138001A38F2 /* CircleView.swift in Sources */,
+				BF8C1BC21D4FDCAF00E7B2B7 /* RoundCornersView.swift in Sources */,
+				BFECDD3D1D4EE5B100E626D3 /* MainVC.swift in Sources */,
+				BF21D39C1D552C00001A38F2 /* WestVC.swift in Sources */,
 				BFECDD3B1D4EE5B100E626D3 /* AppDelegate.swift in Sources */,
 				BF35985B1D4EF79400AF28B3 /* Day.swift in Sources */,
+				BF21D39A1D552B4F001A38F2 /* EastVC.swift in Sources */,
+				BF8C1BC01D4FDAD700E7B2B7 /* MenuVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,12 +332,12 @@
 /* Begin PBXTargetDependency section */
 		BFECDD4D1D4EE5B100E626D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BFECDD361D4EE5B000E626D3 /* Open Den */;
+			target = BFECDD361D4EE5B000E626D3 /* Hungry Cougar 2.0 */;
 			targetProxy = BFECDD4C1D4EE5B100E626D3 /* PBXContainerItemProxy */;
 		};
 		BFECDD581D4EE5B100E626D3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BFECDD361D4EE5B000E626D3 /* Open Den */;
+			target = BFECDD361D4EE5B000E626D3 /* Hungry Cougar 2.0 */;
 			targetProxy = BFECDD571D4EE5B100E626D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -447,7 +484,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyleNakamura.Open-DenTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Open Den.app/Open Den";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hungry Cougar 2.0.app/Hungry Cougar 2.0";
 			};
 			name = Debug;
 		};
@@ -460,7 +497,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kyleNakamura.Open-DenTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Open Den.app/Open Den";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hungry Cougar 2.0.app/Hungry Cougar 2.0";
 			};
 			name = Release;
 		};
@@ -491,7 +528,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BFECDD321D4EE5B000E626D3 /* Build configuration list for PBXProject "Open Den" */ = {
+		BFECDD321D4EE5B000E626D3 /* Build configuration list for PBXProject "Hungry Cougar 2.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFECDD5D1D4EE5B100E626D3 /* Debug */,
@@ -500,7 +537,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFECDD5F1D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Open Den" */ = {
+		BFECDD5F1D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Hungry Cougar 2.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFECDD601D4EE5B100E626D3 /* Debug */,
@@ -509,7 +546,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFECDD621D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Open DenTests" */ = {
+		BFECDD621D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Hungry Cougar 2.0Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFECDD631D4EE5B100E626D3 /* Debug */,
@@ -518,7 +555,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BFECDD651D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Open DenUITests" */ = {
+		BFECDD651D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Hungry Cougar 2.0UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BFECDD661D4EE5B100E626D3 /* Debug */,
