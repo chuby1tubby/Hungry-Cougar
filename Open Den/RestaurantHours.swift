@@ -21,16 +21,22 @@ var Today: Day = Day(openingHour: 0, closingHour: 0)
 var Tomorrow: Day = Day(openingHour: 0, closingHour: 0)
 
 func setHours() {
-    if restaurantChoice == "Cougar's Den Café" {
+    if restaurantChoice == "1899 Dining Hall" {
         Sunday.openHour = 17; Sunday.closeHour = 24
         Monday.openHour = 11; Monday.closeHour = 24
         Tuesday.openHour = 11; Tuesday.closeHour = 24
         Wednesday.openHour = 11; Wednesday.closeHour = 24
         Thursday.openHour = 11; Thursday.closeHour = 24
         Friday.openHour = 11; Friday.closeHour = 19
-        Saturday.openHour = 5; Saturday.closeHour = 24
-    } else if restaurantChoice == "" {
-        
+        Saturday.openHour = 0; Saturday.closeHour = 0
+    } else if restaurantChoice == "Cougar's Den Café" {
+        Sunday.openHour = 17; Sunday.closeHour = 24
+        Monday.openHour = 11; Monday.closeHour = 24
+        Tuesday.openHour = 11; Tuesday.closeHour = 24
+        Wednesday.openHour = 11; Wednesday.closeHour = 24
+        Thursday.openHour = 11; Thursday.closeHour = 24
+        Friday.openHour = 11; Friday.closeHour = 19
+        Saturday.openHour = 0; Saturday.closeHour = 0
     } else if restaurantChoice == "" {
         
     } else if restaurantChoice == "" {

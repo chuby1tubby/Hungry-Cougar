@@ -92,15 +92,6 @@ class ViewController: UIViewController {
     }
     
     func checkIfOpen() {
-        //
-        //
-        // Debugging
-        print("\n\n\nCurrent hour: \(currentHour)\nCurrent minute: \(currentMinute)\n\nOpening hour: \(Today.openHour)\nClosing hour: \(Today.closeHour)\n")
-        print("Store is open: \(storeIsOpen)\n")
-        //
-        //
-        //
-        
         if Today.closeHour >= 1 && Today.closeHour <= 3 {   // If open past midnight (coffeehouse)
             if currentHour >= Today.closeHour && currentHour < Today.openHour{
                 // Store is CLOSED
@@ -129,8 +120,6 @@ class ViewController: UIViewController {
             hoursUntilClose = Today.closeHour - currentHour - 1
             hoursUntilOpen = 0
         }
-        
-        print("Hours until open: \(hoursUntilOpen)\nHours until close: \(hoursUntilClose)")
         
         minutesLeft = 60 - currentMinute
         
