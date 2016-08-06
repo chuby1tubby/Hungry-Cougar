@@ -9,6 +9,8 @@
 import UIKit
 import Foundation
 
+public var restaurantChoice = ""
+
 class ViewController: UIViewController {
     // Base values
     var currentHour: Int = 0
@@ -18,7 +20,6 @@ class ViewController: UIViewController {
     var hoursUntilClose: Int = 0
     var minutesLeft: Int = 0
     var minutesUntilClose: Int = 0
-    var restaurantTitleTxt = "Is ___ Open?"
     
     // IBOutlets
     @IBOutlet weak var restaurantTitleLbl: UILabel!
@@ -44,6 +45,7 @@ class ViewController: UIViewController {
     // Loads right before view appears
     override func viewWillAppear(_ animated: Bool) {
         loadCurrentDateTime()
+        restaurantTitleLbl.text = "Is \(restaurantChoice) Open?"
     }
     
     func loadCurrentDateTime() {

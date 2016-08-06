@@ -120,17 +120,20 @@
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BTN-E9-OAM" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0s-aZ-1ly">
-                                                                <frame key="frameInset" width="191" height="191"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0s-aZ-1ly">
                                                                 <connections>
+                                                                    <action selector="onCougarButtonPressed:" destination="ZWC-yi-dpU" eventType="touchUpInside" id="BKv-uD-pSm"/>
                                                                     <segue destination="BYZ-38-t0r" kind="show" id="N8b-u5-MrR"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" red="0.79894857355654492" green="0.81254047927461137" blue="0.74673880539153448" alpha="0.91612566021126762" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="X0s-aZ-1ly" secondAttribute="bottom" id="TeJ-mK-rxd"/>
+                                                            <constraint firstItem="X0s-aZ-1ly" firstAttribute="leading" secondItem="BTN-E9-OAM" secondAttribute="leading" id="fMk-BY-HI1"/>
                                                             <constraint firstAttribute="width" secondItem="BTN-E9-OAM" secondAttribute="height" multiplier="1:1" id="ojv-1X-8Vi"/>
+                                                            <constraint firstItem="X0s-aZ-1ly" firstAttribute="top" secondItem="BTN-E9-OAM" secondAttribute="top" id="u9x-jV-lim"/>
+                                                            <constraint firstAttribute="trailing" secondItem="X0s-aZ-1ly" secondAttribute="trailing" id="zxm-Po-jkl"/>
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DyY-YH-L7D" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">

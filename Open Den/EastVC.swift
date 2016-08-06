@@ -20,4 +20,8 @@ class EastVC: UIViewController {
     func setTitle() {
         eastTitleLbl.text = "APU Dining Venues"
     }
+    
+    @IBAction func onCougarButtonPressed(_ sender: AnyObject) {
+        restaurantChoice = "Cougar's Den Café"
+    }
 }
