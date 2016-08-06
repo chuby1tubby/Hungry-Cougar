@@ -18,5 +18,6 @@ class MenuVC: UIViewController {
     }
     
     func setTitle() {
+        menuTitleLbl.text = "APU Dining Venues"
     }
 }

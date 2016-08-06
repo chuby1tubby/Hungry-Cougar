@@ -9,9 +9,15 @@
 import UIKit
 
 class WestVC: UIViewController {
+    
+    @IBOutlet weak var westTitleLbl: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setTitle()
+    }
+    
+    func setTitle() {
+        westTitleLbl.text = "APU Dining Venues"
     }
 }

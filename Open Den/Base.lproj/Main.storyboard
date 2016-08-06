@@ -4,7 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11151.4"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -93,6 +92,9 @@
                             <constraint firstItem="aD4-LC-AFc" firstAttribute="top" secondItem="ED6-DO-6u5" secondAttribute="bottom" id="ymT-px-dM6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="menuTitleLbl" destination="tzl-Ju-CmW" id="nhC-Ji-XC6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="noB-ys-rHW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -191,14 +193,52 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9h-FH-tw8">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="East Campus Dining Options" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99x-X6-ZmW">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="74" id="V0H-lm-2X6"/>
+                                                    <constraint firstAttribute="width" constant="314" id="qjf-r5-tut"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.48417359589999998" green="0.11984846740000001" blue="0.1145699993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="76" id="Wro-0b-Pps"/>
+                                            <constraint firstItem="99x-X6-ZmW" firstAttribute="centerY" secondItem="n9h-FH-tw8" secondAttribute="centerY" id="cV4-q9-PWT"/>
+                                            <constraint firstItem="99x-X6-ZmW" firstAttribute="centerX" secondItem="n9h-FH-tw8" secondAttribute="centerX" id="gOT-li-PCX"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.5888599753" green="0.1470975876" blue="0.13562121990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="htp-3N-8J7" firstAttribute="centerY" secondItem="IWL-Nq-Mc6" secondAttribute="centerY" id="5Lp-h6-KKA"/>
-                                    <constraint firstItem="htp-3N-8J7" firstAttribute="leading" secondItem="IWL-Nq-Mc6" secondAttribute="leadingMargin" constant="40" id="QPx-4n-KUT"/>
+                                    <constraint firstAttribute="trailing" secondItem="n9h-FH-tw8" secondAttribute="trailing" id="5br-UX-UKG"/>
+                                    <constraint firstItem="n9h-FH-tw8" firstAttribute="top" secondItem="IWL-Nq-Mc6" secondAttribute="top" id="7LD-ek-Cw4"/>
+                                    <constraint firstItem="htp-3N-8J7" firstAttribute="leading" secondItem="IWL-Nq-Mc6" secondAttribute="leading" constant="40" id="AUH-aH-wcy"/>
+                                    <constraint firstAttribute="bottom" secondItem="htp-3N-8J7" secondAttribute="bottom" constant="40" id="GOk-Zt-pb2"/>
                                     <constraint firstItem="htp-3N-8J7" firstAttribute="centerX" secondItem="IWL-Nq-Mc6" secondAttribute="centerX" id="Yqu-UM-4Jy"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="htp-3N-8J7" secondAttribute="trailing" constant="40" id="xRQ-Q7-nJ5"/>
+                                    <constraint firstItem="n9h-FH-tw8" firstAttribute="leading" secondItem="IWL-Nq-Mc6" secondAttribute="leading" id="axR-wu-KeN"/>
+                                    <constraint firstItem="htp-3N-8J7" firstAttribute="top" secondItem="IWL-Nq-Mc6" secondAttribute="top" constant="40" id="rBI-5r-EeK"/>
+                                    <constraint firstAttribute="trailing" secondItem="htp-3N-8J7" secondAttribute="trailing" constant="40" id="vRC-Vn-ddG"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="GOk-Zt-pb2"/>
+                                        <exclude reference="rBI-5r-EeK"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="AUH-aH-wcy"/>
+                                        <include reference="GOk-Zt-pb2"/>
+                                        <include reference="rBI-5r-EeK"/>
+                                        <exclude reference="vRC-Vn-ddG"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -209,15 +249,18 @@
                             <constraint firstAttribute="trailing" secondItem="IWL-Nq-Mc6" secondAttribute="trailing" id="YAY-F8-OxF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="eastTitleLbl" destination="99x-X6-ZmW" id="TGo-0n-Cbx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Et-L6-cAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="219.53125" y="116.01562499999999"/>
+            <point key="canvasLocation" x="218.40000000000001" y="115.59220389805098"/>
         </scene>
         <!--West Campus Menu-->
         <scene sceneID="Omx-em-fo7">
             <objects>
-                <viewController title="West Campus Menu" id="G51-g3-f77" sceneMemberID="viewController">
+                <viewController title="West Campus Menu" id="G51-g3-f77" customClass="WestVC" customModule="Hungry_Cougar_2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JxN-gQ-Xcq"/>
                         <viewControllerLayoutGuide type="bottom" id="rDg-5r-5wX"/>
@@ -228,14 +271,11 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWt-8B-LLj">
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="d9V-JC-7cB">
-                                        <frame key="frameInset" minX="48" minY="194" width="280" height="280"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="d9V-JC-7cB">
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="m0R-pz-zIA">
-                                                <frame key="frameInset" width="280" height="60"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="m0R-pz-zIA">
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sh8-N4-3mt" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                        <frame key="frameInset" width="60" height="60"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sh8-N4-3mt" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTA-jh-QN2">
                                                                 <frame key="frameInset" width="191" height="191"/>
@@ -247,15 +287,13 @@
                                                             <constraint firstAttribute="width" secondItem="Sh8-N4-3mt" secondAttribute="height" multiplier="1:1" id="1VC-cA-ao1"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NH2-b6-lWY" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                        <frame key="frameInset" minX="110" width="60" height="60"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NH2-b6-lWY" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="NH2-b6-lWY" secondAttribute="height" multiplier="1:1" id="HDG-lV-OVv"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QiN-gl-NrA" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                        <frame key="frameInset" minX="220" width="60" height="60"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QiN-gl-NrA" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="QiN-gl-NrA" secondAttribute="height" multiplier="1:1" id="lmc-Fb-nyZ"/>
@@ -263,25 +301,21 @@
                                                     </view>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="fBM-RT-mJl">
-                                                <frame key="frameInset" minY="110" width="280" height="60"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="fBM-RT-mJl">
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HUD-cx-xgh" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                        <frame key="frameInset" width="60" height="60"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUD-cx-xgh" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="HUD-cx-xgh" secondAttribute="height" multiplier="1:1" id="guw-5f-TVu"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aXc-Am-mHE" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                        <frame key="frameInset" minX="110" width="60" height="60"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aXc-Am-mHE" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="aXc-Am-mHE" secondAttribute="height" multiplier="1:1" id="Pwq-Ul-5Nc"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xyD-h9-206" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                        <frame key="frameInset" minX="220" width="60" height="60"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xyD-h9-206" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="xyD-h9-206" secondAttribute="height" multiplier="1:1" id="Ve2-ax-AkC"/>
@@ -289,25 +323,21 @@
                                                     </view>
                                                 </subviews>
                                             </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="27X-6q-ZkB">
-                                                <frame key="frameInset" minY="220" width="280" height="60"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="27X-6q-ZkB">
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IyG-4e-jiI" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                        <frame key="frameInset" width="60" height="60"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IyG-4e-jiI" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="IyG-4e-jiI" secondAttribute="height" multiplier="1:1" id="Pxc-Dr-ZfB"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b4o-k6-f7a" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                        <frame key="frameInset" minX="110" width="60" height="60"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4o-k6-f7a" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="b4o-k6-f7a" secondAttribute="height" multiplier="1:1" id="yYI-MG-iC0"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="egP-Vn-8qD" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                        <frame key="frameInset" minX="220" width="60" height="60"/>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egP-Vn-8qD" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                                         <color key="backgroundColor" red="0.79894857360000004" green="0.81254047929999995" blue="0.74673880540000004" alpha="0.91612566019999997" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="egP-Vn-8qD" secondAttribute="height" multiplier="1:1" id="8CA-KB-H2X"/>
@@ -317,12 +347,52 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAU-W4-c2u">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="West Campus Dining Options" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBy-dz-EXn">
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="314" id="BKT-eL-zAT"/>
+                                                    <constraint firstAttribute="height" constant="74" id="yj6-jN-Cd9"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.48417359589999998" green="0.11984846740000001" blue="0.1145699993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="76" id="OYS-nu-tXu"/>
+                                            <constraint firstItem="NBy-dz-EXn" firstAttribute="centerY" secondItem="fAU-W4-c2u" secondAttribute="centerY" id="iqx-Tu-GOz"/>
+                                            <constraint firstItem="NBy-dz-EXn" firstAttribute="centerX" secondItem="fAU-W4-c2u" secondAttribute="centerX" id="sTc-36-O1o"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.5888599753" green="0.1470975876" blue="0.13562121990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="d9V-JC-7cB" firstAttribute="centerY" secondItem="XWt-8B-LLj" secondAttribute="centerY" id="wwp-Pd-eEE"/>
-                                    <constraint firstItem="d9V-JC-7cB" firstAttribute="centerX" secondItem="XWt-8B-LLj" secondAttribute="centerX" id="xjk-aB-HeR"/>
+                                    <constraint firstItem="fAU-W4-c2u" firstAttribute="top" secondItem="XWt-8B-LLj" secondAttribute="top" id="5Nr-PL-aw6"/>
+                                    <constraint firstAttribute="trailing" secondItem="fAU-W4-c2u" secondAttribute="trailing" id="8Vu-8S-aEV"/>
+                                    <constraint firstItem="d9V-JC-7cB" firstAttribute="top" secondItem="XWt-8B-LLj" secondAttribute="top" constant="40" id="OVR-I2-DJ1"/>
+                                    <constraint firstItem="d9V-JC-7cB" firstAttribute="centerX" secondItem="XWt-8B-LLj" secondAttribute="centerX" id="PoQ-5b-Yfn"/>
+                                    <constraint firstItem="fAU-W4-c2u" firstAttribute="leading" secondItem="XWt-8B-LLj" secondAttribute="leading" id="UPQ-hC-7qc"/>
+                                    <constraint firstItem="d9V-JC-7cB" firstAttribute="centerY" secondItem="XWt-8B-LLj" secondAttribute="centerY" id="WJZ-QW-DUu"/>
+                                    <constraint firstAttribute="bottom" secondItem="d9V-JC-7cB" secondAttribute="bottom" constant="40" id="tcv-gk-22f"/>
+                                    <constraint firstAttribute="trailing" secondItem="d9V-JC-7cB" secondAttribute="trailing" constant="40" id="yu2-bU-lA2"/>
+                                    <constraint firstItem="d9V-JC-7cB" firstAttribute="leading" secondItem="XWt-8B-LLj" secondAttribute="leading" constant="40" id="zjJ-46-JEz"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OVR-I2-DJ1"/>
+                                        <exclude reference="tcv-gk-22f"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="OVR-I2-DJ1"/>
+                                        <include reference="tcv-gk-22f"/>
+                                        <exclude reference="yu2-bU-lA2"/>
+                                        <exclude reference="zjJ-46-JEz"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -333,6 +403,9 @@
                             <constraint firstAttribute="trailing" secondItem="XWt-8B-LLj" secondAttribute="trailing" id="xpj-CH-fJB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="westTitleLbl" destination="NBy-dz-EXn" id="NWd-Es-Cms"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1xE-dR-cAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -353,6 +426,17 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDV-st-NNq">
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jY5-cB-yZV">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is Cougar's Den Café Open?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32S-Rp-i5M">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="EyX-s5-vUR"/>
+                                                    <constraint firstAttribute="width" constant="286" id="JrX-oP-YML"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" red="0.48417359589999998" green="0.11984846740000001" blue="0.1145699993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="76" id="PFu-da-pQL"/>
@@ -360,6 +444,8 @@
                                             <constraint firstAttribute="height" constant="176" id="cEo-AY-70l">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="140"/>
                                             </constraint>
+                                            <constraint firstItem="32S-Rp-i5M" firstAttribute="centerX" secondItem="jY5-cB-yZV" secondAttribute="centerX" id="gyb-be-RpH"/>
+                                            <constraint firstItem="32S-Rp-i5M" firstAttribute="centerY" secondItem="jY5-cB-yZV" secondAttribute="centerY" id="j1R-px-egh"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -384,13 +470,37 @@
                                             </mask>
                                         </variation>
                                     </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3UD-x8-G89">
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="y/n" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojc-Un-ovC">
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="97" id="TW0-ST-AeX"/>
+                                                    <constraint firstAttribute="width" constant="188" id="eeJ-7m-Azr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="68"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening in 12 hours 12 minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu1-9q-xnw">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                <color key="textColor" red="0.78114880181347157" green="0.78114880181347157" blue="0.78114880181347157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="121" id="XQl-Kg-LLK"/>
+                                            <constraint firstAttribute="width" constant="285" id="afr-TH-X7b"/>
+                                        </constraints>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.5888599753" green="0.1470975876" blue="0.13562121990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="jY5-cB-yZV" secondAttribute="trailing" id="4Gu-Ta-B6Q"/>
                                     <constraint firstItem="jY5-cB-yZV" firstAttribute="leading" secondItem="pDV-st-NNq" secondAttribute="leading" id="E5V-mb-DPr"/>
                                     <constraint firstItem="jY5-cB-yZV" firstAttribute="leading" secondItem="pDV-st-NNq" secondAttribute="leading" id="IJs-Z4-asg"/>
+                                    <constraint firstItem="3UD-x8-G89" firstAttribute="centerX" secondItem="pDV-st-NNq" secondAttribute="centerX" id="PYj-sK-OrC"/>
                                     <constraint firstItem="jY5-cB-yZV" firstAttribute="leading" secondItem="pDV-st-NNq" secondAttribute="leading" id="Sz2-cQ-Lpk"/>
+                                    <constraint firstItem="3UD-x8-G89" firstAttribute="centerY" secondItem="pDV-st-NNq" secondAttribute="centerY" id="Wb0-qY-q2B"/>
                                     <constraint firstItem="jY5-cB-yZV" firstAttribute="top" secondItem="pDV-st-NNq" secondAttribute="top" id="Zmn-iL-3Bf"/>
                                     <constraint firstItem="jY5-cB-yZV" firstAttribute="top" secondItem="pDV-st-NNq" secondAttribute="top" id="cfx-2F-nXS"/>
                                     <constraint firstItem="jY5-cB-yZV" firstAttribute="top" secondItem="pDV-st-NNq" secondAttribute="top" id="dpV-Kk-Qeh"/>
@@ -431,10 +541,15 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pDV-st-NNq" secondAttribute="bottom" id="h3N-E4-HFJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="hoursLbl" destination="Vu1-9q-xnw" id="wYu-e0-Cks"/>
+                        <outlet property="restaurantTitleLbl" destination="32S-Rp-i5M" id="TBV-7W-BVY"/>
+                        <outlet property="yesNoLbl" destination="ojc-Un-ovC" id="Ihm-xz-eVt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="218" y="799"/>
+            <point key="canvasLocation" x="623" y="878"/>
         </scene>
     </scenes>
 </document>

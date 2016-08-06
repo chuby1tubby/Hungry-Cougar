@@ -10,14 +10,14 @@ import UIKit
 
 class EastVC: UIViewController {
 
+    @IBOutlet weak var eastTitleLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setTitle()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func setTitle() {
+        eastTitleLbl.text = "APU Dining Venues"
     }
 }
