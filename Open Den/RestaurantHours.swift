@@ -19,6 +19,7 @@ var Friday: Day = Day(openingHour: 0, closingHour: 0)
 var Saturday: Day = Day(openingHour: 0, closingHour: 0)
 var Today: Day = Day(openingHour: 0, closingHour: 0)
 var Tomorrow: Day = Day(openingHour: 0, closingHour: 0)
+var ZeroDay: Day = Day(openingHour: 0, closingHour: 0)
 
 func setHours() {
     if restaurantChoice == "1899 Dining Hall" {               // Need to add transition closed hours

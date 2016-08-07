@@ -109,7 +109,7 @@ class ViewController: UIViewController {
             if !(floor(Today.closeHour) == Today.closeHour) || !(floor(Today.openHour) == Today.openHour) {
                 // If closing hour isn't a whole number
                 if (currentHour >= Today.closeHour && minutesLeft <= 30) || (currentHour <= Today.openHour  && minutesLeft < 30) {
-                    yesNoLbl.text = "TEST"
+                    yesNoLbl.text = "CLOSED"
                     storeIsOpen = false
                 } else {
                     yesNoLbl.text = "OPEN"
@@ -148,6 +148,11 @@ class ViewController: UIViewController {
         if storeIsOpen == false {
             if Tomorrow.openHour == 0  || Today.openHour == 0 || Today.closeHour == 0 {     // Tomorrow closed all day
                 hoursLbl.text = "Closed for the weekend"
+                if restaurantChoice == "Cougar Walk Café" {
+                    hoursLbl.text = "Restaurant hours unavailable"
+                }
+            } else if restaurantChoice == "Cougar Walk Café" {
+                hoursLbl.text = "Restaurant hours unavailable"
             } else {
                 if hoursUntilOpen > 0 {
                     hoursLbl.text = "Opening in \(Int(hoursUntilOpen)) hours \(minutesLeft) minutes"
