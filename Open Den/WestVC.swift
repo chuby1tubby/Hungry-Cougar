@@ -10,15 +10,8 @@ import UIKit
 
 class WestVC: UIViewController {
     
-    @IBOutlet weak var westTitleLbl: UILabel!
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        setTitle()
-    }
-    
-    func setTitle() {
-        westTitleLbl.text = "West Campus Restaurants"
     }
     
     @IBAction func grillButtonPressed(_ sender: AnyObject) {
@@ -43,10 +36,4 @@ class WestVC: UIViewController {
     @IBAction func umaiButtonPressed(_ sender: AnyObject) {
         restaurantChoice = "Umai Sushi"
     }
-    
-    
-    
-
-    
-
 }

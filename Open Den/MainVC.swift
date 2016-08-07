@@ -24,20 +24,19 @@ class ViewController: UIViewController {
     var minutesUntilClose: Int = 0
     
     // IBOutlets
-    @IBOutlet weak var restaurantTitleLbl: UILabel!
     @IBOutlet weak var yesNoLbl: UILabel!
     @IBOutlet weak var hoursLbl: UILabel!
     
     // Loads when view appears
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = restaurantChoice
     }
     
     // Loads right before view appears
     override func viewWillAppear(_ animated: Bool) {
         setHours()
         loadCurrentDateTime()
-        restaurantTitleLbl.text = "\(restaurantChoice)"
     }
     
     func loadCurrentDateTime() {
@@ -94,7 +93,8 @@ class ViewController: UIViewController {
     }
     
     func checkIfOpen() {
-        if Today.closeHour >= 1.0 && Today.closeHour <= 3.0 {   // If open past midnight (coffeehouse)
+        if Today.closeHour >= 1.0 && Today.closeHour <= 3.0 {
+            // If open past midnight (coffeehouse)
             if currentHour >= Today.closeHour && currentHour < Today.openHour{
                 // Store is CLOSED
                 yesNoLbl.text = "CLOSED"
@@ -105,10 +105,11 @@ class ViewController: UIViewController {
                 storeIsOpen = true
             }
         } else {
+            // If not open past midnight
             if !(floor(Today.closeHour) == Today.closeHour) || !(floor(Today.openHour) == Today.openHour) {
                 // If closing hour isn't a whole number
                 if (currentHour >= Today.closeHour && minutesLeft <= 30) || (currentHour <= Today.openHour  && minutesLeft < 30) {
-                    yesNoLbl.text = "CLOSED"
+                    yesNoLbl.text = "TEST"
                     storeIsOpen = false
                 } else {
                     yesNoLbl.text = "OPEN"
@@ -130,8 +131,13 @@ class ViewController: UIViewController {
     
     func calculateTimeUntilOpen() {
         if storeIsOpen == false {
-            hoursUntilOpen = Today.openHour - currentHour - 1
-            hoursUntilClose = 0
+            if currentHour > Today.closeHour && currentHour < 24 {
+                hoursUntilOpen = (23 - currentHour) + (Tomorrow.openHour)
+                hoursUntilClose = 0
+            } else {
+                hoursUntilOpen = Today.openHour - currentHour - 1
+                hoursUntilClose = 0
+            }
         } else {
             hoursUntilClose = Today.closeHour - currentHour - 1
             hoursUntilOpen = 0
@@ -144,14 +150,14 @@ class ViewController: UIViewController {
                 hoursLbl.text = "Closed for the weekend"
             } else {
                 if hoursUntilOpen > 0 {
-                    hoursLbl.text = "Opening in \(hoursUntilOpen) hours \(minutesLeft) minutes"
+                    hoursLbl.text = "Opening in \(Int(hoursUntilOpen)) hours \(minutesLeft) minutes"
                 } else if hoursUntilOpen <= 0 {
                     hoursLbl.text = "Opening in \(minutesLeft) minutes"
                 }
             }
         } else {
             if hoursUntilClose > 0 {
-                hoursLbl.text = "Closing in \(hoursUntilClose) hours \(minutesLeft) minutes"
+                hoursLbl.text = "Closing in \(Int(hoursUntilClose)) hours \(minutesLeft) minutes"
             } else if hoursUntilClose <= 0 {
                 hoursLbl.text = "Closing in \(minutesLeft) minutes"
             }

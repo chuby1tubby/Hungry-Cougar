@@ -10,14 +10,8 @@ import UIKit
 
 class MenuVC: UIViewController {
     
-    @IBOutlet weak var menuTitleLbl: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        setTitle()
-    }
-    
-    func setTitle() {
-        menuTitleLbl.text = "APU Dining Venues"
+        self.title = "Azusa Pacific University Restaurants"
     }
 }

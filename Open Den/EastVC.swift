@@ -9,16 +9,9 @@
 import UIKit
 
 class EastVC: UIViewController {
-
-    @IBOutlet weak var eastTitleLbl: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setTitle()
-    }
-    
-    func setTitle() {
-        eastTitleLbl.text = "East Campus Restaurants"
     }
     
     @IBAction func diningHallButtonPressed(_ sender: AnyObject) {
