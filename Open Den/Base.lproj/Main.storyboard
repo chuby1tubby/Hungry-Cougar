@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11185.3" systemVersion="16A270f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gOg-31-csF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11185.3" systemVersion="16A270f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aYT-vv-QhX">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11151.4"/>
@@ -54,7 +54,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="ZWC-yi-dpU" kind="show" id="spv-dH-4Mh"/>
+                                                            <segue destination="ZWC-yi-dpU" kind="show" id="Sct-hF-ZgY"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sh-aj-JUC">
@@ -67,7 +67,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="G51-g3-f77" kind="showDetail" id="7gP-NC-YFE"/>
+                                                            <segue destination="G51-g3-f77" kind="show" id="UL7-FB-HSJ"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -92,13 +92,14 @@
                             <constraint firstItem="aD4-LC-AFc" firstAttribute="top" secondItem="ED6-DO-6u5" secondAttribute="bottom" id="ymT-px-dM6"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Qjp-Sd-iGR"/>
                     <connections>
                         <outlet property="menuTitleLbl" destination="tzl-Ju-CmW" id="nhC-Ji-XC6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="noB-ys-rHW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-744.79999999999995" y="117.39130434782609"/>
+            <point key="canvasLocation" x="194.40000000000001" y="117.39130434782609"/>
         </scene>
         <!--East Campus Menu-->
         <scene sceneID="crm-gj-9mr">
@@ -290,22 +291,9 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n9h-FH-tw8">
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="East Campus Dining Options" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99x-X6-ZmW">
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="74" id="V0H-lm-2X6"/>
-                                                    <constraint firstAttribute="width" constant="314" id="qjf-r5-tut"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
                                         <color key="backgroundColor" red="0.48417359589999998" green="0.11984846740000001" blue="0.1145699993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="76" id="Wro-0b-Pps"/>
-                                            <constraint firstItem="99x-X6-ZmW" firstAttribute="centerY" secondItem="n9h-FH-tw8" secondAttribute="centerY" id="cV4-q9-PWT"/>
-                                            <constraint firstItem="99x-X6-ZmW" firstAttribute="centerX" secondItem="n9h-FH-tw8" secondAttribute="centerX" id="gOT-li-PCX"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -345,13 +333,10 @@
                             <constraint firstAttribute="trailing" secondItem="IWL-Nq-Mc6" secondAttribute="trailing" id="YAY-F8-OxF"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="eastTitleLbl" destination="99x-X6-ZmW" id="TGo-0n-Cbx"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Et-L6-cAz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="218.40000000000001" y="115.59220389805098"/>
+            <point key="canvasLocation" x="1113" y="-216"/>
         </scene>
         <!--West Campus Menu-->
         <scene sceneID="Omx-em-fo7">
@@ -486,11 +471,9 @@
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="27X-6q-ZkB">
                                                 <subviews>
-                                                    <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IyG-4e-jiI" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                        <frame key="frameInset" minX="-40" minY="-416"/>
+                                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IyG-4e-jiI" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kt-bT-2D2">
-                                                                <frame key="frameInset" width="65" height="65"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kt-bT-2D2">
                                                                 <connections>
                                                                     <segue destination="BYZ-38-t0r" kind="show" id="ZLf-d0-all"/>
                                                                 </connections>
@@ -505,11 +488,9 @@
                                                             <constraint firstAttribute="bottom" secondItem="1kt-bT-2D2" secondAttribute="bottom" id="z30-ln-hOn"/>
                                                         </constraints>
                                                     </view>
-                                                    <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b4o-k6-f7a" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                        <frame key="frameInset" minX="-40" minY="-416"/>
+                                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b4o-k6-f7a" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7q-Ya-xkK">
-                                                                <frame key="frameInset" width="65" height="65"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7q-Ya-xkK">
                                                                 <connections>
                                                                     <segue destination="BYZ-38-t0r" kind="show" id="xAv-xx-acr"/>
                                                                 </connections>
@@ -524,11 +505,9 @@
                                                             <constraint firstAttribute="width" secondItem="b4o-k6-f7a" secondAttribute="height" multiplier="1:1" id="yYI-MG-iC0"/>
                                                         </constraints>
                                                     </view>
-                                                    <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="egP-Vn-8qD" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                        <frame key="frameInset" minX="-40" minY="-416"/>
+                                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egP-Vn-8qD" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rH-JL-NL6">
-                                                                <frame key="frameInset" width="65" height="65"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rH-JL-NL6">
                                                                 <connections>
                                                                     <segue destination="BYZ-38-t0r" kind="show" id="e6e-At-BI3"/>
                                                                 </connections>
@@ -548,22 +527,9 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fAU-W4-c2u">
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="West Campus Dining Options" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBy-dz-EXn">
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="314" id="BKT-eL-zAT"/>
-                                                    <constraint firstAttribute="height" constant="74" id="yj6-jN-Cd9"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
                                         <color key="backgroundColor" red="0.48417359589999998" green="0.11984846740000001" blue="0.1145699993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="76" id="OYS-nu-tXu"/>
-                                            <constraint firstItem="NBy-dz-EXn" firstAttribute="centerY" secondItem="fAU-W4-c2u" secondAttribute="centerY" id="iqx-Tu-GOz"/>
-                                            <constraint firstItem="NBy-dz-EXn" firstAttribute="centerX" secondItem="fAU-W4-c2u" secondAttribute="centerX" id="sTc-36-O1o"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -587,13 +553,10 @@
                             <constraint firstAttribute="trailing" secondItem="XWt-8B-LLj" secondAttribute="trailing" id="xpj-CH-fJB"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="westTitleLbl" destination="NBy-dz-EXn" id="NWd-Es-Cms"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1xE-dR-cAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="992.79999999999995" y="115.59220389805098"/>
+            <point key="canvasLocation" x="1114" y="489"/>
         </scene>
         <!--Cougar's Den Café-->
         <scene sceneID="tne-QT-ifu">
@@ -610,17 +573,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDV-st-NNq">
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jY5-cB-yZV">
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cougar's Den Café" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32S-Rp-i5M">
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="33" id="EyX-s5-vUR"/>
-                                                    <constraint firstAttribute="width" constant="286" id="JrX-oP-YML"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
                                         <color key="backgroundColor" red="0.48417359589999998" green="0.11984846740000001" blue="0.1145699993" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="76" id="PFu-da-pQL"/>
@@ -628,8 +580,6 @@
                                             <constraint firstAttribute="height" constant="176" id="cEo-AY-70l">
                                                 <variation key="heightClass=regular-widthClass=regular" constant="140"/>
                                             </constraint>
-                                            <constraint firstItem="32S-Rp-i5M" firstAttribute="centerX" secondItem="jY5-cB-yZV" secondAttribute="centerX" id="gyb-be-RpH"/>
-                                            <constraint firstItem="32S-Rp-i5M" firstAttribute="centerY" secondItem="jY5-cB-yZV" secondAttribute="centerY" id="j1R-px-egh"/>
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
@@ -735,13 +685,30 @@
                     </view>
                     <connections>
                         <outlet property="hoursLbl" destination="Vu1-9q-xnw" id="wYu-e0-Cks"/>
-                        <outlet property="restaurantTitleLbl" destination="32S-Rp-i5M" id="TBV-7W-BVY"/>
                         <outlet property="yesNoLbl" destination="ojc-Un-ovC" id="Ihm-xz-eVt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="216.80000000000001" y="1001.649175412294"/>
+            <point key="canvasLocation" x="2086" y="117"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nc8-hp-fFS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aYT-vv-QhX" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6j5-pb-k0w">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gOg-31-csF" kind="relationship" relationship="rootViewController" id="jhp-fs-9kE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jdJ-j6-1NA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-744.79999999999995" y="117.39130434782609"/>
         </scene>
     </scenes>
     <resources>
