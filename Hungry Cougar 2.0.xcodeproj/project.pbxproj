@@ -140,9 +140,9 @@
 		BFECDD391D4EE5B100E626D3 /* Hungry Cougar 2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				BF819A751D5666B200420B55 /* Custom Views */,
 				BF21D3961D552A5A001A38F2 /* Controller */,
 				BF21D3981D552A78001A38F2 /* Data */,
+				BF819A751D5666B200420B55 /* Custom Views */,
 				BFECDD3E1D4EE5B100E626D3 /* Main.storyboard */,
 				BFECDD3A1D4EE5B100E626D3 /* AppDelegate.swift */,
 				BFECDD411D4EE5B100E626D3 /* Assets.xcassets */,

@@ -10,11 +10,11 @@ import Foundation
 
 class Day {
     // Base variables
-    private var _openHour: Int = 24
-    private var _closeHour: Int = 24
+    private var _openHour: Double = 24
+    private var _closeHour: Double = 24
     
     // Getters
-    var openHour: Int {
+    var openHour: Double {
         get {
             return _openHour
         }
@@ -22,7 +22,7 @@ class Day {
             _openHour = value
         }
     }
-    var closeHour: Int {
+    var closeHour: Double {
         get {
             return _closeHour
         }
@@ -32,7 +32,7 @@ class Day {
     }
     
     // Initializer
-    init(openingHour: Int, closingHour: Int) {
+    init(openingHour: Double, closingHour: Double) {
         self._openHour = openingHour
         self._closeHour = closingHour
     }

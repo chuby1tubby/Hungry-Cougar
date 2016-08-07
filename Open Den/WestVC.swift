@@ -18,6 +18,6 @@ class WestVC: UIViewController {
     }
     
     func setTitle() {
-        westTitleLbl.text = "APU Dining Venues"
+        westTitleLbl.text = "West Campus Restaurants"
     }
 }

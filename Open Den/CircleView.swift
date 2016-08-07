@@ -21,9 +21,11 @@ class CircleView: UIView {
     }
     
     func customInit() {
-        //let thisWidth = self.bounds.size.width
-        //self.layer.cornerRadius = thisWidth/2
         
-        self.layer.cornerRadius = 15
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        layer.cornerRadius = bounds.size.width/2
     }
 }

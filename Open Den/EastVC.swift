@@ -18,10 +18,38 @@ class EastVC: UIViewController {
     }
     
     func setTitle() {
-        eastTitleLbl.text = "APU Dining Venues"
+        eastTitleLbl.text = "East Campus Restaurants"
     }
     
-    @IBAction func onCougarButtonPressed(_ sender: AnyObject) {
+    @IBAction func diningHallButtonPressed(_ sender: AnyObject) {
+        restaurantChoice = "1899 Dining Hall"
+    }
+    
+    @IBAction func cornerstoneButtonPressed(_ sender: AnyObject) {
+        restaurantChoice = "Cornerstone Coffeehouse"
+    }
+    
+    
+    @IBAction func denButtonPressed(_ sender: AnyObject) {
         restaurantChoice = "Cougar's Den Café"
     }
+    
+    
+    @IBAction func cougarButtonPressed(_ sender: AnyObject) {
+        restaurantChoice = "Cougar Walk Café"
+    }
+    
+    
+    @IBAction func mexicaliButtonPressed(_ sender: AnyObject) {
+        restaurantChoice = "Mexicali Grill"
+    }
+    
+    
+    @IBAction func pawsButtonPressed(_ sender: AnyObject) {
+        restaurantChoice = "Paws 'N Go"
+    }
+    
+    
+
+    
 }

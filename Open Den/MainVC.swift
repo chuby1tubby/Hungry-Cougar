@@ -13,11 +13,13 @@ public var restaurantChoice = ""
 
 class ViewController: UIViewController {
     // Base values
-    var currentHour: Int = 0
+    var currentHour: Double = 0
     var currentMinute: Int = 0
+    
     var storeIsOpen: Bool = false
-    var hoursUntilOpen: Int = 0
-    var hoursUntilClose: Int = 0
+    
+    var hoursUntilOpen: Double = 0
+    var hoursUntilClose: Double = 0
     var minutesLeft: Int = 0
     var minutesUntilClose: Int = 0
     
@@ -45,7 +47,7 @@ class ViewController: UIViewController {
         let weekday = components.weekday
         let hour = components.hour
         let minute = components.minute
-        currentHour = hour!
+        currentHour = Double(hour!)
         currentMinute = minute!
         
         // Set current day hours
@@ -92,7 +94,7 @@ class ViewController: UIViewController {
     }
     
     func checkIfOpen() {
-        if Today.closeHour >= 1 && Today.closeHour <= 3 {   // If open past midnight (coffeehouse)
+        if Today.closeHour >= 1.0 && Today.closeHour <= 3.0 {   // If open past midnight (coffeehouse)
             if currentHour >= Today.closeHour && currentHour < Today.openHour{
                 // Store is CLOSED
                 yesNoLbl.text = "CLOSED"
@@ -102,12 +104,26 @@ class ViewController: UIViewController {
                 yesNoLbl.text = "OPEN"
                 storeIsOpen = true
             }
-        } else if currentHour >= Today.closeHour || currentHour <= Today.openHour {
-            yesNoLbl.text = "CLOSED"
-            storeIsOpen = false
         } else {
-            yesNoLbl.text = "OPEN"
-            storeIsOpen = true
+            if !(floor(Today.closeHour) == Today.closeHour) || !(floor(Today.openHour) == Today.openHour) {
+                // If closing hour isn't a whole number
+                if (currentHour >= Today.closeHour && minutesLeft <= 30) || (currentHour <= Today.openHour  && minutesLeft < 30) {
+                    yesNoLbl.text = "CLOSED"
+                    storeIsOpen = false
+                } else {
+                    yesNoLbl.text = "OPEN"
+                    storeIsOpen = true
+                }
+            } else {
+                // If closeHour or openHour is a whole number
+                if currentHour >= Today.closeHour || currentHour <= Today.openHour {
+                    yesNoLbl.text = "CLOSED"
+                    storeIsOpen = false
+                } else {
+                    yesNoLbl.text = "OPEN"
+                    storeIsOpen = true
+                }
+            }
         }
         calculateTimeUntilOpen()
     }
