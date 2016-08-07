@@ -20,4 +20,33 @@ class WestVC: UIViewController {
     func setTitle() {
         westTitleLbl.text = "West Campus Restaurants"
     }
+    
+    @IBAction func grillButtonPressed(_ sender: AnyObject) {
+        restaurantChoice = "The Grill at Heritage"
+    }
+    
+    
+    @IBAction func hillsideButtonPressed(_ sender: AnyObject) {
+        restaurantChoice = "Hillside Grounds at Heritage"
+    }
+    
+    
+    @IBAction func marketButtonPressed(_ sender: AnyObject) {
+        restaurantChoice = "The Market at Heritage"
+    }
+    
+    
+    @IBAction func subsButtonPressed(_ sender: AnyObject) {
+        restaurantChoice = "Sam's Subs"
+    }
+    
+    @IBAction func umaiButtonPressed(_ sender: AnyObject) {
+        restaurantChoice = "Umai Sushi"
+    }
+    
+    
+    
+
+    
+
 }
