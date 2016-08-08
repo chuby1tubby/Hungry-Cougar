@@ -809,7 +809,7 @@ Sushi</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2028" y="117"/>
+            <point key="canvasLocation" x="2038" y="117"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nc8-hp-fFS">
