@@ -22,7 +22,7 @@ var Tomorrow: Day = Day(openingHour: 0, closingHour: 0)
 var ZeroDay: Day = Day(openingHour: 0, closingHour: 0)
 
 func setHours() {
-    if restaurantChoice == "1899 Dining Hall" {               // Need to add transition closed hours
+    if restaurantChoice == "1899 Dining Hall" {                // Need to add transition closed hours
         Sunday.openHour = 8.0; Sunday.closeHour = 19.5;
         Monday.openHour = 6.5; Monday.closeHour = 19.5
         Tuesday.openHour = 6.5; Tuesday.closeHour = 19.5
