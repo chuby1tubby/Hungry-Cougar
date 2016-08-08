@@ -21,7 +21,7 @@ class CircleView: UIView {
     }
     
     func customInit() {
-        
+        self.backgroundColor = UIColor.white
     }
     
     override func layoutSubviews() {

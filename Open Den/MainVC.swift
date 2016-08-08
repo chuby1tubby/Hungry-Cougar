@@ -138,7 +138,7 @@ class ViewController: UIViewController {
                 hoursUntilOpen = Today.openHour - currentHour - 1
                 hoursUntilClose = 0
             }
-        } else {
+        } else if storeIsOpen == true {
             hoursUntilClose = Today.closeHour - currentHour - 1
             hoursUntilOpen = 0
         }
@@ -148,22 +148,27 @@ class ViewController: UIViewController {
         if storeIsOpen == false {
             if Tomorrow.openHour == 0  || Today.openHour == 0 || Today.closeHour == 0 {     // Tomorrow closed all day
                 hoursLbl.text = "Closed for the weekend"
+                if Tomorrow.openHour > 0 {
+                    if hoursUntilOpen > 1 {
+                        hoursLbl.text = "Opening in \(Int(hoursUntilOpen)) hours \(minutesLeft) minutes"
+                    } else if hoursUntilOpen <= 0 {
+                        hoursLbl.text = "Opening in \(minutesLeft) minutes"
+                    }
+                }
                 if restaurantChoice == "Cougar Walk Café" {
                     hoursLbl.text = "Restaurant hours unavailable"
                 }
-            } else if restaurantChoice == "Cougar Walk Café" {
-                hoursLbl.text = "Restaurant hours unavailable"
-            } else {
-                if hoursUntilOpen > 0 {
+            } else /* If the store is open tomorrow */ {
+                if hoursUntilOpen > 1 {
                     hoursLbl.text = "Opening in \(Int(hoursUntilOpen)) hours \(minutesLeft) minutes"
                 } else if hoursUntilOpen <= 0 {
                     hoursLbl.text = "Opening in \(minutesLeft) minutes"
                 }
             }
-        } else {
-            if hoursUntilClose > 0 {
+        } else /* If store is closed */ {
+            if hoursUntilClose > 1 {
                 hoursLbl.text = "Closing in \(Int(hoursUntilClose)) hours \(minutesLeft) minutes"
-            } else if hoursUntilClose <= 0 {
+            } else {
                 hoursLbl.text = "Closing in \(minutesLeft) minutes"
             }
         }
