@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="aD4-LC-AFc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XXd-Rs-Bxe">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ED6-DO-6u5">
@@ -97,7 +97,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xLL-QA-eWU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CIU-wu-5TH">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWL-Nq-Mc6">
@@ -397,7 +397,7 @@ Grill</string>
                         <viewControllerLayoutGuide type="bottom" id="rDg-5r-5wX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ObO-DL-q6x">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWt-8B-LLj">
@@ -572,7 +572,7 @@ Sushi</string>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="27X-6q-ZkB">
                                                 <subviews>
                                                     <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IyG-4e-jiI" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                        <frame key="frameInset" minX="-40" minY="-750"/>
+                                                        <frame key="frameInset" minX="-40" minY="-506"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kt-bT-2D2">
                                                                 <frame key="frameInset" width="1000" height="1000"/>
@@ -598,7 +598,7 @@ Sushi</string>
                                                         </constraints>
                                                     </view>
                                                     <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b4o-k6-f7a" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                        <frame key="frameInset" minX="-40" minY="-750"/>
+                                                        <frame key="frameInset" minX="-40" minY="-506"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7q-Ya-xkK">
                                                                 <frame key="frameInset" width="1000" height="1000"/>
@@ -624,7 +624,7 @@ Sushi</string>
                                                         </constraints>
                                                     </view>
                                                     <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="egP-Vn-8qD" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                        <frame key="frameInset" minX="-40" minY="-750"/>
+                                                        <frame key="frameInset" minX="-40" minY="-506"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rH-JL-NL6">
                                                                 <frame key="frameInset" width="1000" height="1000"/>
@@ -694,7 +694,7 @@ Sushi</string>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDV-st-NNq">
@@ -831,6 +831,6 @@ Sushi</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wom-8M-OzI"/>
+        <segue reference="zQr-XA-8rL"/>
     </inferredMetricsTieBreakers>
 </document>

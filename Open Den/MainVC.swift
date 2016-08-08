@@ -139,8 +139,13 @@ class ViewController: UIViewController {
                 hoursUntilClose = 0
             }
         } else if storeIsOpen == true {
-            hoursUntilClose = Today.closeHour - currentHour - 1
-            hoursUntilOpen = 0
+            if Today.closeHour == 1 {       // If store closes at exactly 1am
+                hoursUntilClose = 25 - currentHour - 1
+                hoursUntilOpen = 0
+            } else /* If store closes before midnight */ {
+                hoursUntilClose = Today.closeHour - currentHour - 1
+                hoursUntilOpen = 0
+            }
         }
         
         minutesLeft = 60 - currentMinute
