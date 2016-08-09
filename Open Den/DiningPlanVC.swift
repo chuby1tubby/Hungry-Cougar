@@ -14,9 +14,10 @@ class DiningPlanVC: UIViewController {
     @IBOutlet weak var diningPlanLbl: UILabel!
     
     // Variables
-    var currentPoints = 0.0
+    var currentBalance = 0.0
     var mealBudget = 0.0
     var weeklyBudget = 0.0
+    var dailyBudget = 0.0
     
     // Constants
     let mealBudgets: [Double] = [1162, 978, 696, 554, 363]
@@ -24,6 +25,7 @@ class DiningPlanVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        diningPlanLbl.text = diningPlanChoice
     }
     
     func calculateDiningPoints() {
@@ -47,5 +49,7 @@ class DiningPlanVC: UIViewController {
             mealBudget = mealBudgets[5]
             weeklyBudget = weeklyBudgets[5]
         }
+        
+        dailyBudget = weeklyBudget/7            // Set daily budget to subtract from currentBalance
     }
 }

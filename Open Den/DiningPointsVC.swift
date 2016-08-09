@@ -28,8 +28,12 @@ class DiningPointsVC: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let message = diningTitles[indexPath.row]
+        diningPlanChoice = message
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         if let cell = tableView.dequeueReusableCell(withIdentifier: "DiningPlans") as? DiningPlanCell {
             img = diningPlanImages[indexPath.row]
             cell.configureCell(image: img, text: diningTitles[indexPath.row])

@@ -901,33 +901,24 @@ Sushi</string>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="nbB-Hn-hzb"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtX-GU-AOF">
-                                                            <connections>
-                                                                <action selector="onDiningButtonPressed" destination="xZM-Ix-Tu3" eventType="touchUpInside" id="wgK-ZH-i3h"/>
-                                                                <segue destination="Ih7-xX-Njt" kind="show" id="nXF-Sr-74Y"/>
-                                                            </connections>
-                                                        </button>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="OtX-GU-AOF" firstAttribute="bottom" secondItem="pRh-R0-KIy" secondAttribute="bottomMargin" id="BTq-KM-ZSk"/>
                                                         <constraint firstItem="9cq-Ir-z0e" firstAttribute="centerY" secondItem="pRh-R0-KIy" secondAttribute="centerY" id="IWM-DZ-pDL"/>
                                                         <constraint firstItem="VG8-2c-Zge" firstAttribute="centerY" secondItem="pRh-R0-KIy" secondAttribute="centerY" id="U7d-hC-P2N"/>
                                                         <constraint firstItem="9cq-Ir-z0e" firstAttribute="leading" secondItem="pRh-R0-KIy" secondAttribute="leadingMargin" id="WP4-xD-oGC"/>
-                                                        <constraint firstItem="OtX-GU-AOF" firstAttribute="leading" secondItem="pRh-R0-KIy" secondAttribute="leadingMargin" id="fmu-9H-7XC"/>
                                                         <constraint firstItem="VG8-2c-Zge" firstAttribute="trailing" secondItem="pRh-R0-KIy" secondAttribute="trailingMargin" id="fzM-y7-xkn"/>
-                                                        <constraint firstItem="OtX-GU-AOF" firstAttribute="trailing" secondItem="pRh-R0-KIy" secondAttribute="trailingMargin" id="gdT-td-4aC"/>
                                                         <constraint firstItem="VG8-2c-Zge" firstAttribute="leading" secondItem="9cq-Ir-z0e" secondAttribute="trailing" constant="10" id="uda-Uf-Qbk"/>
-                                                        <constraint firstItem="OtX-GU-AOF" firstAttribute="top" secondItem="pRh-R0-KIy" secondAttribute="topMargin" id="yEh-iv-gT8"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" red="0.5888599753" green="0.1470975876" blue="0.13562121990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <outlet property="mainImg" destination="9cq-Ir-z0e" id="zbg-TM-cnE"/>
                                                     <outlet property="mainLbl" destination="VG8-2c-Zge" id="QJM-NV-B0o"/>
+                                                    <segue destination="Ih7-xX-Njt" kind="show" id="Mj2-Yc-eTl"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
