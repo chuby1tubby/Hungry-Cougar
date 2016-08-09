@@ -905,7 +905,7 @@ Sushi</string>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtX-GU-AOF">
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtX-GU-AOF">
                                                             <connections>
                                                                 <action selector="onDiningButtonPressed" destination="xZM-Ix-Tu3" eventType="touchUpInside" id="wgK-ZH-i3h"/>
                                                                 <segue destination="Ih7-xX-Njt" kind="show" id="nXF-Sr-74Y"/>
@@ -985,7 +985,7 @@ Sushi</string>
                                 </subviews>
                                 <color key="backgroundColor" red="0.5888599753" green="0.1470975876" blue="0.13562121990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="WHX-RX-sIg" firstAttribute="top" secondItem="mcw-QY-ZdD" secondAttribute="top" constant="80" id="5xu-iq-yRs"/>
+                                    <constraint firstItem="WHX-RX-sIg" firstAttribute="top" secondItem="mcw-QY-ZdD" secondAttribute="top" constant="100" id="5xu-iq-yRs"/>
                                     <constraint firstItem="WHX-RX-sIg" firstAttribute="centerX" secondItem="mcw-QY-ZdD" secondAttribute="centerX" id="Tdn-64-C2f"/>
                                 </constraints>
                             </view>
