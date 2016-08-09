@@ -85,11 +85,24 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzR-Eu-YPj">
+                                                        <frame key="frameInset" minX="74" minY="15" width="227" height="50"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="hzR-Eu-YPj" secondAttribute="height" multiplier="227:50" id="0gv-Hp-Cax"/>
+                                                            <constraint firstAttribute="width" constant="250" id="6h9-Pz-hvh"/>
+                                                            <constraint firstAttribute="height" constant="70" id="M9w-nj-y3T"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <segue destination="xZM-Ix-Tu3" kind="show" id="qiu-vB-CTD"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="kJ3-3o-di1" firstAttribute="centerY" secondItem="bsw-fj-iVJ" secondAttribute="centerY" id="737-MR-JHN"/>
                                                     <constraint firstAttribute="width" secondItem="bsw-fj-iVJ" secondAttribute="height" multiplier="125:27" id="Aqu-kt-UMJ"/>
+                                                    <constraint firstItem="hzR-Eu-YPj" firstAttribute="centerY" secondItem="bsw-fj-iVJ" secondAttribute="centerY" id="MXC-RP-4nZ"/>
                                                     <constraint firstItem="6PY-hl-SV9" firstAttribute="centerY" secondItem="bsw-fj-iVJ" secondAttribute="centerY" id="Phq-Ru-81d"/>
+                                                    <constraint firstItem="hzR-Eu-YPj" firstAttribute="centerX" secondItem="bsw-fj-iVJ" secondAttribute="centerX" id="QJN-K9-A3M"/>
                                                     <constraint firstItem="kJ3-3o-di1" firstAttribute="centerX" secondItem="bsw-fj-iVJ" secondAttribute="centerX" constant="30" id="bJJ-I7-Inc"/>
                                                     <constraint firstItem="kJ3-3o-di1" firstAttribute="leading" secondItem="6PY-hl-SV9" secondAttribute="trailing" constant="15" id="gux-qG-8OQ"/>
                                                 </constraints>
@@ -851,6 +864,35 @@ Sushi</string>
             </objects>
             <point key="canvasLocation" x="2038" y="117"/>
         </scene>
+        <!--Dining Points-->
+        <scene sceneID="F8t-cc-9Q7">
+            <objects>
+                <viewController title="Dining Points" id="xZM-Ix-Tu3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RL6-z7-UAQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ANr-Qj-hX4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="45v-He-wQP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VCL-Kd-Lg1">
+                                <color key="backgroundColor" red="0.5888887048" green="0.15054461359999999" blue="0.13530883190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ANr-Qj-hX4" firstAttribute="top" secondItem="VCL-Kd-Lg1" secondAttribute="bottom" id="21T-ms-BSh"/>
+                            <constraint firstItem="VCL-Kd-Lg1" firstAttribute="leading" secondItem="45v-He-wQP" secondAttribute="leading" id="LYm-S0-EFz"/>
+                            <constraint firstAttribute="trailing" secondItem="VCL-Kd-Lg1" secondAttribute="trailing" id="YmC-w0-AdI"/>
+                            <constraint firstItem="VCL-Kd-Lg1" firstAttribute="top" secondItem="45v-He-wQP" secondAttribute="top" id="fC4-O3-JBJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DV3-YJ-hqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="875"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="nc8-hp-fFS">
             <objects>
@@ -875,6 +917,6 @@ Sushi</string>
         <image name="coin-white" width="208" height="208"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zQr-XA-8rL"/>
+        <segue reference="xAv-xx-acr"/>
     </inferredMetricsTieBreakers>
 </document>
