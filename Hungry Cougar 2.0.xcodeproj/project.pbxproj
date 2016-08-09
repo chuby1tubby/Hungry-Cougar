@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BF05BE401D59B97400AA3DF6 /* DiningPointsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05BE3F1D59B97400AA3DF6 /* DiningPointsVC.swift */; };
+		BF05BE421D59BBA000AA3DF6 /* DiningPlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05BE411D59BBA000AA3DF6 /* DiningPlanCell.swift */; };
+		BF05BE441D59C65600AA3DF6 /* DiningPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05BE431D59C65600AA3DF6 /* DiningPlanVC.swift */; };
 		BF21D39A1D552B4F001A38F2 /* EastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF21D3991D552B4F001A38F2 /* EastVC.swift */; };
 		BF21D39C1D552C00001A38F2 /* WestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF21D39B1D552C00001A38F2 /* WestVC.swift */; };
 		BF21D39E1D55A138001A38F2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF21D39D1D55A138001A38F2 /* CircleView.swift */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		BF05BE3F1D59B97400AA3DF6 /* DiningPointsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningPointsVC.swift; sourceTree = "<group>"; };
+		BF05BE411D59BBA000AA3DF6 /* DiningPlanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningPlanCell.swift; sourceTree = "<group>"; };
+		BF05BE431D59C65600AA3DF6 /* DiningPlanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningPlanVC.swift; sourceTree = "<group>"; };
 		BF21D3991D552B4F001A38F2 /* EastVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EastVC.swift; sourceTree = "<group>"; };
 		BF21D39B1D552C00001A38F2 /* WestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WestVC.swift; sourceTree = "<group>"; };
 		BF21D39D1D55A138001A38F2 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 				BF21D3991D552B4F001A38F2 /* EastVC.swift */,
 				BF21D39B1D552C00001A38F2 /* WestVC.swift */,
 				BF05BE3F1D59B97400AA3DF6 /* DiningPointsVC.swift */,
+				BF05BE431D59C65600AA3DF6 /* DiningPlanVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -116,6 +121,7 @@
 			children = (
 				BF8C1BC11D4FDCAF00E7B2B7 /* RoundCornersView.swift */,
 				BF21D39D1D55A138001A38F2 /* CircleView.swift */,
+				BF05BE411D59BBA000AA3DF6 /* DiningPlanCell.swift */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -316,6 +322,7 @@
 			files = (
 				BF21D39E1D55A138001A38F2 /* CircleView.swift in Sources */,
 				BF21D3A01D55C51D001A38F2 /* RestaurantHours.swift in Sources */,
+				BF05BE421D59BBA000AA3DF6 /* DiningPlanCell.swift in Sources */,
 				BF8C1BC21D4FDCAF00E7B2B7 /* RoundCornersView.swift in Sources */,
 				BFECDD3D1D4EE5B100E626D3 /* MainVC.swift in Sources */,
 				BF21D39C1D552C00001A38F2 /* WestVC.swift in Sources */,
@@ -324,6 +331,7 @@
 				BF21D39A1D552B4F001A38F2 /* EastVC.swift in Sources */,
 				BF05BE401D59B97400AA3DF6 /* DiningPointsVC.swift in Sources */,
 				BF8C1BC01D4FDAD700E7B2B7 /* MenuVC.swift in Sources */,
+				BF05BE441D59C65600AA3DF6 /* DiningPlanVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -879,14 +879,15 @@ Sushi</string>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VCL-Kd-Lg1">
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="67" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cMg-WG-cpU">
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="123" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cMg-WG-cpU">
+                                        <color key="backgroundColor" red="0.5888599753" green="0.1470975876" blue="0.13562121990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="sectionIndexBackgroundColor" red="0.5888887048" green="0.15054461359999999" blue="0.13530883190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="67" id="VIG-Hx-wee">
-                                                <frame key="frameInset" minY="92" width="335" height="67"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DiningPlans" rowHeight="123" id="VIG-Hx-wee" customClass="DiningPlanCell" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                <frame key="frameInset" minY="92" width="335" height="123"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VIG-Hx-wee" id="pRh-R0-KIy">
-                                                    <frame key="frameInset" width="335" height="66"/>
+                                                    <frame key="frameInset" width="335" height="123"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="money5" translatesAutoresizingMaskIntoConstraints="NO" id="9cq-Ir-z0e">
@@ -896,7 +897,7 @@ Sushi</string>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No Worries" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VG8-2c-Zge">
-                                                            <frame key="frameInset" minX="66" minY="8" width="261" height="50"/>
+                                                            <frame key="frameInset" minX="66" minY="36" width="261" height="50"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="nbB-Hn-hzb"/>
                                                             </constraints>
@@ -904,18 +905,30 @@ Sushi</string>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OtX-GU-AOF">
+                                                            <connections>
+                                                                <action selector="onDiningButtonPressed" destination="xZM-Ix-Tu3" eventType="touchUpInside" id="wgK-ZH-i3h"/>
+                                                                <segue destination="Ih7-xX-Njt" kind="show" id="nXF-Sr-74Y"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="VG8-2c-Zge" firstAttribute="top" secondItem="pRh-R0-KIy" secondAttribute="topMargin" id="73y-Kq-frT"/>
-                                                        <constraint firstItem="9cq-Ir-z0e" firstAttribute="top" secondItem="pRh-R0-KIy" secondAttribute="topMargin" id="Is5-dR-hK6"/>
+                                                        <constraint firstItem="OtX-GU-AOF" firstAttribute="bottom" secondItem="pRh-R0-KIy" secondAttribute="bottomMargin" id="BTq-KM-ZSk"/>
+                                                        <constraint firstItem="9cq-Ir-z0e" firstAttribute="centerY" secondItem="pRh-R0-KIy" secondAttribute="centerY" id="IWM-DZ-pDL"/>
                                                         <constraint firstItem="VG8-2c-Zge" firstAttribute="centerY" secondItem="pRh-R0-KIy" secondAttribute="centerY" id="U7d-hC-P2N"/>
                                                         <constraint firstItem="9cq-Ir-z0e" firstAttribute="leading" secondItem="pRh-R0-KIy" secondAttribute="leadingMargin" id="WP4-xD-oGC"/>
-                                                        <constraint firstItem="VG8-2c-Zge" firstAttribute="bottom" secondItem="pRh-R0-KIy" secondAttribute="bottomMargin" id="ale-QP-Nn3"/>
+                                                        <constraint firstItem="OtX-GU-AOF" firstAttribute="leading" secondItem="pRh-R0-KIy" secondAttribute="leadingMargin" id="fmu-9H-7XC"/>
                                                         <constraint firstItem="VG8-2c-Zge" firstAttribute="trailing" secondItem="pRh-R0-KIy" secondAttribute="trailingMargin" id="fzM-y7-xkn"/>
+                                                        <constraint firstItem="OtX-GU-AOF" firstAttribute="trailing" secondItem="pRh-R0-KIy" secondAttribute="trailingMargin" id="gdT-td-4aC"/>
                                                         <constraint firstItem="VG8-2c-Zge" firstAttribute="leading" secondItem="9cq-Ir-z0e" secondAttribute="trailing" constant="10" id="uda-Uf-Qbk"/>
+                                                        <constraint firstItem="OtX-GU-AOF" firstAttribute="top" secondItem="pRh-R0-KIy" secondAttribute="topMargin" id="yEh-iv-gT8"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
-                                                <color key="backgroundColor" red="0.66357599362221165" green="0.84170764593908631" blue="0.70900131452356285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.5888599753" green="0.1470975876" blue="0.13562121990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <outlet property="mainImg" destination="9cq-Ir-z0e" id="zbg-TM-cnE"/>
+                                                    <outlet property="mainLbl" destination="VG8-2c-Zge" id="QJM-NV-B0o"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -943,7 +956,52 @@ Sushi</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DV3-YJ-hqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="189.59999999999999" y="874.81259370314854"/>
+            <point key="canvasLocation" x="191" y="1164"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yuj-NC-pQ7">
+            <objects>
+                <viewController id="Ih7-xX-Njt" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jN3-jF-hWZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="xRM-tP-B3d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uMD-V8-z0P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcw-QY-ZdD">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="We've Got You Covered" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHX-RX-sIg">
+                                        <frame key="frameInset" minX="15" minY="77" width="344" height="58"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="344" id="B0t-l4-i3C"/>
+                                            <constraint firstAttribute="height" constant="58" id="dZt-ge-kvu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.5888599753" green="0.1470975876" blue="0.13562121990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="WHX-RX-sIg" firstAttribute="top" secondItem="mcw-QY-ZdD" secondAttribute="top" constant="80" id="5xu-iq-yRs"/>
+                                    <constraint firstItem="WHX-RX-sIg" firstAttribute="centerX" secondItem="mcw-QY-ZdD" secondAttribute="centerX" id="Tdn-64-C2f"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mcw-QY-ZdD" firstAttribute="leading" secondItem="uMD-V8-z0P" secondAttribute="leading" id="2To-QS-4TI"/>
+                            <constraint firstItem="mcw-QY-ZdD" firstAttribute="top" secondItem="uMD-V8-z0P" secondAttribute="top" id="7qR-3r-RJ7"/>
+                            <constraint firstItem="xRM-tP-B3d" firstAttribute="top" secondItem="mcw-QY-ZdD" secondAttribute="bottom" id="cEn-sb-5GQ"/>
+                            <constraint firstAttribute="trailing" secondItem="mcw-QY-ZdD" secondAttribute="trailing" id="wjX-WX-YaN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="675-BR-Eho" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1096.8" y="1164.4677661169417"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nc8-hp-fFS">
