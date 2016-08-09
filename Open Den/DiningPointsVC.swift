@@ -18,7 +18,7 @@ class DiningPointsVC: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // Variables
     var diningPlanImages: [UIImage] = [#imageLiteral(resourceName: "money5"), #imageLiteral(resourceName: "money4"), #imageLiteral(resourceName: "money3"), #imageLiteral(resourceName: "money2"), #imageLiteral(resourceName: "money1")]
-    var diningTitles: [String] = ["No Worries", "We've Got You Covered", "Weekend Away", "Fogot To Cook", "Grab And Go"]
+    var diningTitles: [String] = ["No Worries", "We've Got You Covered", "Weekend Away", "Forgot To Cook", "Grab And Go"]
     
     var img: UIImage!
     

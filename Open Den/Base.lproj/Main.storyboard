@@ -972,11 +972,22 @@ Sushi</string>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="150.50" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2au-c1-jMq">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="105" id="Gpl-a0-Dwb"/>
+                                            <constraint firstAttribute="height" constant="50" id="jHo-4g-Tir"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.5888599753" green="0.1470975876" blue="0.13562121990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="WHX-RX-sIg" firstAttribute="top" secondItem="mcw-QY-ZdD" secondAttribute="top" constant="100" id="5xu-iq-yRs"/>
+                                    <constraint firstItem="2au-c1-jMq" firstAttribute="centerY" secondItem="mcw-QY-ZdD" secondAttribute="centerY" id="FZm-xl-KMe"/>
                                     <constraint firstItem="WHX-RX-sIg" firstAttribute="centerX" secondItem="mcw-QY-ZdD" secondAttribute="centerX" id="Tdn-64-C2f"/>
+                                    <constraint firstItem="2au-c1-jMq" firstAttribute="centerX" secondItem="mcw-QY-ZdD" secondAttribute="centerX" id="sfp-rf-hbM"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -990,6 +1001,7 @@ Sushi</string>
                     </view>
                     <connections>
                         <outlet property="diningPlanLbl" destination="WHX-RX-sIg" id="5sG-g3-9Li"/>
+                        <outlet property="diningPointsLbl" destination="2au-c1-jMq" id="1zC-pl-WGn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="675-BR-Eho" userLabel="First Responder" sceneMemberID="firstResponder"/>
