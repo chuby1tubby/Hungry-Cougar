@@ -901,7 +901,7 @@ Sushi</string>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="nbB-Hn-hzb"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -938,7 +938,7 @@ Sushi</string>
                                     <constraint firstAttribute="bottom" secondItem="cMg-WG-cpU" secondAttribute="bottom" id="XgF-5S-6Vh"/>
                                     <constraint firstAttribute="trailing" secondItem="cMg-WG-cpU" secondAttribute="trailing" constant="20" id="ju7-bt-mWh"/>
                                     <constraint firstItem="cMg-WG-cpU" firstAttribute="leading" secondItem="VCL-Kd-Lg1" secondAttribute="leading" constant="20" id="nWJ-UV-Hug"/>
-                                    <constraint firstItem="cMg-WG-cpU" firstAttribute="top" secondItem="VCL-Kd-Lg1" secondAttribute="top" constant="62" id="wrP-44-JVV"/>
+                                    <constraint firstItem="cMg-WG-cpU" firstAttribute="top" secondItem="VCL-Kd-Lg1" secondAttribute="top" id="wrP-44-JVV"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -958,10 +958,10 @@ Sushi</string>
             </objects>
             <point key="canvasLocation" x="191" y="1164"/>
         </scene>
-        <!--View Controller-->
+        <!--Dining PlanVC-->
         <scene sceneID="Yuj-NC-pQ7">
             <objects>
-                <viewController id="Ih7-xX-Njt" sceneMemberID="viewController">
+                <viewController id="Ih7-xX-Njt" customClass="DiningPlanVC" customModule="Hungry_Cougar_2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jN3-jF-hWZ"/>
                         <viewControllerLayoutGuide type="bottom" id="xRM-tP-B3d"/>
@@ -972,8 +972,7 @@ Sushi</string>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcw-QY-ZdD">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="We've Got You Covered" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHX-RX-sIg">
-                                        <frame key="frameInset" minX="15" minY="77" width="344" height="58"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Worries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHX-RX-sIg">
                                         <constraints>
                                             <constraint firstAttribute="width" constant="344" id="B0t-l4-i3C"/>
                                             <constraint firstAttribute="height" constant="58" id="dZt-ge-kvu"/>
@@ -998,6 +997,9 @@ Sushi</string>
                             <constraint firstAttribute="trailing" secondItem="mcw-QY-ZdD" secondAttribute="trailing" id="wjX-WX-YaN"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="diningPlanLbl" destination="WHX-RX-sIg" id="5sG-g3-9Li"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="675-BR-Eho" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1028,6 +1030,6 @@ Sushi</string>
         <image name="money5" width="208" height="208"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xAv-xx-acr"/>
+        <segue reference="wom-8M-OzI"/>
     </inferredMetricsTieBreakers>
 </document>
