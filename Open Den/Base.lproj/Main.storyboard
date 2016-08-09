@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11151.4"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -864,10 +865,10 @@ Sushi</string>
             </objects>
             <point key="canvasLocation" x="2038" y="117"/>
         </scene>
-        <!--Dining Points-->
+        <!--My Dining Points-->
         <scene sceneID="F8t-cc-9Q7">
             <objects>
-                <viewController title="Dining Points" id="xZM-Ix-Tu3" sceneMemberID="viewController">
+                <viewController title="My Dining Points" id="xZM-Ix-Tu3" customClass="DiningPointsVC" customModule="Hungry_Cougar_2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RL6-z7-UAQ"/>
                         <viewControllerLayoutGuide type="bottom" id="ANr-Qj-hX4"/>
@@ -877,7 +878,55 @@ Sushi</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VCL-Kd-Lg1">
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="67" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cMg-WG-cpU">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="67" id="VIG-Hx-wee">
+                                                <frame key="frameInset" minY="92" width="335" height="67"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VIG-Hx-wee" id="pRh-R0-KIy">
+                                                    <frame key="frameInset" width="335" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="money5" translatesAutoresizingMaskIntoConstraints="NO" id="9cq-Ir-z0e">
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="AEV-HL-huc"/>
+                                                                <constraint firstAttribute="width" constant="50" id="dWu-ma-02s"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No Worries" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VG8-2c-Zge">
+                                                            <frame key="frameInset" minX="66" minY="8" width="261" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="50" id="nbB-Hn-hzb"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="VG8-2c-Zge" firstAttribute="top" secondItem="pRh-R0-KIy" secondAttribute="topMargin" id="73y-Kq-frT"/>
+                                                        <constraint firstItem="9cq-Ir-z0e" firstAttribute="top" secondItem="pRh-R0-KIy" secondAttribute="topMargin" id="Is5-dR-hK6"/>
+                                                        <constraint firstItem="VG8-2c-Zge" firstAttribute="centerY" secondItem="pRh-R0-KIy" secondAttribute="centerY" id="U7d-hC-P2N"/>
+                                                        <constraint firstItem="9cq-Ir-z0e" firstAttribute="leading" secondItem="pRh-R0-KIy" secondAttribute="leadingMargin" id="WP4-xD-oGC"/>
+                                                        <constraint firstItem="VG8-2c-Zge" firstAttribute="bottom" secondItem="pRh-R0-KIy" secondAttribute="bottomMargin" id="ale-QP-Nn3"/>
+                                                        <constraint firstItem="VG8-2c-Zge" firstAttribute="trailing" secondItem="pRh-R0-KIy" secondAttribute="trailingMargin" id="fzM-y7-xkn"/>
+                                                        <constraint firstItem="VG8-2c-Zge" firstAttribute="leading" secondItem="9cq-Ir-z0e" secondAttribute="trailing" constant="10" id="uda-Uf-Qbk"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" red="0.66357599362221165" green="0.84170764593908631" blue="0.70900131452356285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.5888887048" green="0.15054461359999999" blue="0.13530883190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="cMg-WG-cpU" secondAttribute="bottom" id="XgF-5S-6Vh"/>
+                                    <constraint firstAttribute="trailing" secondItem="cMg-WG-cpU" secondAttribute="trailing" constant="20" id="ju7-bt-mWh"/>
+                                    <constraint firstItem="cMg-WG-cpU" firstAttribute="leading" secondItem="VCL-Kd-Lg1" secondAttribute="leading" constant="20" id="nWJ-UV-Hug"/>
+                                    <constraint firstItem="cMg-WG-cpU" firstAttribute="top" secondItem="VCL-Kd-Lg1" secondAttribute="top" constant="62" id="wrP-44-JVV"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -888,10 +937,13 @@ Sushi</string>
                             <constraint firstItem="VCL-Kd-Lg1" firstAttribute="top" secondItem="45v-He-wQP" secondAttribute="top" id="fC4-O3-JBJ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="cMg-WG-cpU" id="cKC-VN-RBo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DV3-YJ-hqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="191" y="875"/>
+            <point key="canvasLocation" x="189.59999999999999" y="874.81259370314854"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="nc8-hp-fFS">
@@ -915,6 +967,7 @@ Sushi</string>
     <resources>
         <image name="East-West-Img" width="3437" height="1830"/>
         <image name="coin-white" width="208" height="208"/>
+        <image name="money5" width="208" height="208"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="xAv-xx-acr"/>

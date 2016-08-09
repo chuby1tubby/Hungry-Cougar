@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF05BE401D59B97400AA3DF6 /* DiningPointsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05BE3F1D59B97400AA3DF6 /* DiningPointsVC.swift */; };
 		BF21D39A1D552B4F001A38F2 /* EastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF21D3991D552B4F001A38F2 /* EastVC.swift */; };
 		BF21D39C1D552C00001A38F2 /* WestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF21D39B1D552C00001A38F2 /* WestVC.swift */; };
 		BF21D39E1D55A138001A38F2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF21D39D1D55A138001A38F2 /* CircleView.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF05BE3F1D59B97400AA3DF6 /* DiningPointsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningPointsVC.swift; sourceTree = "<group>"; };
 		BF21D3991D552B4F001A38F2 /* EastVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EastVC.swift; sourceTree = "<group>"; };
 		BF21D39B1D552C00001A38F2 /* WestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WestVC.swift; sourceTree = "<group>"; };
 		BF21D39D1D55A138001A38F2 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				BF8C1BBF1D4FDAD700E7B2B7 /* MenuVC.swift */,
 				BF21D3991D552B4F001A38F2 /* EastVC.swift */,
 				BF21D39B1D552C00001A38F2 /* WestVC.swift */,
+				BF05BE3F1D59B97400AA3DF6 /* DiningPointsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				BFECDD3B1D4EE5B100E626D3 /* AppDelegate.swift in Sources */,
 				BF35985B1D4EF79400AF28B3 /* Day.swift in Sources */,
 				BF21D39A1D552B4F001A38F2 /* EastVC.swift in Sources */,
+				BF05BE401D59B97400AA3DF6 /* DiningPointsVC.swift in Sources */,
 				BF8C1BC01D4FDAD700E7B2B7 /* MenuVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
