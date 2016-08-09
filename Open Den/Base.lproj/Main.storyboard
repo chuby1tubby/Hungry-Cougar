@@ -16,7 +16,7 @@
                         <viewControllerLayoutGuide type="bottom" id="aD4-LC-AFc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XXd-Rs-Bxe">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ED6-DO-6u5">
@@ -44,7 +44,7 @@
                                                             <segue destination="ZWC-yi-dpU" kind="show" id="0s7-N8-E0F"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sh-aj-JUC">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Sh-aj-JUC">
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="214" id="8qW-Pk-pqZ"/>
                                                             <constraint firstAttribute="height" constant="115" id="sdv-DY-hgi"/>
@@ -57,6 +57,35 @@
                                                             <segue destination="G51-g3-f77" kind="show" id="rG2-hi-0aw"/>
                                                         </connections>
                                                     </button>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vHK-F5-04H">
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YwG-jd-wcI">
+                                                                <subviews>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Coins" translatesAutoresizingMaskIntoConstraints="NO" id="4hV-af-ZXH">
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="4hV-af-ZXH" secondAttribute="height" multiplier="1:1" id="8Ed-p5-fsG"/>
+                                                                            <constraint firstAttribute="height" constant="40" id="dPN-Rz-O8q"/>
+                                                                            <constraint firstAttribute="width" constant="40" id="yZM-YF-f4U"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dining Points Calculator" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IdK-I5-zRP">
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="213" id="BEN-kq-cVt"/>
+                                                                    <constraint firstAttribute="height" constant="40" id="neL-4y-4rv"/>
+                                                                </constraints>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.5888599753" green="0.1470975876" blue="0.13562121990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="YwG-jd-wcI" firstAttribute="centerX" secondItem="vHK-F5-04H" secondAttribute="centerX" id="Gpk-Jn-W73"/>
+                                                            <constraint firstItem="YwG-jd-wcI" firstAttribute="centerY" secondItem="vHK-F5-04H" secondAttribute="centerY" id="dDz-pk-KsC"/>
+                                                        </constraints>
+                                                    </view>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
@@ -97,7 +126,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xLL-QA-eWU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="CIU-wu-5TH">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IWL-Nq-Mc6">
@@ -397,7 +426,7 @@ Grill</string>
                         <viewControllerLayoutGuide type="bottom" id="rDg-5r-5wX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ObO-DL-q6x">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XWt-8B-LLj">
@@ -572,7 +601,7 @@ Sushi</string>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="27X-6q-ZkB">
                                                 <subviews>
                                                     <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IyG-4e-jiI" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                        <frame key="frameInset" minX="-40" minY="-750"/>
+                                                        <frame key="frameInset" minX="-40" minY="-447"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1kt-bT-2D2">
                                                                 <frame key="frameInset" width="1000" height="1000"/>
@@ -598,7 +627,7 @@ Sushi</string>
                                                         </constraints>
                                                     </view>
                                                     <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b4o-k6-f7a" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                        <frame key="frameInset" minX="-40" minY="-750"/>
+                                                        <frame key="frameInset" minX="-40" minY="-447"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7q-Ya-xkK">
                                                                 <frame key="frameInset" width="1000" height="1000"/>
@@ -624,7 +653,7 @@ Sushi</string>
                                                         </constraints>
                                                     </view>
                                                     <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="egP-Vn-8qD" customClass="CircleView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                        <frame key="frameInset" minX="-40" minY="-750"/>
+                                                        <frame key="frameInset" minX="-40" minY="-447"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2rH-JL-NL6">
                                                                 <frame key="frameInset" width="1000" height="1000"/>
@@ -694,7 +723,7 @@ Sushi</string>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDV-st-NNq">
@@ -830,6 +859,9 @@ Sushi</string>
             <point key="canvasLocation" x="-744.79999999999995" y="117.39130434782609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Coins" width="133" height="133"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="zQr-XA-8rL"/>
     </inferredMetricsTieBreakers>
