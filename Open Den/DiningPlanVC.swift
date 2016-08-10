@@ -66,6 +66,12 @@ class DiningPlanVC: UIViewController {
     }
     
     func calculateBalance() {
-        
+        let date = NSDate()
+        let userCalendar = NSCalendar.current
+        let firstDayOfSemester = NSDateComponents()
+        firstDayOfSemester.year = 2016
+        firstDayOfSemester.month = 8
+        firstDayOfSemester.day = 31
     }
+
 }
