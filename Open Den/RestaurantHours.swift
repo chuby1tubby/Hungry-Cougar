@@ -22,7 +22,7 @@ var Tomorrow: Day = Day(openingHour: 0, closingHour: 0)
 var ZeroDay: Day = Day(openingHour: 0, closingHour: 0)
 
 func setHours() {
-    if restaurantChoice == "1899 Dining Hall" {                // Need to add transition closed hours
+    if restaurantChoice == "1899 Dining Hall" {
         Sunday.openHour = 8.0; Sunday.closeHour = 19.5;
         Monday.openHour = 6.5; Monday.closeHour = 19.5
         Tuesday.openHour = 6.5; Tuesday.closeHour = 19.5
@@ -46,7 +46,7 @@ func setHours() {
         Thursday.openHour = 11; Thursday.closeHour = 24
         Friday.openHour = 11; Friday.closeHour = 19
         Saturday.openHour = 0; Saturday.closeHour = 0
-    } else if restaurantChoice == "Cougar Walk Café" {
+    } else if restaurantChoice == "Cougar Walk Café" {  // Hours unavailable
         Sunday.openHour = 0; Sunday.closeHour = 0
         Monday.openHour = 0; Monday.closeHour = 0
         Tuesday.openHour = 0; Tuesday.closeHour = 0
@@ -72,43 +72,43 @@ func setHours() {
         Saturday.openHour = 12.0; Saturday.closeHour = 19.0
     } else if restaurantChoice == "The Grill at Heritage" {  // Need to add transition closed hours
         Sunday.openHour = 0; Sunday.closeHour = 0
-        Monday.openHour = 7.0; Monday.closeHour = 0
-        Tuesday.openHour = 7.0; Tuesday.closeHour = 0
-        Wednesday.openHour = 7.0; Wednesday.closeHour = 0
-        Thursday.openHour = 7.0; Thursday.closeHour = 0
-        Friday.openHour = 7.0; Friday.closeHour = 0
+        Monday.openHour = 7.0; Monday.closeHour = 20.0
+        Tuesday.openHour = 7.0; Tuesday.closeHour = 20.0
+        Wednesday.openHour = 7.0; Wednesday.closeHour = 20.0
+        Thursday.openHour = 7.0; Thursday.closeHour = 20.0
+        Friday.openHour = 7.0; Friday.closeHour = 15.0
         Saturday.openHour = 0; Saturday.closeHour = 0
     } else if restaurantChoice == "Hillside Grounds at Heritage" {
         Sunday.openHour = 0; Sunday.closeHour = 0
-        Monday.openHour = 0; Monday.closeHour = 0
-        Tuesday.openHour = 0; Tuesday.closeHour = 0
-        Wednesday.openHour = 0; Wednesday.closeHour = 0
-        Thursday.openHour = 0; Thursday.closeHour = 0
-        Friday.openHour = 0; Friday.closeHour = 0
+        Monday.openHour = 6.5; Monday.closeHour = 20.0
+        Tuesday.openHour = 6.5; Tuesday.closeHour = 20.0
+        Wednesday.openHour = 6.5; Wednesday.closeHour = 20.0
+        Thursday.openHour = 6.5; Thursday.closeHour = 20.0
+        Friday.openHour = 6.5; Friday.closeHour = 16.0
         Saturday.openHour = 0; Saturday.closeHour = 0
     } else if restaurantChoice == "The Market at Heritage" {
         Sunday.openHour = 0; Sunday.closeHour = 0
-        Monday.openHour = 0; Monday.closeHour = 0
-        Tuesday.openHour = 0; Tuesday.closeHour = 0
-        Wednesday.openHour = 0; Wednesday.closeHour = 0
-        Thursday.openHour = 0; Thursday.closeHour = 0
-        Friday.openHour = 0; Friday.closeHour = 0
+        Monday.openHour = 7.0; Monday.closeHour = 20.0
+        Tuesday.openHour = 7.0; Tuesday.closeHour = 20.0
+        Wednesday.openHour = 7.0; Wednesday.closeHour = 20.0
+        Thursday.openHour = 7.0; Thursday.closeHour = 20.0
+        Friday.openHour = 7.0; Friday.closeHour = 16.0
         Saturday.openHour = 0; Saturday.closeHour = 0
     } else if restaurantChoice == "Sam's Subs" {
         Sunday.openHour = 0; Sunday.closeHour = 0
-        Monday.openHour = 0; Monday.closeHour = 0
-        Tuesday.openHour = 0; Tuesday.closeHour = 0
-        Wednesday.openHour = 0; Wednesday.closeHour = 0
-        Thursday.openHour = 0; Thursday.closeHour = 0
-        Friday.openHour = 0; Friday.closeHour = 0
-        Saturday.openHour = 0; Saturday.closeHour = 0
+        Monday.openHour = 9.0; Monday.closeHour = 20.0
+        Tuesday.openHour = 9.0; Tuesday.closeHour = 20.0
+        Wednesday.openHour = 9.0; Wednesday.closeHour = 20.0
+        Thursday.openHour = 9.0; Thursday.closeHour = 20.0
+        Friday.openHour = 9.0; Friday.closeHour = 16.0
+        Saturday.openHour = 10.0; Saturday.closeHour = 15.0
     } else if restaurantChoice == "Umai Sushi" {
         Sunday.openHour = 0; Sunday.closeHour = 0
-        Monday.openHour = 0; Monday.closeHour = 0
-        Tuesday.openHour = 0; Tuesday.closeHour = 0
-        Wednesday.openHour = 0; Wednesday.closeHour = 0
-        Thursday.openHour = 0; Thursday.closeHour = 0
-        Friday.openHour = 0; Friday.closeHour = 0
+        Monday.openHour = 11.0; Monday.closeHour = 20.0
+        Tuesday.openHour = 11.0; Tuesday.closeHour = 20.0
+        Wednesday.openHour = 11.0; Wednesday.closeHour = 20.0
+        Thursday.openHour = 11.0; Thursday.closeHour = 20.0
+        Friday.openHour = 11.0; Friday.closeHour = 15.0
         Saturday.openHour = 0; Saturday.closeHour = 0
     } else {
         Sunday.openHour = 0; Sunday.closeHour = 0

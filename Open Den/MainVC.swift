@@ -151,26 +151,56 @@ class ViewController: UIViewController {
         minutesLeft = 60 - currentMinute
         
         if storeIsOpen == false {
-            if Tomorrow.openHour == 0  || Today.openHour == 0 || Today.closeHour == 0 {     // Tomorrow closed all day
-                hoursLbl.text = "Closed for the weekend"
-                if Tomorrow.openHour > 0 {
-                    if hoursUntilOpen > 1 {
-                        hoursLbl.text = "Opening in \(Int(hoursUntilOpen)) hours \(minutesLeft) minutes"
-                    } else if hoursUntilOpen <= 0 {
-                        hoursLbl.text = "Opening in \(minutesLeft) minutes"
+            // Calculate hours until open only if store is opening soon
+            if hoursUntilOpen <= 0 {
+                hoursLbl.text = "Opening in \(minutesLeft) minutes"
+            } else {
+                if currentHour < 24 {
+                    if Tomorrow.openHour == 1 {
+                        hoursLbl.text = "Opening at 1am"
+                    } else {
+                        hoursLbl.text = "Opening at \(Int(Tomorrow.openHour))am"
+                    }
+                } else if currentHour == 24 || currentHour > 0 {    // If currentHour > 0
+                    if Today.openHour == 1 {
+                        hoursLbl.text = "Opening at 1am"
+                    } else {
+                        hoursLbl.text = "Opening at \(Int(Today.openHour))am"
                     }
                 }
-                if restaurantChoice == "Cougar Walk Café" {
-                    hoursLbl.text = "Restaurant hours unavailable"
+                
+                if !(floor(Today.openHour) == Today.openHour) { // If openHour is a half hour
+                    hoursLbl.text = "Opening at \(Int(Today.openHour)):30am"
                 }
-            } else /* If the store is open tomorrow */ {
-                if hoursUntilOpen > 1 {
-                    hoursLbl.text = "Opening in \(Int(hoursUntilOpen)) hours \(minutesLeft) minutes"
-                } else if hoursUntilOpen <= 0 {
-                    hoursLbl.text = "Opening in \(minutesLeft) minutes"
+                
+                if restaurantChoice == "Cougar Walk Café" {
+                    hoursLbl.text = "Hours unavailable"
                 }
             }
-        } else /* If store is closed */ {
+            
+            // Obsolete code: replaced by "Opening at 8am"
+            //            if Tomorrow.openHour == 0  || Today.openHour == 0 || Today.closeHour == 0 {     // Tomorrow closed all day
+            //                hoursLbl.text = "Closed for the weekend"
+            //                if Tomorrow.openHour > 0 {
+            //                    if hoursUntilOpen > 1 {
+            //                        hoursLbl.text = "Opening in \(Int(hoursUntilOpen)) hours \(minutesLeft) minutes"
+            //                    } else if hoursUntilOpen <= 0 {
+            //                        hoursLbl.text = "Opening in \(minutesLeft) minutes"
+            //                    }
+            //                }
+            //                if restaurantChoice == "Cougar Walk Café" {
+            //                    hoursLbl.text = "Restaurant hours unavailable"
+            //                }
+            //            } else /* If the store is open tomorrow */ {
+            //                if hoursUntilOpen > 1 {
+            //                    hoursLbl.text = "Opening in \(Int(hoursUntilOpen)) hours \(minutesLeft) minutes"
+            //                } else if hoursUntilOpen <= 0 {
+            //                    hoursLbl.text = "Opening in \(minutesLeft) minutes"
+            //                }
+            //            }
+        }
+        
+        else /* If store is OPEN */ {
             if hoursUntilClose > 1 {
                 hoursLbl.text = "Closing in \(Int(hoursUntilClose)) hours \(minutesLeft) minutes"
             } else {
