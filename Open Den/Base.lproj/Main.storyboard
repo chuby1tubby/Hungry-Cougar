@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11185.3" systemVersion="16A286a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aYT-vv-QhX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11185.3" systemVersion="16A294a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aYT-vv-QhX">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11151.4"/>
@@ -8,6 +8,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HarvestItal Regular.ttf">
+            <string>HarvestItal</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--MenuVC-->
         <scene sceneID="Tlb-0I-sDB">
@@ -83,7 +88,7 @@
                                                             <constraint firstAttribute="height" constant="50" id="KM4-pL-eVX"/>
                                                             <constraint firstAttribute="width" secondItem="kJ3-3o-di1" secondAttribute="height" multiplier="163:50" id="cqo-OX-ylW"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="24"/>
+                                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="23"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -455,7 +460,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="zQK-fc-s9Y">
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cQ2-pI-rZe">
-                                                <frame key="frameInset" width="80" height="102"/>
+                                                <frame key="frameInset" width="80" height="101"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXe-ru-TbA">
                                                         <subviews>
@@ -482,7 +487,7 @@
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Grill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agO-QE-b70">
-                                                        <frame key="frameInset" minX="28" minY="85" width="25" height="17"/>
+                                                        <frame key="frameInset" minX="28" minY="85" width="25" height="16"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -490,7 +495,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pJo-rZ-7yk">
-                                                <frame key="frameInset" minY="162" width="80" height="102"/>
+                                                <frame key="frameInset" minY="161" width="80" height="102"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1lp-PA-pkC">
                                                         <frame key="frameInset" width="80" height="80"/>
@@ -529,7 +534,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rEm-ud-9aR">
-                                                <frame key="frameInset" minY="324" width="80" height="102"/>
+                                                <frame key="frameInset" minY="323" width="80" height="102"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yGB-Rt-Mza">
                                                         <frame key="frameInset" width="80" height="80"/>
@@ -585,7 +590,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Ppc-pf-rmb">
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="V0g-RO-fFA">
-                                                <frame key="frameInset" width="80" height="102"/>
+                                                <frame key="frameInset" width="80" height="101"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ih0-gO-xCu">
                                                         <subviews>
@@ -612,7 +617,7 @@
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Coffeehouse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ac-iH-zfJ">
-                                                        <frame key="frameInset" minY="85" width="80" height="17"/>
+                                                        <frame key="frameInset" minY="85" width="80" height="16"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
@@ -620,7 +625,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aGV-MR-syC">
-                                                <frame key="frameInset" minY="162" width="80" height="102"/>
+                                                <frame key="frameInset" minY="161" width="80" height="102"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2qx-4P-yqD">
                                                         <frame key="frameInset" width="80" height="80"/>
@@ -659,7 +664,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ph3-OP-s4m">
-                                                <frame key="frameInset" minY="324" width="80" height="102"/>
+                                                <frame key="frameInset" minY="323" width="80" height="102"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iVj-XA-f1i">
                                                         <frame key="frameInset" width="80" height="80"/>
@@ -727,7 +732,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="QMW-Nr-MdC">
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IFu-Qk-aSw">
-                                                        <frame key="frameInset" width="80" height="116"/>
+                                                        <frame key="frameInset" width="80" height="115"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTy-AV-BoI">
                                                                 <subviews>
@@ -753,7 +758,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Dining Hall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lb-fE-poO">
-                                                                <frame key="frameInset" minX="9" minY="85" width="63" height="31"/>
+                                                                <frame key="frameInset" minX="9" minY="85" width="63" height="30"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
@@ -761,7 +766,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="y9p-4x-VWa">
-                                                        <frame key="frameInset" minY="176" width="80" height="101"/>
+                                                        <frame key="frameInset" minY="175" width="80" height="101"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="thQ-Kk-cfF">
                                                                 <frame key="frameInset" width="80" height="80"/>
@@ -799,7 +804,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gAf-FM-y0M">
-                                                        <frame key="frameInset" minY="337" width="80" height="101"/>
+                                                        <frame key="frameInset" minY="336" width="80" height="101"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YZz-uE-zYz">
                                                                 <frame key="frameInset" width="80" height="80"/>
@@ -854,7 +859,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="pEW-si-ATN">
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1Da-ui-v6m">
-                                                        <frame key="frameInset" width="80" height="116"/>
+                                                        <frame key="frameInset" width="80" height="115"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nd1-iD-sEv">
                                                                 <subviews>
@@ -880,7 +885,7 @@
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Coffeehouse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RM7-9o-y7x">
-                                                                <frame key="frameInset" minX="3" minY="85" width="74" height="31"/>
+                                                                <frame key="frameInset" minX="3" minY="85" width="74" height="30"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
@@ -888,7 +893,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Sh0-lF-gve">
-                                                        <frame key="frameInset" minY="176" width="80" height="101"/>
+                                                        <frame key="frameInset" minY="175" width="80" height="101"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="atv-zT-DMq">
                                                                 <frame key="frameInset" width="80" height="80"/>
@@ -926,7 +931,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1wT-Vc-zdc">
-                                                        <frame key="frameInset" minY="337" width="80" height="101"/>
+                                                        <frame key="frameInset" minY="336" width="80" height="101"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BBS-TC-9gX">
                                                                 <frame key="frameInset" width="80" height="80"/>
@@ -1008,7 +1013,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aYT-vv-QhX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6j5-pb-k0w">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6j5-pb-k0w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1039,6 +1044,6 @@
         <image name="money5" width="208" height="208"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sca-7N-huW"/>
+        <segue reference="lc3-Kn-Un2"/>
     </inferredMetricsTieBreakers>
 </document>
