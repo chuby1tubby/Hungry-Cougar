@@ -376,42 +376,48 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S90-A4-jr6">
-                                        <frame key="frameInset" minX="16" minY="302" width="344" height="62"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIV-Xz-5hs" customClass="CustomView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="150.50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2au-c1-jMq">
-                                                <frame key="frameInset" minX="230" minY="6" width="105" height="50"/>
+                                                <frame key="frameInset" minX="246" minY="10" width="105" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="105" id="Gpl-a0-Dwb"/>
                                                     <constraint firstAttribute="height" constant="50" id="jHo-4g-Tir"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
-                                                <color key="textColor" red="0.58888870477676392" green="0.15054461359977722" blue="0.13530883193016052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Today's Dining Points:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Od-cT-1Ue">
-                                                <frame key="frameInset" minX="8" minY="18" width="214" height="26"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                                <color key="textColor" red="0.58888870477676392" green="0.15054461359977722" blue="0.13530883193016052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Today's Dining Points:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xD-xO-ok1">
+                                                <frame key="frameInset" minX="8" minY="17" width="214" height="36"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="214" id="iLg-iu-V7h"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="21"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="2au-c1-jMq" firstAttribute="centerY" secondItem="S90-A4-jr6" secondAttribute="centerY" id="0Q4-y7-xve"/>
-                                            <constraint firstAttribute="trailing" secondItem="2au-c1-jMq" secondAttribute="trailing" constant="4" id="bsl-dz-K89"/>
-                                            <constraint firstAttribute="height" constant="62" id="ctt-0M-And"/>
-                                            <constraint firstItem="1Od-cT-1Ue" firstAttribute="leading" secondItem="S90-A4-jr6" secondAttribute="leading" constant="8" id="f6F-yK-9UY"/>
+                                            <constraint firstItem="8xD-xO-ok1" firstAttribute="leading" secondItem="MIV-Xz-5hs" secondAttribute="leadingMargin" id="YOQ-8i-I1u"/>
+                                            <constraint firstItem="2au-c1-jMq" firstAttribute="trailing" secondItem="MIV-Xz-5hs" secondAttribute="trailingMargin" id="cpf-FE-laj"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="8xD-xO-ok1" secondAttribute="bottom" id="deB-Wd-pFc"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="2au-c1-jMq" secondAttribute="bottom" id="ekp-pq-VWD"/>
+                                            <constraint firstAttribute="height" constant="71" id="g8D-LT-HNa"/>
+                                            <constraint firstItem="2au-c1-jMq" firstAttribute="top" secondItem="MIV-Xz-5hs" secondAttribute="topMargin" id="oPs-xa-krt"/>
+                                            <constraint firstItem="8xD-xO-ok1" firstAttribute="top" secondItem="MIV-Xz-5hs" secondAttribute="topMargin" id="qcQ-L9-8VV"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.5888599753" green="0.1470975876" blue="0.13562121990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="WHX-RX-sIg" firstAttribute="top" secondItem="mcw-QY-ZdD" secondAttribute="top" constant="100" id="5xu-iq-yRs"/>
+                                    <constraint firstItem="MIV-Xz-5hs" firstAttribute="leading" secondItem="mcw-QY-ZdD" secondAttribute="leadingMargin" id="64o-Oe-qra"/>
                                     <constraint firstItem="WHX-RX-sIg" firstAttribute="centerX" secondItem="mcw-QY-ZdD" secondAttribute="centerX" id="Tdn-64-C2f"/>
-                                    <constraint firstAttribute="trailing" secondItem="S90-A4-jr6" secondAttribute="trailing" constant="15" id="gSl-ac-3Cg"/>
-                                    <constraint firstItem="S90-A4-jr6" firstAttribute="leading" secondItem="mcw-QY-ZdD" secondAttribute="leading" constant="15" id="rHG-2H-wmQ"/>
-                                    <constraint firstItem="S90-A4-jr6" firstAttribute="centerY" secondItem="mcw-QY-ZdD" secondAttribute="centerY" id="ryu-GW-rG1"/>
+                                    <constraint firstItem="MIV-Xz-5hs" firstAttribute="centerX" secondItem="mcw-QY-ZdD" secondAttribute="centerX" id="gy9-aL-ZPB"/>
+                                    <constraint firstItem="MIV-Xz-5hs" firstAttribute="trailing" secondItem="mcw-QY-ZdD" secondAttribute="trailingMargin" id="lB2-iP-ZR0"/>
+                                    <constraint firstItem="MIV-Xz-5hs" firstAttribute="centerY" secondItem="mcw-QY-ZdD" secondAttribute="centerY" id="mJZ-1U-OU5"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -606,7 +612,7 @@
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Coffeehouse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ac-iH-zfJ">
-                                                        <frame key="frameInset" minX="1" minY="85" width="80" height="17"/>
+                                                        <frame key="frameInset" minY="85" width="80" height="17"/>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>

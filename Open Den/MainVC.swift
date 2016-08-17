@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     }
     
     // Loads right before view appears
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         setHours()
         loadCurrentDateTime()
     }
@@ -201,10 +201,17 @@ class ViewController: UIViewController {
         }
         
         else /* If store is OPEN */ {
-            if hoursUntilClose > 1 {
-                hoursLbl.text = "Closing in \(Int(hoursUntilClose)) hours \(minutesLeft) minutes"
-            } else {
+            if hoursUntilClose <= 0 {
                 hoursLbl.text = "Closing in \(minutesLeft) minutes"
+            } else {
+                if Today.closeHour == 24 {
+                    hoursLbl.text = "Closing at 12am"
+                } else if Today.closeHour == 1 {
+                    hoursLbl.text = "Closing at 1am"
+                }
+                else {
+                    hoursLbl.text = "Closing at \(Int(Today.closeHour)-12)pm"
+                }
             }
         }
     }
