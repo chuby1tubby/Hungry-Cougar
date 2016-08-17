@@ -14,10 +14,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--MenuVC-->
+        <!--Campus Restaurants-->
         <scene sceneID="Tlb-0I-sDB">
             <objects>
-                <viewController id="gOg-31-csF" customClass="MenuVC" customModule="Hungry_Cougar_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Campus Restaurants" id="gOg-31-csF" customClass="MenuVC" customModule="Hungry_Cougar_2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AYf-we-Pti"/>
                         <viewControllerLayoutGuide type="bottom" id="aD4-LC-AFc"/>
@@ -274,10 +274,10 @@
             </objects>
             <point key="canvasLocation" x="2038" y="117"/>
         </scene>
-        <!--My Dining Points-->
+        <!--Dining Points-->
         <scene sceneID="F8t-cc-9Q7">
             <objects>
-                <viewController title="My Dining Points" id="xZM-Ix-Tu3" customClass="DiningPointsVC" customModule="Hungry_Cougar_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Dining Points" id="xZM-Ix-Tu3" customClass="DiningPointsVC" customModule="Hungry_Cougar_2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RL6-z7-UAQ"/>
                         <viewControllerLayoutGuide type="bottom" id="ANr-Qj-hX4"/>
@@ -310,7 +310,7 @@
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="nbB-Hn-hzb"/>
                                                             </constraints>
-                                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                                            <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="22"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -358,10 +358,10 @@
             </objects>
             <point key="canvasLocation" x="191" y="1164"/>
         </scene>
-        <!--My Dining Plan-->
+        <!--Dining Plan-->
         <scene sceneID="Yuj-NC-pQ7">
             <objects>
-                <viewController title="My Dining Plan" id="Ih7-xX-Njt" customClass="DiningPlanVC" customModule="Hungry_Cougar_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Dining Plan" id="Ih7-xX-Njt" customClass="DiningPlanVC" customModule="Hungry_Cougar_2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jN3-jF-hWZ"/>
                         <viewControllerLayoutGuide type="bottom" id="xRM-tP-B3d"/>
@@ -377,7 +377,7 @@
                                             <constraint firstAttribute="width" constant="344" id="B0t-l4-i3C"/>
                                             <constraint firstAttribute="height" constant="58" id="dZt-ge-kvu"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="38"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -405,6 +405,7 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
+                                            <constraint firstItem="8xD-xO-ok1" firstAttribute="centerY" secondItem="MIV-Xz-5hs" secondAttribute="centerY" id="JeR-5B-dWu"/>
                                             <constraint firstItem="8xD-xO-ok1" firstAttribute="leading" secondItem="MIV-Xz-5hs" secondAttribute="leadingMargin" id="YOQ-8i-I1u"/>
                                             <constraint firstItem="2au-c1-jMq" firstAttribute="trailing" secondItem="MIV-Xz-5hs" secondAttribute="trailingMargin" id="cpf-FE-laj"/>
                                             <constraint firstAttribute="bottomMargin" secondItem="8xD-xO-ok1" secondAttribute="bottom" id="deB-Wd-pFc"/>
@@ -731,8 +732,7 @@
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="QMW-Nr-MdC">
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IFu-Qk-aSw">
-                                                        <frame key="frameInset" width="80" height="115"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IFu-Qk-aSw">
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTy-AV-BoI">
                                                                 <subviews>
@@ -757,25 +757,23 @@
                                                                     <constraint firstAttribute="trailing" secondItem="7t3-Jp-k6K" secondAttribute="trailing" id="yep-xc-nwB"/>
                                                                 </constraints>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Dining Hall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lb-fE-poO">
-                                                                <frame key="frameInset" minX="9" minY="85" width="63" height="30"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dining Hall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lb-fE-poO">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="17" id="Ajx-GP-teq"/>
+                                                                    <constraint firstAttribute="width" constant="75" id="u28-fa-9f8"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="16"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="y9p-4x-VWa">
-                                                        <frame key="frameInset" minY="175" width="80" height="101"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="y9p-4x-VWa">
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="thQ-Kk-cfF">
-                                                                <frame key="frameInset" width="80" height="80"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thQ-Kk-cfF">
                                                                 <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="CougarsDen-2" translatesAutoresizingMaskIntoConstraints="NO" id="DIx-2v-hGA">
-                                                                        <frame key="frameInset" width="80" height="80"/>
-                                                                    </imageView>
-                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZX-Cl-tmi">
-                                                                        <frame key="frameInset" width="80" height="80"/>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CougarsDen-2" translatesAutoresizingMaskIntoConstraints="NO" id="DIx-2v-hGA"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZX-Cl-tmi">
                                                                         <connections>
                                                                             <action selector="denButtonPressed:" destination="IC1-M4-iXJ" eventType="touchUpInside" id="Oph-RZ-9vx"/>
                                                                             <segue destination="BYZ-38-t0r" kind="show" id="l2d-U9-KN9"/>
@@ -795,25 +793,23 @@
                                                                     <constraint firstAttribute="trailing" secondItem="yZX-Cl-tmi" secondAttribute="trailing" id="x0L-pi-HFe"/>
                                                                 </constraints>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="The Den" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFU-ce-ghj">
-                                                                <frame key="frameInset" minX="16" minY="85" width="49" height="16"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Den" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFU-ce-ghj">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="17" id="4Sh-hN-ykZ"/>
+                                                                    <constraint firstAttribute="width" constant="75" id="Z7O-b4-l7n"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gAf-FM-y0M">
-                                                        <frame key="frameInset" minY="336" width="80" height="101"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gAf-FM-y0M">
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YZz-uE-zYz">
-                                                                <frame key="frameInset" width="80" height="80"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZz-uE-zYz">
                                                                 <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Mexicali-Grill-2" translatesAutoresizingMaskIntoConstraints="NO" id="lws-P8-xEp">
-                                                                        <frame key="frameInset" width="80" height="80"/>
-                                                                    </imageView>
-                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ek-Ji-uNr">
-                                                                        <frame key="frameInset" width="80" height="80"/>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mexicali-Grill-2" translatesAutoresizingMaskIntoConstraints="NO" id="lws-P8-xEp"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ek-Ji-uNr">
                                                                         <connections>
                                                                             <action selector="mexicaliButtonPressed:" destination="IC1-M4-iXJ" eventType="touchUpInside" id="P1R-U5-clL"/>
                                                                             <segue destination="BYZ-38-t0r" kind="show" id="ZR0-1y-gQP"/>
@@ -833,9 +829,12 @@
                                                                     <constraint firstItem="4ek-Ji-uNr" firstAttribute="top" secondItem="YZz-uE-zYz" secondAttribute="top" id="y3F-3g-m4h"/>
                                                                 </constraints>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Cali Grill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6G-y6-AcA">
-                                                                <frame key="frameInset" minX="16" minY="85" width="49" height="16"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cali Grill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6G-y6-AcA">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="75" id="VrZ-Lp-lKN"/>
+                                                                    <constraint firstAttribute="height" constant="17" id="mTJ-kR-6tb"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -858,8 +857,7 @@
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="pEW-si-ATN">
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1Da-ui-v6m">
-                                                        <frame key="frameInset" width="80" height="115"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1Da-ui-v6m">
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nd1-iD-sEv">
                                                                 <subviews>
@@ -884,25 +882,23 @@
                                                                     <constraint firstItem="8FV-Ah-QbL" firstAttribute="top" secondItem="Nd1-iD-sEv" secondAttribute="top" id="zpM-l2-MzQ"/>
                                                                 </constraints>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Coffeehouse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RM7-9o-y7x">
-                                                                <frame key="frameInset" minX="3" minY="85" width="74" height="30"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffeehouse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RM7-9o-y7x">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="17" id="UM2-Vk-E2o"/>
+                                                                    <constraint firstAttribute="width" constant="80" id="xJy-DN-YQ1"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Sh0-lF-gve">
-                                                        <frame key="frameInset" minY="175" width="80" height="101"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Sh0-lF-gve">
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="atv-zT-DMq">
-                                                                <frame key="frameInset" width="80" height="80"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atv-zT-DMq">
                                                                 <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Cougar Walk Grill-2" translatesAutoresizingMaskIntoConstraints="NO" id="Cu4-lf-864">
-                                                                        <frame key="frameInset" width="80" height="80"/>
-                                                                    </imageView>
-                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfV-yo-1Kw">
-                                                                        <frame key="frameInset" width="80" height="80"/>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cougar Walk Grill-2" translatesAutoresizingMaskIntoConstraints="NO" id="Cu4-lf-864"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfV-yo-1Kw">
                                                                         <connections>
                                                                             <action selector="cougarButtonPressed:" destination="IC1-M4-iXJ" eventType="touchUpInside" id="J4L-5E-6VY"/>
                                                                             <segue destination="BYZ-38-t0r" kind="show" id="lc3-Kn-Un2"/>
@@ -922,25 +918,23 @@
                                                                     <constraint firstAttribute="width" secondItem="atv-zT-DMq" secondAttribute="height" multiplier="1:1" id="xf9-e0-hg6"/>
                                                                 </constraints>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="BBQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfF-Vk-40m">
-                                                                <frame key="frameInset" minX="26" minY="85" width="28" height="16"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BBQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfF-Vk-40m">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="17" id="Fri-d3-StX"/>
+                                                                    <constraint firstAttribute="width" constant="75" id="qco-iu-eJi"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1wT-Vc-zdc">
-                                                        <frame key="frameInset" minY="336" width="80" height="101"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1wT-Vc-zdc">
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BBS-TC-9gX">
-                                                                <frame key="frameInset" width="80" height="80"/>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBS-TC-9gX">
                                                                 <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Paws N Go-2" translatesAutoresizingMaskIntoConstraints="NO" id="eUk-Io-vEM">
-                                                                        <frame key="frameInset" width="80" height="80"/>
-                                                                    </imageView>
-                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCi-V8-O16">
-                                                                        <frame key="frameInset" width="80" height="80"/>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Paws N Go-2" translatesAutoresizingMaskIntoConstraints="NO" id="eUk-Io-vEM"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCi-V8-O16">
                                                                         <connections>
                                                                             <action selector="pawsButtonPressed:" destination="IC1-M4-iXJ" eventType="touchUpInside" id="bqo-BY-gyj"/>
                                                                             <segue destination="BYZ-38-t0r" kind="show" id="j6O-Es-DFP"/>
@@ -960,9 +954,12 @@
                                                                     <constraint firstAttribute="trailing" secondItem="eUk-Io-vEM" secondAttribute="trailing" id="yBq-jC-Byb"/>
                                                                 </constraints>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Convenience" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLr-uM-ehu">
-                                                                <frame key="frameInset" minX="2" minY="85" width="76" height="16"/>
-                                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pause 'n Go" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLr-uM-ehu">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="75" id="WcB-ck-JtS"/>
+                                                                    <constraint firstAttribute="height" constant="17" id="qOx-OW-wQc"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
