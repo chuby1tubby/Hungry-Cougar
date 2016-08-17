@@ -12,6 +12,7 @@ class MenuVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Azusa Pacific University Restaurants"
+        self.title = "Campus Restaurants"
+        self.navigationController?.navigationBar.tintColor = UIColor.darkGray
     }
 }
