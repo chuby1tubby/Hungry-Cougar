@@ -46,7 +46,7 @@ func setHours() {
         Thursday.openHour = 11; Thursday.closeHour = 24
         Friday.openHour = 11; Friday.closeHour = 19
         Saturday.openHour = 0; Saturday.closeHour = 0
-    } else if restaurantChoice == "BBQ" {  // Hours unavailable
+    } else if restaurantChoice == "Cougar BBQ" {  // Hours unavailable
         Sunday.openHour = 0; Sunday.closeHour = 0
         Monday.openHour = 0; Monday.closeHour = 0
         Tuesday.openHour = 0; Tuesday.closeHour = 0
@@ -70,7 +70,7 @@ func setHours() {
         Thursday.openHour = 7.5; Thursday.closeHour = 1.0
         Friday.openHour = 7.5; Friday.closeHour = 19.0
         Saturday.openHour = 12.0; Saturday.closeHour = 19.0
-    } else if restaurantChoice == "Heritage Grill" {  // Need to add transition closed hours
+    } else if restaurantChoice == "Fusion Grill" {  // Need to add transition closed hours
         Sunday.openHour = 0; Sunday.closeHour = 0
         Monday.openHour = 7.0; Monday.closeHour = 20.0
         Tuesday.openHour = 7.0; Tuesday.closeHour = 20.0
@@ -78,7 +78,7 @@ func setHours() {
         Thursday.openHour = 7.0; Thursday.closeHour = 20.0
         Friday.openHour = 7.0; Friday.closeHour = 15.0
         Saturday.openHour = 0; Saturday.closeHour = 0
-    } else if restaurantChoice == "Heritage Coffeehouse" {
+    } else if restaurantChoice == "Fresh Grounds" {
         Sunday.openHour = 0; Sunday.closeHour = 0
         Monday.openHour = 6.5; Monday.closeHour = 20.0
         Tuesday.openHour = 6.5; Tuesday.closeHour = 20.0
@@ -86,7 +86,7 @@ func setHours() {
         Thursday.openHour = 6.5; Thursday.closeHour = 20.0
         Friday.openHour = 6.5; Friday.closeHour = 16.0
         Saturday.openHour = 0; Saturday.closeHour = 0
-    } else if restaurantChoice == "Heritage Market" {
+    } else if restaurantChoice == "West Market" {
         Sunday.openHour = 0; Sunday.closeHour = 0
         Monday.openHour = 7.0; Monday.closeHour = 20.0
         Tuesday.openHour = 7.0; Tuesday.closeHour = 20.0
@@ -102,7 +102,7 @@ func setHours() {
         Thursday.openHour = 9.0; Thursday.closeHour = 20.0
         Friday.openHour = 9.0; Friday.closeHour = 16.0
         Saturday.openHour = 10.0; Saturday.closeHour = 15.0
-    } else if restaurantChoice == "Yumay Sushi" {
+    } else if restaurantChoice == "Tasti Sushi" {
         Sunday.openHour = 0; Sunday.closeHour = 0
         Monday.openHour = 11.0; Monday.closeHour = 20.0
         Tuesday.openHour = 11.0; Tuesday.closeHour = 20.0

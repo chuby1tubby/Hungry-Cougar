@@ -130,6 +130,7 @@ class ViewController: UIViewController {
     }
     
     func calculateTimeUntilOpen() {
+        // If the store is CLOSED
         if storeIsOpen == false {
             if currentHour >= Today.closeHour && currentHour < 24 {
                 hoursUntilOpen = (23 - currentHour) + (Tomorrow.openHour)
@@ -138,11 +139,14 @@ class ViewController: UIViewController {
                 hoursUntilOpen = Today.openHour - currentHour - 1
                 hoursUntilClose = 0
             }
-        } else if storeIsOpen == true {
+        }
+        
+        // If the store is OPEN
+        else {
             if Today.closeHour == 1 {       // If store closes at exactly 1am
                 hoursUntilClose = 25 - currentHour - 1
                 hoursUntilOpen = 0
-            } else /* If store closes before midnight */ {
+            } else /* If store closes before 1am */ {
                 hoursUntilClose = Today.closeHour - currentHour - 1
                 hoursUntilOpen = 0
             }
@@ -150,6 +154,7 @@ class ViewController: UIViewController {
         
         minutesLeft = 60 - currentMinute
         
+        // If the store is CLOSED
         if storeIsOpen == false {
             // Calculate hours until open only if store is opening soon
             if hoursUntilOpen <= 0 {
@@ -172,35 +177,15 @@ class ViewController: UIViewController {
                 if !(floor(Today.openHour) == Today.openHour) { // If openHour is a half hour
                     hoursLbl.text = "Opening at \(Int(Today.openHour)):30am"
                 }
-                
-                if restaurantChoice == "Cougar Walk Café" {
-                    hoursLbl.text = "Hours unavailable"
-                }
             }
             
-            // Obsolete code: replaced by "Opening at 8am"
-            //            if Tomorrow.openHour == 0  || Today.openHour == 0 || Today.closeHour == 0 {     // Tomorrow closed all day
-            //                hoursLbl.text = "Closed for the weekend"
-            //                if Tomorrow.openHour > 0 {
-            //                    if hoursUntilOpen > 1 {
-            //                        hoursLbl.text = "Opening in \(Int(hoursUntilOpen)) hours \(minutesLeft) minutes"
-            //                    } else if hoursUntilOpen <= 0 {
-            //                        hoursLbl.text = "Opening in \(minutesLeft) minutes"
-            //                    }
-            //                }
-            //                if restaurantChoice == "Cougar Walk Café" {
-            //                    hoursLbl.text = "Restaurant hours unavailable"
-            //                }
-            //            } else /* If the store is open tomorrow */ {
-            //                if hoursUntilOpen > 1 {
-            //                    hoursLbl.text = "Opening in \(Int(hoursUntilOpen)) hours \(minutesLeft) minutes"
-            //                } else if hoursUntilOpen <= 0 {
-            //                    hoursLbl.text = "Opening in \(minutesLeft) minutes"
-            //                }
-            //            }
+            if restaurantChoice == "Cougar BBQ" {
+                hoursLbl.text = "Hours unavailable"
+            }
         }
         
-        else /* If store is OPEN */ {
+        // If the store is OPEN
+        else {
             if hoursUntilClose <= 0 {
                 hoursLbl.text = "Closing in \(minutesLeft) minutes"
             } else {
@@ -208,10 +193,13 @@ class ViewController: UIViewController {
                     hoursLbl.text = "Closing at 12am"
                 } else if Today.closeHour == 1 {
                     hoursLbl.text = "Closing at 1am"
-                }
-                else {
+                } else {
                     hoursLbl.text = "Closing at \(Int(Today.closeHour)-12)pm"
                 }
+            }
+            
+            if restaurantChoice == "Cougar BBQ" {
+                hoursLbl.text = "Hours unavailable"
             }
         }
     }

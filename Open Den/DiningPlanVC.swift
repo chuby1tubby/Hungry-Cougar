@@ -64,47 +64,6 @@ class DiningPlanVC: UIViewController {
     func calculateBalance() {
         setSchoolWeek()
         
-        switch schoolWeek {
-        case -1:
-            print("Summer vacation")
-        case -2:
-            print("Mid-semester break")
-        case 0:
-            print("Week 0")
-        case 1:
-            print("Week 1")
-        case 2:
-            print("Week 2")
-        case 3:
-            print("Week 3")
-        case 4:
-            print("Week 4")
-        case 5:
-            print("Week 5")
-        case 6:
-            print("Week 6")
-        case 7:
-            print("Week 7")
-        case 8:
-            print("Week 8")
-        case 9:
-            print("Week 9")
-        case 10:
-            print("Week 10")
-        case 11:
-            print("Week 11")
-        case 12:
-            print("Week 12")
-        case 13:
-            print("Week 13")
-        case 14:
-            print("Week 14")
-        case 15:
-            print("Week 15")
-        default:
-            print("Nothing to see here.")
-        }
-        
         // Balance for summer vacation and winter vacation
         if schoolWeek == -1 {
             currentBalance = 0.0
@@ -143,7 +102,7 @@ class DiningPlanVC: UIViewController {
         year = components.year!          // 2016
         
         // Optional function-call for testing
-        manuallySetDay(mm: 9, dd: 11, yyyy: 2016, wday: 0)
+        manuallySetDay(mm: 8, dd: 28, yyyy: 2016, wday: 0)
         
         todayDate = String("\(month!).\(day!).\(year!-2000)")
         

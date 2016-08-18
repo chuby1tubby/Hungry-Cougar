@@ -29,7 +29,7 @@ class EastVC: UIViewController {
     
     
     @IBAction func cougarButtonPressed(_ sender: AnyObject) {
-        restaurantChoice = "BBQ"
+        restaurantChoice = "Cougar BBQ"
     }
     
     
