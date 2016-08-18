@@ -35,8 +35,8 @@ class DiningPlanVC: UIViewController {
         diningPlanLbl.text = diningPlanChoice
         calculateDiningPoints()
         calculateBalance()
-        // Move this line to calculateBalance()
-        diningPointsLbl.text = "\(currentBalance)"
+        // Move this line to calculateBalance() ***
+            diningPointsLbl.text = "\(currentBalance)"
     }
     
     func calculateDiningPoints() {
@@ -66,12 +66,30 @@ class DiningPlanVC: UIViewController {
     }
     
     func calculateBalance() {
+//        let date = NSDate()
+//        let userCalendar = NSCalendar.current
+//        let firstDayOfSemester = NSDateComponents()
+//        firstDayOfSemester.year = 2016
+//        firstDayOfSemester.month = 8
+//        firstDayOfSemester.day = 31
+        
         let date = NSDate()
-        let userCalendar = NSCalendar.current
-        let firstDayOfSemester = NSDateComponents()
-        firstDayOfSemester.year = 2016
-        firstDayOfSemester.month = 8
-        firstDayOfSemester.day = 31
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.weekday, .day, .month, .year], from: date as Date)
+        let weekday = components.weekday    // 4
+        let day = components.day            // 17
+        let month = components.month        // 8
+        let year = components.year          // 2016
+        let todayDate: String = String("\(month!).\(day!).\(year!-2000)")
+        print("\n\n")
+        print("*****************************************************")
+        print("*****************************************************")
+        print("*****************************************************")
+        print("")
+        print("Today's date in Double format: \(todayDate)")
+        print("\n\n")
+ 
+        
     }
-
+    
 }

@@ -17,10 +17,9 @@ class DiningPointsVC: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var tableView: UITableView!
     
     // Variables
-    var diningPlanImages: [UIImage] = [#imageLiteral(resourceName: "money5"), #imageLiteral(resourceName: "money4"), #imageLiteral(resourceName: "money3"), #imageLiteral(resourceName: "money2"), #imageLiteral(resourceName: "money1")]
-    var diningTitles: [String] = ["No Worries", "We've Got You Covered", "Weekend Away", "Forgot To Cook", "Grab And Go"]
-    
     var img: UIImage!
+    var diningTitles = ["No Worries", "We've Got You Covered", "Weekend Away", "Forgot To Cook", "Grab And Go"]
+    var diningPlanImages = [#imageLiteral(resourceName: "money5"), #imageLiteral(resourceName: "money4"), #imageLiteral(resourceName: "money3"), #imageLiteral(resourceName: "money2"), #imageLiteral(resourceName: "money1")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +27,11 @@ class DiningPointsVC: UIViewController, UITableViewDataSource, UITableViewDelega
         tableView.dataSource = self
     }
     
+    // Table view functions
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let message = diningTitles[indexPath.row]
         diningPlanChoice = message
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "DiningPlans") as? DiningPlanCell {
             img = diningPlanImages[indexPath.row]
@@ -42,17 +41,10 @@ class DiningPointsVC: UIViewController, UITableViewDataSource, UITableViewDelega
             return DiningPlanCell()
         }
     }
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
-    }
-    
-    @IBAction func onDiningButtonPressed() {
-        
-    }
-    
+    }    
 }
