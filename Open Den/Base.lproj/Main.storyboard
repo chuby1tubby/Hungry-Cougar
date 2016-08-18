@@ -205,7 +205,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening in 12 hours 12 minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu1-9q-xnw">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening in 15 minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu1-9q-xnw">
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                 <color key="textColor" red="0.78114880181347157" green="0.78114880181347157" blue="0.78114880181347157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -287,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2037.5999999999999" y="116.49175412293854"/>
+            <point key="canvasLocation" x="2007" y="116"/>
         </scene>
         <!--Restaurant Hours-->
         <scene sceneID="h8h-XA-rPZ">
@@ -316,7 +316,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Nz-DK-Lrm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3007" y="116"/>
+            <point key="canvasLocation" x="2919" y="116"/>
         </scene>
         <!--Dining Points-->
         <scene sceneID="F8t-cc-9Q7">
@@ -421,17 +421,17 @@
                                             <constraint firstAttribute="width" constant="344" id="B0t-l4-i3C"/>
                                             <constraint firstAttribute="height" constant="58" id="dZt-ge-kvu"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="36"/>
+                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="35"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIV-Xz-5hs" customClass="CustomView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1012.50" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2au-c1-jMq">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1050.50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2au-c1-jMq">
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="Gpl-a0-Dwb"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="34"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="33"/>
                                                 <color key="textColor" red="0.60058677199999999" green="0.17196440700000001" blue="0.17363679409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -505,6 +505,24 @@
             </objects>
             <point key="canvasLocation" x="1096.8" y="1164.4677661169417"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="4fe-tK-9Td">
+            <objects>
+                <viewController id="qzh-ff-0Qa" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KIT-ya-uuG"/>
+                        <viewControllerLayoutGuide type="bottom" id="69s-Oy-Sy0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LO6-5F-qUx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mNC-p4-bCX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1097" y="1870"/>
+        </scene>
         <!--Nothing-->
         <scene sceneID="UrV-2L-Kb6">
             <objects>
@@ -548,7 +566,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="98j-ad-bvl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2037.5999999999999" y="1163.568215892054"/>
+            <point key="canvasLocation" x="2007" y="1164"/>
         </scene>
         <!--West Campus Restaurants-->
         <scene sceneID="ter-6k-wtq">
@@ -815,6 +833,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vpj-pM-WFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1097" y="456"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oM6-qP-rAU">
+            <objects>
+                <viewController id="MRx-ob-NrR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jZm-Wu-okh"/>
+                        <viewControllerLayoutGuide type="bottom" id="pDJ-zL-T7z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="p02-ou-B29">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iwW-Ey-PGV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="191" y="-609"/>
         </scene>
         <!--East Campus Restaurants-->
         <scene sceneID="uyp-Cv-Otb">
@@ -1110,7 +1146,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aYT-vv-QhX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6j5-pb-k0w">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6j5-pb-k0w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1121,7 +1157,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jdJ-j6-1NA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-744.79999999999995" y="117.39130434782609"/>
+            <point key="canvasLocation" x="-774" y="116"/>
         </scene>
     </scenes>
     <resources>

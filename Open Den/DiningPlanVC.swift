@@ -96,13 +96,13 @@ class DiningPlanVC: UIViewController {
         let date = NSDate()
         let calendar = Calendar.current
         let components = calendar.dateComponents([.weekday, .day, .month, .year], from: date as Date)
-        weekday = components.weekday!    // 4
-        day = components.day!            // 17
-        month = components.month!        // 8
-        year = components.year!          // 2016
+        weekday = components.weekday!
+        day = components.day!
+        month = components.month!
+        year = components.year!
         
         // Optional function-call for testing
-        manuallySetDay(mm: 8, dd: 28, yyyy: 2016, wday: 0)
+//        manuallySetDay(mm: 8, dd: 28, yyyy: 2016, wday: 0)
         
         todayDate = String("\(month!).\(day!).\(year!-2000)")
         
