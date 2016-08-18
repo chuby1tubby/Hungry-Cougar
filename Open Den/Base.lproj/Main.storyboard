@@ -421,17 +421,15 @@
                                             <constraint firstAttribute="width" constant="344" id="B0t-l4-i3C"/>
                                             <constraint firstAttribute="height" constant="58" id="dZt-ge-kvu"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="38"/>
+                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="45"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIV-Xz-5hs" customClass="CustomView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="150.50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2au-c1-jMq">
-                                                <frame key="frameInset" minX="246" minY="10" width="105" height="50"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1016.50" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2au-c1-jMq">
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="105" id="Gpl-a0-Dwb"/>
-                                                    <constraint firstAttribute="height" constant="50" id="jHo-4g-Tir"/>
+                                                    <constraint firstAttribute="width" constant="120" id="Gpl-a0-Dwb"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="34"/>
                                                 <color key="textColor" red="0.60058677199999999" green="0.17196440700000001" blue="0.17363679409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -442,7 +440,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="214" id="iLg-iu-V7h"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="21"/>
+                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="22"/>
                                                 <color key="textColor" red="0.60058677199999999" green="0.17196440700000001" blue="0.17363679409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1062,7 +1060,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aYT-vv-QhX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6j5-pb-k0w">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6j5-pb-k0w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
