@@ -15,25 +15,22 @@ class WestVC: UIViewController {
     }
     
     @IBAction func grillButtonPressed(_ sender: AnyObject) {
-        restaurantChoice = "The Grill at Heritage"
+        restaurantChoice = "Heritage Grill"
     }
-    
     
     @IBAction func hillsideButtonPressed(_ sender: AnyObject) {
-        restaurantChoice = "Hillside Grounds at Heritage"
+        restaurantChoice = "Heritage Coffeehouse"
     }
-    
     
     @IBAction func marketButtonPressed(_ sender: AnyObject) {
-        restaurantChoice = "The Market at Heritage"
+        restaurantChoice = "Heritage Market"
     }
     
-    
     @IBAction func subsButtonPressed(_ sender: AnyObject) {
-        restaurantChoice = "Sam's Subs"
+        restaurantChoice = "Tam's Subs"
     }
     
     @IBAction func umaiButtonPressed(_ sender: AnyObject) {
-        restaurantChoice = "Umai Sushi"
+        restaurantChoice = "Yumay Sushi"
     }
 }

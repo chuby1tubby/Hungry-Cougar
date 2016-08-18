@@ -226,21 +226,14 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="onInformationPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qid-iQ-aVQ"/>
+                                            <segue destination="rCL-Cx-Z5G" kind="show" id="vkx-zZ-DrN"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiningHallHours" translatesAutoresizingMaskIntoConstraints="NO" id="HvD-ew-Bfn">
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="285" id="YjO-O5-3Nx"/>
-                                            <constraint firstAttribute="height" constant="180" id="vdm-Qj-AR5"/>
-                                        </constraints>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.5888599753" green="0.1470975876" blue="0.13562121990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailingMargin" secondItem="a4m-Dr-821" secondAttribute="trailing" constant="10" id="0Wk-Xt-XjR"/>
                                     <constraint firstAttribute="trailing" secondItem="jY5-cB-yZV" secondAttribute="trailing" id="4Gu-Ta-B6Q"/>
-                                    <constraint firstItem="HvD-ew-Bfn" firstAttribute="centerX" secondItem="pDV-st-NNq" secondAttribute="centerX" id="DHP-6w-umO"/>
                                     <constraint firstItem="jY5-cB-yZV" firstAttribute="leading" secondItem="pDV-st-NNq" secondAttribute="leading" id="E5V-mb-DPr"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="a4m-Dr-821" secondAttribute="bottom" constant="10" id="GFU-iw-S5R"/>
                                     <constraint firstItem="jY5-cB-yZV" firstAttribute="leading" secondItem="pDV-st-NNq" secondAttribute="leading" id="IJs-Z4-asg"/>
@@ -250,7 +243,6 @@
                                     <constraint firstItem="jY5-cB-yZV" firstAttribute="top" secondItem="pDV-st-NNq" secondAttribute="top" id="Zmn-iL-3Bf"/>
                                     <constraint firstItem="jY5-cB-yZV" firstAttribute="top" secondItem="pDV-st-NNq" secondAttribute="top" id="cfx-2F-nXS"/>
                                     <constraint firstItem="jY5-cB-yZV" firstAttribute="top" secondItem="pDV-st-NNq" secondAttribute="top" id="dpV-Kk-Qeh"/>
-                                    <constraint firstItem="HvD-ew-Bfn" firstAttribute="top" secondItem="3UD-x8-G89" secondAttribute="bottom" constant="33" id="fU1-eb-4az"/>
                                     <constraint firstAttribute="trailing" secondItem="jY5-cB-yZV" secondAttribute="trailing" id="fmg-3M-hft"/>
                                     <constraint firstAttribute="trailing" secondItem="jY5-cB-yZV" secondAttribute="trailing" id="hKc-7Y-AUh"/>
                                 </constraints>
@@ -290,14 +282,41 @@
                     </view>
                     <connections>
                         <outlet property="hoursLbl" destination="Vu1-9q-xnw" id="wYu-e0-Cks"/>
-                        <outlet property="informationBtn" destination="a4m-Dr-821" id="22A-mZ-YWh"/>
-                        <outlet property="restaurantHoursImg" destination="HvD-ew-Bfn" id="oho-va-djX"/>
                         <outlet property="yesNoLbl" destination="ojc-Un-ovC" id="Ihm-xz-eVt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2037.5999999999999" y="116.49175412293854"/>
+        </scene>
+        <!--Restaurant Hours-->
+        <scene sceneID="h8h-XA-rPZ">
+            <objects>
+                <viewController title="Restaurant Hours" id="rCL-Cx-Z5G" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6bI-va-qfF"/>
+                        <viewControllerLayoutGuide type="bottom" id="JuP-Au-9Zg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rn2-vj-Uwt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAl-IA-0Eb">
+                                <color key="backgroundColor" red="0.58888870477676392" green="0.15054461359977722" blue="0.13530883193016052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="zAl-IA-0Eb" secondAttribute="trailing" id="3UG-uZ-vgG"/>
+                            <constraint firstItem="zAl-IA-0Eb" firstAttribute="leading" secondItem="rn2-vj-Uwt" secondAttribute="leading" id="AnW-mh-zQO"/>
+                            <constraint firstItem="JuP-Au-9Zg" firstAttribute="top" secondItem="zAl-IA-0Eb" secondAttribute="bottom" id="IKE-fR-p20"/>
+                            <constraint firstItem="zAl-IA-0Eb" firstAttribute="top" secondItem="rn2-vj-Uwt" secondAttribute="top" id="LVV-Yt-D0r"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Nz-DK-Lrm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3007" y="116"/>
         </scene>
         <!--Dining Points-->
         <scene sceneID="F8t-cc-9Q7">
@@ -511,12 +530,12 @@
                                                             <constraint firstAttribute="bottom" secondItem="OYH-zo-cEa" secondAttribute="bottom" id="ybu-eR-zsL"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agO-QE-b70">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fusion Grill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agO-QE-b70">
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="17" id="Mod-Ff-T8N"/>
                                                             <constraint firstAttribute="width" constant="75" id="PKE-Gn-i9i"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -547,12 +566,12 @@
                                                             <constraint firstAttribute="trailing" secondItem="zUb-ug-hd7" secondAttribute="trailing" id="vwo-mN-RMu"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Market" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ul-oU-bAi">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="West Market" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ul-oU-bAi">
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="17" id="CZU-fR-e7g"/>
                                                             <constraint firstAttribute="width" constant="75" id="mK1-Xb-NbX"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -583,12 +602,12 @@
                                                             <constraint firstAttribute="trailing" secondItem="wYT-WP-Gni" secondAttribute="trailing" id="yqr-bv-uz3"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sushi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWB-0p-qnE">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasti Sushi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWB-0p-qnE">
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="17" id="Znb-c3-53R"/>
                                                             <constraint firstAttribute="width" constant="75" id="cxK-tD-jTh"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -637,12 +656,12 @@
                                                             <constraint firstAttribute="trailing" secondItem="V26-EY-JKj" secondAttribute="trailing" id="zzu-va-flW"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffeehouse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ac-iH-zfJ">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fresh Grounds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ac-iH-zfJ">
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="O8A-GU-Prl"/>
                                                             <constraint firstAttribute="height" constant="17" id="xan-lv-5Vg"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -673,12 +692,12 @@
                                                             <constraint firstItem="B7o-ZN-ixA" firstAttribute="leading" secondItem="2qx-4P-yqD" secondAttribute="leading" id="w1J-rO-6W1"/>
                                                         </constraints>
                                                     </view>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHm-fe-rxf">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tam's Subs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHm-fe-rxf">
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="17" id="H7N-3T-O6h"/>
                                                             <constraint firstAttribute="width" constant="75" id="qTz-VI-v0Q"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="13"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -698,7 +717,7 @@
                                                             <constraint firstAttribute="height" constant="17" id="Exk-Vy-pE2"/>
                                                             <constraint firstAttribute="width" constant="75" id="Ya5-Ql-FFT"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="14"/>
                                                         <color key="textColor" red="0.60058677199999999" green="0.17196440700000001" blue="0.17363679409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -733,7 +752,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vpj-pM-WFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1097" y="468"/>
+            <point key="canvasLocation" x="1097" y="456"/>
         </scene>
         <!--East Campus Restaurants-->
         <scene sceneID="uyp-Cv-Otb">
@@ -765,7 +784,6 @@
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
                                                                     <constraint firstItem="7t3-Jp-k6K" firstAttribute="top" secondItem="HTy-AV-BoI" secondAttribute="top" id="3Lt-Ua-hzk"/>
                                                                     <constraint firstAttribute="bottom" secondItem="7t3-Jp-k6K" secondAttribute="bottom" id="97k-Mj-Tw2"/>
@@ -783,7 +801,7 @@
                                                                     <constraint firstAttribute="height" constant="17" id="Ajx-GP-teq"/>
                                                                     <constraint firstAttribute="width" constant="75" id="u28-fa-9f8"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="16"/>
+                                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="13"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -818,7 +836,7 @@
                                                                     <constraint firstAttribute="height" constant="17" id="4Sh-hN-ykZ"/>
                                                                     <constraint firstAttribute="width" constant="75" id="Z7O-b4-l7n"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="15"/>
+                                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="13"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -856,7 +874,7 @@
                                                                     <constraint firstAttribute="width" constant="75" id="VrZ-Lp-lKN"/>
                                                                     <constraint firstAttribute="height" constant="17" id="mTJ-kR-6tb"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="15"/>
+                                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="13"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -891,7 +909,6 @@
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="bottom" secondItem="8FV-Ah-QbL" secondAttribute="bottom" id="33D-Wb-N7X"/>
                                                                     <constraint firstAttribute="bottom" secondItem="lLP-Yz-8m6" secondAttribute="bottom" id="3Ue-Ru-HtB"/>
@@ -909,7 +926,7 @@
                                                                     <constraint firstAttribute="height" constant="17" id="UM2-Vk-E2o"/>
                                                                     <constraint firstAttribute="width" constant="80" id="xJy-DN-YQ1"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="15"/>
+                                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="13"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -927,7 +944,6 @@
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <constraints>
                                                                     <constraint firstItem="gfV-yo-1Kw" firstAttribute="leading" secondItem="atv-zT-DMq" secondAttribute="leading" id="6Gy-P7-mQe"/>
                                                                     <constraint firstAttribute="bottom" secondItem="gfV-yo-1Kw" secondAttribute="bottom" id="Cf1-nI-drT"/>
@@ -940,12 +956,12 @@
                                                                     <constraint firstAttribute="width" secondItem="atv-zT-DMq" secondAttribute="height" multiplier="1:1" id="xf9-e0-hg6"/>
                                                                 </constraints>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BBQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfF-Vk-40m">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cougar BBQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfF-Vk-40m">
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="17" id="Fri-d3-StX"/>
                                                                     <constraint firstAttribute="width" constant="75" id="qco-iu-eJi"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="15"/>
+                                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="13"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -972,6 +988,7 @@
                                                                     <constraint firstAttribute="trailing" secondItem="BCi-V8-O16" secondAttribute="trailing" id="WWx-S7-Neo"/>
                                                                     <constraint firstItem="eUk-Io-vEM" firstAttribute="top" secondItem="BBS-TC-9gX" secondAttribute="top" id="fvL-5u-uZJ"/>
                                                                     <constraint firstItem="BCi-V8-O16" firstAttribute="top" secondItem="BBS-TC-9gX" secondAttribute="top" id="qXF-Ep-dMp"/>
+                                                                    <constraint firstAttribute="height" constant="80" id="tEL-KX-EtA"/>
                                                                     <constraint firstAttribute="trailing" secondItem="eUk-Io-vEM" secondAttribute="trailing" id="yBq-jC-Byb"/>
                                                                 </constraints>
                                                             </view>
@@ -980,7 +997,7 @@
                                                                     <constraint firstAttribute="width" constant="75" id="WcB-ck-JtS"/>
                                                                     <constraint firstAttribute="height" constant="17" id="qOx-OW-wQc"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="15"/>
+                                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="13"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
@@ -1031,7 +1048,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aYT-vv-QhX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6j5-pb-k0w">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6j5-pb-k0w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1050,7 +1067,6 @@
         <image name="Cougar Walk Grill-2" width="833" height="833"/>
         <image name="CougarsDen-2" width="833" height="833"/>
         <image name="DiningHall-2" width="833" height="833"/>
-        <image name="DiningHallHours" width="1207" height="594"/>
         <image name="East-West-Img" width="3437" height="1830"/>
         <image name="Hillside-Grounds-2" width="833" height="833"/>
         <image name="Mexicali-Grill-2" width="833" height="833"/>

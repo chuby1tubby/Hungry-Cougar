@@ -22,7 +22,7 @@ var Tomorrow: Day = Day(openingHour: 0, closingHour: 0)
 var ZeroDay: Day = Day(openingHour: 0, closingHour: 0)
 
 func setHours() {
-    if restaurantChoice == "1899 Dining Hall" {
+    if restaurantChoice == "Dining Hall" {
         Sunday.openHour = 8.0; Sunday.closeHour = 19.5;
         Monday.openHour = 6.5; Monday.closeHour = 19.5
         Tuesday.openHour = 6.5; Tuesday.closeHour = 19.5
@@ -30,7 +30,7 @@ func setHours() {
         Thursday.openHour = 6.5; Thursday.closeHour = 19.5
         Friday.openHour = 6.5; Friday.closeHour = 19.5
         Saturday.openHour = 8.0; Saturday.closeHour = 19.5
-    } else if restaurantChoice == "Cornerstone Coffeehouse" {
+    } else if restaurantChoice == "Coffeehouse" {
         Sunday.openHour = 18; Sunday.closeHour = 24.0
         Monday.openHour = 6.5; Monday.closeHour = 1.0
         Tuesday.openHour = 6.5; Tuesday.closeHour = 1.0
@@ -38,7 +38,7 @@ func setHours() {
         Thursday.openHour = 6.5; Thursday.closeHour = 1.0
         Friday.openHour = 6.5; Friday.closeHour = 17.0
         Saturday.openHour = 0; Saturday.closeHour = 16.0
-    } else if restaurantChoice == "Cougar's Den Café" {
+    } else if restaurantChoice == "The Den" {
         Sunday.openHour = 17; Sunday.closeHour = 24
         Monday.openHour = 11; Monday.closeHour = 24
         Tuesday.openHour = 11; Tuesday.closeHour = 24
@@ -46,7 +46,7 @@ func setHours() {
         Thursday.openHour = 11; Thursday.closeHour = 24
         Friday.openHour = 11; Friday.closeHour = 19
         Saturday.openHour = 0; Saturday.closeHour = 0
-    } else if restaurantChoice == "Cougar Walk Café" {  // Hours unavailable
+    } else if restaurantChoice == "BBQ" {  // Hours unavailable
         Sunday.openHour = 0; Sunday.closeHour = 0
         Monday.openHour = 0; Monday.closeHour = 0
         Tuesday.openHour = 0; Tuesday.closeHour = 0
@@ -54,7 +54,7 @@ func setHours() {
         Thursday.openHour = 0; Thursday.closeHour = 0
         Friday.openHour = 0; Friday.closeHour = 0
         Saturday.openHour = 0; Saturday.closeHour = 0
-    } else if restaurantChoice == "Mexicali Grill" {
+    } else if restaurantChoice == "Cali Grill" {
         Sunday.openHour = 0; Sunday.closeHour = 0
         Monday.openHour = 8; Monday.closeHour = 20
         Tuesday.openHour = 8; Tuesday.closeHour = 20
@@ -62,7 +62,7 @@ func setHours() {
         Thursday.openHour = 8; Thursday.closeHour = 20
         Friday.openHour = 8; Friday.closeHour = 19
         Saturday.openHour = 11; Saturday.closeHour = 19
-    } else if restaurantChoice == "Paws 'N Go" {
+    } else if restaurantChoice == "Pause 'n Go" {
         Sunday.openHour = 16.0; Sunday.closeHour = 24.0
         Monday.openHour = 7.5; Monday.closeHour = 1.0
         Tuesday.openHour = 7.5; Tuesday.closeHour = 1.0
@@ -70,7 +70,7 @@ func setHours() {
         Thursday.openHour = 7.5; Thursday.closeHour = 1.0
         Friday.openHour = 7.5; Friday.closeHour = 19.0
         Saturday.openHour = 12.0; Saturday.closeHour = 19.0
-    } else if restaurantChoice == "The Grill at Heritage" {  // Need to add transition closed hours
+    } else if restaurantChoice == "Heritage Grill" {  // Need to add transition closed hours
         Sunday.openHour = 0; Sunday.closeHour = 0
         Monday.openHour = 7.0; Monday.closeHour = 20.0
         Tuesday.openHour = 7.0; Tuesday.closeHour = 20.0
@@ -78,7 +78,7 @@ func setHours() {
         Thursday.openHour = 7.0; Thursday.closeHour = 20.0
         Friday.openHour = 7.0; Friday.closeHour = 15.0
         Saturday.openHour = 0; Saturday.closeHour = 0
-    } else if restaurantChoice == "Hillside Grounds at Heritage" {
+    } else if restaurantChoice == "Heritage Coffeehouse" {
         Sunday.openHour = 0; Sunday.closeHour = 0
         Monday.openHour = 6.5; Monday.closeHour = 20.0
         Tuesday.openHour = 6.5; Tuesday.closeHour = 20.0
@@ -86,7 +86,7 @@ func setHours() {
         Thursday.openHour = 6.5; Thursday.closeHour = 20.0
         Friday.openHour = 6.5; Friday.closeHour = 16.0
         Saturday.openHour = 0; Saturday.closeHour = 0
-    } else if restaurantChoice == "The Market at Heritage" {
+    } else if restaurantChoice == "Heritage Market" {
         Sunday.openHour = 0; Sunday.closeHour = 0
         Monday.openHour = 7.0; Monday.closeHour = 20.0
         Tuesday.openHour = 7.0; Tuesday.closeHour = 20.0
@@ -94,7 +94,7 @@ func setHours() {
         Thursday.openHour = 7.0; Thursday.closeHour = 20.0
         Friday.openHour = 7.0; Friday.closeHour = 16.0
         Saturday.openHour = 0; Saturday.closeHour = 0
-    } else if restaurantChoice == "Sam's Subs" {
+    } else if restaurantChoice == "Tam's Subs" {
         Sunday.openHour = 0; Sunday.closeHour = 0
         Monday.openHour = 9.0; Monday.closeHour = 20.0
         Tuesday.openHour = 9.0; Tuesday.closeHour = 20.0
@@ -102,7 +102,7 @@ func setHours() {
         Thursday.openHour = 9.0; Thursday.closeHour = 20.0
         Friday.openHour = 9.0; Friday.closeHour = 16.0
         Saturday.openHour = 10.0; Saturday.closeHour = 15.0
-    } else if restaurantChoice == "Umai Sushi" {
+    } else if restaurantChoice == "Yumay Sushi" {
         Sunday.openHour = 0; Sunday.closeHour = 0
         Monday.openHour = 11.0; Monday.closeHour = 20.0
         Tuesday.openHour = 11.0; Tuesday.closeHour = 20.0

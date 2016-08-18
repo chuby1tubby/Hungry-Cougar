@@ -15,31 +15,31 @@ class EastVC: UIViewController {
     }
     
     @IBAction func diningHallButtonPressed(_ sender: AnyObject) {
-        restaurantChoice = "1899 Dining Hall"
+        restaurantChoice = "Dining Hall"
     }
     
     @IBAction func cornerstoneButtonPressed(_ sender: AnyObject) {
-        restaurantChoice = "Cornerstone Coffeehouse"
+        restaurantChoice = "Coffeehouse"
     }
     
     
     @IBAction func denButtonPressed(_ sender: AnyObject) {
-        restaurantChoice = "Cougar's Den Café"
+        restaurantChoice = "The Den"
     }
     
     
     @IBAction func cougarButtonPressed(_ sender: AnyObject) {
-        restaurantChoice = "Cougar Walk Café"
+        restaurantChoice = "BBQ"
     }
     
     
     @IBAction func mexicaliButtonPressed(_ sender: AnyObject) {
-        restaurantChoice = "Mexicali Grill"
+        restaurantChoice = "Cali Grill"
     }
     
     
     @IBAction func pawsButtonPressed(_ sender: AnyObject) {
-        restaurantChoice = "Paws 'N Go"
+        restaurantChoice = "Pause 'n Go"
     }
     
     

@@ -26,8 +26,6 @@ class ViewController: UIViewController {
     // IBOutlets
     @IBOutlet weak var yesNoLbl: UILabel!
     @IBOutlet weak var hoursLbl: UILabel!
-    @IBOutlet weak var informationBtn: UIButton!
-    @IBOutlet weak var restaurantHoursImg: UIImageView!
     
     // Loads when view appears
     override func viewDidLoad() {
@@ -37,20 +35,8 @@ class ViewController: UIViewController {
     
     // Loads right before view appears
     override func viewWillAppear(_ animated: Bool) {
-        resetView()
         setHours()
         loadCurrentDateTime()
-    }
-    
-    // Actions
-    @IBAction func onInformationPressed(_ sender: AnyObject) {
-        informationBtn.isHidden = true
-        restaurantHoursImg.isHidden = false
-    }
-    
-    func resetView() {
-        informationBtn.isHidden = false
-        restaurantHoursImg.isHidden = true
     }
     
     func loadCurrentDateTime() {
