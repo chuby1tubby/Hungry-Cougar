@@ -40,7 +40,7 @@ class ViewController: UIViewController {
     }
     
     func loadCurrentDateTime() {
-        let date = NSDate()
+        let date = Date()
         let calendar = Calendar.current
         let components = calendar.dateComponents([.minute, .hour, .weekday], from: date as Date)
         let weekday = components.weekday

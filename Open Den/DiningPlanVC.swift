@@ -86,7 +86,7 @@ class DiningPlanVC: UIViewController {
     }
     
     // Set the date manualy to test the calculator
-    func manuallySetDay(mm: Int, dd: Int, yyyy: Int, wday: Int) {
+    func manuallySetDay(_ mm: Int, dd: Int, yyyy: Int, wday: Int) {
         month = mm
         day = dd
         year = yyyy
@@ -94,7 +94,7 @@ class DiningPlanVC: UIViewController {
     }
     
     func setSchoolWeek() {
-        let date = NSDate()
+        let date = Date()
         let calendar = Calendar.current
         let components = calendar.dateComponents([.weekday, .day, .month, .year], from: date as Date)
         weekday = components.weekday!

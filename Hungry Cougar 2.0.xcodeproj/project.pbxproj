@@ -264,12 +264,14 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 7GDSF452LB;
 						DevelopmentTeamName = "Kyle Nakamura";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 					BFECDD4A1D4EE5B100E626D3 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 7GDSF452LB;
 						DevelopmentTeamName = "Kyle Nakamura";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = BFECDD361D4EE5B000E626D3;
 					};
@@ -277,6 +279,7 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 7GDSF452LB;
 						DevelopmentTeamName = "Kyle Nakamura";
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						TestTargetID = BFECDD361D4EE5B000E626D3;
 					};

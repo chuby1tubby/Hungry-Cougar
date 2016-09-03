@@ -10,8 +10,8 @@ import Foundation
 
 class Day {
     // Base variables
-    private var _openHour: Double = 24
-    private var _closeHour: Double = 24
+    fileprivate var _openHour: Double = 24
+    fileprivate var _closeHour: Double = 24
     
     // Getters
     var openHour: Double {

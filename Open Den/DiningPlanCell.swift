@@ -19,7 +19,7 @@ class DiningPlanCell: UITableViewCell {
         // Initialization code
     }
 
-    func configureCell(image: UIImage, text: String) {
+    func configureCell(_ image: UIImage, text: String) {
         mainImg.image = image
         mainLbl.text = text
     }

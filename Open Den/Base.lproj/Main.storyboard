@@ -584,6 +584,9 @@ Hours</string>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWB-Gi-4jx">
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FSI-Av-d9O">
+                                <frame key="frameInset" minX="112" minY="332" width="150" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -591,12 +594,15 @@ Hours</string>
                             <constraint firstItem="FWB-Gi-4jx" firstAttribute="leading" secondItem="x8A-Ga-kjb" secondAttribute="leading" id="JnT-5L-EwZ"/>
                             <constraint firstItem="PAY-Re-vGh" firstAttribute="leading" secondItem="x8A-Ga-kjb" secondAttribute="leading" id="Xqc-t7-j5L"/>
                             <constraint firstAttribute="trailing" secondItem="PAY-Re-vGh" secondAttribute="trailing" id="bNb-X2-cs1"/>
+                            <constraint firstItem="FSI-Av-d9O" firstAttribute="centerY" secondItem="x8A-Ga-kjb" secondAttribute="centerY" id="cQu-e8-zxj"/>
                             <constraint firstAttribute="trailing" secondItem="FWB-Gi-4jx" secondAttribute="trailing" id="eeA-T9-gcD"/>
+                            <constraint firstItem="FSI-Av-d9O" firstAttribute="centerX" secondItem="x8A-Ga-kjb" secondAttribute="centerX" id="fWn-U9-qRL"/>
                             <constraint firstItem="FWB-Gi-4jx" firstAttribute="top" secondItem="GTK-jK-IZV" secondAttribute="bottom" id="uPq-Zm-WRe"/>
                             <constraint firstItem="qb7-lR-u8d" firstAttribute="top" secondItem="FWB-Gi-4jx" secondAttribute="bottom" id="xeO-fa-GrT"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="progressView" destination="FSI-Av-d9O" id="Ih9-ew-DBr"/>
                         <outlet property="webView" destination="FWB-Gi-4jx" id="J2i-bM-RlT"/>
                     </connections>
                 </viewController>
