@@ -292,7 +292,7 @@
         <!--Restaurant Hours-->
         <scene sceneID="h8h-XA-rPZ">
             <objects>
-                <viewController title="Restaurant Hours" id="rCL-Cx-Z5G" sceneMemberID="viewController">
+                <viewController title="Restaurant Hours" id="rCL-Cx-Z5G" customClass="InformationVC" customModule="Hungry_Cougar_2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6bI-va-qfF"/>
                         <viewControllerLayoutGuide type="bottom" id="JuP-Au-9Zg"/>
@@ -303,20 +303,29 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAl-IA-0Eb">
                                 <color key="backgroundColor" red="0.58888870477676392" green="0.15054461359977722" blue="0.13530883193016052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="p7R-qC-h0Q"/>
+                                </constraints>
                             </view>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8g6-7X-MQ8">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="zAl-IA-0Eb" secondAttribute="trailing" id="3UG-uZ-vgG"/>
+                            <constraint firstItem="JuP-Au-9Zg" firstAttribute="top" secondItem="8g6-7X-MQ8" secondAttribute="bottom" id="8t1-hQ-pNH"/>
                             <constraint firstItem="zAl-IA-0Eb" firstAttribute="leading" secondItem="rn2-vj-Uwt" secondAttribute="leading" id="AnW-mh-zQO"/>
-                            <constraint firstItem="JuP-Au-9Zg" firstAttribute="top" secondItem="zAl-IA-0Eb" secondAttribute="bottom" id="IKE-fR-p20"/>
                             <constraint firstItem="zAl-IA-0Eb" firstAttribute="top" secondItem="rn2-vj-Uwt" secondAttribute="top" id="LVV-Yt-D0r"/>
+                            <constraint firstAttribute="trailing" secondItem="8g6-7X-MQ8" secondAttribute="trailing" id="pg8-5G-b9s"/>
+                            <constraint firstItem="8g6-7X-MQ8" firstAttribute="leading" secondItem="rn2-vj-Uwt" secondAttribute="leading" id="tMS-9c-yGQ"/>
+                            <constraint firstItem="8g6-7X-MQ8" firstAttribute="top" secondItem="6bI-va-qfF" secondAttribute="bottom" id="uJB-97-LBz"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Nz-DK-Lrm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2919" y="116"/>
+            <point key="canvasLocation" x="2917.5999999999999" y="115.59220389805098"/>
         </scene>
         <!--Dining Points-->
         <scene sceneID="F8t-cc-9Q7">
@@ -427,11 +436,11 @@
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIV-Xz-5hs" customClass="CustomView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1050.50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2au-c1-jMq">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1050.50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2au-c1-jMq" customClass="DontCutMe" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="Gpl-a0-Dwb"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="33"/>
+                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="33"/>
                                                 <color key="textColor" red="0.60058677199999999" green="0.17196440700000001" blue="0.17363679409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -508,7 +517,7 @@
         <!--Nothing-->
         <scene sceneID="UrV-2L-Kb6">
             <objects>
-                <viewController title="Nothing" id="WpJ-IH-Vbs" sceneMemberID="viewController">
+                <viewController title="Nothing" automaticallyAdjustsScrollViewInsets="NO" id="WpJ-IH-Vbs" customClass="APUHomeVC" customModule="Hungry_Cougar_2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GTK-jK-IZV"/>
                         <viewControllerLayoutGuide type="bottom" id="qb7-lR-u8d"/>
@@ -518,37 +527,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAY-Re-vGh">
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This page does nothing." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfr-Et-6p4">
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="uQ0-VN-afu"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
                                 <color key="backgroundColor" red="0.5888887048" green="0.15054461359999999" blue="0.13530883190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="yfr-Et-6p4" firstAttribute="leading" secondItem="PAY-Re-vGh" secondAttribute="leadingMargin" id="Dcg-VK-ahf"/>
-                                    <constraint firstItem="yfr-Et-6p4" firstAttribute="centerY" secondItem="PAY-Re-vGh" secondAttribute="centerY" id="E1D-8j-FCu"/>
-                                    <constraint firstItem="yfr-Et-6p4" firstAttribute="centerX" secondItem="PAY-Re-vGh" secondAttribute="centerX" id="orv-e7-XcH"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="yfr-Et-6p4" secondAttribute="trailing" id="pJU-F1-tFM"/>
+                                    <constraint firstAttribute="height" constant="64" id="mW8-fc-aUc"/>
                                 </constraints>
                             </view>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWB-Gi-4jx">
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="PAY-Re-vGh" firstAttribute="top" secondItem="x8A-Ga-kjb" secondAttribute="top" id="JRG-tk-Mqu"/>
+                            <constraint firstItem="FWB-Gi-4jx" firstAttribute="leading" secondItem="x8A-Ga-kjb" secondAttribute="leading" id="JnT-5L-EwZ"/>
                             <constraint firstItem="PAY-Re-vGh" firstAttribute="leading" secondItem="x8A-Ga-kjb" secondAttribute="leading" id="Xqc-t7-j5L"/>
                             <constraint firstAttribute="trailing" secondItem="PAY-Re-vGh" secondAttribute="trailing" id="bNb-X2-cs1"/>
-                            <constraint firstItem="qb7-lR-u8d" firstAttribute="top" secondItem="PAY-Re-vGh" secondAttribute="bottom" id="bVO-Op-MAI"/>
+                            <constraint firstAttribute="trailing" secondItem="FWB-Gi-4jx" secondAttribute="trailing" id="eeA-T9-gcD"/>
+                            <constraint firstItem="FWB-Gi-4jx" firstAttribute="top" secondItem="GTK-jK-IZV" secondAttribute="bottom" id="uPq-Zm-WRe"/>
+                            <constraint firstItem="qb7-lR-u8d" firstAttribute="top" secondItem="FWB-Gi-4jx" secondAttribute="bottom" id="xeO-fa-GrT"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="98j-ad-bvl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2007" y="1164"/>
+            <point key="canvasLocation" x="2005.5999999999999" y="1163.568215892054"/>
         </scene>
         <!--West Campus Restaurants-->
         <scene sceneID="ter-6k-wtq">

@@ -152,6 +152,7 @@ class ViewController: UIViewController {
             }
         }
         
+        // Calculate minutes until the next hour
         minutesLeft = 60 - currentMinute
         
         // If the store is CLOSED
@@ -207,7 +208,7 @@ class ViewController: UIViewController {
             }
         }
             
-            // If the store is OPEN
+        // If the store is OPEN
         else {
             if hoursUntilClose <= 0 {
                 hoursLbl.text = "Closing in \(minutesLeft) minutes"
