@@ -171,16 +171,6 @@ class ViewController: UIViewController {
                     hoursLbl.text = "Opening in \(minutesLeft) minutes"
                 } else {
                     if currentHour < 24 && currentHour != 0 {  // If not yet midnight
-                        if Tomorrow.openHour == 1 {
-                            hoursLbl.text = "Opening at 1am"
-                        } else {
-                            if Tomorrow.openHour <= 12 {
-                                hoursLbl.text = "Opening at \(Int(Tomorrow.openHour))am"
-                            } else if Tomorrow.openHour > 12 {
-                                hoursLbl.text = "Opening at \(Int(Tomorrow.openHour)-12)pm"
-                            }
-                        }
-                    } else if currentHour == 24 || currentHour >= 0 {
                         if Today.openHour == 1 {
                             hoursLbl.text = "Opening at 1am"
                         } else {
@@ -188,6 +178,16 @@ class ViewController: UIViewController {
                                 hoursLbl.text = "Opening at \(Int(Today.openHour))am"
                             } else if Today.openHour > 12 {
                                 hoursLbl.text = "Opening at \(Int(Today.openHour)-12)pm"
+                            }
+                        }
+                    } else if currentHour == 24 || currentHour >= 0 {   // *** PRETTY SURE THIS LOGIC IS INCORRECT ***
+                        if Tomorrow.openHour == 1 {
+                            hoursLbl.text = "Opening at 1am"
+                        } else {
+                            if Tomorrow.openHour <= 12 {
+                                hoursLbl.text = "Opening at \(Int(Tomorrow.openHour))am"
+                            } else if Today.openHour > 12 {
+                                hoursLbl.text = "Opening at \(Int(Tomorrow.openHour)-12)pm"      // I switched all Tomorrows with Todays
                             }
                         }
                     }

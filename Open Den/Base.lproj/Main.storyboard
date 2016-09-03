@@ -229,18 +229,42 @@
                                             <segue destination="rCL-Cx-Z5G" kind="show" id="vkx-zZ-DrN"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ept-U9-Ono" customClass="DontCutMe" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="83" id="Jxy-XV-sko"/>
+                                            <constraint firstAttribute="height" constant="42" id="ORN-0k-x7C"/>
+                                        </constraints>
+                                        <string key="text">Restaurant
+Hours</string>
+                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUb-su-Det">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="6qO-n5-U41"/>
+                                            <constraint firstAttribute="width" constant="126" id="l0a-yG-Dcd"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="rCL-Cx-Z5G" kind="show" id="eC7-B8-qvl"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.58727836609999995" green="0.1501453519" blue="0.13814073800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailingMargin" secondItem="a4m-Dr-821" secondAttribute="trailing" constant="10" id="0Wk-Xt-XjR"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ept-U9-Ono" secondAttribute="trailing" constant="61" id="2pl-q9-dkh"/>
                                     <constraint firstAttribute="trailing" secondItem="jY5-cB-yZV" secondAttribute="trailing" id="4Gu-Ta-B6Q"/>
                                     <constraint firstItem="jY5-cB-yZV" firstAttribute="leading" secondItem="pDV-st-NNq" secondAttribute="leading" id="E5V-mb-DPr"/>
                                     <constraint firstAttribute="bottomMargin" secondItem="a4m-Dr-821" secondAttribute="bottom" constant="10" id="GFU-iw-S5R"/>
                                     <constraint firstItem="jY5-cB-yZV" firstAttribute="leading" secondItem="pDV-st-NNq" secondAttribute="leading" id="IJs-Z4-asg"/>
+                                    <constraint firstAttribute="trailing" secondItem="qUb-su-Det" secondAttribute="trailing" constant="18" id="NAL-7M-pbB"/>
                                     <constraint firstItem="3UD-x8-G89" firstAttribute="centerX" secondItem="pDV-st-NNq" secondAttribute="centerX" id="PYj-sK-OrC"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ept-U9-Ono" secondAttribute="bottom" constant="22" id="RAA-eR-uYl"/>
                                     <constraint firstItem="jY5-cB-yZV" firstAttribute="leading" secondItem="pDV-st-NNq" secondAttribute="leading" id="Sz2-cQ-Lpk"/>
                                     <constraint firstItem="3UD-x8-G89" firstAttribute="centerY" secondItem="pDV-st-NNq" secondAttribute="centerY" id="Wb0-qY-q2B"/>
                                     <constraint firstItem="jY5-cB-yZV" firstAttribute="top" secondItem="pDV-st-NNq" secondAttribute="top" id="Zmn-iL-3Bf"/>
+                                    <constraint firstAttribute="bottom" secondItem="qUb-su-Det" secondAttribute="bottom" constant="22" id="cYf-Vq-lJ4"/>
                                     <constraint firstItem="jY5-cB-yZV" firstAttribute="top" secondItem="pDV-st-NNq" secondAttribute="top" id="cfx-2F-nXS"/>
                                     <constraint firstItem="jY5-cB-yZV" firstAttribute="top" secondItem="pDV-st-NNq" secondAttribute="top" id="dpV-Kk-Qeh"/>
                                     <constraint firstAttribute="trailing" secondItem="jY5-cB-yZV" secondAttribute="trailing" id="fmg-3M-hft"/>
@@ -287,7 +311,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2007" y="116"/>
+            <point key="canvasLocation" x="2005.5999999999999" y="115.59220389805098"/>
         </scene>
         <!--Restaurant Hours-->
         <scene sceneID="h8h-XA-rPZ">
@@ -484,16 +508,28 @@
                                             <segue destination="WpJ-IH-Vbs" kind="show" id="BBY-u1-RPY"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6v-BC-YtK">
-                                        <frame key="frameInset" minX="282" minY="622" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="APU Home" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6v-BC-YtK" customClass="DontCutMe" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="83" id="1SH-QN-J5I"/>
+                                            <constraint firstAttribute="height" constant="21" id="bUx-sI-ea4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VfC-fF-qpd">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="Rfk-un-O04"/>
+                                            <constraint firstAttribute="width" constant="111" id="Ylk-IP-knC"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="WpJ-IH-Vbs" kind="show" id="1eb-hq-0hH"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.58823529411764708" green="0.14901960784313725" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="VfC-fF-qpd" secondAttribute="trailing" constant="23" id="22i-bX-joi"/>
                                     <constraint firstItem="WHX-RX-sIg" firstAttribute="top" secondItem="mcw-QY-ZdD" secondAttribute="top" constant="100" id="5xu-iq-yRs"/>
                                     <constraint firstItem="MIV-Xz-5hs" firstAttribute="leading" secondItem="mcw-QY-ZdD" secondAttribute="leadingMargin" id="64o-Oe-qra"/>
                                     <constraint firstAttribute="bottom" secondItem="nQI-J1-hqF" secondAttribute="bottom" constant="10" id="7DK-oE-sJ6"/>
@@ -502,8 +538,11 @@
                                     <constraint firstAttribute="trailingMargin" secondItem="WHX-RX-sIg" secondAttribute="trailing" id="R52-Ph-2pU"/>
                                     <constraint firstItem="WHX-RX-sIg" firstAttribute="centerX" secondItem="mcw-QY-ZdD" secondAttribute="centerX" id="Tdn-64-C2f"/>
                                     <constraint firstItem="MIV-Xz-5hs" firstAttribute="centerX" secondItem="mcw-QY-ZdD" secondAttribute="centerX" id="gy9-aL-ZPB"/>
+                                    <constraint firstAttribute="bottom" secondItem="VfC-fF-qpd" secondAttribute="bottom" constant="16" id="iwT-aN-ivW"/>
                                     <constraint firstItem="MIV-Xz-5hs" firstAttribute="trailing" secondItem="mcw-QY-ZdD" secondAttribute="trailingMargin" id="lB2-iP-ZR0"/>
                                     <constraint firstItem="MIV-Xz-5hs" firstAttribute="centerY" secondItem="mcw-QY-ZdD" secondAttribute="centerY" id="mJZ-1U-OU5"/>
+                                    <constraint firstAttribute="trailing" secondItem="y6v-BC-YtK" secondAttribute="trailing" constant="51" id="oqS-fA-cw8"/>
+                                    <constraint firstAttribute="bottom" secondItem="y6v-BC-YtK" secondAttribute="bottom" constant="24" id="xyQ-GE-3S7"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1157,5 +1196,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="sca-7N-huW"/>
+        <segue reference="vkx-zZ-DrN"/>
+        <segue reference="BBY-u1-RPY"/>
     </inferredMetricsTieBreakers>
 </document>
