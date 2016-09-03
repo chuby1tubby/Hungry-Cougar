@@ -140,8 +140,8 @@ class ViewController: UIViewController {
                 hoursUntilClose = 0
             }
         }
-        
-        // If the store is OPEN
+            
+            // If the store is OPEN
         else {
             if Today.closeHour == 1 {       // If store closes at exactly 1am
                 hoursUntilClose = 25 - currentHour - 1
@@ -156,35 +156,58 @@ class ViewController: UIViewController {
         
         // If the store is CLOSED
         if storeIsOpen == false {
-            // Calculate hours until open only if store is opening soon
-            if hoursUntilOpen <= 0 {
-                hoursLbl.text = "Opening in \(minutesLeft) minutes"
-            } else {
-                if currentHour < 24 {
-                    if Tomorrow.openHour == 1 {
-                        hoursLbl.text = "Opening at 1am"
-                    } else {
-                        hoursLbl.text = "Opening at \(Int(Tomorrow.openHour))am"
+            if Today.openHour == 0 && Today.closeHour == 0 {
+                hoursLbl.text = "Closed all day today"
+                
+                if Tomorrow.openHour == 0 && Tomorrow.closeHour == 0 {
+                hoursLbl.text = "Closed until Monday"
+                }
+            }
+                
+            else {
+                // Calculate hours until open only if store is opening soon
+                if hoursUntilOpen <= 0 {
+                    hoursLbl.text = "Opening in \(minutesLeft) minutes"
+                } else {
+                    if currentHour < 24 && currentHour != 0 {  // If not yet midnight
+                        if Tomorrow.openHour == 1 {
+                            hoursLbl.text = "Opening at 1am"
+                        } else {
+                            if Tomorrow.openHour <= 12 {
+                                hoursLbl.text = "Opening at \(Int(Tomorrow.openHour))am"
+                            } else if Tomorrow.openHour > 12 {
+                                hoursLbl.text = "Opening at \(Int(Tomorrow.openHour)-12)pm"
+                            }
+                        }
+                    } else if currentHour == 24 || currentHour >= 0 {
+                        if Today.openHour == 1 {
+                            hoursLbl.text = "Opening at 1am"
+                        } else {
+                            if Today.openHour <= 12 {
+                                hoursLbl.text = "Opening at \(Int(Today.openHour))am"
+                            } else if Today.openHour > 12 {
+                                hoursLbl.text = "Opening at \(Int(Today.openHour)-12)pm"
+                            }
+                        }
                     }
-                } else if currentHour == 24 || currentHour > 0 {    // If currentHour > 0
-                    if Today.openHour == 1 {
-                        hoursLbl.text = "Opening at 1am"
-                    } else {
-                        hoursLbl.text = "Opening at \(Int(Today.openHour))am"
+                    
+                    // If openHour is a half hour
+                    if !(floor(Today.openHour) == Today.openHour) {
+                        if Today.openHour <= 12 {
+                            hoursLbl.text = "Opening at \(Int(Today.openHour)):30am"
+                        } else if Today.openHour > 12 {
+                            hoursLbl.text = "Opening at \(Int(Today.openHour)-12):30pm"
+                        }
                     }
                 }
                 
-                if !(floor(Today.openHour) == Today.openHour) { // If openHour is a half hour
-                    hoursLbl.text = "Opening at \(Int(Today.openHour)):30am"
+                if restaurantChoice == "Cougar BBQ" {
+                    hoursLbl.text = "Hours unavailable"
                 }
             }
-            
-            if restaurantChoice == "Cougar BBQ" {
-                hoursLbl.text = "Hours unavailable"
-            }
         }
-        
-        // If the store is OPEN
+            
+            // If the store is OPEN
         else {
             if hoursUntilClose <= 0 {
                 hoursLbl.text = "Closing in \(minutesLeft) minutes"

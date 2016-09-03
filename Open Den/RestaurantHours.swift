@@ -37,7 +37,7 @@ func setHours() {
         Wednesday.openHour = 6.5; Wednesday.closeHour = 1.0
         Thursday.openHour = 6.5; Thursday.closeHour = 1.0
         Friday.openHour = 6.5; Friday.closeHour = 17.0
-        Saturday.openHour = 0; Saturday.closeHour = 16.0
+        Saturday.openHour = 10; Saturday.closeHour = 16.0
     } else if restaurantChoice == "The Den" {
         Sunday.openHour = 17; Sunday.closeHour = 24
         Monday.openHour = 11; Monday.closeHour = 24
