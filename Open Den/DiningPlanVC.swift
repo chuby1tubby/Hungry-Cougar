@@ -14,10 +14,10 @@ var mealBudget = 0.0
 var weeklyBudget = 0.0
 var dailyBudget = 0.0
 var schoolWeek: Int = 0
-var weekday: Int? = 0
-var day: Int? = 0
-var month: Int? = 0
-var year: Int? = 0
+var weekday: Int = 0
+var day: Int = 0
+var month: Int = 0
+var year: Int = 0
 var todayDate: String? = ""
 
 class DiningPlanVC: UIViewController {
@@ -70,18 +70,19 @@ class DiningPlanVC: UIViewController {
         }
         // Balance for mid-semester break
         else if schoolWeek == -2 {
-            currentBalance = mealBudget - ((mealBudget/112)*7*9) + (mealBudget/112)
+            currentBalance = mealBudget - ((mealBudget/112)*7*9) + (mealBudget/112) + dailyBudget
         }
         // Balance for rest of the year
         else {
-            currentBalance = mealBudget - (weeklyBudget * Double(schoolWeek)) - (dailyBudget * Double(weekday!))
+            currentBalance = mealBudget - (weeklyBudget * Double(schoolWeek)) - (dailyBudget * Double(weekday)) + dailyBudget
         }
         
         // Formatter
         let twoDecimalFormatter = NumberFormatter()
         twoDecimalFormatter.minimumFractionDigits = 2
         
-        currentBalance = NSString(string: twoDecimalFormatter.string(from: currentBalance)!).doubleValue
+        let balanceNum = NSNumber(value: currentBalance)
+        currentBalance = NSString(string: twoDecimalFormatter.string(from: (balanceNum))!).doubleValue
     }
     
     // Set the date manualy to test the calculator
@@ -104,7 +105,7 @@ class DiningPlanVC: UIViewController {
         // Optional function-call for testing
 //        manuallySetDay(mm: 8, dd: 28, yyyy: 2016, wday: 0)
         
-        todayDate = String("\(month!).\(day!).\(year!-2000)")
+        todayDate = String("\(month).\(day).\(year-2000)")
         
         // School has yet to begin
         if month == 8 && day < 31 {
