@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import WebKit
 
 class InformationVC: UIViewController {
     
     // Outlets
-    @IBOutlet weak var webView: UIWebView?
+    @IBOutlet weak var webView: WKWebView!
     
     var nameOfRestaurant = ""
     var url: URL!
@@ -33,7 +34,7 @@ class InformationVC: UIViewController {
         } else {
             url = URL(string: "https://www.apu.edu/diningservices/menus/\(nameOfRestaurant)")!
         }
-        webView?.loadRequest(URLRequest(url: url))
+        webView.load(URLRequest(url: url))
     }
     
     func setRestaurantName() {

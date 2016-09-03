@@ -322,6 +322,9 @@
                             <constraint firstItem="8g6-7X-MQ8" firstAttribute="top" secondItem="6bI-va-qfF" secondAttribute="bottom" id="uJB-97-LBz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="8g6-7X-MQ8" id="Shq-OR-nWY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Nz-DK-Lrm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -481,6 +484,13 @@
                                             <segue destination="WpJ-IH-Vbs" kind="show" id="BBY-u1-RPY"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y6v-BC-YtK">
+                                        <frame key="frameInset" minX="282" minY="622" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.58823529411764708" green="0.14901960784313725" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -547,6 +557,9 @@
                             <constraint firstItem="qb7-lR-u8d" firstAttribute="top" secondItem="FWB-Gi-4jx" secondAttribute="bottom" id="xeO-fa-GrT"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="FWB-Gi-4jx" id="J2i-bM-RlT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="98j-ad-bvl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

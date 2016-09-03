@@ -107,14 +107,14 @@
 		BF21D3961D552A5A001A38F2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BF91ED4C1D7ABD49007B161E /* InformationVC.swift */,
 				BFECDD3C1D4EE5B100E626D3 /* MainVC.swift */,
-				BF91ED4A1D7ABD40007B161E /* APUHomeVC.swift */,
 				BF8C1BBF1D4FDAD700E7B2B7 /* MenuVC.swift */,
 				BF21D3991D552B4F001A38F2 /* EastVC.swift */,
 				BF21D39B1D552C00001A38F2 /* WestVC.swift */,
 				BF05BE3F1D59B97400AA3DF6 /* DiningPointsVC.swift */,
 				BF05BE431D59C65600AA3DF6 /* DiningPlanVC.swift */,
+				BF91ED4A1D7ABD40007B161E /* APUHomeVC.swift */,
+				BF91ED4C1D7ABD49007B161E /* InformationVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";

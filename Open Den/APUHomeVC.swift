@@ -12,8 +12,7 @@ import WebKit
 class APUHomeVC: UIViewController {
     
     // Outlets
-    @IBOutlet weak var webView: UIWebView!
-    @IBOutlet weak var wkWebView: WKWebView!
+    @IBOutlet weak var webView: WKWebView!
     
     var url: URL!
 
@@ -24,7 +23,7 @@ class APUHomeVC: UIViewController {
     }
     
     func loadHomePage() {
-        url = URL(string: "https://home.apu.edu/")!
-        webView.loadRequest(URLRequest(url: url))
+        url = URL(string: "https://home.apu.edu/")
+        webView.load(URLRequest(url: url))
     }
 }
