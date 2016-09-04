@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="16A313a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aYT-vv-QhX">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -33,7 +32,7 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGM-AU-Dwd">
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="East-West-Img" translatesAutoresizingMaskIntoConstraints="NO" id="kbH-Yb-ZwZ">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Map_white" translatesAutoresizingMaskIntoConstraints="NO" id="kbH-Yb-ZwZ">
                                                         <frame key="frameInset" width="375" height="200"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iC-dk-YRN">
@@ -584,9 +583,6 @@ Hours</string>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWB-Gi-4jx">
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FSI-Av-d9O">
-                                <frame key="frameInset" minX="112" minY="332" width="150" height="2"/>
-                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -594,15 +590,12 @@ Hours</string>
                             <constraint firstItem="FWB-Gi-4jx" firstAttribute="leading" secondItem="x8A-Ga-kjb" secondAttribute="leading" id="JnT-5L-EwZ"/>
                             <constraint firstItem="PAY-Re-vGh" firstAttribute="leading" secondItem="x8A-Ga-kjb" secondAttribute="leading" id="Xqc-t7-j5L"/>
                             <constraint firstAttribute="trailing" secondItem="PAY-Re-vGh" secondAttribute="trailing" id="bNb-X2-cs1"/>
-                            <constraint firstItem="FSI-Av-d9O" firstAttribute="centerY" secondItem="x8A-Ga-kjb" secondAttribute="centerY" id="cQu-e8-zxj"/>
                             <constraint firstAttribute="trailing" secondItem="FWB-Gi-4jx" secondAttribute="trailing" id="eeA-T9-gcD"/>
-                            <constraint firstItem="FSI-Av-d9O" firstAttribute="centerX" secondItem="x8A-Ga-kjb" secondAttribute="centerX" id="fWn-U9-qRL"/>
                             <constraint firstItem="FWB-Gi-4jx" firstAttribute="top" secondItem="GTK-jK-IZV" secondAttribute="bottom" id="uPq-Zm-WRe"/>
                             <constraint firstItem="qb7-lR-u8d" firstAttribute="top" secondItem="FWB-Gi-4jx" secondAttribute="bottom" id="xeO-fa-GrT"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="progressView" destination="FSI-Av-d9O" id="Ih9-ew-DBr"/>
                         <outlet property="webView" destination="FWB-Gi-4jx" id="J2i-bM-RlT"/>
                     </connections>
                 </viewController>
@@ -1170,7 +1163,7 @@ Hours</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aYT-vv-QhX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6j5-pb-k0w">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6j5-pb-k0w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1189,9 +1182,9 @@ Hours</string>
         <image name="CougarWalkGrill-transparent-2" width="833" height="833"/>
         <image name="CougarsDen-transparent-2" width="833" height="833"/>
         <image name="DiningHall-transparent-2" width="833" height="833"/>
-        <image name="East-West-Img" width="3437" height="1830"/>
         <image name="GRILL_FINAL" width="192" height="192"/>
         <image name="HILLSIDE_GROUNDS_FINAL" width="192" height="192"/>
+        <image name="Map_white" width="4500" height="2599"/>
         <image name="Mexicali-Grill-transparent-2" width="833" height="833"/>
         <image name="Paws-N-Go-transparent-2" width="833" height="833"/>
         <image name="Sams-Subs-transparent-3" width="833" height="833"/>
