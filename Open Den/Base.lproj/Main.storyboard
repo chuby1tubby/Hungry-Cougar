@@ -234,7 +234,7 @@
                                             <constraint firstAttribute="height" constant="42" id="ORN-0k-x7C"/>
                                         </constraints>
                                         <string key="text">Restaurant
-Hours</string>
+Menu</string>
                                         <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -312,10 +312,10 @@ Hours</string>
             </objects>
             <point key="canvasLocation" x="2005.5999999999999" y="115.59220389805098"/>
         </scene>
-        <!--Restaurant Hours-->
+        <!--Restaurant Menu-->
         <scene sceneID="h8h-XA-rPZ">
             <objects>
-                <viewController title="Restaurant Hours" id="rCL-Cx-Z5G" customClass="InformationVC" customModule="Hungry_Cougar_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Restaurant Menu" id="rCL-Cx-Z5G" customClass="InformationVC" customModule="Hungry_Cougar_2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6bI-va-qfF"/>
                         <viewControllerLayoutGuide type="bottom" id="JuP-Au-9Zg"/>
@@ -330,9 +330,11 @@ Hours</string>
                                     <constraint firstAttribute="height" constant="64" id="p7R-qC-h0Q"/>
                                 </constraints>
                             </view>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8g6-7X-MQ8">
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8g6-7X-MQ8"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yjV-uO-bFq">
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.78431372549019607" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.58823529409999997" green="0.14901960780000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -340,12 +342,18 @@ Hours</string>
                             <constraint firstItem="JuP-Au-9Zg" firstAttribute="top" secondItem="8g6-7X-MQ8" secondAttribute="bottom" id="8t1-hQ-pNH"/>
                             <constraint firstItem="zAl-IA-0Eb" firstAttribute="leading" secondItem="rn2-vj-Uwt" secondAttribute="leading" id="AnW-mh-zQO"/>
                             <constraint firstItem="zAl-IA-0Eb" firstAttribute="top" secondItem="rn2-vj-Uwt" secondAttribute="top" id="LVV-Yt-D0r"/>
+                            <constraint firstItem="8g6-7X-MQ8" firstAttribute="top" secondItem="yjV-uO-bFq" secondAttribute="bottom" id="Mlt-jz-V9J"/>
+                            <constraint firstItem="yjV-uO-bFq" firstAttribute="centerX" secondItem="rn2-vj-Uwt" secondAttribute="centerX" id="W41-mv-uq0"/>
+                            <constraint firstItem="yjV-uO-bFq" firstAttribute="leading" secondItem="rn2-vj-Uwt" secondAttribute="leading" id="XT4-s4-g8K"/>
+                            <constraint firstAttribute="trailing" secondItem="yjV-uO-bFq" secondAttribute="trailing" id="byT-sW-rqh"/>
+                            <constraint firstItem="yjV-uO-bFq" firstAttribute="top" secondItem="6bI-va-qfF" secondAttribute="bottom" id="jsG-fw-viv"/>
                             <constraint firstAttribute="trailing" secondItem="8g6-7X-MQ8" secondAttribute="trailing" id="pg8-5G-b9s"/>
                             <constraint firstItem="8g6-7X-MQ8" firstAttribute="leading" secondItem="rn2-vj-Uwt" secondAttribute="leading" id="tMS-9c-yGQ"/>
-                            <constraint firstItem="8g6-7X-MQ8" firstAttribute="top" secondItem="6bI-va-qfF" secondAttribute="bottom" id="uJB-97-LBz"/>
+                            <constraint firstItem="8g6-7X-MQ8" firstAttribute="top" secondItem="yjV-uO-bFq" secondAttribute="bottom" id="xAh-en-mgI"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="progressBar" destination="yjV-uO-bFq" id="yDr-Wb-2HY"/>
                         <outlet property="webView" destination="8g6-7X-MQ8" id="Shq-OR-nWY"/>
                     </connections>
                 </viewController>
@@ -562,10 +570,10 @@ Hours</string>
             </objects>
             <point key="canvasLocation" x="1096.8" y="1164.4677661169417"/>
         </scene>
-        <!--Nothing-->
+        <!--APU Home-->
         <scene sceneID="UrV-2L-Kb6">
             <objects>
-                <viewController title="Nothing" automaticallyAdjustsScrollViewInsets="NO" id="WpJ-IH-Vbs" customClass="APUHomeVC" customModule="Hungry_Cougar_2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="APU Home" automaticallyAdjustsScrollViewInsets="NO" id="WpJ-IH-Vbs" customClass="APUHomeVC" customModule="Hungry_Cougar_2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GTK-jK-IZV"/>
                         <viewControllerLayoutGuide type="bottom" id="qb7-lR-u8d"/>
@@ -581,21 +589,31 @@ Hours</string>
                                 </constraints>
                             </view>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWB-Gi-4jx">
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.58823529409999997" green="0.14901960780000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="geB-hg-5dH">
+                                <color key="backgroundColor" red="0.95294117647058818" green="0.78431372549019607" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.58823529409999997" green="0.14901960780000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="FWB-Gi-4jx" firstAttribute="top" secondItem="geB-hg-5dH" secondAttribute="bottom" id="261-Zk-QAC"/>
                             <constraint firstItem="PAY-Re-vGh" firstAttribute="top" secondItem="x8A-Ga-kjb" secondAttribute="top" id="JRG-tk-Mqu"/>
                             <constraint firstItem="FWB-Gi-4jx" firstAttribute="leading" secondItem="x8A-Ga-kjb" secondAttribute="leading" id="JnT-5L-EwZ"/>
+                            <constraint firstItem="geB-hg-5dH" firstAttribute="top" secondItem="GTK-jK-IZV" secondAttribute="bottom" id="P1u-AK-DJ3"/>
+                            <constraint firstItem="geB-hg-5dH" firstAttribute="centerX" secondItem="x8A-Ga-kjb" secondAttribute="centerX" id="SZU-1v-GY4"/>
                             <constraint firstItem="PAY-Re-vGh" firstAttribute="leading" secondItem="x8A-Ga-kjb" secondAttribute="leading" id="Xqc-t7-j5L"/>
                             <constraint firstAttribute="trailing" secondItem="PAY-Re-vGh" secondAttribute="trailing" id="bNb-X2-cs1"/>
                             <constraint firstAttribute="trailing" secondItem="FWB-Gi-4jx" secondAttribute="trailing" id="eeA-T9-gcD"/>
-                            <constraint firstItem="FWB-Gi-4jx" firstAttribute="top" secondItem="GTK-jK-IZV" secondAttribute="bottom" id="uPq-Zm-WRe"/>
+                            <constraint firstAttribute="trailing" secondItem="geB-hg-5dH" secondAttribute="trailing" id="ezk-lk-CVR"/>
                             <constraint firstItem="qb7-lR-u8d" firstAttribute="top" secondItem="FWB-Gi-4jx" secondAttribute="bottom" id="xeO-fa-GrT"/>
+                            <constraint firstItem="geB-hg-5dH" firstAttribute="leading" secondItem="x8A-Ga-kjb" secondAttribute="leading" id="zZR-R3-663"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="progressBar" destination="geB-hg-5dH" id="WFM-5l-yx8"/>
                         <outlet property="webView" destination="FWB-Gi-4jx" id="J2i-bM-RlT"/>
                     </connections>
                 </viewController>
@@ -1163,7 +1181,7 @@ Hours</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aYT-vv-QhX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6j5-pb-k0w">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6j5-pb-k0w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1194,8 +1212,8 @@ Hours</string>
         <image name="money5" width="208" height="208"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sca-7N-huW"/>
-        <segue reference="vkx-zZ-DrN"/>
         <segue reference="BBY-u1-RPY"/>
+        <segue reference="lc3-Kn-Un2"/>
+        <segue reference="vkx-zZ-DrN"/>
     </inferredMetricsTieBreakers>
 </document>

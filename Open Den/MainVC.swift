@@ -201,10 +201,6 @@ class ViewController: UIViewController {
                         }
                     }
                 }
-                
-                if restaurantChoice == "Cougar BBQ" {
-                    hoursLbl.text = "Hours unavailable"
-                }
             }
         }
             
@@ -221,10 +217,10 @@ class ViewController: UIViewController {
                     hoursLbl.text = "Closing at \(Int(Today.closeHour)-12)pm"
                 }
             }
-            
-            if restaurantChoice == "Cougar BBQ" {
-                hoursLbl.text = "Hours unavailable"
-            }
+        }
+        
+        if restaurantChoice == "Cougar BBQ" {
+            hoursLbl.text = "Hours unavailable"
         }
     }
 }
