@@ -32,7 +32,8 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
     
     // Load web view
     func loadHomePage() {
-        url = URL(string: "https://home.apu.edu/")
+//        url = URL(string: "https://home.apu.edu/")
+        url = URL(string: "https://den.apu.edu/cas/login?service=https%3A//home.apu.edu/psp/PRODPRT/EMPLOYEE/HRMS/h/%3Ftab%3DDEFAULT")
         webView.loadRequest(URLRequest(url: url))
     }
     
@@ -43,7 +44,45 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
     }
     func webViewDidFinishLoad(_ webView: UIWebView) {
         timeBool = false
+        
+//        // Code found on Stack Overflow at goo.gl/Hclo7T  (Shortened url)
+//        let result = webView.stringByEvaluatingJavaScript(from: "var script = document.createElement('script');" +
+//        "script.type = 'text/javascript';" +
+//        "script.text = \"function myFunction() { " +
+//        "var field = document.getElementById('field_3');" +
+//        "field.value='Calling function - OK';" +
+//        "}\";" +
+//        "document.getElementsByTagName('head')[0].appendChild(script);")!
+//        webView.stringByEvaluatingJavaScript(from: "myFunction();")!
+        
+//        let script = "var script = document.createElement('script');" +
+//                "script.type = 'text/javascript';" +
+//                "script.text = \"function myFunction() { " +
+//            
+//                "var TheTextBox = document.getElementById('username');" +
+//                "TheTextBox.value = \"Hello World\";" +
+//        
+//                "}\";" +
+//                "document.getElementsByTagName('head')[0].appendChild(script);"
+//        webView.stringByEvaluatingJavaScript(from: "myFunction();")!
+        
+        let myUser = "knakamura13"
+        let myPassword = "Suki1suki"
+        
+        let result = webView.stringByEvaluatingJavaScript(from: "var script = document.createElement('script');" +
+            "script.type = 'text/javascript';" +
+            "script.text = \"function myFunction() { " +
+                "var userNameField = document.getElementById('username');" +
+                    "var passwordField = document.getElementById('password');" +
+                    "var loginButton = document.getElementsByName('submit')[0];" +
+                    "userNameField.value='\(myUser)';" +
+                    "passwordField.value='\(myPassword)';" +
+                    "loginButton.click();" +
+                "}\";" +
+                "document.getElementsByTagName('head')[0].appendChild(script);")!
+                webView.stringByEvaluatingJavaScript(from: "myFunction();")!
     }
+    
     func timerCallBack() {
         if timeBool != nil {
             if progressBar.progress >= 1 {
