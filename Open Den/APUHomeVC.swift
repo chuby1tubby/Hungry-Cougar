@@ -43,8 +43,7 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
     func webViewDidFinishLoad(_ webView: UIWebView) {
         // Hide the progress bar
         timeBool = false
-        
-        loginUser(username: usernameStr, password: passwordStr)
+        loginUser(username: usernameStr!, password: passwordStr!)
     }
     
     func loginUser(username: String?, password: String?) {
@@ -55,8 +54,8 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
             "var userNameField = document.getElementById('username');" +
             "var passwordField = document.getElementById('password');" +
             "var loginButton = document.getElementsByName('submit')[0];" +
-            "userNameField.value='\(username)';" +
-            "passwordField.value='\(password)';" +
+            "userNameField.value='\(username!)';" +
+            "passwordField.value='\(password!)';" +
             "loginButton.click();" +
             "}\";" +
             "document.getElementsByTagName('head')[0].appendChild(script);")!
