@@ -20,11 +20,14 @@ var month: Int = 0
 var year: Int = 0
 var todayDate: String? = ""
 
-class DiningPlanVC: UIViewController {
+class DiningPlanVC: UIViewController, UITextFieldDelegate {
 
     // Outlets
     @IBOutlet weak var diningPlanLbl: UILabel!
     @IBOutlet weak var diningPointsLbl: UILabel!
+    @IBOutlet weak var loginView: CustomView!
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
     
     // Constants
     let mealBudgets: [Double] = [1162, 978, 696, 554, 363]
@@ -37,6 +40,31 @@ class DiningPlanVC: UIViewController {
         calculateBalance()
         // Move this line to calculateBalance() ***
             diningPointsLbl.text = "\(currentBalance)"
+        
+        usernameField.delegate = self
+        passwordField.delegate = self
+    }
+    
+    // Jump from usernameField to passwordField, then hide the keyboard
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == usernameField {
+            passwordField.becomeFirstResponder()
+        } else {
+            passwordField.resignFirstResponder()
+        }
+        return true
+    }
+    
+    // Login Action
+    @IBAction func onLoginPressed(_ sender: AnyObject) {
+        usernameStr = usernameField.text
+        passwordStr = passwordField.text
+        loginUser()
+    }
+    
+    // Login function
+    func loginUser() {
+        
     }
     
     func calculateDiningPoints() {
@@ -80,7 +108,6 @@ class DiningPlanVC: UIViewController {
         // Formatter
         let twoDecimalFormatter = NumberFormatter()
         twoDecimalFormatter.minimumFractionDigits = 2
-        
         let balanceNum = NSNumber(value: currentBalance)
         currentBalance = NSString(string: twoDecimalFormatter.string(from: (balanceNum))!).doubleValue
     }
