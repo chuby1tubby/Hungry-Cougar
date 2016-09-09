@@ -43,6 +43,7 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
     func webViewDidFinishLoad(_ webView: UIWebView) {
         // Hide the progress bar
         timeBool = false
+        
         loginUser(username: usernameStr!, password: passwordStr!)
     }
     

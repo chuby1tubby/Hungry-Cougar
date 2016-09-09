@@ -8,7 +8,7 @@
 
 import UIKit
 
-// Variables
+// Global Variables
 var currentBalance = 0.0
 var mealBudget = 0.0
 var weeklyBudget = 0.0
@@ -19,8 +19,15 @@ var day: Int = 0
 var month: Int = 0
 var year: Int = 0
 var todayDate: String? = ""
+var rememberLogin: Bool = false
 
 class DiningPlanVC: UIViewController, UITextFieldDelegate {
+    
+    // Local variables
+    
+    // Constants
+    let mealBudgets: [Double] = [1162, 978, 696, 554, 363]
+    let weeklyBudgets: [Double] = [72.5, 61, 43.5, 35, 22.5]
 
     // Outlets
     @IBOutlet weak var diningPlanLbl: UILabel!
@@ -28,19 +35,35 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var loginView: CustomView!
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    
-    // Constants
-    let mealBudgets: [Double] = [1162, 978, 696, 554, 363]
-    let weeklyBudgets: [Double] = [72.5, 61, 43.5, 35, 22.5]
+    @IBOutlet weak var checkedBoxView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        diningPlanLbl.text = diningPlanChoice
+        setupViews()
+        
+        let prefs = UserDefaults.standard
+       // rememberLogin = prefs.bool(forKey: "userStoredDetails")
+        
         calculateDiningPoints()
         calculateBalance()
-        // Move this line to calculateBalance() ***
-            diningPointsLbl.text = "\(currentBalance)"
         
+        // If both name and pass are stored in UserDefaults
+        if let name = prefs.string(forKey: "username"){
+            if let pass = prefs.string(forKey: "password") {
+                print("\n\n\n TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST \n\n\n")
+                print("The name:")
+                print(name)
+                print("The pass:")
+                print(pass)
+                print("\n\n\n TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST \n\n\n")
+                usernameField.text = name
+                passwordField.text = pass
+            }
+        }
+    }
+    
+    func setupViews() {
+        diningPlanLbl.text = diningPlanChoice
         usernameField.delegate = self
         passwordField.delegate = self
     }
@@ -55,17 +78,34 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
         return true
     }
     
-    // Login Action
+    // Actions
+    // Login Button Action
+    let defaults = UserDefaults.standard
     @IBAction func onLoginPressed(_ sender: AnyObject) {
         usernameStr = usernameField.text
         passwordStr = passwordField.text
-        loginUser()
+        //if rememberLogin == true {
+            defaults.set(usernameStr!, forKey: "username")
+            defaults.set(passwordStr!, forKey: "password")
+            //defaults.set(true, forKey: "userSavedDetails")
+        //}
     }
     
-    // Login function
-    func loginUser() {
-        
+    // Check-box Button Action
+    @IBAction func onCheckBoxPressed(_ sender: AnyObject) {
+        if checkedBoxView.isHidden {
+            checkedBoxView.isHidden = false
+            //rememberLogin = true
+        } else {
+            checkedBoxView.isHidden = true
+            //rememberLogin = false
+        }
     }
+    
+    
+    
+    
+    
     
     func calculateDiningPoints() {
         switch diningPlanChoice {
@@ -96,11 +136,11 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
         if schoolWeek == -1 {
             currentBalance = 0.0
         }
-        // Balance for mid-semester break
+            // Balance for mid-semester break
         else if schoolWeek == -2 {
             currentBalance = mealBudget - ((mealBudget/112)*7*9) + (mealBudget/112) + dailyBudget
         }
-        // Balance for rest of the year
+            // Balance for rest of the year
         else {
             currentBalance = mealBudget - (weeklyBudget * Double(schoolWeek)) - (dailyBudget * Double(weekday)) + dailyBudget
         }
@@ -110,6 +150,9 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
         twoDecimalFormatter.minimumFractionDigits = 2
         let balanceNum = NSNumber(value: currentBalance)
         currentBalance = NSString(string: twoDecimalFormatter.string(from: (balanceNum))!).doubleValue
+        
+        // Update label
+        diningPointsLbl.text = "\(currentBalance)"
     }
     
     // Set the date manualy to test the calculator
