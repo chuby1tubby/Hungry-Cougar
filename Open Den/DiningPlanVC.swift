@@ -19,7 +19,6 @@ var day: Int = 0
 var month: Int = 0
 var year: Int = 0
 var todayDate: String? = ""
-var rememberLoginBool: Bool = false
 
 class DiningPlanVC: UIViewController, UITextFieldDelegate {
     
@@ -53,10 +52,8 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
         passwordField.delegate = self
         
         let prefs = UserDefaults.standard
-        rememberLoginBool = prefs.bool(forKey: "userStoredDetails")
-
         // If both name and pass are stored in UserDefaults
-        if let name = prefs.string(forKey: "username"){
+        if let name = prefs.string(forKey: "username") {
             if let pass = prefs.string(forKey: "password") {
                 usernameField.text = name
                 passwordField.text = pass
@@ -85,11 +82,12 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
     @IBAction func onLoginPressed(_ sender: AnyObject) {
         usernameStr = usernameField.text
         passwordStr = passwordField.text
-        if rememberLoginBool == true {
+        if greyView.isHidden == false {
             defaults.set(usernameStr!, forKey: "username")
             defaults.set(passwordStr!, forKey: "password")
             defaults.set(true, forKey: "userSavedDetails")
-        } else {
+        }
+        else {
             defaults.set(nil, forKey: "username")
             defaults.set(nil, forKey: "password")
             defaults.set(false, forKey: "userSavedDetails")
@@ -100,10 +98,12 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
     @IBAction func onCheckBoxPressed(_ sender: AnyObject) {
         if greyView.isHidden {
             greyView.isHidden = false
-            rememberLoginBool = true
         } else {
             greyView.isHidden = true
-            rememberLoginBool = false
+            // Erase login details
+            defaults.set(nil, forKey: "username")
+            defaults.set(nil, forKey: "password")
+            defaults.set(false, forKey: "userSavedDetails")
         }
     }
     
