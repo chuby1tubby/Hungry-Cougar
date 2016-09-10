@@ -35,7 +35,8 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var loginView: CustomView!
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var checkedBoxView: UIView!
+    @IBOutlet weak var whiteCheckBoxView: UIView!
+    @IBOutlet weak var greyView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +46,8 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
     }
     
     func setupViews() {
+        whiteCheckBoxView.layer.cornerRadius = 7
+        greyView.layer.cornerRadius = 5
         diningPlanLbl.text = diningPlanChoice
         usernameField.delegate = self
         passwordField.delegate = self
@@ -57,12 +60,12 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
             if let pass = prefs.string(forKey: "password") {
                 usernameField.text = name
                 passwordField.text = pass
-                checkedBoxView.isHidden = false
+                greyView.isHidden = false
             } else {
-                checkedBoxView.isHidden = true
+                greyView.isHidden = true
             }
         } else {
-            checkedBoxView.isHidden = true
+            greyView.isHidden = true
         }
     }
     
@@ -95,11 +98,11 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
     
     // Check-box Button Action
     @IBAction func onCheckBoxPressed(_ sender: AnyObject) {
-        if checkedBoxView.isHidden {
-            checkedBoxView.isHidden = false
+        if greyView.isHidden {
+            greyView.isHidden = false
             rememberLoginBool = true
         } else {
-            checkedBoxView.isHidden = true
+            greyView.isHidden = true
             rememberLoginBool = false
         }
     }

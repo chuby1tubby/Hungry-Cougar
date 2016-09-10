@@ -22,13 +22,13 @@
                         <viewControllerLayoutGuide type="bottom" id="aD4-LC-AFc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XXd-Rs-Bxe">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ED6-DO-6u5">
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="9Xk-cF-Dda">
-                                        <frame key="frameInset" minY="130" width="730" height="547"/>
+                                        <frame key="frameInset" minY="130" width="598" height="448"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGM-AU-Dwd">
                                                 <subviews>
@@ -156,7 +156,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDV-st-NNq">
@@ -321,7 +321,7 @@ Menu</string>
                         <viewControllerLayoutGuide type="bottom" id="JuP-Au-9Zg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rn2-vj-Uwt">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAl-IA-0Eb">
@@ -370,7 +370,7 @@ Menu</string>
                         <viewControllerLayoutGuide type="bottom" id="ANr-Qj-hX4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="45v-He-wQP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VCL-Kd-Lg1">
@@ -380,10 +380,10 @@ Menu</string>
                                         <color key="sectionIndexBackgroundColor" red="0.5888887048" green="0.15054461359999999" blue="0.13530883190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DiningPlans" rowHeight="123" id="VIG-Hx-wee" customClass="DiningPlanCell" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="92" width="335" height="123"/>
+                                                <rect key="frame" x="0.0" y="92" width="280" height="123"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VIG-Hx-wee" id="pRh-R0-KIy">
-                                                    <frame key="frameInset" width="335" height="123"/>
+                                                    <frame key="frameInset" width="280" height="123"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="money5" translatesAutoresizingMaskIntoConstraints="NO" id="9cq-Ir-z0e">
@@ -454,7 +454,7 @@ Menu</string>
                         <viewControllerLayoutGuide type="bottom" id="xRM-tP-B3d"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uMD-V8-z0P">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcw-QY-ZdD">
@@ -470,34 +470,34 @@ Menu</string>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIV-Xz-5hs" customClass="CustomView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1050.50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2au-c1-jMq" customClass="DontCutMe" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dbH-ku-6ET">
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Dining Points:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="8xD-xO-ok1" customClass="DontCutMe" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="22"/>
+                                                        <color key="textColor" red="0.60058677199999999" green="0.17196440700000001" blue="0.17363679409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1050.50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2au-c1-jMq" customClass="DontCutMe" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="115" id="Fdg-da-rlC"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="33"/>
+                                                        <color key="textColor" red="0.60058677199999999" green="0.17196440700000001" blue="0.17363679409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="120" id="Gpl-a0-Dwb"/>
+                                                    <constraint firstItem="2au-c1-jMq" firstAttribute="centerY" secondItem="8xD-xO-ok1" secondAttribute="centerY" id="9u9-an-XO4"/>
+                                                    <constraint firstAttribute="height" constant="40" id="gK0-mq-vQy"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="33"/>
-                                                <color key="textColor" red="0.60058677199999999" green="0.17196440700000001" blue="0.17363679409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Today's Dining Points:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8xD-xO-ok1">
-                                                <frame key="frameInset" minX="8" minY="17" width="214" height="36"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="214" id="iLg-iu-V7h"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="22"/>
-                                                <color key="textColor" red="0.60058677199999999" green="0.17196440700000001" blue="0.17363679409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.89554929733276367" green="0.80525416135787964" blue="0.80302643775939941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="8xD-xO-ok1" firstAttribute="centerY" secondItem="MIV-Xz-5hs" secondAttribute="centerY" id="JeR-5B-dWu"/>
-                                            <constraint firstItem="8xD-xO-ok1" firstAttribute="leading" secondItem="MIV-Xz-5hs" secondAttribute="leadingMargin" id="YOQ-8i-I1u"/>
-                                            <constraint firstItem="2au-c1-jMq" firstAttribute="trailing" secondItem="MIV-Xz-5hs" secondAttribute="trailingMargin" id="cpf-FE-laj"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="8xD-xO-ok1" secondAttribute="bottom" id="deB-Wd-pFc"/>
-                                            <constraint firstAttribute="bottomMargin" secondItem="2au-c1-jMq" secondAttribute="bottom" id="ekp-pq-VWD"/>
+                                            <constraint firstItem="dbH-ku-6ET" firstAttribute="leading" secondItem="MIV-Xz-5hs" secondAttribute="leading" constant="8" id="KPH-Qu-nz9"/>
                                             <constraint firstAttribute="height" constant="71" id="g8D-LT-HNa"/>
-                                            <constraint firstItem="2au-c1-jMq" firstAttribute="top" secondItem="MIV-Xz-5hs" secondAttribute="topMargin" id="oPs-xa-krt"/>
-                                            <constraint firstItem="8xD-xO-ok1" firstAttribute="top" secondItem="MIV-Xz-5hs" secondAttribute="topMargin" id="qcQ-L9-8VV"/>
+                                            <constraint firstAttribute="trailing" secondItem="dbH-ku-6ET" secondAttribute="trailing" constant="8" id="jiO-qB-2dY"/>
+                                            <constraint firstItem="dbH-ku-6ET" firstAttribute="centerY" secondItem="MIV-Xz-5hs" secondAttribute="centerY" id="pEY-53-eIu"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzj-bZ-50I">
@@ -510,7 +510,7 @@ Menu</string>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jsm-Xs-5Qj" customClass="CustomView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRe-de-k6r">
-                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="OVJ-Tp-I3z"/>
                                                 </constraints>
@@ -578,41 +578,43 @@ Menu</string>
                                             <segue destination="WpJ-IH-Vbs" kind="show" id="6OB-Y2-cW2"/>
                                         </connections>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="c1K-5u-5CT">
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="A91-NZ-orQ">
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember me" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iey-fs-Vx7">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember me" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21q-ig-Cqp">
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="62" id="31t-Hg-Mg7"/>
-                                                    <constraint firstAttribute="height" constant="10" id="TQ1-by-9l7"/>
+                                                    <constraint firstAttribute="width" constant="69" id="8SG-yy-eSn"/>
+                                                    <constraint firstAttribute="height" constant="14" id="uYm-sc-4JV"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="9"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GOl-sp-ebG" userLabel="whiteBox">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYG-5s-PRg">
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nq0-U5-cXZ" userLabel="checkedBox">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPB-Mj-5hj">
                                                         <color key="backgroundColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="10" id="H63-PR-VWp"/>
+                                                            <constraint firstAttribute="height" constant="10" id="tOe-L8-6NP"/>
+                                                        </constraints>
                                                     </view>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pV4-V6-cOe" userLabel="checkedButton">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mh7-fd-rob">
                                                         <connections>
-                                                            <action selector="onCheckBoxPressed:" destination="Ih7-xX-Njt" eventType="touchUpInside" id="Hbn-DO-AuB"/>
+                                                            <action selector="onCheckBoxPressed:" destination="Ih7-xX-Njt" eventType="touchUpInside" id="tyO-uE-Oeo"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" secondItem="GOl-sp-ebG" secondAttribute="height" multiplier="1:1" id="4fp-24-yzT"/>
-                                                    <constraint firstAttribute="height" constant="10" id="5pG-Z2-hAw"/>
-                                                    <constraint firstAttribute="width" constant="10" id="LZQ-9q-kiA"/>
-                                                    <constraint firstItem="pV4-V6-cOe" firstAttribute="top" secondItem="GOl-sp-ebG" secondAttribute="top" id="OXy-wT-tfL"/>
-                                                    <constraint firstAttribute="bottom" secondItem="pV4-V6-cOe" secondAttribute="bottom" id="YR7-HH-EYn"/>
-                                                    <constraint firstItem="Nq0-U5-cXZ" firstAttribute="leading" secondItem="GOl-sp-ebG" secondAttribute="leading" constant="2" id="Zau-JT-Boq"/>
-                                                    <constraint firstAttribute="trailing" secondItem="pV4-V6-cOe" secondAttribute="trailing" id="hJZ-TZ-YCO"/>
-                                                    <constraint firstItem="pV4-V6-cOe" firstAttribute="leading" secondItem="GOl-sp-ebG" secondAttribute="leading" id="l5o-II-vBQ"/>
-                                                    <constraint firstAttribute="bottom" secondItem="Nq0-U5-cXZ" secondAttribute="bottom" constant="2" id="p6g-6D-Htc"/>
-                                                    <constraint firstAttribute="trailing" secondItem="Nq0-U5-cXZ" secondAttribute="trailing" constant="2" id="tCn-xt-VsM"/>
-                                                    <constraint firstItem="Nq0-U5-cXZ" firstAttribute="top" secondItem="GOl-sp-ebG" secondAttribute="top" constant="2" id="yRs-eu-M5g"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Mh7-fd-rob" secondAttribute="trailing" id="E0r-P6-Sak"/>
+                                                    <constraint firstAttribute="width" constant="14" id="ObE-U5-1OL"/>
+                                                    <constraint firstItem="hPB-Mj-5hj" firstAttribute="centerY" secondItem="nYG-5s-PRg" secondAttribute="centerY" id="Zzc-uR-p9d"/>
+                                                    <constraint firstItem="Mh7-fd-rob" firstAttribute="top" secondItem="nYG-5s-PRg" secondAttribute="top" id="d5r-rS-8eO"/>
+                                                    <constraint firstAttribute="height" constant="14" id="jm4-Tc-jQx"/>
+                                                    <constraint firstItem="hPB-Mj-5hj" firstAttribute="centerX" secondItem="nYG-5s-PRg" secondAttribute="centerX" id="rBO-ph-TQD"/>
+                                                    <constraint firstItem="Mh7-fd-rob" firstAttribute="leading" secondItem="nYG-5s-PRg" secondAttribute="leading" id="svk-9K-h3F"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Mh7-fd-rob" secondAttribute="bottom" id="uEW-4V-csl"/>
+                                                    <constraint firstAttribute="width" secondItem="nYG-5s-PRg" secondAttribute="height" multiplier="1:1" id="zHO-Rc-hMi"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -621,7 +623,6 @@ Menu</string>
                                 <color key="backgroundColor" red="0.58823529411764708" green="0.14901960784313725" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="dBO-QT-8w1" firstAttribute="centerX" secondItem="mcw-QY-ZdD" secondAttribute="centerX" id="0sX-wg-yCm"/>
-                                    <constraint firstItem="c1K-5u-5CT" firstAttribute="top" secondItem="Jsm-Xs-5Qj" secondAttribute="bottom" constant="18" id="2Zb-uq-dxT"/>
                                     <constraint firstItem="WHX-RX-sIg" firstAttribute="top" secondItem="mcw-QY-ZdD" secondAttribute="top" constant="100" id="5xu-iq-yRs"/>
                                     <constraint firstItem="MIV-Xz-5hs" firstAttribute="leading" secondItem="mcw-QY-ZdD" secondAttribute="leadingMargin" id="64o-Oe-qra"/>
                                     <constraint firstItem="Jsm-Xs-5Qj" firstAttribute="top" secondItem="MIV-Xz-5hs" secondAttribute="bottom" constant="40" id="GuN-ag-Lsb"/>
@@ -629,13 +630,14 @@ Menu</string>
                                     <constraint firstItem="dBO-QT-8w1" firstAttribute="top" secondItem="Jsm-Xs-5Qj" secondAttribute="bottom" constant="8" id="NUO-Sl-BhP"/>
                                     <constraint firstAttribute="trailingMargin" secondItem="WHX-RX-sIg" secondAttribute="trailing" id="R52-Ph-2pU"/>
                                     <constraint firstItem="WHX-RX-sIg" firstAttribute="centerX" secondItem="mcw-QY-ZdD" secondAttribute="centerX" id="Tdn-64-C2f"/>
+                                    <constraint firstItem="A91-NZ-orQ" firstAttribute="centerY" secondItem="dBO-QT-8w1" secondAttribute="centerY" id="e1g-ii-hJz"/>
                                     <constraint firstItem="Jsm-Xs-5Qj" firstAttribute="trailing" secondItem="mcw-QY-ZdD" secondAttribute="trailingMargin" id="fwU-tp-jwY"/>
                                     <constraint firstItem="MIV-Xz-5hs" firstAttribute="centerX" secondItem="mcw-QY-ZdD" secondAttribute="centerX" id="gy9-aL-ZPB"/>
+                                    <constraint firstItem="A91-NZ-orQ" firstAttribute="trailing" secondItem="mcw-QY-ZdD" secondAttribute="trailingMargin" id="hkQ-Ra-UuZ"/>
                                     <constraint firstItem="Jsm-Xs-5Qj" firstAttribute="leading" secondItem="mcw-QY-ZdD" secondAttribute="leadingMargin" id="hvF-K5-50i"/>
                                     <constraint firstItem="MIV-Xz-5hs" firstAttribute="trailing" secondItem="mcw-QY-ZdD" secondAttribute="trailingMargin" id="lB2-iP-ZR0"/>
                                     <constraint firstItem="Jsm-Xs-5Qj" firstAttribute="centerX" secondItem="mcw-QY-ZdD" secondAttribute="centerX" id="mAt-Vr-K2P"/>
                                     <constraint firstItem="MIV-Xz-5hs" firstAttribute="centerY" secondItem="mcw-QY-ZdD" secondAttribute="centerY" constant="-30" id="mJZ-1U-OU5"/>
-                                    <constraint firstItem="c1K-5u-5CT" firstAttribute="trailing" secondItem="mcw-QY-ZdD" secondAttribute="trailingMargin" id="ybu-0L-1Tw"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -648,17 +650,18 @@ Menu</string>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="checkedBoxView" destination="Nq0-U5-cXZ" id="a8F-d8-Tza"/>
                         <outlet property="diningPlanLbl" destination="WHX-RX-sIg" id="5sG-g3-9Li"/>
                         <outlet property="diningPointsLbl" destination="2au-c1-jMq" id="1zC-pl-WGn"/>
+                        <outlet property="greyView" destination="hPB-Mj-5hj" id="vqs-TL-mlU"/>
                         <outlet property="loginView" destination="Jsm-Xs-5Qj" id="1Da-sX-8FN"/>
                         <outlet property="passwordField" destination="fhr-kw-cKe" id="g2U-cB-gwU"/>
                         <outlet property="usernameField" destination="6nf-Uf-JTb" id="xIf-JK-MID"/>
+                        <outlet property="whiteCheckBoxView" destination="nYG-5s-PRg" id="43j-4t-udx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="675-BR-Eho" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1096.8" y="1164.4677661169417"/>
+            <point key="canvasLocation" x="1095" y="1164.0845070422536"/>
         </scene>
         <!--APU Home-->
         <scene sceneID="UrV-2L-Kb6">
@@ -669,7 +672,7 @@ Menu</string>
                         <viewControllerLayoutGuide type="bottom" id="qb7-lR-u8d"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="x8A-Ga-kjb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAY-Re-vGh">
@@ -720,7 +723,7 @@ Menu</string>
                         <viewControllerLayoutGuide type="bottom" id="CNb-6g-Xe1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GCE-9l-gTB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="swx-Ps-VMF">
@@ -986,7 +989,7 @@ Menu</string>
                         <viewControllerLayoutGuide type="bottom" id="fOc-zZ-41e"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ahr-VJ-MPq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rh0-tf-fVg">
@@ -1271,7 +1274,7 @@ Menu</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aYT-vv-QhX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6j5-pb-k0w">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6j5-pb-k0w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
