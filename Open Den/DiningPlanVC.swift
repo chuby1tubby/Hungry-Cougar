@@ -40,7 +40,6 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
-        
         calculateDiningPoints()
         calculateBalance()
     }
@@ -107,9 +106,7 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
     
     
     
-    
-    
-    
+    // Dining points functions
     func calculateDiningPoints() {
         switch diningPlanChoice {
         case "No Worries":
