@@ -175,8 +175,8 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
         month = components.month!
         year = components.year!
         
-        // Optional function-call for testing
-//        manuallySetDay(mm: 8, dd: 28, yyyy: 2016, wday: 0)
+        // Optional function for testing a day
+//        manuallySetDay(9, dd: 10, yyyy: 2016, wday: 7)
         
         todayDate = String("\(month).\(day).\(year-2000)")
         

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Foundation
+//import Foundation
 
 public var restaurantChoice = ""
 
@@ -169,8 +169,10 @@ class ViewController: UIViewController {
                 // Calculate hours until open only if store is opening soon
                 if hoursUntilOpen <= 0 {
                     hoursLbl.text = "Opening in \(minutesLeft) minutes"
-                } else {
-                    if currentHour < 24 && currentHour != 0 {  // If not yet midnight
+                }
+                
+                else {
+                    if currentHour < Today.openHour {    // Between midnight and open time
                         if Today.openHour == 1 {
                             hoursLbl.text = "Opening at 1am"
                         } else {
@@ -180,14 +182,18 @@ class ViewController: UIViewController {
                                 hoursLbl.text = "Opening at \(Int(Today.openHour)-12)pm"
                             }
                         }
-                    } else if currentHour == 24 || currentHour >= 0 {   // *** PRETTY SURE THIS LOGIC IS INCORRECT ***
+                    } else if currentHour > Today.closeHour {   // *** PRETTY SURE THIS LOGIC IS INCORRECT ***
                         if Tomorrow.openHour == 1 {
                             hoursLbl.text = "Opening at 1am"
                         } else {
-                            if Tomorrow.openHour <= 12 {
+                            if Tomorrow.openHour < 12 {
                                 hoursLbl.text = "Opening at \(Int(Tomorrow.openHour))am"
-                            } else if Today.openHour > 12 {
-                                hoursLbl.text = "Opening at \(Int(Tomorrow.openHour)-12)pm"      // I switched all Tomorrows with Todays
+                            } else if Today.openHour >= 12 {
+                                if Today.openHour == 12 {
+                                    hoursLbl.text = "Opening at 12pm"
+                                } else {
+                                    hoursLbl.text = "Opening at \(Int(Tomorrow.openHour)-12)pm"
+                                }
                             }
                         }
                     }

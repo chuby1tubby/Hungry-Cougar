@@ -61,22 +61,6 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
             "}\";" +
             "document.getElementsByTagName('head')[0].appendChild(script);")!
         webView.stringByEvaluatingJavaScript(from: "myFunction();")!
-        
-        //        let result2 = webView.stringByEvaluatingJavaScript(from: "var script = document.createElement('script');" +
-        //            "script.type = 'text/javascript';" +
-        //            "script.text = \"function findFirstDescendant(parent, tagname) { " +
-        //
-        //            "parent = document.getElementById(parent);" +
-        //            "var descendants = parent.getElementsByTagName(tagname);" +
-        //            "if (descendants.length)" +
-        //            "return descendats[0];" +
-        //            "return null;" +
-        //
-        //            "}\";" +
-        //
-        //            "document.getElementsByTagName('head')[0].appendChild(script);")!
-        //        webView.stringByEvaluatingJavaScript(from: "findFirstDescendant(\"ptpgltbody_ADMN_APU_ONE_CARD_PAGELET_HMPG\", \"   \");")!
-
     }
     
     // Load progress bar
