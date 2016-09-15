@@ -379,11 +379,11 @@ Menu</string>
                                         <color key="backgroundColor" red="0.5888599753" green="0.1470975876" blue="0.13562121990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="sectionIndexBackgroundColor" red="0.5888887048" green="0.15054461359999999" blue="0.13530883190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DiningPlans" rowHeight="123" id="VIG-Hx-wee" customClass="DiningPlanCell" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="92" width="335" height="123"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DiningPlans" rowHeight="123" id="VIG-Hx-wee" customClass="DiningPlanCell" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="92" width="1000" height="123"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VIG-Hx-wee" id="pRh-R0-KIy">
-                                                    <frame key="frameInset" width="335" height="123"/>
+                                                    <frame key="frameInset" width="1000" height="123"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="money5" translatesAutoresizingMaskIntoConstraints="NO" id="9cq-Ir-z0e">
