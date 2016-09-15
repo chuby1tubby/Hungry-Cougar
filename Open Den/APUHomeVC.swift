@@ -11,6 +11,9 @@ import WebKit
 
 var usernameStr: String? = ""
 var passwordStr: String? = ""
+var shouldRepeat: Bool = true
+var didReceievePointsVal: Bool = false
+var myFinalDouble: Double = 0.0
 
 class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebViewDelegate {
     
@@ -22,14 +25,19 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
     var url: URL!
     var timeBool: Bool!
     var timer: Timer!
-
+    var timer2: Timer!
+    var regexConverter: String = ""
+    
     // Main functions
     override func viewDidLoad() {
         super.viewDidLoad()
         webView.delegate = self
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         progressBar.progress = 0.0
+        shouldRepeat = true
+        didReceievePointsVal = false
         loadHomePage()
     }
     
@@ -45,13 +53,32 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
         timeBool = false
         
         loginUser(username: usernameStr!, password: passwordStr!)
+        
+//        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(APUHomeVC.getHTML), userInfo: nil, repeats: shouldRepeat)
+        
+        // Magical pause function           *should not repeat, but it does anyway*
+        let when = DispatchTime.now() + 1
+        DispatchQueue.main.asyncAfter(deadline: when){
+            if shouldRepeat == true {
+                self.getHTML()
+            }
+        }
+    }
+    
+    func getHTML(){
+        //Here is the line of code you need to run after it is logged in.
+        let html = webView.stringByEvaluatingJavaScript(from: "document.documentElement.innerHTML")
+        if let page = html {
+            //calls the parse function
+            parseHTML(html: page)
+        }
     }
     
     func loginUser(username: String?, password: String?) {
         // Run JavaScript script to automatically login the user
         let result1 = webView.stringByEvaluatingJavaScript(from: "var script = document.createElement('script');" +
             "script.type = 'text/javascript';" +
-            "script.text = \"function myFunction() { " +
+            "script.text = \"function insertLoginDetails() { " +
             "var userNameField = document.getElementById('username');" +
             "var passwordField = document.getElementById('password');" +
             "var loginButton = document.getElementsByName('submit')[0];" +
@@ -60,22 +87,22 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
             "loginButton.click();" +
             "}\";" +
             "document.getElementsByTagName('head')[0].appendChild(script);")!
-        webView.stringByEvaluatingJavaScript(from: "myFunction();")!
+        webView.stringByEvaluatingJavaScript(from: "insertLoginDetails();")!
     }
     
     // Load progress bar
     func webViewDidStartLoad(_ webView: UIWebView) {
         timeBool = false
-        timer = Timer.scheduledTimer(timeInterval: 0.015, target: self, selector: #selector(APUHomeVC.timerCallBack), userInfo: nil, repeats: true)
+        timer2 = Timer.scheduledTimer(timeInterval: 0.015, target: self, selector: #selector(APUHomeVC.progressUpdate), userInfo: nil, repeats: true)
     }
     
     // Estimate progress for progress bar
-    func timerCallBack() {
+    func progressUpdate() {
         if timeBool != nil {
             if progressBar.progress >= 1 {
                 progressBar.isHidden = true
-                timer.invalidate()
                 progressBar.progress = 1
+                timer2.invalidate()
             } else {
                 progressBar.progress += 0.01
             }
@@ -86,4 +113,71 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
             }
         }
     }
+    
+    // This is the function that you need to call with the string of HTML that you grab
+    // Courtesy of David Bartholemew.
+    var count = 0
+    func parseHTML(html: String) {
+        count += 1
+        print(count)
+        //Parses for the index Of specific location in the HTML
+        let fontString = "font-weight: bold;\">"
+        
+        if let range = html.range(of: fontString) {
+            let lo = html.index((range.lowerBound), offsetBy: 20)
+            let hi = html.index((range.lowerBound), offsetBy: 27)
+            let subRange = lo ..< hi
+            
+            // Access the string by the range.
+            let substring = html[subRange]
+            
+            //Converts the number to a double
+            let str = substring
+            let numArray: [Character] = ["0","1","2","3","4","5","6","7","8","9","."]
+            let symbolsArray: [Character] = ["$", ",",]
+            var finalNumArray: [Character] = []
+            
+            for char in str.characters {
+                if numArray.contains(char) {
+                    finalNumArray.append(char)
+                } else if symbolsArray.contains(char) {
+                    // Do nothing
+                } else {
+                    break
+                }
+            }
+            
+            //Checks to see if it is N/A or a number then converts it to a double
+            var newString: String = ""
+            if str.contains("N/A") {
+                myFinalDouble = 0.0
+                shouldRepeat = false
+                didReceievePointsVal = true
+                if let navController = self.navigationController {
+                    navController.popViewController(animated: true)
+                }
+            } else {
+                for char in finalNumArray {
+                    newString.append(char)
+                }
+                myFinalDouble = Double(newString)!
+                //Instead of print, add this to a global variable or something.
+                print("\n\n\n TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST \n\n\n")
+                print(myFinalDouble)
+                print("\n\n\n TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST \n\n\n")
+                shouldRepeat = false
+                didReceievePointsVal = true
+                if let navController = self.navigationController {
+                    navController.popViewController(animated: true)
+                }
+            }
+        }
+    }
 }
+
+extension String {
+    func index(of string: String) -> String.Index? {
+        return range(of: string)?.lowerBound
+    }
+}
+

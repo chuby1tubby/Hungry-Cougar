@@ -32,10 +32,17 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var diningPlanLbl: UILabel!
     @IBOutlet weak var diningPointsLbl: UILabel!
     @IBOutlet weak var loginView: CustomView!
+    @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var whiteSquareView: UIView!
+    @IBOutlet weak var rememberLbl: UILabel!
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var whiteCheckBoxView: UIView!
     @IBOutlet weak var greyView: UIView!
+    @IBOutlet weak var usersDiningPointsView: CustomView!
+    @IBOutlet weak var usersDiningPointsLbl: DontCutMe!
+    @IBOutlet weak var refreshImg: UIImageView!
+    @IBOutlet weak var refreshBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +51,27 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
         calculateBalance()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        if didReceievePointsVal == true {
+            usersDiningPointsView.isHidden = false
+            refreshImg.isHidden = false
+            refreshBtn.isHidden = false
+            loginView.isHidden = true
+            loginBtn.isHidden = true
+            rememberLbl.isHidden = true
+            whiteSquareView.isHidden = true
+            usersDiningPointsLbl.text = "\(myFinalDouble)"
+        }
+    }
+    
     func setupViews() {
+        usersDiningPointsView.isHidden = true
+        refreshImg.isHidden = true
+        refreshBtn.isHidden = true
+        loginView.isHidden = false
+        loginBtn.isHidden = false
+        rememberLbl.isHidden = false
+        loginView.isHidden = false
         whiteCheckBoxView.layer.cornerRadius = 7
         greyView.layer.cornerRadius = 5
         diningPlanLbl.text = diningPlanChoice
@@ -80,6 +107,10 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
     // Login Button Action
     let defaults = UserDefaults.standard
     @IBAction func onLoginPressed(_ sender: AnyObject) {
+        loginActionFunc()
+    }
+    
+    func loginActionFunc() {
         usernameStr = usernameField.text
         passwordStr = passwordField.text
         if greyView.isHidden == false {
@@ -107,7 +138,22 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
         }
     }
     
+    @IBAction func onRefreshBtnPressed(_ sender: AnyObject) {
+        let prefs = UserDefaults.standard
+        if let name = prefs.string(forKey: "username") {
+            if let pass = prefs.string(forKey: "password") {
+                usernameStr = name
+                passwordStr = pass
+            }
+        }
+    }
     
+    // Hide keyboard on background tap
+    @IBAction func userTappedBackground(sender: AnyObject) {
+        view.endEditing(true)
+        usernameField.resignFirstResponder()
+        passwordField.resignFirstResponder()
+    }
     
     // Dining points functions
     func calculateDiningPoints() {
