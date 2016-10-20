@@ -15,9 +15,7 @@ class ViewController: UIViewController {
     // Base values
     var currentHour: Double = 0
     var currentMinute: Int = 0
-    
     var storeIsOpen: Bool = false
-    
     var hoursUntilOpen: Double = 0
     var hoursUntilClose: Double = 0
     var minutesLeft: Int = 0
@@ -39,6 +37,16 @@ class ViewController: UIViewController {
         loadCurrentDateTime()
     }
     
+    // Set the date manualy to test the calculator
+    func manuallySetDay(_ mm: Int, dd: Int, yyyy: Int, wday: Int, hr: Int, min: Int) {
+        month = mm
+        day = dd
+        year = yyyy
+        weekday = wday
+        hour = hr
+        minute = min
+    }
+    
     func loadCurrentDateTime() {
         let date = Date()
         let calendar = Calendar.current
@@ -46,6 +54,10 @@ class ViewController: UIViewController {
         let weekday = components.weekday
         let hour = components.hour
         let minute = components.minute
+        
+        // Manually set current date and time
+//        manuallySetDay(9, dd: 17, yyyy: 2016, wday: 7, hr: 17, min: 23)
+        
         currentHour = Double(hour!)
         currentMinute = minute!
         
@@ -182,7 +194,7 @@ class ViewController: UIViewController {
                                 hoursLbl.text = "Opening at \(Int(Today.openHour)-12)pm"
                             }
                         }
-                    } else if currentHour > Today.closeHour {   // *** PRETTY SURE THIS LOGIC IS INCORRECT ***
+                    } else if currentHour >= Today.closeHour {   // *** PRETTY SURE THIS LOGIC IS INCORRECT ***
                         if Tomorrow.openHour == 1 {
                             hoursLbl.text = "Opening at 1am"
                         } else {
@@ -227,6 +239,8 @@ class ViewController: UIViewController {
         
         if restaurantChoice == "Cougar BBQ" {
             hoursLbl.text = "Hours unavailable"
+        } else if restaurantChoice == "The Den" {
+            hoursLbl.text = "Closed for renovation"
         }
     }
 }

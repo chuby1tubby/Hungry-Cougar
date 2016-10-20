@@ -18,6 +18,7 @@ class DiningPointsVC: UIViewController, UITableViewDataSource, UITableViewDelega
     
     // Variables
     var img: UIImage!
+    var txt: String!
     var diningTitles = ["No Worries", "We've Got You Covered", "Weekend Away", "Forgot To Cook", "Grab And Go"]
     var diningPlanImages = [#imageLiteral(resourceName: "money5"), #imageLiteral(resourceName: "money4"), #imageLiteral(resourceName: "money3"), #imageLiteral(resourceName: "money2"), #imageLiteral(resourceName: "money1")]
     
@@ -35,7 +36,8 @@ class DiningPointsVC: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "DiningPlans") as? DiningPlanCell {
             img = diningPlanImages[indexPath.row]
-            cell.configureCell(img, text: diningTitles[indexPath.row])
+            txt = diningTitles[indexPath.row]
+            cell.configureCell(img, text: txt)
             return cell
         } else {
             return DiningPlanCell()

@@ -14,6 +14,8 @@ var mealBudget = 0.0
 var weeklyBudget = 0.0
 var dailyBudget = 0.0
 var schoolWeek: Int = 0
+var minute: Int = 0
+var hour: Int = 0
 var weekday: Int = 0
 var day: Int = 0
 var month: Int = 0
@@ -60,6 +62,13 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
             loginBtn.isHidden = true
             rememberLbl.isHidden = true
             whiteSquareView.isHidden = true
+            
+            // Formatter
+            let twoDecimalFormatter = NumberFormatter()
+            twoDecimalFormatter.minimumFractionDigits = 2
+            let finalDouble = NSNumber(value: myFinalDouble)
+            myFinalDouble = NSString(string: twoDecimalFormatter.string(from: (finalDouble))!).doubleValue
+            
             usersDiningPointsLbl.text = "\(myFinalDouble)"
         }
     }
@@ -155,6 +164,15 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
         passwordField.resignFirstResponder()
     }
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
     // Dining points functions
     func calculateDiningPoints() {
         switch diningPlanChoice {
@@ -222,7 +240,7 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
         year = components.year!
         
         // Optional function for testing a day
-//        manuallySetDay(9, dd: 10, yyyy: 2016, wday: 7)
+//        manuallySetDay(9, dd: 17, yyyy: 2016, wday: 7)
         
         todayDate = String("\(month).\(day).\(year-2000)")
         

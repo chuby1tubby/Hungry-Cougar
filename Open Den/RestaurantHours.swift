@@ -39,12 +39,12 @@ func setHours() {
         Friday.openHour = 6.5; Friday.closeHour = 17.0
         Saturday.openHour = 10; Saturday.closeHour = 16.0
     } else if restaurantChoice == "The Den" {
-        Sunday.openHour = 17; Sunday.closeHour = 24
-        Monday.openHour = 11; Monday.closeHour = 24
-        Tuesday.openHour = 11; Tuesday.closeHour = 24
-        Wednesday.openHour = 11; Wednesday.closeHour = 24
-        Thursday.openHour = 11; Thursday.closeHour = 24
-        Friday.openHour = 11; Friday.closeHour = 19
+        Sunday.openHour = 0; Sunday.closeHour = 0
+        Monday.openHour = 0; Monday.closeHour = 0
+        Tuesday.openHour = 0; Tuesday.closeHour = 0
+        Wednesday.openHour = 0; Wednesday.closeHour = 0
+        Thursday.openHour = 0; Thursday.closeHour = 0
+        Friday.openHour = 0; Friday.closeHour = 0
         Saturday.openHour = 0; Saturday.closeHour = 0
     } else if restaurantChoice == "Cougar BBQ" {  // Hours unavailable
         Sunday.openHour = 0; Sunday.closeHour = 0
@@ -55,11 +55,11 @@ func setHours() {
         Friday.openHour = 0; Friday.closeHour = 0
         Saturday.openHour = 0; Saturday.closeHour = 0
     } else if restaurantChoice == "Cali Grill" {
-        Sunday.openHour = 0; Sunday.closeHour = 0
-        Monday.openHour = 8; Monday.closeHour = 20
-        Tuesday.openHour = 8; Tuesday.closeHour = 20
-        Wednesday.openHour = 8; Wednesday.closeHour = 20
-        Thursday.openHour = 8; Thursday.closeHour = 20
+        Sunday.openHour = 17; Sunday.closeHour = 24
+        Monday.openHour = 8; Monday.closeHour = 24
+        Tuesday.openHour = 8; Tuesday.closeHour = 24
+        Wednesday.openHour = 8; Wednesday.closeHour = 24
+        Thursday.openHour = 8; Thursday.closeHour = 24
         Friday.openHour = 8; Friday.closeHour = 19
         Saturday.openHour = 11; Saturday.closeHour = 19
     } else if restaurantChoice == "Pause 'n Go" {

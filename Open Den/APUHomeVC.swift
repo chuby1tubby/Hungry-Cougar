@@ -54,14 +54,14 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
         
         loginUser(username: usernameStr!, password: passwordStr!)
         
-//        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(APUHomeVC.getHTML), userInfo: nil, repeats: shouldRepeat)
-        
-        // Magical pause function           *should not repeat, but it does anyway*
+        // Magical pause function           
+        // *should not repeat, but it does anyway*
         let when = DispatchTime.now() + 1
         DispatchQueue.main.asyncAfter(deadline: when){
             if shouldRepeat == true {
                 self.getHTML()
             }
+            // new line
         }
     }
     
@@ -76,7 +76,7 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
     
     func loginUser(username: String?, password: String?) {
         // Run JavaScript script to automatically login the user
-        let result1 = webView.stringByEvaluatingJavaScript(from: "var script = document.createElement('script');" +
+        _ = webView.stringByEvaluatingJavaScript(from: "var script = document.createElement('script');" +
             "script.type = 'text/javascript';" +
             "script.text = \"function insertLoginDetails() { " +
             "var userNameField = document.getElementById('username');" +
