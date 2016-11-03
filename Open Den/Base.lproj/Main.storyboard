@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="16B2338c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aYT-vv-QhX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11535.1" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aYT-vv-QhX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11523"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -22,21 +25,23 @@
                         <viewControllerLayoutGuide type="bottom" id="aD4-LC-AFc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XXd-Rs-Bxe">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ED6-DO-6u5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="9Xk-cF-Dda">
-                                        <frame key="frameInset" minY="130" width="598" height="448"/>
+                                        <rect key="frame" x="0.0" y="130" width="730" height="547"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGM-AU-Dwd">
+                                                <rect key="frame" x="0.0" y="0.0" width="730" height="339.5"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Map_white" translatesAutoresizingMaskIntoConstraints="NO" id="kbH-Yb-ZwZ">
-                                                        <frame key="frameInset" width="375" height="200"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                                     </imageView>
                                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iC-dk-YRN">
-                                                        <frame key="frameInset" minX="36" width="150" height="68"/>
+                                                        <rect key="frame" x="36" y="0.0" width="150" height="68"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="68" id="3AG-Jo-JkI"/>
                                                             <constraint firstAttribute="width" secondItem="7iC-dk-YRN" secondAttribute="height" multiplier="31:17" id="5Gq-Bh-su4"/>
@@ -47,7 +52,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUG-I5-eiR">
-                                                        <frame key="frameInset" minX="218" minY="127" width="150" height="68"/>
+                                                        <rect key="frame" x="218" y="127" width="150" height="68"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="68" id="61j-t4-M8F"/>
                                                             <constraint firstAttribute="width" constant="150" id="OI4-Be-jWQ"/>
@@ -71,9 +76,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsw-fj-iVJ">
+                                                <rect key="frame" x="0.0" y="389.5" width="730" height="157.5"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="coin-white" translatesAutoresizingMaskIntoConstraints="NO" id="6PY-hl-SV9">
-                                                        <frame key="frameInset" minX="74" minY="15" width="50" height="50"/>
+                                                        <rect key="frame" x="74" y="15" width="50" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="6PY-hl-SV9" secondAttribute="height" multiplier="1:1" id="1gA-UG-wqL"/>
                                                             <constraint firstAttribute="width" constant="50" id="C7e-Gv-xu6"/>
@@ -81,7 +87,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="My Dining Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJ3-3o-di1">
-                                                        <frame key="frameInset" minX="138" minY="15" width="163" height="50"/>
+                                                        <rect key="frame" x="138" y="15" width="163" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="163" id="4f5-BR-Frm"/>
                                                             <constraint firstAttribute="height" constant="50" id="KM4-pL-eVX"/>
@@ -92,7 +98,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzR-Eu-YPj">
-                                                        <frame key="frameInset" minX="74" minY="15" width="227" height="50"/>
+                                                        <rect key="frame" x="74" y="15" width="227" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="hzR-Eu-YPj" secondAttribute="height" multiplier="227:50" id="0gv-Hp-Cax"/>
                                                             <constraint firstAttribute="width" constant="250" id="6h9-Pz-hvh"/>
@@ -156,12 +162,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDV-st-NNq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jY5-cB-yZV">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
                                         <color key="backgroundColor" red="0.5888599753" green="0.1470975876" blue="0.13562121990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="76" id="PFu-da-pQL"/>
@@ -194,8 +202,10 @@
                                         </variation>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="3UD-x8-G89">
+                                        <rect key="frame" x="45" y="273" width="285" height="121"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLOSED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojc-Un-ovC">
+                                                <rect key="frame" x="1.5" y="0.0" width="282.5" height="97"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="97" id="TW0-ST-AeX"/>
                                                     <constraint firstAttribute="width" constant="350" id="eeJ-7m-Azr"/>
@@ -205,6 +215,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opening in 99 minutes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu1-9q-xnw">
+                                                <rect key="frame" x="42" y="97" width="201.5" height="24"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                 <color key="textColor" red="0.78114880181347157" green="0.78114880181347157" blue="0.78114880181347157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -216,6 +227,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4m-Dr-821">
+                                        <rect key="frame" x="307" y="599" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="GPL-a6-nGz"/>
                                             <constraint firstAttribute="width" constant="50" id="mWo-E2-f3k"/>
@@ -229,6 +241,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ept-U9-Ono" customClass="DontCutMe" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                        <rect key="frame" x="231" y="603" width="83" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="83" id="Jxy-XV-sko"/>
                                             <constraint firstAttribute="height" constant="42" id="ORN-0k-x7C"/>
@@ -240,6 +253,7 @@ Menu</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUb-su-Det">
+                                        <rect key="frame" x="231" y="603" width="126" height="42"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="42" id="6qO-n5-U41"/>
                                             <constraint firstAttribute="width" constant="126" id="l0a-yG-Dcd"/>
@@ -321,17 +335,21 @@ Menu</string>
                         <viewControllerLayoutGuide type="bottom" id="JuP-Au-9Zg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rn2-vj-Uwt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zAl-IA-0Eb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <color key="backgroundColor" red="0.58888870477676392" green="0.15054461359977722" blue="0.13530883193016052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="p7R-qC-h0Q"/>
                                 </constraints>
                             </view>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8g6-7X-MQ8"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8g6-7X-MQ8">
+                                <rect key="frame" x="0.0" y="66" width="375" height="601"/>
+                            </webView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yjV-uO-bFq">
+                                <rect key="frame" x="0.0" y="64" width="375" height="2"/>
                                 <color key="backgroundColor" red="0.95294117647058818" green="0.78431372549019607" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.58823529409999997" green="0.14901960780000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
@@ -370,30 +388,33 @@ Menu</string>
                         <viewControllerLayoutGuide type="bottom" id="ANr-Qj-hX4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="45v-He-wQP">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VCL-Kd-Lg1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="123" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cMg-WG-cpU">
+                                        <rect key="frame" x="20" y="0.0" width="335" height="667"/>
                                         <color key="backgroundColor" red="0.5888599753" green="0.1470975876" blue="0.13562121990000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="sectionIndexBackgroundColor" red="0.5888887048" green="0.15054461359999999" blue="0.13530883190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DiningPlans" rowHeight="123" id="VIG-Hx-wee" customClass="DiningPlanCell" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="92" width="280" height="123"/>
+                                                <rect key="frame" x="0.0" y="28" width="335" height="123"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VIG-Hx-wee" id="pRh-R0-KIy">
-                                                    <frame key="frameInset" width="280" height="123"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="123"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="money5" translatesAutoresizingMaskIntoConstraints="NO" id="9cq-Ir-z0e">
+                                                            <rect key="frame" x="8" y="37" width="50" height="50"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="AEV-HL-huc"/>
                                                                 <constraint firstAttribute="width" constant="50" id="dWu-ma-02s"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="No Worries" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VG8-2c-Zge">
-                                                            <frame key="frameInset" minX="66" minY="36" width="261" height="50"/>
+                                                            <rect key="frame" x="66" y="36" width="261" height="50"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="50" id="nbB-Hn-hzb"/>
                                                             </constraints>
@@ -454,12 +475,14 @@ Menu</string>
                         <viewControllerLayoutGuide type="bottom" id="xRM-tP-B3d"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uMD-V8-z0P">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mcw-QY-ZdD" customClass="UIControl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We've Got You Covered" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHX-RX-sIg">
+                                        <rect key="frame" x="8" y="100" width="344" height="58"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="344" id="B0t-l4-i3C"/>
                                             <constraint firstAttribute="height" constant="58" id="dZt-ge-kvu"/>
@@ -469,15 +492,19 @@ Menu</string>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIV-Xz-5hs" customClass="CustomView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="268" width="359" height="71"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dbH-ku-6ET">
+                                                <rect key="frame" x="8" y="15.5" width="343" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expected Dining Points:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="8xD-xO-ok1" customClass="DontCutMe" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="218" height="40"/>
                                                         <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="22"/>
                                                         <color key="textColor" red="0.60058677199999999" green="0.17196440700000001" blue="0.17363679409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1050.50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2au-c1-jMq" customClass="DontCutMe" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <rect key="frame" x="228" y="0.0" width="115" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="115" id="Fdg-da-rlC"/>
                                                         </constraints>
@@ -501,21 +528,24 @@ Menu</string>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzj-bZ-50I">
-                                        <frame key="frameInset" minX="8" minY="387" width="42" height="21"/>
+                                        <rect key="frame" x="8" y="387" width="42" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jsm-Xs-5Qj" customClass="CustomView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="379" width="359" height="71"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRe-de-k6r">
+                                                <rect key="frame" x="0.0" y="35" width="359" height="1"/>
                                                 <color key="backgroundColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="OVJ-Tp-I3z"/>
                                                 </constraints>
                                             </view>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="userIcon" translatesAutoresizingMaskIntoConstraints="NO" id="e1g-LQ-jOP">
+                                                <rect key="frame" x="12" y="4" width="26" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="26" id="1Rv-Wg-u2Z"/>
                                                     <constraint firstAttribute="width" secondItem="e1g-LQ-jOP" secondAttribute="height" multiplier="1:1" id="1SJ-O7-pdr"/>
@@ -523,6 +553,7 @@ Menu</string>
                                                 </constraints>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lockIcon" translatesAutoresizingMaskIntoConstraints="NO" id="qUg-ew-Xgd">
+                                                <rect key="frame" x="12" y="41" width="26" height="26"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="26" id="TLd-cN-iQr"/>
                                                     <constraint firstAttribute="height" constant="26" id="q0G-Nl-mJh"/>
@@ -530,6 +561,7 @@ Menu</string>
                                                 </constraints>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="APU NetID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6nf-Uf-JTb">
+                                                <rect key="frame" x="58" y="2" width="293" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="nYp-J7-nwM"/>
                                                 </constraints>
@@ -538,6 +570,7 @@ Menu</string>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fhr-kw-cKe">
+                                                <rect key="frame" x="58" y="39" width="293" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Xfy-63-aWK"/>
                                                 </constraints>
@@ -565,6 +598,7 @@ Menu</string>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBO-QT-8w1">
+                                        <rect key="frame" x="155" y="458" width="65" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="OoC-pN-htE"/>
                                             <constraint firstAttribute="width" constant="65" id="qg0-s9-I3E"/>
@@ -579,8 +613,10 @@ Menu</string>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="A91-NZ-orQ">
+                                        <rect key="frame" x="279" y="466" width="88" height="14"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remember me" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21q-ig-Cqp">
+                                                <rect key="frame" x="0.0" y="0.0" width="69" height="14"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="69" id="8SG-yy-eSn"/>
                                                     <constraint firstAttribute="height" constant="14" id="uYm-sc-4JV"/>
@@ -590,8 +626,10 @@ Menu</string>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYG-5s-PRg">
+                                                <rect key="frame" x="74" y="0.0" width="14" height="14"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPB-Mj-5hj">
+                                                        <rect key="frame" x="2" y="2" width="10" height="10"/>
                                                         <color key="backgroundColor" red="0.22352941179999999" green="0.22352941179999999" blue="0.22352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="10" id="H63-PR-VWp"/>
@@ -599,6 +637,7 @@ Menu</string>
                                                         </constraints>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mh7-fd-rob">
+                                                        <rect key="frame" x="0.0" y="0.0" width="14" height="14"/>
                                                         <connections>
                                                             <action selector="onCheckBoxPressed:" destination="Ih7-xX-Njt" eventType="touchUpInside" id="tyO-uE-Oeo"/>
                                                         </connections>
@@ -620,16 +659,19 @@ Menu</string>
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O3t-a3-86V" customClass="CustomView" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
-                                        <frame key="frameInset" minX="8" minY="505" width="359" height="71"/>
+                                        <rect key="frame" x="8" y="505" width="359" height="71"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="19k-Fz-lzF">
+                                                <rect key="frame" x="8" y="15.5" width="343" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Dining Points:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Jpl-fm-mfl" customClass="DontCutMe" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="218" height="40"/>
                                                         <fontDescription key="fontDescription" name="HarvestItal" family="HarvestItal" pointSize="22"/>
                                                         <color key="textColor" red="0.60058677199999999" green="0.17196440700000001" blue="0.17363679409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999.99" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUy-li-Qn6" customClass="DontCutMe" customModule="Hungry_Cougar_2_0" customModuleProvider="target">
+                                                        <rect key="frame" x="228" y="0.0" width="115" height="40"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="115" id="De2-8H-jdN"/>
                                                         </constraints>
@@ -653,7 +695,7 @@ Menu</string>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Mz-Jb-HCd">
-                                        <frame key="frameInset" minX="347" minY="584" width="20" height="20"/>
+                                        <rect key="frame" x="347" y="584" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="AlE-Ww-KwP"/>
                                             <constraint firstAttribute="width" constant="20" id="Z9Q-1h-Zga"/>
@@ -664,7 +706,7 @@ Menu</string>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Refresh Icon" translatesAutoresizingMaskIntoConstraints="NO" id="M9B-z0-bWd">
-                                        <frame key="frameInset" minX="347" minY="584" width="20" height="20"/>
+                                        <rect key="frame" x="347" y="584" width="20" height="20"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="20" id="ZQw-2b-U2R"/>
                                             <constraint firstAttribute="height" constant="20" id="hAU-lK-0bm"/>
@@ -741,20 +783,23 @@ Menu</string>
                         <viewControllerLayoutGuide type="bottom" id="qb7-lR-u8d"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="x8A-Ga-kjb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAY-Re-vGh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <color key="backgroundColor" red="0.5888887048" green="0.15054461359999999" blue="0.13530883190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="mW8-fc-aUc"/>
                                 </constraints>
                             </view>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWB-Gi-4jx">
+                                <rect key="frame" x="0.0" y="66" width="375" height="601"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="0.58823529409999997" green="0.14901960780000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="geB-hg-5dH">
+                                <rect key="frame" x="0.0" y="64" width="375" height="2"/>
                                 <color key="backgroundColor" red="0.95294117647058818" green="0.78431372549019607" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.58823529409999997" green="0.14901960780000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
@@ -792,19 +837,26 @@ Menu</string>
                         <viewControllerLayoutGuide type="bottom" id="CNb-6g-Xe1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GCE-9l-gTB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="swx-Ps-VMF">
+                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="667"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="zQK-fc-s9Y">
+                                        <rect key="frame" x="54" y="141" width="80" height="425"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cQ2-pI-rZe">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="102"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UXe-ru-TbA">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GRILL_FINAL" translatesAutoresizingMaskIntoConstraints="NO" id="OYH-zo-cEa"/>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GRILL_FINAL" translatesAutoresizingMaskIntoConstraints="NO" id="OYH-zo-cEa">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                            </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oty-Fu-v7o">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                 <connections>
                                                                     <action selector="grillButtonPressed:" destination="Bn5-0n-IEe" eventType="touchUpInside" id="ic8-Vu-0zF"/>
                                                                     <segue destination="BYZ-38-t0r" kind="show" id="UAf-aR-JWl"/>
@@ -826,6 +878,7 @@ Menu</string>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fusion Grill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agO-QE-b70">
+                                                        <rect key="frame" x="2.5" y="85" width="75" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="17" id="Mod-Ff-T8N"/>
                                                             <constraint firstAttribute="width" constant="75" id="PKE-Gn-i9i"/>
@@ -837,11 +890,16 @@ Menu</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pJo-rZ-7yk">
+                                                <rect key="frame" x="0.0" y="162" width="80" height="101"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lp-PA-pkC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="79"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="The-Market-transparent-2" translatesAutoresizingMaskIntoConstraints="NO" id="Pex-oe-3gw"/>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="The-Market-transparent-2" translatesAutoresizingMaskIntoConstraints="NO" id="Pex-oe-3gw">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="79"/>
+                                                            </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUb-ug-hd7">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="79"/>
                                                                 <connections>
                                                                     <action selector="marketButtonPressed:" destination="Bn5-0n-IEe" eventType="touchUpInside" id="RZK-7U-bfT"/>
                                                                     <segue destination="BYZ-38-t0r" kind="show" id="sca-7N-huW"/>
@@ -862,6 +920,7 @@ Menu</string>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="West Market" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ul-oU-bAi">
+                                                        <rect key="frame" x="2.5" y="84" width="75" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="17" id="CZU-fR-e7g"/>
                                                             <constraint firstAttribute="width" constant="75" id="mK1-Xb-NbX"/>
@@ -873,11 +932,16 @@ Menu</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rEm-ud-9aR">
+                                                <rect key="frame" x="0.0" y="323" width="80" height="102"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yGB-Rt-Mza">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Umai-Sushi-transparent-2" translatesAutoresizingMaskIntoConstraints="NO" id="tTd-IG-Y7X"/>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Umai-Sushi-transparent-2" translatesAutoresizingMaskIntoConstraints="NO" id="tTd-IG-Y7X">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                            </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wYT-WP-Gni">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                 <connections>
                                                                     <action selector="umaiButtonPressed:" destination="Bn5-0n-IEe" eventType="touchUpInside" id="Msi-kB-3a4"/>
                                                                     <segue destination="BYZ-38-t0r" kind="show" id="YRa-H5-j5X"/>
@@ -898,6 +962,7 @@ Menu</string>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tasti Sushi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWB-0p-qnE">
+                                                        <rect key="frame" x="2.5" y="85" width="75" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="17" id="Znb-c3-53R"/>
                                                             <constraint firstAttribute="width" constant="75" id="cxK-tD-jTh"/>
@@ -922,15 +987,22 @@ Menu</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPM-Ac-I9v">
+                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="667"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Ppc-pf-rmb">
+                                        <rect key="frame" x="54" y="141" width="80" height="425"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="V0g-RO-fFA">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="102"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ih0-gO-xCu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HILLSIDE_GROUNDS_FINAL" translatesAutoresizingMaskIntoConstraints="NO" id="Bfa-Zo-xed"/>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HILLSIDE_GROUNDS_FINAL" translatesAutoresizingMaskIntoConstraints="NO" id="Bfa-Zo-xed">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                            </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V26-EY-JKj">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                 <connections>
                                                                     <action selector="hillsideButtonPressed:" destination="Bn5-0n-IEe" eventType="touchUpInside" id="EH3-Zo-v62"/>
                                                                     <segue destination="BYZ-38-t0r" kind="show" id="m4a-Dr-Mb4"/>
@@ -952,6 +1024,7 @@ Menu</string>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fresh Grounds" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ac-iH-zfJ">
+                                                        <rect key="frame" x="0.0" y="85" width="80" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="O8A-GU-Prl"/>
                                                             <constraint firstAttribute="height" constant="17" id="xan-lv-5Vg"/>
@@ -963,11 +1036,16 @@ Menu</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aGV-MR-syC">
+                                                <rect key="frame" x="0.0" y="162" width="80" height="101"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2qx-4P-yqD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="79"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sams-Subs-transparent-3" translatesAutoresizingMaskIntoConstraints="NO" id="B7o-ZN-ixA"/>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sams-Subs-transparent-3" translatesAutoresizingMaskIntoConstraints="NO" id="B7o-ZN-ixA">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="79"/>
+                                                            </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bo0-Na-HZx">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="79"/>
                                                                 <connections>
                                                                     <action selector="subsButtonPressed:" destination="Bn5-0n-IEe" eventType="touchUpInside" id="kl7-W6-fHZ"/>
                                                                     <segue destination="BYZ-38-t0r" kind="show" id="l7F-v4-0AR"/>
@@ -988,6 +1066,7 @@ Menu</string>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tam's Subs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHm-fe-rxf">
+                                                        <rect key="frame" x="2.5" y="84" width="75" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="17" id="H7N-3T-O6h"/>
                                                             <constraint firstAttribute="width" constant="75" id="qTz-VI-v0Q"/>
@@ -999,8 +1078,10 @@ Menu</string>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ph3-OP-s4m">
+                                                <rect key="frame" x="0.0" y="323" width="80" height="102"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVj-XA-f1i">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                         <color key="backgroundColor" red="0.58823529411764708" green="0.14901960784313725" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="8cJ-gY-hPy"/>
@@ -1008,6 +1089,7 @@ Menu</string>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eO-JP-Ksz">
+                                                        <rect key="frame" x="2.5" y="85" width="75" height="17"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="17" id="Exk-Vy-pE2"/>
                                                             <constraint firstAttribute="width" constant="75" id="Ya5-Ql-FFT"/>
@@ -1058,21 +1140,29 @@ Menu</string>
                         <viewControllerLayoutGuide type="bottom" id="fOc-zZ-41e"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ahr-VJ-MPq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rh0-tf-fVg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FnD-kq-uei" userLabel="LEFT">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="667"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="QMW-Nr-MdC">
+                                                <rect key="frame" x="54" y="135" width="80" height="437"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="IFu-Qk-aSw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="102"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTy-AV-BoI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                 <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiningHall-transparent-2" translatesAutoresizingMaskIntoConstraints="NO" id="Jqe-RZ-2cM"/>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiningHall-transparent-2" translatesAutoresizingMaskIntoConstraints="NO" id="Jqe-RZ-2cM">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                                    </imageView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7t3-Jp-k6K">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                         <connections>
                                                                             <action selector="diningHallButtonPressed:" destination="IC1-M4-iXJ" eventType="touchUpInside" id="Arp-iL-ZxJ"/>
                                                                             <segue destination="BYZ-38-t0r" kind="show" id="d0y-61-l0H"/>
@@ -1092,6 +1182,7 @@ Menu</string>
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dining Hall" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lb-fE-poO">
+                                                                <rect key="frame" x="2.5" y="85" width="75" height="17"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="17" id="Ajx-GP-teq"/>
                                                                     <constraint firstAttribute="width" constant="75" id="u28-fa-9f8"/>
@@ -1103,11 +1194,16 @@ Menu</string>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="y9p-4x-VWa">
+                                                        <rect key="frame" x="0.0" y="162" width="80" height="102"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thQ-Kk-cfF">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                 <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CougarsDen-transparent-2" translatesAutoresizingMaskIntoConstraints="NO" id="DIx-2v-hGA"/>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CougarsDen-transparent-2" translatesAutoresizingMaskIntoConstraints="NO" id="DIx-2v-hGA">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                                    </imageView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZX-Cl-tmi">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                         <connections>
                                                                             <action selector="denButtonPressed:" destination="IC1-M4-iXJ" eventType="touchUpInside" id="Oph-RZ-9vx"/>
                                                                             <segue destination="BYZ-38-t0r" kind="show" id="l2d-U9-KN9"/>
@@ -1127,6 +1223,7 @@ Menu</string>
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Den" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFU-ce-ghj">
+                                                                <rect key="frame" x="2.5" y="85" width="75" height="17"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="17" id="4Sh-hN-ykZ"/>
                                                                     <constraint firstAttribute="width" constant="75" id="Z7O-b4-l7n"/>
@@ -1141,11 +1238,16 @@ Menu</string>
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gAf-FM-y0M">
+                                                        <rect key="frame" x="0.0" y="324" width="80" height="113"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZz-uE-zYz">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="91"/>
                                                                 <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mexicali-Grill-transparent-2" translatesAutoresizingMaskIntoConstraints="NO" id="lws-P8-xEp"/>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mexicali-Grill-transparent-2" translatesAutoresizingMaskIntoConstraints="NO" id="lws-P8-xEp">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="91"/>
+                                                                    </imageView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ek-Ji-uNr">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="91"/>
                                                                         <connections>
                                                                             <action selector="mexicaliButtonPressed:" destination="IC1-M4-iXJ" eventType="touchUpInside" id="P1R-U5-clL"/>
                                                                             <segue destination="BYZ-38-t0r" kind="show" id="ZR0-1y-gQP"/>
@@ -1165,6 +1267,7 @@ Menu</string>
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cali Grill" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6G-y6-AcA">
+                                                                <rect key="frame" x="2.5" y="96" width="75" height="17"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="75" id="VrZ-Lp-lKN"/>
                                                                     <constraint firstAttribute="height" constant="17" id="mTJ-kR-6tb"/>
@@ -1189,15 +1292,22 @@ Menu</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHA-k0-7Dp" userLabel="RIGHT">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="667"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="pEW-si-ATN">
+                                                <rect key="frame" x="54" y="135" width="80" height="437"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1Da-ui-v6m">
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="102"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nd1-iD-sEv">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                 <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CornerstoneCoffeehouse-transparent-2" translatesAutoresizingMaskIntoConstraints="NO" id="lLP-Yz-8m6"/>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CornerstoneCoffeehouse-transparent-2" translatesAutoresizingMaskIntoConstraints="NO" id="lLP-Yz-8m6">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                                    </imageView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FV-Ah-QbL">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                         <connections>
                                                                             <action selector="cornerstoneButtonPressed:" destination="IC1-M4-iXJ" eventType="touchUpInside" id="bTR-OY-LED"/>
                                                                             <segue destination="BYZ-38-t0r" kind="show" id="Mas-jl-mhZ"/>
@@ -1217,6 +1327,7 @@ Menu</string>
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffeehouse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RM7-9o-y7x">
+                                                                <rect key="frame" x="0.0" y="85" width="80" height="17"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="17" id="UM2-Vk-E2o"/>
                                                                     <constraint firstAttribute="width" constant="80" id="xJy-DN-YQ1"/>
@@ -1228,11 +1339,16 @@ Menu</string>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Sh0-lF-gve">
+                                                        <rect key="frame" x="0.0" y="162" width="80" height="113"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atv-zT-DMq">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="91"/>
                                                                 <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CougarWalkGrill-transparent-2" translatesAutoresizingMaskIntoConstraints="NO" id="Cu4-lf-864"/>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CougarWalkGrill-transparent-2" translatesAutoresizingMaskIntoConstraints="NO" id="Cu4-lf-864">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="91"/>
+                                                                    </imageView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gfV-yo-1Kw">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="91"/>
                                                                         <connections>
                                                                             <action selector="cougarButtonPressed:" destination="IC1-M4-iXJ" eventType="touchUpInside" id="J4L-5E-6VY"/>
                                                                             <segue destination="BYZ-38-t0r" kind="show" id="lc3-Kn-Un2"/>
@@ -1252,6 +1368,7 @@ Menu</string>
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cougar BBQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfF-Vk-40m">
+                                                                <rect key="frame" x="2.5" y="96" width="75" height="17"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="17" id="Fri-d3-StX"/>
                                                                     <constraint firstAttribute="width" constant="75" id="qco-iu-eJi"/>
@@ -1263,11 +1380,16 @@ Menu</string>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1wT-Vc-zdc">
+                                                        <rect key="frame" x="0.0" y="335" width="80" height="102"/>
                                                         <subviews>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBS-TC-9gX">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                 <subviews>
-                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Paws-N-Go-transparent-2" translatesAutoresizingMaskIntoConstraints="NO" id="eUk-Io-vEM"/>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Paws-N-Go-transparent-2" translatesAutoresizingMaskIntoConstraints="NO" id="eUk-Io-vEM">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                                    </imageView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCi-V8-O16">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
                                                                         <connections>
                                                                             <action selector="pawsButtonPressed:" destination="IC1-M4-iXJ" eventType="touchUpInside" id="bqo-BY-gyj"/>
                                                                             <segue destination="BYZ-38-t0r" kind="show" id="j6O-Es-DFP"/>
@@ -1288,6 +1410,7 @@ Menu</string>
                                                                 </constraints>
                                                             </view>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pause 'n Go" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLr-uM-ehu">
+                                                                <rect key="frame" x="2.5" y="85" width="75" height="17"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="75" id="WcB-ck-JtS"/>
                                                                     <constraint firstAttribute="height" constant="17" id="qOx-OW-wQc"/>
@@ -1343,7 +1466,7 @@ Menu</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aYT-vv-QhX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6j5-pb-k0w">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6j5-pb-k0w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

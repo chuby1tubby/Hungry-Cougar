@@ -210,6 +210,7 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
             // Balance for rest of the year
         else {
             currentBalance = mealBudget - (weeklyBudget * Double(schoolWeek)) - (dailyBudget * Double(weekday)) + dailyBudget
+            
         }
         
         // Formatter
@@ -273,30 +274,33 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
             schoolWeek = 8
         }
         
-        // Mid-semester break
-        if (month == 10 && (day >= 30 && day <= 31)) || (month == 11 && (day >= 1 && day <= 5)) {
-            schoolWeek = -2
-        }
-        
         // November
-        if (month == 11 && (day >= 6 && day <= 12)) {
+        if (month == 10 && (day >= 30 && day <= 31) || month == 11 && (day >= 1 && day <= 5)) {
             schoolWeek = 9
-        } else if (month == 11 && (day >= 13 && day <= 19)) {
+        } else if (month == 11 && (day >= 6 && day <= 12)) {
             schoolWeek = 10
-        } else if (month == 11 && (day >= 20 && day <= 26)) {
+        } else if (month == 11 && (day >= 13 && day <= 19)) {
             schoolWeek = 11
-        } else if (month == 11 && (day >= 27 && day <= 30)) || (month == 11 && (day >= 1 && day <= 3)) {
+        } else if (month == 11 && (day >= 20 && day <= 26)) {
             schoolWeek = 12
         }
         
         // December
-        if (month == 12 && (day >= 4 && day <= 10)) {
+        if (month == 11 && (day >= 27 && day <= 30) || month == 12 && (day >= 1 && day <= 3)) {
             schoolWeek = 13
-        } else if (month == 12 && (day >= 11 && day <= 17)) {
+        } else if (month == 12 && (day >= 4 && day <= 10)) {
             schoolWeek = 14
-        } else if (month == 12 && (day >= 18 && day <= 24)) {           // When does the semester end?
+        } else if (month == 12 && (day >= 11 && day <= 17)) {
             schoolWeek = 15
         }
+        
+ 
+        /*
+         *
+         * NEW SEMESTER
+         *
+         */
+        
         
         // Christmas break
         if (month == 12 && (day >= 18 && day <= 31)) || (month == 1 && (day >= 1 && day <= 14)) {
