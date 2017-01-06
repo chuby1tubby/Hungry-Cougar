@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF05BE401D59B97400AA3DF6 /* DiningPointsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05BE3F1D59B97400AA3DF6 /* DiningPointsVC.swift */; };
+		BF05BE401D59B97400AA3DF6 /* DiningPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05BE3F1D59B97400AA3DF6 /* DiningPlanVC.swift */; };
 		BF05BE421D59BBA000AA3DF6 /* DiningPlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05BE411D59BBA000AA3DF6 /* DiningPlanCell.swift */; };
-		BF05BE441D59C65600AA3DF6 /* DiningPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05BE431D59C65600AA3DF6 /* DiningPlanVC.swift */; };
+		BF05BE441D59C65600AA3DF6 /* DiningPointsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05BE431D59C65600AA3DF6 /* DiningPointsVC.swift */; };
 		BF21D39A1D552B4F001A38F2 /* EastVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF21D3991D552B4F001A38F2 /* EastVC.swift */; };
 		BF21D39C1D552C00001A38F2 /* WestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF21D39B1D552C00001A38F2 /* WestVC.swift */; };
 		BF21D39E1D55A138001A38F2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF21D39D1D55A138001A38F2 /* CircleView.swift */; };
 		BF21D3A01D55C51D001A38F2 /* RestaurantHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF21D39F1D55C51D001A38F2 /* RestaurantHours.swift */; };
 		BF35985B1D4EF79400AF28B3 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF35985A1D4EF79400AF28B3 /* Day.swift */; };
-		BF8C1BC01D4FDAD700E7B2B7 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8C1BBF1D4FDAD700E7B2B7 /* MenuVC.swift */; };
+		BF8C1BC01D4FDAD700E7B2B7 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8C1BBF1D4FDAD700E7B2B7 /* HomeVC.swift */; };
 		BF8C1BC21D4FDCAF00E7B2B7 /* RoundCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8C1BC11D4FDCAF00E7B2B7 /* RoundCornersView.swift */; };
 		BF91ED4B1D7ABD40007B161E /* APUHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF91ED4A1D7ABD40007B161E /* APUHomeVC.swift */; };
 		BF91ED4D1D7ABD49007B161E /* InformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF91ED4C1D7ABD49007B161E /* InformationVC.swift */; };
@@ -24,7 +24,7 @@
 		BFB55CB31D640342005C9A23 /* HarvestItal Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFB55CB11D640342005C9A23 /* HarvestItal Regular.ttf */; };
 		BFB55CB41D640342005C9A23 /* HarvestItal Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFB55CB11D640342005C9A23 /* HarvestItal Regular.ttf */; };
 		BFECDD3B1D4EE5B100E626D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECDD3A1D4EE5B100E626D3 /* AppDelegate.swift */; };
-		BFECDD3D1D4EE5B100E626D3 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECDD3C1D4EE5B100E626D3 /* MainVC.swift */; };
+		BFECDD3D1D4EE5B100E626D3 /* HoursVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECDD3C1D4EE5B100E626D3 /* HoursVC.swift */; };
 		BFECDD401D4EE5B100E626D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFECDD3E1D4EE5B100E626D3 /* Main.storyboard */; };
 		BFECDD421D4EE5B100E626D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFECDD411D4EE5B100E626D3 /* Assets.xcassets */; };
 		BFECDD451D4EE5B100E626D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFECDD431D4EE5B100E626D3 /* LaunchScreen.storyboard */; };
@@ -50,16 +50,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BF05BE3F1D59B97400AA3DF6 /* DiningPointsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningPointsVC.swift; sourceTree = "<group>"; };
+		BF05BE3F1D59B97400AA3DF6 /* DiningPlanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningPlanVC.swift; sourceTree = "<group>"; };
 		BF05BE411D59BBA000AA3DF6 /* DiningPlanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningPlanCell.swift; sourceTree = "<group>"; };
-		BF05BE431D59C65600AA3DF6 /* DiningPlanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningPlanVC.swift; sourceTree = "<group>"; };
+		BF05BE431D59C65600AA3DF6 /* DiningPointsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningPointsVC.swift; sourceTree = "<group>"; };
 		BF21D3991D552B4F001A38F2 /* EastVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EastVC.swift; sourceTree = "<group>"; };
 		BF21D39B1D552C00001A38F2 /* WestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WestVC.swift; sourceTree = "<group>"; };
 		BF21D39D1D55A138001A38F2 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		BF21D39F1D55C51D001A38F2 /* RestaurantHours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantHours.swift; sourceTree = "<group>"; };
 		BF35985A1D4EF79400AF28B3 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		BF54CECB1DCADB9800DFB40D /* Hungry Cougar 2.0.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hungry Cougar 2.0.entitlements"; sourceTree = SOURCE_ROOT; };
-		BF8C1BBF1D4FDAD700E7B2B7 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		BF8C1BBF1D4FDAD700E7B2B7 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		BF8C1BC11D4FDCAF00E7B2B7 /* RoundCornersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCornersView.swift; sourceTree = "<group>"; };
 		BF91ED4A1D7ABD40007B161E /* APUHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APUHomeVC.swift; sourceTree = "<group>"; };
 		BF91ED4C1D7ABD49007B161E /* InformationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformationVC.swift; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 		BFB55CB11D640342005C9A23 /* HarvestItal Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "HarvestItal Regular.ttf"; path = "../../../App Media/Fonts/HarvestItal Regular.ttf"; sourceTree = "<group>"; };
 		BFECDD371D4EE5B100E626D3 /* Hungry Cougar 2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hungry Cougar 2.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFECDD3A1D4EE5B100E626D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFECDD3C1D4EE5B100E626D3 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		BFECDD3C1D4EE5B100E626D3 /* HoursVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursVC.swift; sourceTree = "<group>"; };
 		BFECDD3F1D4EE5B100E626D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFECDD411D4EE5B100E626D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFECDD441D4EE5B100E626D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -108,28 +108,28 @@
 		BF21D3961D552A5A001A38F2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BFECDD3C1D4EE5B100E626D3 /* MainVC.swift */,
-				BF8C1BBF1D4FDAD700E7B2B7 /* MenuVC.swift */,
+				BF8C1BBF1D4FDAD700E7B2B7 /* HomeVC.swift */,
 				BF21D3991D552B4F001A38F2 /* EastVC.swift */,
 				BF21D39B1D552C00001A38F2 /* WestVC.swift */,
-				BF05BE3F1D59B97400AA3DF6 /* DiningPointsVC.swift */,
-				BF05BE431D59C65600AA3DF6 /* DiningPlanVC.swift */,
-				BF91ED4A1D7ABD40007B161E /* APUHomeVC.swift */,
+				BFECDD3C1D4EE5B100E626D3 /* HoursVC.swift */,
 				BF91ED4C1D7ABD49007B161E /* InformationVC.swift */,
+				BF05BE3F1D59B97400AA3DF6 /* DiningPlanVC.swift */,
+				BF05BE431D59C65600AA3DF6 /* DiningPointsVC.swift */,
+				BF91ED4A1D7ABD40007B161E /* APUHomeVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		BF21D3981D552A78001A38F2 /* Data */ = {
+		BF21D3981D552A78001A38F2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				BF35985A1D4EF79400AF28B3 /* Day.swift */,
 				BF21D39F1D55C51D001A38F2 /* RestaurantHours.swift */,
 			);
-			name = Data;
+			name = Model;
 			sourceTree = "<group>";
 		};
-		BF819A751D5666B200420B55 /* Custom Views */ = {
+		BF819A751D5666B200420B55 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				BF91ED4E1D7ABD52007B161E /* DontCutMe.swift */,
@@ -137,7 +137,24 @@
 				BF21D39D1D55A138001A38F2 /* CircleView.swift */,
 				BF05BE411D59BBA000AA3DF6 /* DiningPlanCell.swift */,
 			);
-			name = "Custom Views";
+			name = View;
+			sourceTree = "<group>";
+		};
+		BFC2FCA61E1FB385003A3149 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		BFC2FCA71E1FB397003A3149 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				BFECDD461D4EE5B100E626D3 /* Info.plist */,
+				BFECDD3A1D4EE5B100E626D3 /* AppDelegate.swift */,
+				BF54CECB1DCADB9800DFB40D /* Hungry Cougar 2.0.entitlements */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 		BFECDD2E1D4EE5B000E626D3 = {
@@ -163,16 +180,15 @@
 		BFECDD391D4EE5B100E626D3 /* Hungry Cougar 2.0 */ = {
 			isa = PBXGroup;
 			children = (
-				BF54CECB1DCADB9800DFB40D /* Hungry Cougar 2.0.entitlements */,
+				BFC2FCA61E1FB385003A3149 /* Services */,
+				BFC2FCA71E1FB397003A3149 /* Util */,
+				BF21D3981D552A78001A38F2 /* Model */,
+				BF819A751D5666B200420B55 /* View */,
 				BF21D3961D552A5A001A38F2 /* Controller */,
-				BF21D3981D552A78001A38F2 /* Data */,
-				BF819A751D5666B200420B55 /* Custom Views */,
 				BFECDD3E1D4EE5B100E626D3 /* Main.storyboard */,
-				BFECDD3A1D4EE5B100E626D3 /* AppDelegate.swift */,
 				BFECDD411D4EE5B100E626D3 /* Assets.xcassets */,
 				BFECDD431D4EE5B100E626D3 /* LaunchScreen.storyboard */,
 				BFB55CB11D640342005C9A23 /* HarvestItal Regular.ttf */,
-				BFECDD461D4EE5B100E626D3 /* Info.plist */,
 			);
 			name = "Hungry Cougar 2.0";
 			path = "Open Den";
@@ -354,17 +370,17 @@
 				BF21D3A01D55C51D001A38F2 /* RestaurantHours.swift in Sources */,
 				BF05BE421D59BBA000AA3DF6 /* DiningPlanCell.swift in Sources */,
 				BF8C1BC21D4FDCAF00E7B2B7 /* RoundCornersView.swift in Sources */,
-				BFECDD3D1D4EE5B100E626D3 /* MainVC.swift in Sources */,
+				BFECDD3D1D4EE5B100E626D3 /* HoursVC.swift in Sources */,
 				BF91ED4D1D7ABD49007B161E /* InformationVC.swift in Sources */,
 				BF21D39C1D552C00001A38F2 /* WestVC.swift in Sources */,
 				BF91ED4F1D7ABD52007B161E /* DontCutMe.swift in Sources */,
 				BFECDD3B1D4EE5B100E626D3 /* AppDelegate.swift in Sources */,
 				BF35985B1D4EF79400AF28B3 /* Day.swift in Sources */,
 				BF21D39A1D552B4F001A38F2 /* EastVC.swift in Sources */,
-				BF05BE401D59B97400AA3DF6 /* DiningPointsVC.swift in Sources */,
-				BF8C1BC01D4FDAD700E7B2B7 /* MenuVC.swift in Sources */,
+				BF05BE401D59B97400AA3DF6 /* DiningPlanVC.swift in Sources */,
+				BF8C1BC01D4FDAD700E7B2B7 /* HomeVC.swift in Sources */,
 				BF91ED4B1D7ABD40007B161E /* APUHomeVC.swift in Sources */,
-				BF05BE441D59C65600AA3DF6 /* DiningPlanVC.swift in Sources */,
+				BF05BE441D59C65600AA3DF6 /* DiningPointsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

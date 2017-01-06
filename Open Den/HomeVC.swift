@@ -1,5 +1,5 @@
 //
-//  MenuViewController.swift
+//  HomeVC.swift
 //  Hungry Cougar 2.0
 //
 //  Created by Kyle Nakamura on 8/1/16.
@@ -8,8 +8,7 @@
 
 import UIKit
 
-class MenuVC: UIViewController {
-    
+class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Campus Restaurants"

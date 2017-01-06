@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HoursVC.swift
 //  Open Den
 //
 //  Created by Kyle Nakamura on 7/31/16.
@@ -11,7 +11,7 @@ import UIKit
 
 public var restaurantChoice = ""
 
-class ViewController: UIViewController {
+class HoursVC: UIViewController {
     // Base values
     var currentHour: Double = 0
     var currentMinute: Int = 0
