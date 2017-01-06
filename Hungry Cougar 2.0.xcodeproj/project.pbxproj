@@ -58,6 +58,7 @@
 		BF21D39D1D55A138001A38F2 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		BF21D39F1D55C51D001A38F2 /* RestaurantHours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantHours.swift; sourceTree = "<group>"; };
 		BF35985A1D4EF79400AF28B3 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		BF54CECB1DCADB9800DFB40D /* Hungry Cougar 2.0.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hungry Cougar 2.0.entitlements"; sourceTree = SOURCE_ROOT; };
 		BF8C1BBF1D4FDAD700E7B2B7 /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		BF8C1BC11D4FDCAF00E7B2B7 /* RoundCornersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCornersView.swift; sourceTree = "<group>"; };
 		BF91ED4A1D7ABD40007B161E /* APUHomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APUHomeVC.swift; sourceTree = "<group>"; };
@@ -162,6 +163,7 @@
 		BFECDD391D4EE5B100E626D3 /* Hungry Cougar 2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				BF54CECB1DCADB9800DFB40D /* Hungry Cougar 2.0.entitlements */,
 				BF21D3961D552A5A001A38F2 /* Controller */,
 				BF21D3981D552A78001A38F2 /* Data */,
 				BF819A751D5666B200420B55 /* Custom Views */,
@@ -266,6 +268,14 @@
 						DevelopmentTeamName = "Kyle Nakamura";
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
 					};
 					BFECDD4A1D4EE5B100E626D3 = {
 						CreatedOnToolsVersion = 8.0;
@@ -510,8 +520,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 7GDSF452LB;
 				INFOPLIST_FILE = "Open Den/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kyleNakamura.hungrycougar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylenakamura.hungrycougar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -527,8 +538,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 7GDSF452LB;
 				INFOPLIST_FILE = "Open Den/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kyleNakamura.hungrycougar;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kylenakamura.hungrycougar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

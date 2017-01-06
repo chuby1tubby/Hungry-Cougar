@@ -67,9 +67,10 @@ class DiningPlanVC: UIViewController, UITextFieldDelegate {
             let twoDecimalFormatter = NumberFormatter()
             twoDecimalFormatter.minimumFractionDigits = 2
             let finalDouble = NSNumber(value: myFinalDouble)
+            let y = NSNumber(value: Double(round(1000*Double(finalDouble))/1000))
             myFinalDouble = NSString(string: twoDecimalFormatter.string(from: (finalDouble))!).doubleValue
             
-            usersDiningPointsLbl.text = "\(myFinalDouble)"
+            usersDiningPointsLbl.text = "\(y)"
         }
     }
     
