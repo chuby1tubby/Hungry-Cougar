@@ -35,6 +35,8 @@ class HoursVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         setHours()
         loadCurrentDateTime()
+        checkIfOpen()
+        calculateTimeUntilOpen()
     }
     
     // Set the date manualy to test the calculator
@@ -64,40 +66,33 @@ class HoursVC: UIViewController {
         // Set current day hours
         switch weekday! {
         case 1:
-            Today.openHour = Sunday.openHour
-            Today.closeHour = Sunday.closeHour
+            Yesterday = Saturday
+            Today = Sunday
             Tomorrow = Monday
-            checkIfOpen()
         case 2:
-            Today.openHour = Monday.openHour
-            Today.closeHour = Monday.closeHour
+            Yesterday = Sunday
+            Today = Monday
             Tomorrow = Tuesday
-            checkIfOpen()
         case 3:
-            Today.openHour = Tuesday.openHour
-            Today.closeHour = Tuesday.closeHour
+            Yesterday = Monday
+            Today = Tuesday
             Tomorrow = Wednesday
-            checkIfOpen()
         case 4:
-            Today.openHour = Wednesday.openHour
-            Today.closeHour = Wednesday.closeHour
+            Yesterday = Tuesday
+            Today = Wednesday
             Tomorrow = Thursday
-            checkIfOpen()
         case 5:
-            Today.openHour = Thursday.openHour
-            Today.closeHour = Thursday.closeHour
+            Yesterday = Wednesday
+            Today = Thursday
             Tomorrow = Friday
-            checkIfOpen()
         case 6:
-            Today.openHour = Friday.openHour
-            Today.closeHour = Friday.closeHour
+            Yesterday = Thursday
+            Today = Friday
             Tomorrow = Saturday
-            checkIfOpen()
         case 7:
-            Today.openHour = Saturday.openHour
-            Today.closeHour = Saturday.closeHour
+            Yesterday = Friday
+            Today = Saturday
             Tomorrow = Sunday
-            checkIfOpen()
         default:
             yesNoLbl.text = "ERR"
             storeIsOpen = true
@@ -138,7 +133,6 @@ class HoursVC: UIViewController {
                 }
             }
         }
-        calculateTimeUntilOpen()
     }
     
     func calculateTimeUntilOpen() {
