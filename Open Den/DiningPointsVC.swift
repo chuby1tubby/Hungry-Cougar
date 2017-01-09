@@ -147,6 +147,7 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
         }
     }
     
+    // Refresh dining points value
     @IBAction func onRefreshBtnPressed(_ sender: AnyObject) {
         let prefs = UserDefaults.standard
         if let name = prefs.string(forKey: "username") {
@@ -155,6 +156,10 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
                 passwordStr = pass
             }
         }
+    }
+    
+    @IBAction func pointsHistoryButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "pointsHistorySegue", sender: nil)
     }
     
     // Hide keyboard on background tap

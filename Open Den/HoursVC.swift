@@ -100,16 +100,19 @@ class HoursVC: UIViewController {
     }
     
     func checkIfOpen() {
+        yesNoLbl.text = "OPEN"
+        storeIsOpen = true
+        
+        /*
+            I need to make sure this logic is correct. Something seems wrong here.
+        */
+        
         if Today.closeHour >= 1.0 && Today.closeHour <= 3.0 {
             // If open past midnight (coffeehouse)
             if currentHour >= Today.closeHour && currentHour < Today.openHour{
                 // Store is CLOSED
                 yesNoLbl.text = "CLOSED"
                 storeIsOpen = false
-            } else {
-                // Store is OPEN
-                yesNoLbl.text = "OPEN"
-                storeIsOpen = true
             }
         } else {
             // If not open past midnight
@@ -118,18 +121,12 @@ class HoursVC: UIViewController {
                 if (currentHour >= Today.closeHour && minutesLeft <= 30) || (currentHour <= Today.openHour  && minutesLeft < 30) {
                     yesNoLbl.text = "CLOSED"
                     storeIsOpen = false
-                } else {
-                    yesNoLbl.text = "OPEN"
-                    storeIsOpen = true
                 }
             } else {
                 // If closeHour or openHour is a whole number
                 if currentHour >= Today.closeHour || currentHour <= Today.openHour {
                     yesNoLbl.text = "CLOSED"
                     storeIsOpen = false
-                } else {
-                    yesNoLbl.text = "OPEN"
-                    storeIsOpen = true
                 }
             }
         }
@@ -138,7 +135,7 @@ class HoursVC: UIViewController {
     func calculateTimeUntilOpen() {
         // If the store is CLOSED
         if storeIsOpen == false {
-            if currentHour >= Today.closeHour && currentHour < 24 {
+            if currentHour >= Today.closeHour {
                 hoursUntilOpen = (23 - currentHour) + (Tomorrow.openHour)
                 hoursUntilClose = 0
             } else {

@@ -81,6 +81,24 @@ class InformationVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWeb
         timeBool = false
         progressBar.progress = 1.0
     }
+    
+    // Prevent web view from navigating away from APU dining services web pages.
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        if String(describing: request.url).range(of: "www.apu.edu/diningservices/") != nil {
+            return true
+        } else {
+            presentAlertToUser()
+            return false
+        }
+    }
+    
+    // Alert user that navigation away from Dining Services is denied
+    func presentAlertToUser() {
+        let alert = UIAlertController(title: "Navigation Denied", message: "Access to external web pages is not allowed.", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     func timerCallBack() {
         if timeBool != nil {
             if progressBar.progress >= 1 {

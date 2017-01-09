@@ -61,7 +61,6 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
             if shouldRepeat == true {
                 self.getHTML()
             }
-            // new line
         }
     }
     
@@ -94,6 +93,24 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
     func webViewDidStartLoad(_ webView: UIWebView) {
         timeBool = false
         timer2 = Timer.scheduledTimer(timeInterval: 0.015, target: self, selector: #selector(APUHomeVC.progressUpdate), userInfo: nil, repeats: true)
+    }
+    
+    // Prevent web view from navigating away from APU web pages.
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        // If website URL contains "den.apu.edu"
+        if String(describing: request.url).range(of: "apu.edu") != nil {
+            return true
+        }else {
+            presentAlertToUser()
+            return false
+        }
+    }
+    
+    // Alert user that navigation away from Dining Services is denied
+    func presentAlertToUser() {
+        let alert = UIAlertController(title: "Navigation Denied", message: "Access to external web pages is not allowed.", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
     // Estimate progress for progress bar
@@ -162,9 +179,6 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
                 }
                 myFinalDouble = Double(newString)!
                 //Instead of print, add this to a global variable or something.
-                print("\n\n\n TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST \n\n\n")
-                print(myFinalDouble)
-                print("\n\n\n TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST TEST \n\n\n")
                 shouldRepeat = false
                 didReceievePointsVal = true
                 if let navController = self.navigationController {
