@@ -21,6 +21,7 @@ var day: Int = 0
 var month: Int = 0
 var year: Int = 0
 var todayDate: String? = ""
+var todayTime: String? = ""
 
 class DiningPointsVC: UIViewController, UITextFieldDelegate {
     

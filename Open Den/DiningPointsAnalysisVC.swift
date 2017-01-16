@@ -1,5 +1,5 @@
 //
-//  PointsHistoryVC.swift
+//  DiningPointsAnalysisVC.swift
 //  Hungry Cougar 2.0
 //
 //  Created by Kyle Nakamura on 1/8/17.
@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class PointsHistoryVC: UIViewController {
+class DiningPointsAnalysisVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         

@@ -107,15 +107,15 @@ class HoursVC: UIViewController {
             I need to make sure this logic is correct. Something seems wrong here.
         */
         
+        // If open past midnight (coffeehouse)
         if Today.closeHour >= 1.0 && Today.closeHour <= 3.0 {
-            // If open past midnight (coffeehouse)
             if currentHour >= Today.closeHour && currentHour < Today.openHour{
-                // Store is CLOSED
                 yesNoLbl.text = "CLOSED"
                 storeIsOpen = false
             }
-        } else {
+        }
             // If not open past midnight
+        else {
             if !(floor(Today.closeHour) == Today.closeHour) || !(floor(Today.openHour) == Today.openHour) {
                 // If closing hour isn't a whole number
                 if (currentHour >= Today.closeHour && minutesLeft <= 30) || (currentHour <= Today.openHour  && minutesLeft < 30) {
