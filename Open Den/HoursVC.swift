@@ -100,6 +100,7 @@ class HoursVC: UIViewController {
     }
     
     func checkIfOpen() {
+        // Default values
         yesNoLbl.text = "OPEN"
         storeIsOpen = true
         
@@ -107,36 +108,66 @@ class HoursVC: UIViewController {
             I need to make sure this logic is correct. Something seems wrong here.
         */
         
-        // If open past midnight (coffeehouse)
-        if Today.closeHour >= 1.0 && Today.closeHour <= 3.0 {
-            if currentHour >= Today.closeHour && currentHour < Today.openHour{
-                yesNoLbl.text = "CLOSED"
+        // If currently between midnight and open hours (0 to 7 roughly)
+        if currentHour < Today.openHour {
+            // If yesterday closed at midnight or 1am or 2am (Exactly 0 or 1 or 2)
+            if Yesterday.closeHour == 0 || Yesterday.closeHour == 1 || Yesterday.closeHour == 2 {
+                // If time has past yesterday closeHour
+                if currentHour >= Yesterday.closeHour {
+                    storeIsOpen = false
+                    print("KYLE: BOOLEAN #1")
+                }
+            }
+            // Else for half-number close hours
+            else if Yesterday.closeHour >= 0 && Yesterday.closeHour <= 2 && (floor(Yesterday.closeHour) != Yesterday.closeHour) {
+                let minutesFloorVal = (Yesterday.closeHour - floor(Yesterday.closeHour)) * 60   // Convert 0.5 hours to 30 minutes
+                if (currentHour >= Yesterday.closeHour && minutesLeft <= Int(minutesFloorVal)) {
+                    storeIsOpen = false
+                    print("KYLE: BOOLEAN #2")
+                }
+            }
+            // Else if yesterday closed before midnight
+            else {
                 storeIsOpen = false
+                print("KYLE: BOOLEAN #3")
             }
         }
-            // If not open past midnight
-        else {
-            if !(floor(Today.closeHour) == Today.closeHour) || !(floor(Today.openHour) == Today.openHour) {
-                // If closing hour isn't a whole number
-                if (currentHour >= Today.closeHour && minutesLeft <= 30) || (currentHour <= Today.openHour  && minutesLeft < 30) {
-                    yesNoLbl.text = "CLOSED"
+        // If currently between roughly 7am and midnight (7 to 23 roughly) AND store does not close after midnight
+        else if currentHour >= Today.openHour && !(Today.closeHour >= 0 && Today.closeHour <= 3){
+            // For whole-number close hours
+            if floor(Today.closeHour) == Today.closeHour {
+                if currentHour >= Today.closeHour {
                     storeIsOpen = false
-                }
-            } else {
-                // If closeHour or openHour is a whole number
-                if currentHour >= Today.closeHour || currentHour <= Today.openHour {
-                    yesNoLbl.text = "CLOSED"
-                    storeIsOpen = false
+                    print("KYLE: BOOLEAN #4")
                 }
             }
+            // Else for half-number close hours
+            else {
+                let minutesFloorVal = (Today.closeHour - floor(Today.closeHour)) * 60   // Convert 0.5 hours to 30 minutes
+                if (currentHour >= Today.closeHour && minutesLeft <= Int(minutesFloorVal)) {
+                    storeIsOpen = false
+                    print("KYLE: BOOLEAN #5")
+                }
+            }
+        }
+        
+        if Today.hasNoHours {
+            storeIsOpen = false
+        }
+        
+        // Set yesNoLabel
+        if storeIsOpen {
+            yesNoLbl.text = "OPEN"
+        } else {
+            yesNoLbl.text = "CLOSED"
         }
     }
     
     func calculateTimeUntilOpen() {
         // If the store is CLOSED
         if storeIsOpen == false {
-            if currentHour >= Today.closeHour {
-                hoursUntilOpen = (23 - currentHour) + (Tomorrow.openHour)
+            if currentHour >= Today.closeHour && Today.closeHour != 0 {
+                hoursUntilOpen = (23 - currentHour) + Tomorrow.openHour
                 hoursUntilClose = 0
             } else {
                 hoursUntilOpen = Today.openHour - currentHour - 1
@@ -144,12 +175,15 @@ class HoursVC: UIViewController {
             }
         }
             
-            // If the store is OPEN
+        // If the store is OPEN
         else {
-            if Today.closeHour == 1 {       // If store closes at exactly 1am
-                hoursUntilClose = 25 - currentHour - 1
+            // If store closes between 0 and 3am
+            if Today.closeHour >= 0 && Today.closeHour <= 3 {
+                hoursUntilClose = 23 - currentHour
                 hoursUntilOpen = 0
-            } else /* If store closes before 1am */ {
+            }
+            // Else if store closes at normal hours
+            else {
                 hoursUntilClose = Today.closeHour - currentHour - 1
                 hoursUntilOpen = 0
             }
@@ -160,53 +194,78 @@ class HoursVC: UIViewController {
         
         // If the store is CLOSED
         if storeIsOpen == false {
-            if Today.openHour == 0 && Today.closeHour == 0 {
+            if Today.hasNoHours {
                 hoursLbl.text = "Closed all day today"
-                
-                if Tomorrow.openHour == 0 && Tomorrow.closeHour == 0 {
-                hoursLbl.text = "Closed until Monday"
+                if Tomorrow.hasNoHours {
+                    hoursLbl.text = "Closed until Monday"
                 }
             }
-                
             else {
                 // Calculate hours until open only if store is opening soon
-                if hoursUntilOpen <= 0 {
+                if hoursUntilOpen == 0 {
                     hoursLbl.text = "Opening in \(minutesLeft) minutes"
                 }
-                
                 else {
-                    if currentHour < Today.openHour {    // Between midnight and open time
-                        if Today.openHour == 1 {
-                            hoursLbl.text = "Opening at 1am"
-                        } else {
+                    // If currently between midnight and open hours (0 to 7 roughly)
+                    if currentHour < Today.openHour {
+                        // If yesterday closed at midnight or 1am or 2am (Exactly 0 or 1 or 2)
+                        if Yesterday.closeHour == 0 || Yesterday.closeHour == 1 || Yesterday.closeHour == 2 {
+                            // If time has past yesterday closeHour
+                            if currentHour >= Yesterday.closeHour {
+                                if Today.openHour <= 12 {
+                                    hoursLbl.text = "Opening at \(Int(Today.openHour))am"
+                                } else if Today.openHour > 12 {
+                                    hoursLbl.text = "Opening at \(Int(Today.openHour)-12)pm"
+                                }
+                                print("KYLE: TWO BOOLEAN #1")
+                            }
+                        }
+                            // Else for half-number close hours
+                        else if Yesterday.closeHour >= 0 && Yesterday.closeHour <= 2 && (floor(Yesterday.closeHour) != Yesterday.closeHour) {
+                            let minutesFloorVal = (Yesterday.closeHour - floor(Yesterday.closeHour)) * 60   // Convert 0.5 hours to 30 minutes
+                            if (currentHour >= Yesterday.closeHour && minutesLeft <= Int(minutesFloorVal)) && currentHour < Today.openHour {
+                                if Today.openHour <= 12 {
+                                    hoursLbl.text = "Opening at \(Int(Today.openHour)):30am"
+                                } else if Today.openHour > 12 {
+                                    hoursLbl.text = "Opening at \(Int(Today.openHour)-12):30pm"
+                                }
+                                print("KYLE: TWO BOOLEAN #2")
+                            }
+                        }
+                        // Else if yesterday closed at normal hours
+                        else {
                             if Today.openHour <= 12 {
                                 hoursLbl.text = "Opening at \(Int(Today.openHour))am"
                             } else if Today.openHour > 12 {
                                 hoursLbl.text = "Opening at \(Int(Today.openHour)-12)pm"
                             }
-                        }
-                    } else if currentHour >= Today.closeHour {   // *** PRETTY SURE THIS LOGIC IS INCORRECT ***
-                        if Tomorrow.openHour == 1 {
-                            hoursLbl.text = "Opening at 1am"
-                        } else {
-                            if Tomorrow.openHour < 12 {
-                                hoursLbl.text = "Opening at \(Int(Tomorrow.openHour))am"
-                            } else if Today.openHour >= 12 {
-                                if Today.openHour == 12 {
-                                    hoursLbl.text = "Opening at 12pm"
-                                } else {
-                                    hoursLbl.text = "Opening at \(Int(Tomorrow.openHour)-12)pm"
-                                }
-                            }
+                            print("KYLE: TWO BOOLEAN #3")
                         }
                     }
-                    
-                    // If openHour is a half hour
-                    if !(floor(Today.openHour) == Today.openHour) {
-                        if Today.openHour <= 12 {
-                            hoursLbl.text = "Opening at \(Int(Today.openHour)):30am"
-                        } else if Today.openHour > 12 {
-                            hoursLbl.text = "Opening at \(Int(Today.openHour)-12):30pm"
+                    // If currently between roughly 7am and midnight (7 to 23 roughly) AND store does not close after midnight
+                    else if currentHour >= Today.openHour && !(Today.closeHour >= 0 && Today.closeHour <= 3){
+                        // For whole-number close hours
+                        if floor(Today.closeHour) == Today.closeHour {
+                            if currentHour >= Today.closeHour {
+                                if Today.openHour <= 12 {
+                                    hoursLbl.text = "Opening at \(Int(Today.openHour))am"
+                                } else if Today.openHour > 12 {
+                                    hoursLbl.text = "Opening at \(Int(Today.openHour)-12)pm"
+                                }
+                                print("KYLE: TWO BOOLEAN #4")
+                            }
+                        }
+                        // Else for half-number close hours
+                        else {
+                            let minutesFloorVal = (Today.closeHour - floor(Today.closeHour)) * 60   // Convert 0.5 hours to 30 minutes
+                            if (currentHour >= Today.closeHour && minutesLeft <= Int(minutesFloorVal)) {
+                                if Today.openHour <= 12 {
+                                    hoursLbl.text = "Opening at \(Int(Today.openHour)):30am"
+                                } else if Today.openHour > 12 {
+                                    hoursLbl.text = "Opening at \(Int(Today.openHour)-12):30pm"
+                                }
+                                print("KYLE: TWO BOOLEAN #5")
+                            }
                         }
                     }
                 }
@@ -218,7 +277,7 @@ class HoursVC: UIViewController {
             if hoursUntilClose <= 0 {
                 hoursLbl.text = "Closing in \(minutesLeft) minutes"
             } else {
-                if Today.closeHour == 24 {
+                if Today.closeHour == 0 {
                     hoursLbl.text = "Closing at 12am"
                 } else if Today.closeHour == 1 {
                     hoursLbl.text = "Closing at 1am"
@@ -230,8 +289,6 @@ class HoursVC: UIViewController {
         
         if restaurantChoice == "Cougar BBQ" {
             hoursLbl.text = "Hours unavailable"
-        } else if restaurantChoice == "The Den" {
-            hoursLbl.text = "Closed for renovation"
         }
     }
 }

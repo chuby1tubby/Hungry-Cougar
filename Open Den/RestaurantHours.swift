@@ -22,61 +22,72 @@ var Today: Day = Day(openingHour: 0, closingHour: 0, hasNoHours: false)
 var Tomorrow: Day = Day(openingHour: 0, closingHour: 0, hasNoHours: false)
 var ZeroDay: Day = Day(openingHour: 0, closingHour: 0, hasNoHours: false)
 
-var daysOfTheWeek = [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+var daysOfTheWeek = [Day]()
 
 func setHours() {
-    if restaurantChoice == "Dining Hall" {
-        Sunday.openHour = 8.0; Sunday.closeHour = 19.5
-        Monday.openHour = 6.5; Monday.closeHour = 19.5
-        Tuesday.openHour = 6.5; Tuesday.closeHour = 19.5
-        Wednesday.openHour = 6.5; Wednesday.closeHour = 19.5
-        Thursday.openHour = 6.5; Thursday.closeHour = 19.5
-        Friday.openHour = 6.5; Friday.closeHour = 19.5
-        Saturday.openHour = 8.0; Saturday.closeHour = 19.5
+    if restaurantChoice == "Dining Hall" { // Need to add transition closed hours
+        setupDay(day: Sunday, open: 8, close: 19.5)
+        setupDay(day: Monday, open: 6.5, close: 19.5)
+        setupDay(day: Tuesday, open: 6.5, close: 19.5)
+        setupDay(day: Wednesday, open: 6.5, close: 19.5)
+        setupDay(day: Thursday, open: 6.5, close: 19.5)
+        setupDay(day: Friday, open: 6.5, close: 19.5)
+        setupDay(day: Saturday, open: 8, close: 19.5)
     } else if restaurantChoice == "Coffeehouse" {
-        Sunday.openHour = 18; Sunday.closeHour = 24.0
-        Monday.openHour = 6.5; Monday.closeHour = 1.0
-        Tuesday.openHour = 6.5; Tuesday.closeHour = 1.0
-        Wednesday.openHour = 6.5; Wednesday.closeHour = 1.0
-        Thursday.openHour = 6.5; Thursday.closeHour = 1.0
-        Friday.openHour = 6.5; Friday.closeHour = 17.0
-        Saturday.openHour = 10; Saturday.closeHour = 16.0
+        setupDay(day: Sunday, open: 18, close: 0)
+        setupDay(day: Monday, open: 6.5, close: 1)
+        setupDay(day: Tuesday, open: 6.5, close: 1)
+        setupDay(day: Wednesday, open: 6.5, close: 1)
+        setupDay(day: Thursday, open: 6.5, close: 1)
+        setupDay(day: Friday, open: 6.5, close: 17)
+        setupDay(day: Saturday, open: 10, close: 16)
     } else if restaurantChoice == "The Den" {
         // Hours unavailable
+        setupDay(day: Sunday, open: 17, close: 0)
+        setupDay(day: Monday, open: 8, close: 0)
+        setupDay(day: Tuesday, open: 8, close: 0)
+        setupDay(day: Wednesday, open: 8, close: 0)
+        setupDay(day: Thursday, open: 8, close: 0)
+        setupDay(day: Friday, open: 8, close: 19)
+        setupDay(day: Saturday, open: 11, close: 19)
     } else if restaurantChoice == "Cougar BBQ" {
-        // Hours unavailable
+        /*
+         *
+         * Hours unavailable
+         *
+         */
     } else if restaurantChoice == "Cali Grill" {
-        Sunday.openHour = 17; Sunday.closeHour = 24
-        Monday.openHour = 8; Monday.closeHour = 24
-        Tuesday.openHour = 8; Tuesday.closeHour = 24
-        Wednesday.openHour = 8; Wednesday.closeHour = 24
-        Thursday.openHour = 8; Thursday.closeHour = 24
-        Friday.openHour = 8; Friday.closeHour = 19
-        Saturday.openHour = 11; Saturday.closeHour = 19
+        setupDay(day: Sunday, open: 17, close: 0)
+        setupDay(day: Monday, open: 8, close: 0)
+        setupDay(day: Tuesday, open: 8, close: 0)
+        setupDay(day: Wednesday, open: 8, close: 0)
+        setupDay(day: Thursday, open: 8, close: 0)
+        setupDay(day: Friday, open: 8, close: 19)
+        setupDay(day: Saturday, open: 11, close: 19)
     } else if restaurantChoice == "Pause 'n Go" {
-        Sunday.openHour = 16.0; Sunday.closeHour = 24.0
-        Monday.openHour = 7.5; Monday.closeHour = 1.0
-        Tuesday.openHour = 7.5; Tuesday.closeHour = 1.0
-        Wednesday.openHour = 7.5; Wednesday.closeHour = 1.0
-        Thursday.openHour = 7.5; Thursday.closeHour = 1.0
-        Friday.openHour = 7.5; Friday.closeHour = 19.0
-        Saturday.openHour = 12.0; Saturday.closeHour = 19.0
+        setupDay(day: Sunday, open: 16, close: 24)
+        setupDay(day: Monday, open: 7.5, close: 1)
+        setupDay(day: Tuesday, open: 7.5, close: 1)
+        setupDay(day: Wednesday, open: 7.5, close: 1)
+        setupDay(day: Thursday, open: 7.5, close: 1)
+        setupDay(day: Friday, open: 7.5, close: 1)
+        setupDay(day: Saturday, open: 12, close: 19)
     } else if restaurantChoice == "Fusion Grill" {  // Need to add transition closed hours
-        Sunday.openHour = 0; Sunday.closeHour = 0
-        Monday.openHour = 7.0; Monday.closeHour = 20.0
-        Tuesday.openHour = 7.0; Tuesday.closeHour = 20.0
-        Wednesday.openHour = 7.0; Wednesday.closeHour = 20.0
-        Thursday.openHour = 7.0; Thursday.closeHour = 20.0
-        Friday.openHour = 7.0; Friday.closeHour = 15.0
-        Saturday.openHour = 0; Saturday.closeHour = 0
+        setupDay(day: Sunday, open: 0, close: 0)
+        setupDay(day: Monday, open: 7, close: 20)
+        setupDay(day: Tuesday, open: 7, close: 20)
+        setupDay(day: Wednesday, open: 7, close: 20)
+        setupDay(day: Thursday, open: 7, close: 20)
+        setupDay(day: Friday, open: 7, close: 16)
+        setupDay(day: Saturday, open: 0, close: 0)
     } else if restaurantChoice == "Fresh Grounds" {
-        Sunday.openHour = 0; Sunday.closeHour = 0
-        Monday.openHour = 6.5; Monday.closeHour = 20.0
-        Tuesday.openHour = 6.5; Tuesday.closeHour = 20.0
-        Wednesday.openHour = 6.5; Wednesday.closeHour = 20.0
-        Thursday.openHour = 6.5; Thursday.closeHour = 20.0
-        Friday.openHour = 6.5; Friday.closeHour = 16.0
-        Saturday.openHour = 0; Saturday.closeHour = 0
+        setupDay(day: Sunday, open: 0, close: 0)
+        setupDay(day: Monday, open: 6.5, close: 20)
+        setupDay(day: Tuesday, open: 6.5, close: 20)
+        setupDay(day: Wednesday, open: 6.5, close: 20)
+        setupDay(day: Thursday, open: 6.5, close: 20)
+        setupDay(day: Friday, open: 6.5, close: 16)
+        setupDay(day: Saturday, open: 0, close: 0)
     } else if restaurantChoice == "West Market" {
         setupDay(day: Sunday, open: 0, close: 0)
         setupDay(day: Monday, open: 7, close: 20)
@@ -102,6 +113,8 @@ func setHours() {
         setupDay(day: Friday, open: 11, close: 15)
         setupDay(day: Saturday, open: 0, close: 0)
     }
+    
+    daysOfTheWeek = [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
     
     for day in daysOfTheWeek {
         if day.openHour == 0 && day.closeHour == 0 {
