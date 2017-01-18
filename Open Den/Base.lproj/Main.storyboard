@@ -99,7 +99,7 @@
                                                 <rect key="frame" x="8" y="461.5" width="359" height="77.5"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="coin-white" translatesAutoresizingMaskIntoConstraints="NO" id="6PY-hl-SV9">
-                                                        <rect key="frame" x="63.5" y="14" width="50" height="50"/>
+                                                        <rect key="frame" x="63" y="13.5" width="50" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="6PY-hl-SV9" secondAttribute="height" multiplier="1:1" id="1gA-UG-wqL"/>
                                                             <constraint firstAttribute="width" constant="50" id="C7e-Gv-xu6"/>
@@ -107,7 +107,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Dining Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJ3-3o-di1">
-                                                        <rect key="frame" x="128.5" y="14" width="163" height="50"/>
+                                                        <rect key="frame" x="128" y="13.5" width="163" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="163" id="4f5-BR-Frm"/>
                                                             <constraint firstAttribute="height" constant="50" id="KM4-pL-eVX"/>
@@ -118,7 +118,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzR-Eu-YPj">
-                                                        <rect key="frame" x="20.5" y="4" width="318" height="70"/>
+                                                        <rect key="frame" x="21" y="3.5" width="318" height="70"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="hzR-Eu-YPj" secondAttribute="height" multiplier="227:50" id="0gv-Hp-Cax"/>
                                                             <constraint firstAttribute="width" constant="250" id="6h9-Pz-hvh"/>
@@ -883,13 +883,6 @@ Menu</string>
                     <view key="view" contentMode="scaleToFill" id="io9-7l-g3p" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PEX-WH-eht">
-                                <rect key="frame" x="67" y="176" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" red="0.5888887048" green="0.15054461359999999" blue="0.13530883190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
@@ -964,10 +957,10 @@ Menu</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="swx-Ps-VMF">
-                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="188" height="667"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="zQK-fc-s9Y">
-                                        <rect key="frame" x="54.5" y="141" width="80" height="425"/>
+                                        <rect key="frame" x="54" y="141" width="80" height="425"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cQ2-pI-rZe">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="101.5"/>
@@ -1129,10 +1122,10 @@ Menu</string>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPM-Ac-I9v">
-                                <rect key="frame" x="187.5" y="0.0" width="187.5" height="667"/>
+                                <rect key="frame" x="188" y="0.0" width="187" height="667"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Ppc-pf-rmb">
-                                        <rect key="frame" x="54.5" y="141" width="80" height="425"/>
+                                        <rect key="frame" x="54" y="141" width="80" height="425"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="V0g-RO-fFA">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="101.5"/>
@@ -1306,7 +1299,7 @@ Menu</string>
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FnD-kq-uei" userLabel="LEFT">
-                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="188" height="667"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="QMW-Nr-MdC">
                                                 <rect key="frame" x="54" y="135" width="80" height="437"/>
@@ -1457,7 +1450,7 @@ Menu</string>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHA-k0-7Dp" userLabel="RIGHT">
-                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="667"/>
+                                        <rect key="frame" x="188" y="0.0" width="187" height="667"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="pEW-si-ATN">
                                                 <rect key="frame" x="54" y="135" width="80" height="437"/>
@@ -1640,7 +1633,7 @@ Menu</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aYT-vv-QhX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6j5-pb-k0w">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="6j5-pb-k0w">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1674,7 +1667,7 @@ Menu</string>
         <image name="userIcon" width="626" height="626"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="X8Z-Ic-x0s"/>
+        <segue reference="HmY-Vi-mCP"/>
         <segue reference="vkx-zZ-DrN"/>
     </inferredMetricsTieBreakers>
 </document>
