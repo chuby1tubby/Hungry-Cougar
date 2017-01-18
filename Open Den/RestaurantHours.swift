@@ -42,7 +42,6 @@ func setHours() {
         setupDay(day: Friday, open: 6.5, close: 17)
         setupDay(day: Saturday, open: 10, close: 16)
     } else if restaurantChoice == "The Den" {
-        // Hours unavailable
         setupDay(day: Sunday, open: 17, close: 0)
         setupDay(day: Monday, open: 8, close: 0)
         setupDay(day: Tuesday, open: 8, close: 0)
