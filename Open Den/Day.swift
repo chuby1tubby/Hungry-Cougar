@@ -10,12 +10,12 @@ import Foundation
 
 class Day {
     // Base variables
-    fileprivate var _openTime: Double = 0
-    fileprivate var _closeTime: Double = 0
+    fileprivate var _openTime: Int = 0
+    fileprivate var _closeTime: Int = 0
     fileprivate var _hasNoHours: Bool = false
     
     // Getters
-    var openTime: Double {
+    var openTime: Int {
         get {
             return _openTime
         }
@@ -23,7 +23,7 @@ class Day {
             _openTime = value
         }
     }
-    var closeTime: Double {
+    var closeTime: Int {
         get {
             return _closeTime
         }
@@ -41,10 +41,9 @@ class Day {
     }
     
     // Initializer
-    init(openTime: Double, closeTime: Double, hasNoHours: Bool) {
+    init(openTime: Int, closeTime: Int, hasNoHours: Bool) {
         self._openTime = openTime
         self._closeTime = closeTime
         self._hasNoHours = hasNoHours
     }
 }
-

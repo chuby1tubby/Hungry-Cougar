@@ -13,30 +13,25 @@ public var restaurantChoice = ""
 
 class HoursVC: UIViewController {
     // Base values
-    var currentHour: Double = 0
-    var currentMinute: Int = 0
-    var storeIsOpen: Bool = false
-    var hoursUntilOpen: Double = 0
-    var hoursUntilClose: Double = 0
     var minutesLeft: Int = 0
+    var currentMinute: Int = 0
+    var minutesUntilOpen: Int = 0
     var minutesUntilClose: Int = 0
+    var currentTimeInMinutes: Int = 0
+    var storeIsOpen: Bool = false
     
     // IBOutlets
     @IBOutlet weak var yesNoLbl: UILabel!
-    @IBOutlet weak var hoursLbl: UILabel!
-    
-    // Loads when view appears
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.title = restaurantChoice
-    }
+    @IBOutlet weak var timeLabel: UILabel!
     
     // Loads right before view appears
     override func viewWillAppear(_ animated: Bool) {
+        self.title = restaurantChoice
         setHours()
         loadCurrentDateTime()
         checkIfOpen()
         calculateTimeUntilOpen()
+        displayTimeUntilOpen()
     }
     
     // Set the date manualy to test the calculator
@@ -57,17 +52,10 @@ class HoursVC: UIViewController {
         let hour = components.hour
         let minute = components.minute
         
-        
         // Manually set current date and time
-//        manuallySetDay(1, dd: 18, yyyy: 2017, wday: 4, hr: 7, min: 37)
+        //        manuallySetDay(1, dd: 18, yyyy: 2017, wday: 4, hr: 7, min: 37)
         
-        currentHour = Double(hour!)
-//        currentHour = 7               // Set manual hour
-        currentMinute = minute!
-//        currentMinute = 29            // Set manual minute
-        
-        // Calculate minutes until the next hour
-        minutesLeft = 60 - currentMinute
+        currentTimeInMinutes = (hour! * 60) + minute!
         
         // Set current day hours
         switch weekday! {
@@ -110,68 +98,34 @@ class HoursVC: UIViewController {
         yesNoLbl.text = "OPEN"
         storeIsOpen = true
         
-        /*
-            I need to make sure this logic is correct. Something seems wrong here.
-        */
         
-        // If currently between midnight and open hours (0 to 7 roughly)
-        if currentHour < floor(Today.openTime) {
-            // If yesterday closed at midnight or 1am or 2am (Exactly 0 or 1 or 2)
-            if Yesterday.closeTime == 0 || Yesterday.closeTime == 1 || Yesterday.closeTime == 2 {
-                // If time has past yesterday closeTime
-                if currentHour >= Yesterday.closeTime {
-                    storeIsOpen = false
-                    print("KYLE: BOOLEAN #1")
-                }
-            }
-            // Else for half-number close hours
-            else if Yesterday.closeTime >= 0 && Yesterday.closeTime <= 2 && (floor(Yesterday.closeTime) != Yesterday.closeTime) {
-                let minutesFloorVal = (Yesterday.closeTime - floor(Yesterday.closeTime)) * 60   // Convert 0.5 hours to 30 minutes
-                if currentHour >= Yesterday.closeTime {
-                    if currentHour == Yesterday.closeTime {
-                        if minutesLeft >= Int(minutesFloorVal) {
-                            storeIsOpen = false
-                            print("KYLE: BOOLEAN #2")
-                        }
-                    } else {
-                        storeIsOpen = false
-                        print("KYLE: BOOLEAN #3")
-                    }
-                }
-            }
-            // Else if yesterday closed before midnight
-            else {
+        // If current time is between midnight and open time
+        if currentTimeInMinutes < Today.openTime {
+            // If yesterday closed at normal hours
+            if Yesterday.closeTime > 120 {
                 storeIsOpen = false
-                print("KYLE: BOOLEAN #4")
+                print("KYLE: OPEN-CLOSE BOOL #1")
+            } else {
+                // If time has past yesterday close time
+                if currentTimeInMinutes >= Yesterday.closeTime {
+                    storeIsOpen = false
+                    print("KYLE: OPEN-CLOSE BOOL #2")
+                }
             }
         }
-        // If currently between roughly 7am and midnight (7 to 23 roughly) AND store does not close after midnight
-        else if currentHour >= Today.openTime && !(Today.closeTime >= 0 && Today.closeTime <= 3){
-            // For whole-number close hours
-            if floor(Today.closeTime) == Today.closeTime {
-                if currentHour >= Today.closeTime {
+        // Else if current time is between open time and 11:59pm
+        else {
+            // If today closes after midnight
+            if Today.closeTime <= 120 {
+                storeIsOpen = false
+                print("KYLE: OPEN-CLOSE BOOL #3")
+            } else {
+                // If current time is after today close time
+                if currentTimeInMinutes >= Today.closeTime {
                     storeIsOpen = false
-                    print("KYLE: BOOLEAN #5")
+                    print("KYLE: OPEN-CLOSE BOOL #4")
                 }
             }
-            // Else for half-number close hours
-            else {
-                let minutesFloorVal = (Today.closeTime - floor(Today.closeTime)) * 60   // Convert 0.5 hours to 30 minutes
-                if currentHour >= Today.closeTime {
-                    if currentHour == Today.closeTime {
-                        if minutesLeft >= Int(minutesFloorVal) {
-                            storeIsOpen = false
-                            print("KYLE: BOOLEAN #6")
-                        }
-                    } else {
-                        storeIsOpen = false
-                        print("KYLE: BOOLEAN #7")
-                    }
-                }
-            }
-        } else {
-            print("KYLE: Made it to the else.")
-            
         }
         
         if Today.hasNoHours {
@@ -189,152 +143,129 @@ class HoursVC: UIViewController {
     func calculateTimeUntilOpen() {
         // If the store is CLOSED
         if storeIsOpen == false {
-            if currentHour >= Today.closeTime && Today.closeTime != 0 {
-                hoursUntilOpen = (23 - currentHour) + Tomorrow.openTime
-                hoursUntilClose = 0
+            if Today.openTime > currentTimeInMinutes {
+                minutesUntilOpen = Today.openTime - currentTimeInMinutes
             } else {
-                hoursUntilOpen = Today.openTime - currentHour - 1
-                hoursUntilClose = 0
+                minutesUntilOpen = Tomorrow.openTime + (1439 - currentTimeInMinutes)
             }
         }
-            
         // If the store is OPEN
         else {
-            // If store closes between 0 and 1am
-            if floor(Today.closeTime) == 0 {
-                hoursUntilClose = 24 - currentHour
-                hoursUntilOpen = 0
-            } else if floor(Today.closeTime) == 1 {
-                hoursUntilClose = 25 - currentHour
-                hoursUntilOpen = 0
-            }
-            // Else if store closes at normal hours
-            else {
-                hoursUntilClose = Today.closeTime - currentHour - 1
-                hoursUntilOpen = 0
+            if Today.closeTime > currentTimeInMinutes {
+                if currentTimeInMinutes < 120 {
+                    minutesUntilClose = Yesterday.closeTime - currentTimeInMinutes
+                } else {
+                    minutesUntilClose = Today.closeTime - currentTimeInMinutes
+                }
+            } else {
+                minutesUntilClose = 1439 - currentTimeInMinutes + Today.closeTime
             }
         }
         
+        // Set minutesLeft value
+        if minutesUntilClose != 0 {
+            minutesLeft = minutesUntilClose
+        } else if minutesUntilOpen != 0 {
+            minutesLeft = minutesUntilOpen
+        }
+    }
+    
+    func displayTimeUntilOpen() {
         // If the store is CLOSED
         if storeIsOpen == false {
+            // If store has no hours today
             if Today.hasNoHours {
-                hoursLbl.text = "Closed all day today"
+                timeLabel.text = "Closed all day today"
+                Today.hasNoHours = false
+                // If store also has no hours tomorrow
                 if Tomorrow.hasNoHours {
-                    hoursLbl.text = "Closed until Monday"
+                    timeLabel.text = "Closed until Monday"
+                    Tomorrow.hasNoHours = false
                 }
             }
             else {
                 // Calculate hours until open only if store is opening soon
-                if hoursUntilOpen == 0 {
-                    hoursLbl.text = "Opening in \(minutesLeft) minutes"
+                if minutesLeft < 60 {
+                    timeLabel.text = "Opening in \(minutesLeft) minutes"
                 }
                 else {
-                    // If currently between midnight and open hours (0 to 7 roughly)
-                    if currentHour < Today.openTime {
-                        // If yesterday closed at midnight or 1am or 2am (Exactly 0 or 1 or 2)
-                        if Yesterday.closeTime == 0 || Yesterday.closeTime == 1 || Yesterday.closeTime == 2 {
-                            // If time has past yesterday closeTime
-                            if currentHour >= Yesterday.closeTime {
-                                if Today.openTime <= 12 {
-                                    hoursLbl.text = "Opening at \(Int(Today.openTime))am"
-                                } else if Today.openTime > 12 {
-                                    hoursLbl.text = "Opening at \(Int(Today.openTime)-12)pm"
-                                }
-                                print("KYLE: TWO BOOLEAN #1")
+                    // If currently between midnight and open hours (0 to 7am roughly)
+                    if currentTimeInMinutes < Today.openTime {
+                        // For whole numbers
+                        if floor(Double(Today.openTime / 60)) == Double(Today.openTime) / 60.0 {
+                            // If opens before 12:00pm
+                            if Today.openTime < 720 {
+                                print("KYLE: Display time BOOL #1")
+                                timeLabel.text = "Opening at \(Today.openTime / 60)am"
+                            } else {
+                                print("KYLE: Display time BOOL #2")
+                                timeLabel.text = "Opening at \(Today.openTime / 60)pm"
                             }
-                        }
-                            // Else for half-number close hours
-                        else if Yesterday.closeTime >= 0 && Yesterday.closeTime <= 2 && (floor(Yesterday.closeTime) != Yesterday.closeTime) {
-                            let minutesFloorVal = (Yesterday.closeTime - floor(Yesterday.closeTime)) * 60   // Convert 0.5 hours to 30 minutes
-                            if currentHour >= Yesterday.closeTime {
-                                if currentHour == Yesterday.closeTime {
-                                    if minutesLeft >= Int(minutesFloorVal) {
-                                        if Today.openTime <= 12 {
-                                            hoursLbl.text = "Opening at \(Int(Today.openTime)):30am"
-                                        } else if Today.openTime > 12 {
-                                            hoursLbl.text = "Opening at \(Int(Today.openTime)-12):30pm"
-                                        }
-                                        print("KYLE: TWO BOOLEAN #3")
-                                    }
-                                } else {
-                                    if Today.openTime <= 12 {
-                                        hoursLbl.text = "Opening at \(Int(Today.openTime)):30am"
-                                    } else if Today.openTime > 12 {
-                                        hoursLbl.text = "Opening at \(Int(Today.openTime)-12):30pm"
-                                    }
-                                    print("KYLE: TWO BOOLEAN #4")
-                                }
+                        } else {
+                            // If opens before 12:30pm
+                            if Tomorrow.openTime < 750 {
+                                print("KYLE: Display time BOOL #3")
+                                timeLabel.text = "Opening at \(Int(floor(Double(Tomorrow.openTime) / 60.0))):30am"
+                            } else {
+                                print("KYLE: Display time BOOL #4")
+                                timeLabel.text = "Opening at \(Int(floor(Double(Tomorrow.openTime) / 60.0))):30pm"
                             }
-                        }
-                        // Else if yesterday closed at normal hours
-                        else {
-                            if Today.openTime <= 12 {
-                                hoursLbl.text = "Opening at \(Int(Today.openTime))am"
-                            } else if Today.openTime > 12 {
-                                hoursLbl.text = "Opening at \(Int(Today.openTime)-12)pm"
-                            }
-                            print("KYLE: TWO BOOLEAN #5")
                         }
                     }
-                    // If currently between roughly 7am and midnight (7 to 23 roughly) AND store does not close after midnight
-                    else if currentHour >= Today.openTime && !(Today.closeTime >= 0 && Today.closeTime <= 3) {
-                        // For whole-number close hours
-                        if floor(Today.closeTime) == Today.closeTime {
-                            if currentHour >= Today.closeTime {
-                                if Today.openTime <= 12 {
-                                    hoursLbl.text = "Opening at \(Int(Today.openTime))am"
-                                } else if Today.openTime > 12 {
-                                    hoursLbl.text = "Opening at \(Int(Today.openTime)-12)pm"
-                                }
-                                print("KYLE: TWO BOOLEAN #6")
+                        // If currently between roughly 7am and midnight
+                    else {
+                        // For whole numbers
+                        if floor(Double(Tomorrow.openTime) / 60.0) == Double(Tomorrow.openTime) / 60.0 {
+                            // If opens before 12:00pm
+                            if Today.openTime < 720 {
+                                print("KYLE: Display time BOOL #5")
+                                timeLabel.text = "Opening at \(Tomorrow.openTime / 60)am"
+                            } else {
+                                print("KYLE: Display time BOOL #6")
+                                timeLabel.text = "Opening at \(Tomorrow.openTime / 60)pm"
                             }
-                        }
-                        // Else for half-number close hours
-                        else {
-                            let minutesFloorVal = (Today.closeTime - floor(Today.closeTime)) * 60   // Convert 0.5 hours to 30 minutes
-                            if currentHour >= Today.closeTime {
-                                if currentHour == Today.closeTime {
-                                    if minutesLeft >= Int(minutesFloorVal) {
-                                        if Today.openTime <= 12 {
-                                            hoursLbl.text = "Opening at \(Int(Today.openTime)):30am"
-                                        } else if Today.openTime > 12 {
-                                            hoursLbl.text = "Opening at \(Int(Today.openTime)-12):30pm"
-                                        }
-                                        print("KYLE: TWO BOOLEAN #8")
-                                    }
-                                } else {
-                                    if Today.openTime <= 12 {
-                                        hoursLbl.text = "Opening at \(Int(Today.openTime)):30am"
-                                    } else if Today.openTime > 12 {
-                                        hoursLbl.text = "Opening at \(Int(Today.openTime)-12):30pm"
-                                    }
-                                    print("KYLE: TWO BOOLEAN #9")
-                                }
+                        } else {
+                            // If opens before 12:30pm
+                            if Tomorrow.openTime < 750 {
+                                print("KYLE: Display time BOOL #7")
+                                timeLabel.text = "Opening at \(Int(floor(Double(Tomorrow.openTime) / 60.0))):30am"
+                            } else {
+                                print("KYLE: Display time BOOL #8")
+                                timeLabel.text = "Opening at \(Int(floor(Double(Tomorrow.openTime) / 60.0))):30pm"
                             }
-
                         }
                     }
                 }
             }
         }
-            
         // If the store is OPEN
         else {
-            if hoursUntilClose <= 0 {
-                hoursLbl.text = "Closing in \(minutesLeft) minutes"
+            if minutesLeft < 60 {
+                timeLabel.text = "Closing in \(minutesLeft) minutes"
             } else {
-                if Today.closeTime == 0 {
-                    hoursLbl.text = "Closing at 12am"
-                } else if Today.closeTime == 1 {
-                    hoursLbl.text = "Closing at 1am"
+                if (Yesterday.closeTime == 0 && currentTimeInMinutes < 120) || (Today.closeTime == 0 && currentTimeInMinutes >= 120) {
+                    print("KYLE: Display time BOOL #9")
+                    timeLabel.text = "Closing at midnight"
+                } else if (Yesterday.closeTime == 60 && currentTimeInMinutes < 120) || (Today.closeTime == 60 && currentTimeInMinutes >= 120) {
+                    print("KYLE: Display time BOOL #10")
+                    timeLabel.text = "Closing at 1am"
                 } else {
-                    hoursLbl.text = "Closing at \(Int(Today.closeTime)-12)pm"
+                    if floor(Double(Today.closeTime)/60.0) == (Double(Today.closeTime) / 60.0) {
+                        print("KYLE: Display time BOOL #11")
+                        timeLabel.text = "Closing at \(Today.closeTime / 60)pm"
+                    } else {
+                        print("KYLE: Display time BOOL #12")
+                        timeLabel.text = "Closing at \(Int(floor(Double(Today.closeTime) / 60.0))):30pm"
+                    }
                 }
             }
         }
         
+        // Extra test cases
         if restaurantChoice == "Cougar BBQ" {
-            hoursLbl.text = "Hours unavailable"
+            timeLabel.text = "Hours unavailable"
+        } else if restaurantChoice == "The Den" {
+            timeLabel.text = "I don't even know"
         }
     }
 }
