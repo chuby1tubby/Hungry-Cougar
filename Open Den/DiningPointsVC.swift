@@ -16,8 +16,9 @@ var dailyBudget = 0.0
 var schoolWeek: Int = 0
 var minute: Int = 0
 var hour: Int = 0
-var weekday: Int = 0
 var day: Int = 0
+var weekday: Int = 0
+var weekOfYear: Int = 0
 var month: Int = 0
 var year: Int = 0
 var todayDate: String? = ""
@@ -170,52 +171,6 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
         passwordField.resignFirstResponder()
     }
     
-    
-    /*
-
-     Keyboard functions
- 
-    */
-    
-    // Keyboard view-moving functions
-    func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y == 0 {
-                self.view.frame.origin.y -= keyboardSize.height * 0.5
-            }
-        }
-    }
-    
-    func keyboardWillHide(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y != 0{
-                self.view.frame.origin.y += keyboardSize.height * 0.5
-            }
-        }
-    }
-    
-    // Jump from usernameField to passwordField, then hide the keyboard
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == usernameField {
-            passwordField.becomeFirstResponder()
-        } else {
-            usernameField.resignFirstResponder()
-            passwordField.resignFirstResponder()
-        }
-        return true
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     /*
         Dining Points calculation functions
     */
@@ -265,9 +220,10 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
     }
     
     // Set the date manualy to test the calculator
-    func manuallySetDay(_ mm: Int, dd: Int, yyyy: Int, wday: Int) {
+    func manuallySetDay(_ mm: Int, dd: Int, woy: Int, yyyy: Int, wday: Int) {
         month = mm
         day = dd
+        weekOfYear = woy
         year = yyyy
         weekday = wday
     }
@@ -275,14 +231,15 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
     func setSchoolWeek() {
         let date = Date()
         let calendar = Calendar.current
-        let components = calendar.dateComponents([.weekday, .day, .month, .year], from: date as Date)
+        let components = calendar.dateComponents([.weekday, .day, .weekOfYear, .month, .year], from: date as Date)
         weekday = components.weekday!
+        weekOfYear = components.weekOfYear!
         day = components.day!
         month = components.month!
         year = components.year!
         
         // Optional function for testing a day
-        manuallySetDay(1, dd: 18, yyyy: 2017, wday: 4)
+        manuallySetDay(1, dd: 18, woy: 1, yyyy: 2017, wday: 4)
         
         todayDate = String("\(month).\(day).\(year-2000)")
         
@@ -404,5 +361,41 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
         } else {
             return false
         }
+    }
+    
+    
+    
+    /*
+     
+     Keyboard functions
+     
+     */
+    
+    // Keyboard view-moving functions
+    func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height * 0.5
+            }
+        }
+    }
+    
+    func keyboardWillHide(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y != 0{
+                self.view.frame.origin.y += keyboardSize.height * 0.5
+            }
+        }
+    }
+    
+    // Jump from usernameField to passwordField, then hide the keyboard
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == usernameField {
+            passwordField.becomeFirstResponder()
+        } else {
+            usernameField.resignFirstResponder()
+            passwordField.resignFirstResponder()
+        }
+        return true
     }
 }
