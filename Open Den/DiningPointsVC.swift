@@ -282,7 +282,7 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
         year = components.year!
         
         // Optional function for testing a day
-//        manuallySetDay(1, dd: 8, yyyy: 2017, wday: 1)
+        manuallySetDay(1, dd: 18, yyyy: 2017, wday: 4)
         
         todayDate = String("\(month).\(day).\(year-2000)")
         

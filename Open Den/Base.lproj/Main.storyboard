@@ -1483,7 +1483,7 @@ Menu</string>
                                                                     <constraint firstItem="8FV-Ah-QbL" firstAttribute="top" secondItem="Nd1-iD-sEv" secondAttribute="top" id="zpM-l2-MzQ"/>
                                                                 </constraints>
                                                             </view>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coffeehouse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RM7-9o-y7x">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starbucks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RM7-9o-y7x">
                                                                 <rect key="frame" x="0.0" y="85" width="80" height="17"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="17" id="UM2-Vk-E2o"/>

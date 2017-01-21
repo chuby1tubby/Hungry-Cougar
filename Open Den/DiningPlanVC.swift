@@ -47,6 +47,6 @@ class DiningPlanVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return diningTitles.count
     }    
 }
