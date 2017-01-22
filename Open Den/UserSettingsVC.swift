@@ -12,6 +12,8 @@ class UserSettingsVC: UIViewController {
     
     // Outlets
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
 
     override func viewWillAppear(_ animated: Bool) {
         scrollView.contentSize.height = 1000

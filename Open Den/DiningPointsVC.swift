@@ -163,7 +163,6 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
     // Segue to Settings
     @IBAction func settingsButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "settingsSegue", sender: nil)
-
     }
     
     // Hide keyboard on background tap
