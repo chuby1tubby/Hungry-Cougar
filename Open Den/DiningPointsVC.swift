@@ -26,11 +26,8 @@ var todayTime: String? = ""
 
 class DiningPointsVC: UIViewController, UITextFieldDelegate {
     
-    // Local variables
-    
     // Constants
     let mealBudgets: [Double] = [1162, 978, 696, 554, 363]
-    let weeklyBudgets: [Double] = [72.5, 61, 43.5, 35, 22.5]
 
     // Outlets
     @IBOutlet weak var diningPlanLbl: UILabel!
@@ -45,7 +42,6 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var greyView: UIView!
     @IBOutlet weak var usersDiningPointsView: CustomView!
     @IBOutlet weak var usersDiningPointsLbl: DontCutMe!
-    @IBOutlet weak var refreshImg: UIImageView!
     @IBOutlet weak var refreshBtn: UIButton!
     
     override func viewDidLoad() {
