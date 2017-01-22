@@ -98,7 +98,6 @@ class HoursVC: UIViewController {
         yesNoLbl.text = "OPEN"
         storeIsOpen = true
         
-        
         // If current time is between midnight and open time
         if currentTimeInMinutes < Today.openTime {
             // If yesterday closed at normal hours
@@ -113,7 +112,7 @@ class HoursVC: UIViewController {
                 }
             }
         }
-        // Else if current time is between open time and 11:59pm
+            // Else if current time is between open time and 11:59pm
         else {
             // If today closes after midnight
             if Today.closeTime <= 120 {
@@ -125,6 +124,19 @@ class HoursVC: UIViewController {
                     storeIsOpen = false
                     print("KYLE: OPEN-CLOSE BOOL #4")
                 }
+            }
+        }
+        
+        // Extra cases for Dining Hall and Fusion Grill due to mid-day breaks
+        if restaurantChoice == "Dining Hall" && Today.openTime == Monday.openTime && Today.closeTime == Monday.closeTime {
+            if currentTimeInMinutes >= 570 && currentTimeInMinutes < 660 {
+                storeIsOpen = false
+            } else if currentTimeInMinutes >= 840 && currentTimeInMinutes < 1020 {
+                storeIsOpen = false
+            }
+        } else if restaurantChoice == "Fusion Grill" && Today.openTime == Monday.openTime && Today.closeTime == Monday.closeTime {
+            if currentTimeInMinutes >= 600 && currentTimeInMinutes < 630 {
+                storeIsOpen = false
             }
         }
         
@@ -149,7 +161,7 @@ class HoursVC: UIViewController {
                 minutesUntilOpen = Tomorrow.openTime + (1439 - currentTimeInMinutes)
             }
         }
-        // If the store is OPEN
+            // If the store is OPEN
         else {
             if Today.closeTime > currentTimeInMinutes {
                 if currentTimeInMinutes < 120 {
@@ -159,6 +171,19 @@ class HoursVC: UIViewController {
                 }
             } else {
                 minutesUntilClose = 1439 - currentTimeInMinutes + Today.closeTime
+            }
+        }
+        
+        // Extra cases for Dining Hall and Fusion Grill due to mid-day breaks
+        if restaurantChoice == "Dining Hall" && Today.openTime == Monday.openTime && Today.closeTime == Monday.closeTime {
+            if currentTimeInMinutes >= 570 && currentTimeInMinutes < 660 {
+                minutesUntilOpen = 660 - currentTimeInMinutes
+            } else if currentTimeInMinutes >= 840 && currentTimeInMinutes < 1020 {
+                minutesUntilOpen = 1020 - currentTimeInMinutes
+            }
+        } else if restaurantChoice == "Fusion Grill" && Today.openTime == Monday.openTime && Today.closeTime == Monday.closeTime {
+            if currentTimeInMinutes >= 600 && currentTimeInMinutes < 630 {
+                minutesUntilOpen = 630 - currentTimeInMinutes
             }
         }
         
@@ -184,54 +209,61 @@ class HoursVC: UIViewController {
                 }
             }
             else {
-                // Calculate hours until open only if store is opening soon
-                if minutesLeft < 60 {
-                    timeLabel.text = "Opening in \(minutesLeft) minutes"
-                }
-                else {
-                    // If currently between midnight and open hours (0 to 7am roughly)
-                    if currentTimeInMinutes < Today.openTime {
-                        // For whole numbers
-                        if floor(Double(Today.openTime / 60)) == Double(Today.openTime) / 60.0 {
-                            // If opens before 12:00pm
-                            if Today.openTime < 720 {
-                                print("KYLE: Display time BOOL #1")
-                                timeLabel.text = "Opening at \(Today.openTime / 60)am"
+                if Tomorrow.hasNoHours {
+                    timeLabel.text = "Closed all day tomorrow"
+                    if Sunday.hasNoHours {
+                        timeLabel.text = "Closed until Monday"
+                    }
+                } else {
+                    // Calculate hours until open only if store is opening soon
+                    if minutesLeft < 60 {
+                        timeLabel.text = "Opening in \(minutesLeft) minutes"
+                    }
+                    else {
+                        // If currently between midnight and open hours (0 to 7am roughly)
+                        if currentTimeInMinutes < Today.openTime {
+                            // For whole numbers
+                            if floor(Double(Today.openTime / 60)) == Double(Today.openTime) / 60.0 {
+                                // If opens before 12:00pm
+                                if Today.openTime < 720 {
+                                    print("KYLE: Display time BOOL #1")
+                                    timeLabel.text = "Opening at \(Today.openTime / 60)am"
+                                } else {
+                                    print("KYLE: Display time BOOL #2")
+                                    timeLabel.text = "Opening at \((Today.openTime / 60) - 12)pm"
+                                }
                             } else {
-                                print("KYLE: Display time BOOL #2")
-                                timeLabel.text = "Opening at \(Today.openTime / 60)pm"
-                            }
-                        } else {
-                            // If opens before 12:30pm
-                            if Tomorrow.openTime < 750 {
-                                print("KYLE: Display time BOOL #3")
-                                timeLabel.text = "Opening at \(Int(floor(Double(Tomorrow.openTime) / 60.0))):30am"
-                            } else {
-                                print("KYLE: Display time BOOL #4")
-                                timeLabel.text = "Opening at \(Int(floor(Double(Tomorrow.openTime) / 60.0))):30pm"
+                                // If opens before 12:30pm
+                                if Tomorrow.openTime < 750 {
+                                    print("KYLE: Display time BOOL #3")
+                                    timeLabel.text = "Opening at \(Int(floor(Double(Tomorrow.openTime) / 60.0))):30am"
+                                } else {
+                                    print("KYLE: Display time BOOL #4")
+                                    timeLabel.text = "Opening at \(Int(floor(Double(Tomorrow.openTime) / 60.0)) - 12):30pm"
+                                }
                             }
                         }
-                    }
                         // If currently between roughly 7am and midnight
-                    else {
-                        // For whole numbers
-                        if floor(Double(Tomorrow.openTime) / 60.0) == Double(Tomorrow.openTime) / 60.0 {
-                            // If opens before 12:00pm
-                            if Today.openTime < 720 {
-                                print("KYLE: Display time BOOL #5")
-                                timeLabel.text = "Opening at \(Tomorrow.openTime / 60)am"
+                        else {
+                            // For whole numbers
+                            if floor(Double(Tomorrow.openTime) / 60.0) == Double(Tomorrow.openTime) / 60.0 {
+                                // If opens before 12:00pm
+                                if Tomorrow.openTime < 720 {
+                                    print("KYLE: Display time BOOL #5")
+                                    timeLabel.text = "Opening at \(Tomorrow.openTime / 60)am"
+                                } else {
+                                    print("KYLE: Display time BOOL #6")
+                                    timeLabel.text = "Opening at \((Tomorrow.openTime / 60) - 12)pm"
+                                }
                             } else {
-                                print("KYLE: Display time BOOL #6")
-                                timeLabel.text = "Opening at \(Tomorrow.openTime / 60)pm"
-                            }
-                        } else {
-                            // If opens before 12:30pm
-                            if Tomorrow.openTime < 750 {
-                                print("KYLE: Display time BOOL #7")
-                                timeLabel.text = "Opening at \(Int(floor(Double(Tomorrow.openTime) / 60.0))):30am"
-                            } else {
-                                print("KYLE: Display time BOOL #8")
-                                timeLabel.text = "Opening at \(Int(floor(Double(Tomorrow.openTime) / 60.0))):30pm"
+                                // If opens before 12:30pm
+                                if Tomorrow.openTime < 750 {
+                                    print("KYLE: Display time BOOL #7")
+                                    timeLabel.text = "Opening at \(Int(floor(Double(Tomorrow.openTime) / 60.0))):30am"
+                                } else {
+                                    print("KYLE: Display time BOOL #8")
+                                    timeLabel.text = "Opening at \(Int(floor(Double(Tomorrow.openTime) / 60.0)) - 12):30pm"
+                                }
                             }
                         }
                     }
@@ -255,17 +287,28 @@ class HoursVC: UIViewController {
                         timeLabel.text = "Closing at \(Today.closeTime / 60)pm"
                     } else {
                         print("KYLE: Display time BOOL #12")
-                        timeLabel.text = "Closing at \(Int(floor(Double(Today.closeTime) / 60.0))):30pm"
+                        timeLabel.text = "Closing at \(Int(floor(Double(Today.closeTime) / 60.0)) - 12):30pm"
                     }
                 }
             }
         }
         
-        // Extra test cases
+        // Extra cases for unavailable hours
         if restaurantChoice == "Cougar BBQ" {
             timeLabel.text = "Hours unavailable"
-        } else if restaurantChoice == "The Den" {
-            timeLabel.text = "I don't even know"
+        }
+        
+        // Extra cases for Dining Hall and Fusion Grill due to mid-day breaks
+        if restaurantChoice == "Dining Hall" && Today.openTime == Monday.openTime && Today.closeTime == Monday.closeTime {
+            if currentTimeInMinutes >= 570 && currentTimeInMinutes < 660 {
+                timeLabel.text = "Opening again at 11am for lunch"
+            } else if currentTimeInMinutes >= 840 && currentTimeInMinutes < 1020 {
+                timeLabel.text = "Opening again at 5pm for dinner"
+            }
+        } else if restaurantChoice == "Fusion Grill" && Today.openTime == Monday.openTime && Today.closeTime == Monday.closeTime {
+            if currentTimeInMinutes >= 600 && currentTimeInMinutes < 630 {
+                timeLabel.text = "Opening again at 10:30am for lunch"
+            }
         }
     }
 }

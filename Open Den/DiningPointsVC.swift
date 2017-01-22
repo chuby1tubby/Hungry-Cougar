@@ -52,6 +52,7 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         setupViews()
         calculateDiningPoints()
+        setSchoolWeek()
         calculateBalance()
     }
     
@@ -67,7 +68,6 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
     override func viewWillAppear(_ animated: Bool) {
         if didReceievePointsVal == true {
             usersDiningPointsView.isHidden = false
-            refreshImg.isHidden = false
             refreshBtn.isHidden = false
             loginView.isHidden = true
             loginBtn.isHidden = true
@@ -82,7 +82,6 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
     
     func setupViews() {
         usersDiningPointsView.isHidden = true
-        refreshImg.isHidden = true
         refreshBtn.isHidden = true
         loginView.isHidden = false
         loginBtn.isHidden = false
@@ -191,14 +190,11 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
             mealBudget = 0.0
             weeklyBudget = 0.0
         }
-        
-        dailyBudget = mealBudget / 112            // Set daily budget to subtract from currentBalance
-        weeklyBudget = dailyBudget * 7
-        expectedBalance = mealBudget               // Set current balance equal to meal plan total balance
     }
     
     func calculateBalance() {
-        setSchoolWeek()
+        dailyBudget = mealBudget / 112.0
+        weeklyBudget = dailyBudget * 7.0
         
         // Balance for summer vacation and winter vacation
         if schoolWeek == -1 {
@@ -211,7 +207,6 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
         // Balance for rest of the year
         else {
             expectedBalance = mealBudget - (weeklyBudget * Double(schoolWeek)) - (dailyBudget * Double(weekday)) + dailyBudget
-            
         }
         
         // Update expected balance label
@@ -239,7 +234,7 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
         year = components.year!
         
         // Optional function for testing a day
-        manuallySetDay(1, dd: 18, woy: 1, yyyy: 2017, wday: 4)
+//        manuallySetDay(1, dd: 18, woy: 1, yyyy: 2017, wday: 4)
         
         todayDate = String("\(month).\(day).\(year-2000)")
         
@@ -315,6 +310,7 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
         } else if monthBetweenDays(MM: 1, ST: 29, ED: 31) || monthBetweenDays(MM: 2, ST: 1, ED: 4) {
             schoolWeek = 3
         }
+        print("KYLE: The school week is: \(schoolWeek)")
         
         // February
         if monthBetweenDays(MM: 2, ST: 5, ED: 11) {
