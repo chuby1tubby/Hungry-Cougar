@@ -155,8 +155,15 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
         }
     }
     
+    // Segue to Points History
     @IBAction func pointsHistoryButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "pointsHistorySegue", sender: nil)
+    }
+    
+    // Segue to Settings
+    @IBAction func settingsButtonPressed(_ sender: Any) {
+        performSegue(withIdentifier: "settingsSegue", sender: nil)
+
     }
     
     // Hide keyboard on background tap

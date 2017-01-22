@@ -11,9 +11,10 @@ import UIKit
 class UserSettingsVC: UIViewController {
     
     // Outlets
+    @IBOutlet weak var scrollView: UIScrollView!
 
     override func viewWillAppear(_ animated: Bool) {
-        
+        scrollView.contentSize.height = 1000
     }
     
 }

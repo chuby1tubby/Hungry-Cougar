@@ -784,6 +784,9 @@ Menu</string>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="settingsButtonPressed:" destination="Ih7-xX-Njt" eventType="touchUpInside" id="K66-7r-AGz"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.58823529411764708" green="0.14901960784313725" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -900,26 +903,54 @@ Menu</string>
                         <viewControllerLayoutGuide type="bottom" id="bWn-Js-Fdy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7mh-Su-gPJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3rM-Yj-zoU">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.80197097081218272" green="0.80197097081218272" blue="0.80197097081218272" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="usF-IJ-dJg">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hkq-ft-LF8" userLabel="Content View">
+                                        <rect key="frame" x="-0.5" y="0.0" width="375" height="1000"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bga-Ol-Oqt">
+                                                <rect key="frame" x="8" y="60" width="63.5" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="Bga-Ol-Oqt" firstAttribute="leading" secondItem="Hkq-ft-LF8" secondAttribute="leading" constant="8" id="a6m-pX-B1d"/>
+                                            <constraint firstItem="Bga-Ol-Oqt" firstAttribute="top" secondItem="Hkq-ft-LF8" secondAttribute="top" constant="60" id="uDp-Bb-yP1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Hkq-ft-LF8" firstAttribute="centerY" secondItem="usF-IJ-dJg" secondAttribute="centerY" id="IpR-M5-1IW"/>
+                                    <constraint firstItem="Hkq-ft-LF8" firstAttribute="centerX" secondItem="usF-IJ-dJg" secondAttribute="centerX" id="Nwt-s2-eyJ"/>
+                                    <constraint firstItem="Hkq-ft-LF8" firstAttribute="width" secondItem="usF-IJ-dJg" secondAttribute="width" id="Znp-87-mby"/>
+                                    <constraint firstItem="Hkq-ft-LF8" firstAttribute="height" secondItem="usF-IJ-dJg" secondAttribute="height" id="ksL-XQ-QMF"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3rM-Yj-zoU" firstAttribute="top" secondItem="7mh-Su-gPJ" secondAttribute="top" id="US0-jG-kpY"/>
-                            <constraint firstItem="3rM-Yj-zoU" firstAttribute="leading" secondItem="7mh-Su-gPJ" secondAttribute="leading" id="iGv-ZX-21E"/>
-                            <constraint firstAttribute="trailing" secondItem="3rM-Yj-zoU" secondAttribute="trailing" id="lzZ-4k-Mzz"/>
-                            <constraint firstItem="bWn-Js-Fdy" firstAttribute="top" secondItem="3rM-Yj-zoU" secondAttribute="bottom" id="szl-Xz-fKk"/>
+                            <constraint firstItem="bWn-Js-Fdy" firstAttribute="top" secondItem="usF-IJ-dJg" secondAttribute="bottom" id="3H6-bU-Mn5"/>
+                            <constraint firstItem="usF-IJ-dJg" firstAttribute="top" secondItem="7mh-Su-gPJ" secondAttribute="top" id="BHA-eQ-UWL"/>
+                            <constraint firstItem="usF-IJ-dJg" firstAttribute="leading" secondItem="7mh-Su-gPJ" secondAttribute="leading" id="hhr-q7-DXV"/>
+                            <constraint firstAttribute="trailing" secondItem="usF-IJ-dJg" secondAttribute="trailing" id="wpB-gG-cof"/>
                         </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="scrollView" destination="usF-IJ-dJg" id="hTr-xz-HUz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qa1-IG-t43" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2005.5999999999999" y="1535.9820089955024"/>
+            <point key="canvasLocation" x="2006" y="1647"/>
         </scene>
         <!--APU Home-->
         <scene sceneID="UrV-2L-Kb6">
@@ -973,7 +1004,7 @@ Menu</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="98j-ad-bvl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2006" y="857"/>
+            <point key="canvasLocation" x="2006" y="845"/>
         </scene>
         <!--West Campus Restaurants-->
         <scene sceneID="ter-6k-wtq">
