@@ -111,11 +111,10 @@ class HoursVC: UIViewController {
                 }
             }
         }
-            // Else if current time is between open time and 11:59pm
+        // Else if current time is between open time and 11:59pm
         else {
             // If today closes after midnight
             if Today.closeTime <= 120 {
-                storeIsOpen = false
                 print("KYLE: OPEN-CLOSE BOOL #3")
             } else {
                 // If current time is after today close time
@@ -282,19 +281,24 @@ class HoursVC: UIViewController {
                     timeLabel.text = "Closing at 1am"
                 } else {
                     if floor(Double(Today.closeTime)/60.0) == (Double(Today.closeTime) / 60.0) {
-                        print("KYLE: Display time BOOL #11")
-                        timeLabel.text = "Closing at \(Today.closeTime / 60)pm"
+                        if Today.closeTime < 720 {
+                            print("KYLE: Display time BOOL #11")
+                            timeLabel.text = "Closing at \(Today.closeTime / 60)pm"
+                        } else {
+                            print("KYLE: Display time BOOL #12")
+                            timeLabel.text = "Closing at \(Today.closeTime / 60 - 12)pm"
+                        }
                     } else {
-                        print("KYLE: Display time BOOL #12")
-                        timeLabel.text = "Closing at \(Int(floor(Double(Today.closeTime) / 60.0)) - 12):30pm"
+                        if Today.closeTime < 750 {
+                            print("KYLE: Display time BOOL #13")
+                            timeLabel.text = "Closing at \(Int(floor(Double(Today.closeTime) / 60.0))):30pm"
+                        } else {
+                            print("KYLE: Display time BOOL #14")
+                            timeLabel.text = "Closing at \(Int(floor(Double(Today.closeTime) / 60.0)) - 12):30pm"
+                        }
                     }
                 }
             }
-        }
-        
-        // Extra cases for unavailable hours
-        if restaurantChoice == "Cougar BBQ" {
-            timeLabel.text = "Hours unavailable"
         }
         
         // Extra cases for Dining Hall and Fusion Grill due to mid-day breaks

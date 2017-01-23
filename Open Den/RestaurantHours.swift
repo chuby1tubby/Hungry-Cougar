@@ -50,11 +50,13 @@ func setHours() {
         setupDay(day: Friday, open: 660, close: 1140)
         setupDay(day: Saturday, open: 0, close: 0)
     } else if restaurantChoice == "Cougar BBQ" {
-        /*
-         *
-         * Hours unavailable
-         *
-         */
+        setupDay(day: Sunday, open: 0, close: 0)
+        setupDay(day: Monday, open: 660, close: 840)
+        setupDay(day: Tuesday, open: 660, close: 840)
+        setupDay(day: Wednesday, open: 660, close: 840)
+        setupDay(day: Thursday, open: 660, close: 840)
+        setupDay(day: Friday, open: 660, close: 840)
+        setupDay(day: Saturday, open: 0, close: 0)
     } else if restaurantChoice == "Cali Grill" {
         setupDay(day: Sunday, open: 1020, close: 0)
         setupDay(day: Monday, open: 480, close: 0)
@@ -64,7 +66,7 @@ func setHours() {
         setupDay(day: Friday, open: 480, close: 1140)
         setupDay(day: Saturday, open: 660, close: 1140)
     } else if restaurantChoice == "Pause 'n Go" {
-        setupDay(day: Sunday, open: 960, close: 1440)
+        setupDay(day: Sunday, open: 960, close: 0)
         setupDay(day: Monday, open: 450, close: 60)
         setupDay(day: Tuesday, open: 450, close: 60)
         setupDay(day: Wednesday, open: 450, close: 60)

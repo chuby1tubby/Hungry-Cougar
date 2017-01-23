@@ -44,7 +44,8 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
     // Load web view
     func loadHomePage() {
         url = URL(string: "https://den.apu.edu/cas/login?service=https%3A//home.apu.edu/psp/PRODPRT/EMPLOYEE/HRMS/h/%3Ftab%3DDEFAULT")
-        webView.loadRequest(URLRequest(url: url))
+        let request = URLRequest(url: url, cachePolicy: NSURLRequest.CachePolicy.reloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 10.0)
+        webView.loadRequest(request)
     }
     
     // Web view finished loading

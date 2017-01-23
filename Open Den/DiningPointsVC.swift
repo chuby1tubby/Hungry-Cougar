@@ -30,19 +30,12 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
     let mealBudgets: [Double] = [1162, 978, 696, 554, 363]
 
     // Outlets
+    @IBOutlet weak var refreshBtn: UIButton!
     @IBOutlet weak var diningPlanLbl: UILabel!
     @IBOutlet weak var diningPointsLbl: UILabel!
-    @IBOutlet weak var loginView: CustomView!
-    @IBOutlet weak var loginBtn: UIButton!
-    @IBOutlet weak var whiteSquareView: UIView!
-    @IBOutlet weak var rememberLbl: UILabel!
-    @IBOutlet weak var usernameField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
-    @IBOutlet weak var whiteCheckBoxView: UIView!
-    @IBOutlet weak var greyView: UIView!
-    @IBOutlet weak var usersDiningPointsView: CustomView!
     @IBOutlet weak var usersDiningPointsLbl: DontCutMe!
-    @IBOutlet weak var refreshBtn: UIButton!
+    @IBOutlet weak var usersDiningPointsView: CustomView!
+    @IBOutlet weak var loginView: CustomView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,27 +45,29 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
         calculateBalance()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        usernameField.delegate = self
-        passwordField.delegate = self
-        
-        // Keyboard observers KEEP THESE DO NOT EDIT
-        NotificationCenter.default.addObserver(self, selector: #selector(DiningPointsVC.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(DiningPointsVC.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-    }
-    
     override func viewWillAppear(_ animated: Bool) {
-        if didReceievePointsVal == true {
+        let prefs = UserDefaults.standard
+        if let value = prefs.string(forKey: "userDiningPointsDefaults") {
             usersDiningPointsView.isHidden = false
             refreshBtn.isHidden = false
             loginView.isHidden = true
-            loginBtn.isHidden = true
-            rememberLbl.isHidden = true
-            whiteSquareView.isHidden = true
             
             // Update current dining points balance label
-            let textNum = String(format: "%.2f", arguments: [myFinalDouble])
-            usersDiningPointsLbl.text = textNum
+            usersDiningPointsLbl.text = value
+        } else {
+            if didReceievePointsVal == true {
+                usersDiningPointsView.isHidden = false
+                refreshBtn.isHidden = false
+                loginView.isHidden = true
+                
+                // Update current dining points balance label
+                let textNum = String(format: "%.2f", arguments: [myFinalDouble])
+                usersDiningPointsLbl.text = textNum
+                
+                // Store dining points in UserDefaults
+                let defaults = UserDefaults.standard
+                defaults.set(textNum, forKey: "userDiningPointsDefaults")
+            }
         }
     }
     
@@ -80,72 +75,36 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
         usersDiningPointsView.isHidden = true
         refreshBtn.isHidden = true
         loginView.isHidden = false
-        loginBtn.isHidden = false
-        rememberLbl.isHidden = false
         loginView.isHidden = false
-        whiteCheckBoxView.layer.cornerRadius = 7
-        greyView.layer.cornerRadius = 5
         diningPlanLbl.text = diningPlanChoice
-        usernameField.delegate = self
-        passwordField.delegate = self
-        
-        let prefs = UserDefaults.standard
-        // If both name and pass are stored in UserDefaults
-        if let name = prefs.string(forKey: "username") {
-            if let pass = prefs.string(forKey: "password") {
-                usernameField.text = name
-                passwordField.text = pass
-                greyView.isHidden = false
-            } else {
-                greyView.isHidden = true
-            }
-        } else {
-            greyView.isHidden = true
-        }
     }
     
     // Actions
-    // Login Button Action
-    let defaults = UserDefaults.standard
-    @IBAction func onLoginPressed(_ sender: AnyObject) {
-        loginFunction()
-    }
-    
     @IBAction func onRefreshPressed(_ sender: Any) {
         loginFunction()
     }
     
-    func loginFunction() {
-        usernameStr = usernameField.text
-        passwordStr = passwordField.text
-        if greyView.isHidden == false {
-            defaults.set(usernameStr!, forKey: "username")
-            defaults.set(passwordStr!, forKey: "password")
-            defaults.set(true, forKey: "userSavedDetails")
-        }
-        else {
-            defaults.set(nil, forKey: "username")
-            defaults.set(nil, forKey: "password")
-            defaults.set(false, forKey: "userSavedDetails")
-        }
-        performSegue(withIdentifier: "APUHome", sender: nil)
-    }
-    
-    // Check-box Button Action
-    @IBAction func onCheckBoxPressed(_ sender: AnyObject) {
-        if greyView.isHidden {
-            greyView.isHidden = false
+    @IBAction func clickToLoadPressed(_ sender: Any) {
+        let prefs = UserDefaults.standard
+        if let name = prefs.string(forKey: "username") {
+            if let pass = prefs.string(forKey: "password") {
+                loginFunction()
+            } else {
+                presentAlertToUser()
+            }
         } else {
-            greyView.isHidden = true
-            // Erase login details
-            defaults.set(nil, forKey: "username")
-            defaults.set(nil, forKey: "password")
-            defaults.set(false, forKey: "userSavedDetails")
+            presentAlertToUser()
         }
     }
     
-    // Refresh dining points value
-    @IBAction func onRefreshBtnPressed(_ sender: AnyObject) {
+    // Alert user that navigation away from Dining Services is denied
+    func presentAlertToUser() {
+        let alert = UIAlertController(title: "Unable to Locate Login Details", message: "Please update your account details in the settings page.", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func loginFunction() {
         let prefs = UserDefaults.standard
         if let name = prefs.string(forKey: "username") {
             if let pass = prefs.string(forKey: "password") {
@@ -153,7 +112,9 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
                 passwordStr = pass
             }
         }
+        performSegue(withIdentifier: "APUHome", sender: nil)
     }
+    
     
     // Segue to Points History
     @IBAction func pointsHistoryButtonPressed(_ sender: Any) {
@@ -163,13 +124,6 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
     // Segue to Settings
     @IBAction func settingsButtonPressed(_ sender: Any) {
         performSegue(withIdentifier: "settingsSegue", sender: nil)
-    }
-    
-    // Hide keyboard on background tap
-    @IBAction func userTappedBackground(sender: AnyObject) {
-        view.endEditing(true)
-        usernameField.resignFirstResponder()
-        passwordField.resignFirstResponder()
     }
     
     /*
@@ -359,41 +313,5 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
         } else {
             return false
         }
-    }
-    
-    
-    
-    /*
-     
-     Keyboard functions
-     
-     */
-    
-    // Keyboard view-moving functions
-    func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y == 0 {
-                self.view.frame.origin.y -= keyboardSize.height * 0.5
-            }
-        }
-    }
-    
-    func keyboardWillHide(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-            if self.view.frame.origin.y != 0{
-                self.view.frame.origin.y += keyboardSize.height * 0.5
-            }
-        }
-    }
-    
-    // Jump from usernameField to passwordField, then hide the keyboard
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == usernameField {
-            passwordField.becomeFirstResponder()
-        } else {
-            usernameField.resignFirstResponder()
-            passwordField.resignFirstResponder()
-        }
-        return true
     }
 }
