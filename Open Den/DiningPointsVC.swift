@@ -99,7 +99,7 @@ class DiningPointsVC: UIViewController, UITextFieldDelegate {
     
     // Alert user that navigation away from Dining Services is denied
     func presentAlertToUser() {
-        let alert = UIAlertController(title: "Unable to Locate Login Details", message: "Please update your account details in the settings page.", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Missing Login Details", message: "Please update your account details in the settings page.", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
