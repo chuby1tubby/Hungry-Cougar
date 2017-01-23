@@ -808,7 +808,7 @@ Menu</string>
                                                     <constraint firstAttribute="height" constant="20" id="1oQ-s6-5or"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="0.47058611690000002" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HEf-Jr-fH6">
@@ -826,7 +826,7 @@ Menu</string>
                                                         <subviews>
                                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="APU NetID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HYg-CD-Gd9">
                                                                 <rect key="frame" x="8" y="0.0" width="359" height="40"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
                                                             </textField>
@@ -868,7 +868,7 @@ Menu</string>
                                                         <subviews>
                                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nD8-Wf-Q9H">
                                                                 <rect key="frame" x="8" y="0.0" width="359" height="40"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
                                                             </textField>
@@ -903,12 +903,65 @@ Menu</string>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                 <state key="normal" title="Update">
-                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="titleColor" red="0.47058611690000002" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="updateData:" destination="6mq-gA-Yq1" eventType="touchUpInside" id="wIc-77-ePO"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developer Contact Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OQN-wm-Nyf">
+                                                <rect key="frame" x="8" y="214" width="250" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="250" id="MNj-wZ-JSe"/>
+                                                    <constraint firstAttribute="height" constant="20" id="sTu-7d-AHL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                <color key="textColor" red="0.47058611690000002" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="jMe-WQ-YeX">
+                                                <rect key="frame" x="8" y="242" width="188" height="59"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kyle Nakamura" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tS-Gh-cGZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="188" height="17"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="17" id="UQV-6h-pCV"/>
+                                                            <constraint firstAttribute="width" constant="188" id="qai-JV-Ygu"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(626) 388 - 5416" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c37-Ea-oIO">
+                                                        <rect key="frame" x="0.0" y="21" width="188" height="17"/>
+                                                        <gestureRecognizers/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="17" id="DWu-ws-mMR"/>
+                                                            <constraint firstAttribute="width" constant="188" id="sYM-qE-5H6"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="blv-Vt-5Fh" appends="YES" id="bkf-Ah-3id"/>
+                                                        </connections>
+                                                    </label>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="knakamura13@apu.edu" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VQW-NX-lSt">
+                                                        <rect key="frame" x="0.0" y="42" width="188" height="17"/>
+                                                        <gestureRecognizers/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="188" id="Rkr-Ea-1Kw"/>
+                                                            <constraint firstAttribute="height" constant="17" id="pQs-lK-oaL"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="4RE-lm-i6N" appends="YES" id="QUk-pO-xRB"/>
+                                                        </connections>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.97162515862944165" green="0.97162515862944165" blue="0.97162515862944165" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -917,11 +970,15 @@ Menu</string>
                                             <constraint firstItem="1Ah-ww-fRx" firstAttribute="top" secondItem="HEf-Jr-fH6" secondAttribute="bottom" constant="-1" id="GTk-JH-Nvi"/>
                                             <constraint firstAttribute="trailing" secondItem="HEf-Jr-fH6" secondAttribute="trailing" id="Hgp-ny-h0C"/>
                                             <constraint firstAttribute="trailing" secondItem="1Ah-ww-fRx" secondAttribute="trailing" id="Sgt-t5-6Qh"/>
+                                            <constraint firstItem="OQN-wm-Nyf" firstAttribute="top" secondItem="izy-Yf-dBW" secondAttribute="bottom" constant="50" id="a1m-8R-eVT"/>
                                             <constraint firstItem="Bga-Ol-Oqt" firstAttribute="leading" secondItem="Hkq-ft-LF8" secondAttribute="leading" constant="8" id="a6m-pX-B1d"/>
                                             <constraint firstItem="1Ah-ww-fRx" firstAttribute="leading" secondItem="Hkq-ft-LF8" secondAttribute="leading" id="d7q-5L-Kfr"/>
                                             <constraint firstItem="HEf-Jr-fH6" firstAttribute="leading" secondItem="Hkq-ft-LF8" secondAttribute="leading" id="fmZ-Zm-NBI"/>
                                             <constraint firstItem="izy-Yf-dBW" firstAttribute="top" secondItem="1Ah-ww-fRx" secondAttribute="bottom" constant="8" id="hf8-x6-1qu"/>
                                             <constraint firstItem="izy-Yf-dBW" firstAttribute="leading" secondItem="Hkq-ft-LF8" secondAttribute="leading" constant="8" id="jAy-mX-GQ7"/>
+                                            <constraint firstItem="jMe-WQ-YeX" firstAttribute="leading" secondItem="Hkq-ft-LF8" secondAttribute="leading" constant="8" id="mGy-0F-wVU"/>
+                                            <constraint firstItem="OQN-wm-Nyf" firstAttribute="leading" secondItem="Hkq-ft-LF8" secondAttribute="leading" constant="8" id="wDt-Nf-smF"/>
+                                            <constraint firstItem="jMe-WQ-YeX" firstAttribute="top" secondItem="OQN-wm-Nyf" secondAttribute="bottom" constant="8" id="zwp-C1-emc"/>
                                         </constraints>
                                         <connections>
                                             <action selector="userTouchedBackground:" destination="6mq-gA-Yq1" eventType="touchDown" id="wB6-59-5xR"/>
@@ -935,11 +992,21 @@ Menu</string>
                                     <constraint firstItem="Hkq-ft-LF8" firstAttribute="height" secondItem="usF-IJ-dJg" secondAttribute="height" id="ksL-XQ-QMF"/>
                                 </constraints>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0I-1H-cwo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <color key="backgroundColor" red="0.5888887048" green="0.15054461359999999" blue="0.13530883190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="axG-f5-5S7"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.97162515859999998" green="0.97162515859999998" blue="0.97162515859999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bWn-Js-Fdy" firstAttribute="top" secondItem="usF-IJ-dJg" secondAttribute="bottom" id="3H6-bU-Mn5"/>
                             <constraint firstItem="usF-IJ-dJg" firstAttribute="top" secondItem="7mh-Su-gPJ" secondAttribute="top" id="BHA-eQ-UWL"/>
+                            <constraint firstItem="F0I-1H-cwo" firstAttribute="leading" secondItem="7mh-Su-gPJ" secondAttribute="leading" id="ICh-Jd-7G5"/>
+                            <constraint firstItem="F0I-1H-cwo" firstAttribute="top" secondItem="7mh-Su-gPJ" secondAttribute="top" id="QCM-1K-ou7"/>
+                            <constraint firstAttribute="trailing" secondItem="F0I-1H-cwo" secondAttribute="trailing" id="WDV-bt-V9b"/>
                             <constraint firstItem="usF-IJ-dJg" firstAttribute="leading" secondItem="7mh-Su-gPJ" secondAttribute="leading" id="hhr-q7-DXV"/>
                             <constraint firstAttribute="trailing" secondItem="usF-IJ-dJg" secondAttribute="trailing" id="wpB-gG-cof"/>
                         </constraints>
@@ -953,6 +1020,16 @@ Menu</string>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qa1-IG-t43" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="blv-Vt-5Fh" userLabel="phoneTap">
+                    <connections>
+                        <action selector="phoneLabelTapped:" destination="6mq-gA-Yq1" id="RAq-Q2-hMw"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="4RE-lm-i6N" userLabel="emailTap">
+                    <connections>
+                        <action selector="emailLabelTapped:" destination="6mq-gA-Yq1" id="1eZ-Kp-Y8Q"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2005.5999999999999" y="1646.176911544228"/>
         </scene>

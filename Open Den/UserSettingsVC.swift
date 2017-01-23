@@ -30,10 +30,6 @@ class UserSettingsVC: UIViewController, UITextFieldDelegate {
                 passwordField.text = passwordStr
             }
         }
-        
-//        // Keyboard observers KEEP THESE DO NOT EDIT
-//        NotificationCenter.default.addObserver(self, selector: #selector(UserSettingsVC.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(UserSettingsVC.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
     // Alert user that navigation away from Dining Services is denied
@@ -63,25 +59,15 @@ class UserSettingsVC: UIViewController, UITextFieldDelegate {
         passwordField.resignFirstResponder()
     }
     
-    /*
-     Keyboard functions
-     */
+    @IBAction func phoneLabelTapped(_ sender: Any) {
+        let url = URL(string: "tel://6263885416")
+        UIApplication.shared.openURL(url!)
+    }
     
-//    // Keyboard view-moving functions
-//    func keyboardWillShow(notification: NSNotification) {
-//        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-//            if self.view.frame.origin.y == 0 {
-//                self.view.frame.origin.y -= keyboardSize.height * 0.5
-//            }
-//        }
-//    }
-//    func keyboardWillHide(notification: NSNotification) {
-//        if let keyboardSize = (notification.userInfo?[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
-//            if self.view.frame.origin.y != 0{
-//                self.view.frame.origin.y += keyboardSize.height * 0.5
-//            }
-//        }
-//    }
+    @IBAction func emailLabelTapped(_ sender: Any) {
+        let url = URL(string: "mailto:knakamura13@apu.edu")
+        UIApplication.shared.openURL(url!)
+    }
     
     // Jump from usernameField to passwordField, then hide the keyboard
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
