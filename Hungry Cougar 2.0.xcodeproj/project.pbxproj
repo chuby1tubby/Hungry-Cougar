@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BE3C5F6567A10170168ED90 /* Pods_Hungry_Cougar_2_0UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98923394135FF761BC88E9F2 /* Pods_Hungry_Cougar_2_0UITests.framework */; };
 		BF05BE401D59B97400AA3DF6 /* DiningPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05BE3F1D59B97400AA3DF6 /* DiningPlanVC.swift */; };
 		BF05BE421D59BBA000AA3DF6 /* DiningPlanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05BE411D59BBA000AA3DF6 /* DiningPlanCell.swift */; };
 		BF05BE441D59C65600AA3DF6 /* DiningPointsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF05BE431D59C65600AA3DF6 /* DiningPointsVC.swift */; };
@@ -32,6 +33,8 @@
 		BFECDD451D4EE5B100E626D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFECDD431D4EE5B100E626D3 /* LaunchScreen.storyboard */; };
 		BFECDD501D4EE5B100E626D3 /* Open_DenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECDD4F1D4EE5B100E626D3 /* Open_DenTests.swift */; };
 		BFECDD5B1D4EE5B100E626D3 /* Open_DenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFECDD5A1D4EE5B100E626D3 /* Open_DenUITests.swift */; };
+		E2CC6A54449A07A524287F89 /* Pods_Hungry_Cougar_2_0.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BFA26FE2E0987EF3B464489 /* Pods_Hungry_Cougar_2_0.framework */; };
+		F1B8132289C36B1A2C2C0BC5 /* Pods_Hungry_Cougar_2_0Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7F1B6F558AC93CA683B7AE /* Pods_Hungry_Cougar_2_0Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C4C044A0199D07486CCF492 /* Pods-Hungry Cougar 2.0Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hungry Cougar 2.0Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hungry Cougar 2.0Tests/Pods-Hungry Cougar 2.0Tests.release.xcconfig"; sourceTree = "<group>"; };
+		14EDF258710C91966199F58F /* Pods-Hungry Cougar 2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hungry Cougar 2.0.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hungry Cougar 2.0/Pods-Hungry Cougar 2.0.release.xcconfig"; sourceTree = "<group>"; };
+		38EB76D0DEA075D8992592FB /* Pods-Hungry Cougar 2.0UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hungry Cougar 2.0UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hungry Cougar 2.0UITests/Pods-Hungry Cougar 2.0UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4ED81E939307EA497925D0F1 /* Pods-Hungry Cougar 2.0Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hungry Cougar 2.0Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hungry Cougar 2.0Tests/Pods-Hungry Cougar 2.0Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D7F1B6F558AC93CA683B7AE /* Pods_Hungry_Cougar_2_0Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hungry_Cougar_2_0Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98923394135FF761BC88E9F2 /* Pods_Hungry_Cougar_2_0UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hungry_Cougar_2_0UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BFA26FE2E0987EF3B464489 /* Pods_Hungry_Cougar_2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hungry_Cougar_2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAAEE20D4376E34E47260BAE /* Pods-Hungry Cougar 2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hungry Cougar 2.0.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hungry Cougar 2.0/Pods-Hungry Cougar 2.0.debug.xcconfig"; sourceTree = "<group>"; };
+		B348BCEB4D33D034AD879FB7 /* Pods-Hungry Cougar 2.0UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hungry Cougar 2.0UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hungry Cougar 2.0UITests/Pods-Hungry Cougar 2.0UITests.release.xcconfig"; sourceTree = "<group>"; };
 		BF05BE3F1D59B97400AA3DF6 /* DiningPlanVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningPlanVC.swift; sourceTree = "<group>"; };
 		BF05BE411D59BBA000AA3DF6 /* DiningPlanCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningPlanCell.swift; sourceTree = "<group>"; };
 		BF05BE431D59C65600AA3DF6 /* DiningPointsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiningPointsVC.swift; sourceTree = "<group>"; };
@@ -89,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2CC6A54449A07A524287F89 /* Pods_Hungry_Cougar_2_0.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1B8132289C36B1A2C2C0BC5 /* Pods_Hungry_Cougar_2_0Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,12 +117,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BE3C5F6567A10170168ED90 /* Pods_Hungry_Cougar_2_0UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3139621FA652A0B8038F55BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAAEE20D4376E34E47260BAE /* Pods-Hungry Cougar 2.0.debug.xcconfig */,
+				14EDF258710C91966199F58F /* Pods-Hungry Cougar 2.0.release.xcconfig */,
+				4ED81E939307EA497925D0F1 /* Pods-Hungry Cougar 2.0Tests.debug.xcconfig */,
+				0C4C044A0199D07486CCF492 /* Pods-Hungry Cougar 2.0Tests.release.xcconfig */,
+				38EB76D0DEA075D8992592FB /* Pods-Hungry Cougar 2.0UITests.debug.xcconfig */,
+				B348BCEB4D33D034AD879FB7 /* Pods-Hungry Cougar 2.0UITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8586445E6C844BDC49D14E26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9BFA26FE2E0987EF3B464489 /* Pods_Hungry_Cougar_2_0.framework */,
+				5D7F1B6F558AC93CA683B7AE /* Pods_Hungry_Cougar_2_0Tests.framework */,
+				98923394135FF761BC88E9F2 /* Pods_Hungry_Cougar_2_0UITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF21D3961D552A5A001A38F2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +208,8 @@
 				BFECDD4E1D4EE5B100E626D3 /* Open DenTests */,
 				BFECDD591D4EE5B100E626D3 /* Open DenUITests */,
 				BFECDD381D4EE5B100E626D3 /* Products */,
+				3139621FA652A0B8038F55BB /* Pods */,
+				8586445E6C844BDC49D14E26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -225,9 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFECDD5F1D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Hungry Cougar 2.0" */;
 			buildPhases = (
+				4711115AAD7324FD5854EAF2 /* [CP] Check Pods Manifest.lock */,
 				BFECDD331D4EE5B000E626D3 /* Sources */,
 				BFECDD341D4EE5B000E626D3 /* Frameworks */,
 				BFECDD351D4EE5B000E626D3 /* Resources */,
+				EFC1F44C824F989D6DD8C28E /* [CP] Embed Pods Frameworks */,
+				7638A709D38C6887B5850BA0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -242,9 +285,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFECDD621D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Hungry Cougar 2.0Tests" */;
 			buildPhases = (
+				9F9139192A04757010984175 /* [CP] Check Pods Manifest.lock */,
 				BFECDD471D4EE5B100E626D3 /* Sources */,
 				BFECDD481D4EE5B100E626D3 /* Frameworks */,
 				BFECDD491D4EE5B100E626D3 /* Resources */,
+				E1FAECC7F13D616534C5A086 /* [CP] Embed Pods Frameworks */,
+				4DD29132BCF46D73887B1CA1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,9 +306,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFECDD651D4EE5B100E626D3 /* Build configuration list for PBXNativeTarget "Hungry Cougar 2.0UITests" */;
 			buildPhases = (
+				D2E9CA1D861ABF30EBA5DE98 /* [CP] Check Pods Manifest.lock */,
 				BFECDD521D4EE5B100E626D3 /* Sources */,
 				BFECDD531D4EE5B100E626D3 /* Frameworks */,
 				BFECDD541D4EE5B100E626D3 /* Resources */,
+				1EBEAFE53716A54CF73498AE /* [CP] Embed Pods Frameworks */,
+				534F612EABEDD02CC06022B5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -366,6 +415,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EBEAFE53716A54CF73498AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hungry Cougar 2.0UITests/Pods-Hungry Cougar 2.0UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4711115AAD7324FD5854EAF2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4DD29132BCF46D73887B1CA1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hungry Cougar 2.0Tests/Pods-Hungry Cougar 2.0Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		534F612EABEDD02CC06022B5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hungry Cougar 2.0UITests/Pods-Hungry Cougar 2.0UITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7638A709D38C6887B5850BA0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hungry Cougar 2.0/Pods-Hungry Cougar 2.0-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F9139192A04757010984175 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D2E9CA1D861ABF30EBA5DE98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E1FAECC7F13D616534C5A086 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hungry Cougar 2.0Tests/Pods-Hungry Cougar 2.0Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFC1F44C824F989D6DD8C28E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hungry Cougar 2.0/Pods-Hungry Cougar 2.0-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFECDD331D4EE5B000E626D3 /* Sources */ = {
@@ -538,6 +725,7 @@
 		};
 		BFECDD601D4EE5B100E626D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAAEE20D4376E34E47260BAE /* Pods-Hungry Cougar 2.0.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -557,6 +745,7 @@
 		};
 		BFECDD611D4EE5B100E626D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14EDF258710C91966199F58F /* Pods-Hungry Cougar 2.0.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -576,6 +765,7 @@
 		};
 		BFECDD631D4EE5B100E626D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ED81E939307EA497925D0F1 /* Pods-Hungry Cougar 2.0Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Open DenTests/Info.plist";
@@ -589,6 +779,7 @@
 		};
 		BFECDD641D4EE5B100E626D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C4C044A0199D07486CCF492 /* Pods-Hungry Cougar 2.0Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "Open DenTests/Info.plist";
@@ -602,6 +793,7 @@
 		};
 		BFECDD661D4EE5B100E626D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38EB76D0DEA075D8992592FB /* Pods-Hungry Cougar 2.0UITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Open DenUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -614,6 +806,7 @@
 		};
 		BFECDD671D4EE5B100E626D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B348BCEB4D33D034AD879FB7 /* Pods-Hungry Cougar 2.0UITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Open DenUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

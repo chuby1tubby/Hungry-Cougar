@@ -8,37 +8,31 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Pods-Hungry Cougar 2.0Tests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>Pods-Hungry Cougar 2.0UITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0700A90321D61FB657457CBE0C725EFC</key>
+		<key>64D9CB11CDB107DBA3CCE961377328A6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1538B4694FD29E14D27B561E9F4794F3</key>
+		<key>834025068D4E31E5871089AA86F0C63E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3BF7CDD91ECD24F137422273102B8C25</key>
+		<key>CAAD092089EC1FDC4BDF56898E2A9ADF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

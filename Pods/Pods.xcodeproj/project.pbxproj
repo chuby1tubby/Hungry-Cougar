@@ -7,33 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		120074921291D0AD0FFE89A65887D2C6 /* Pods-Hungry Cougar 2.0UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F813D6A4EC9250178C08E6D24093FD9 /* Pods-Hungry Cougar 2.0UITests-dummy.m */; };
-		180D6271493D8253CC617A7BFA482A42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		2CA62057087566B6813FDB2902A11E6C /* Pods-Hungry Cougar 2.0Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58FE64E6CE306A54332A0BEC3A215AEA /* Pods-Hungry Cougar 2.0Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8EE2E11E8D8B5C6C9A4FAA3951D780E3 /* Pods-Hungry Cougar 2.0UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D452BECCC2B0B0DB06B18333FA80AE48 /* Pods-Hungry Cougar 2.0UITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A83069031EAA4C1F47740AA108F0970B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		AE1BFF43BE87B42639E1C029F9CA841A /* Pods-Hungry Cougar 2.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A291515B502D0406F43BC37946297158 /* Pods-Hungry Cougar 2.0-dummy.m */; };
-		C1DF1E2B4A62F569D3E6C89ABD512DDA /* Pods-Hungry Cougar 2.0Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E6D60FEE08D04B1E382EC0E45698C /* Pods-Hungry Cougar 2.0Tests-dummy.m */; };
-		CC25091E4D84EBD89B70C476F3138E56 /* Pods-Hungry Cougar 2.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 333B753E5BE54C57A6604F64A18F623F /* Pods-Hungry Cougar 2.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F4766A21340966978E5666E3ED437B31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		09A8615834FA09FC4FFDB76C8811DEE6 /* Pods-Hungry Cougar 2.0Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A4E6D60FEE08D04B1E382EC0E45698C /* Pods-Hungry Cougar 2.0Tests-dummy.m */; };
+		0E807895B6D34FBF95C6EABD7D0CEDFB /* Pods-Hungry Cougar 2.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A291515B502D0406F43BC37946297158 /* Pods-Hungry Cougar 2.0-dummy.m */; };
+		4CF3D2610CF6E6FA76F6083A7BA17C06 /* Pods-Hungry Cougar 2.0UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D452BECCC2B0B0DB06B18333FA80AE48 /* Pods-Hungry Cougar 2.0UITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53C4726E711EF69F55E591E4E850278E /* Pods-Hungry Cougar 2.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 333B753E5BE54C57A6604F64A18F623F /* Pods-Hungry Cougar 2.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5454A8495875F1F32F581F56E15007AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		73FB9871A90FB82D5E8764D01571E24D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		7D48D8BEA4FA8875348E97F6449F0BF4 /* Pods-Hungry Cougar 2.0UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F813D6A4EC9250178C08E6D24093FD9 /* Pods-Hungry Cougar 2.0UITests-dummy.m */; };
+		AFCCE0844E80680046F87E984AFE79F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		BB1DE853BFFAC5AF6545B476094F4D74 /* Pods-Hungry Cougar 2.0Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58FE64E6CE306A54332A0BEC3A215AEA /* Pods-Hungry Cougar 2.0Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		003734045326C8BA3700C3F4EC0F2691 /* Pods-Hungry Cougar 2.0Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hungry Cougar 2.0Tests-frameworks.sh"; sourceTree = "<group>"; };
-		09B5A9B4A10F4BF02813C99F72FF3DBF /* Pods_Hungry_Cougar_2_0UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hungry_Cougar_2_0UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B5A9B4A10F4BF02813C99F72FF3DBF /* Pods_Hungry_Cougar_2_0UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hungry_Cougar_2_0UITests.framework; path = "Pods-Hungry Cougar 2.0UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15675A1BA5A8D8B159F629C7362B90F2 /* Pods-Hungry Cougar 2.0Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hungry Cougar 2.0Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C00AA506F5BEABF13DF753658162842 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		264189C4A371AA6101D26BBF6268A14E /* Pods-Hungry Cougar 2.0-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hungry Cougar 2.0-acknowledgements.plist"; sourceTree = "<group>"; };
-		2859BBE2AD0932A81B00ED2DFED40BDB /* Pods-Hungry Cougar 2.0UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Hungry Cougar 2.0UITests.modulemap"; sourceTree = "<group>"; };
+		2859BBE2AD0932A81B00ED2DFED40BDB /* Pods-Hungry Cougar 2.0UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Hungry Cougar 2.0UITests.modulemap"; sourceTree = "<group>"; };
 		2961485DA3F8532A995C0C7BBE2A3E45 /* Pods-Hungry Cougar 2.0Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hungry Cougar 2.0Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2B85ADF2F93A13CE716BE50C49425DEC /* Pods-Hungry Cougar 2.0Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Hungry Cougar 2.0Tests.modulemap"; sourceTree = "<group>"; };
+		2B85ADF2F93A13CE716BE50C49425DEC /* Pods-Hungry Cougar 2.0Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Hungry Cougar 2.0Tests.modulemap"; sourceTree = "<group>"; };
 		2DE156EB586002F17FDE5D2897A182B8 /* Pods-Hungry Cougar 2.0-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hungry Cougar 2.0-frameworks.sh"; sourceTree = "<group>"; };
 		333B753E5BE54C57A6604F64A18F623F /* Pods-Hungry Cougar 2.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hungry Cougar 2.0-umbrella.h"; sourceTree = "<group>"; };
-		37BFC7F57C4F301DF670D400126B086D /* Pods_Hungry_Cougar_2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hungry_Cougar_2_0.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		389523B38F671132CFBC1F5394E81FD1 /* Pods-Hungry Cougar 2.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Hungry Cougar 2.0.modulemap"; sourceTree = "<group>"; };
+		37BFC7F57C4F301DF670D400126B086D /* Pods_Hungry_Cougar_2_0.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hungry_Cougar_2_0.framework; path = "Pods-Hungry Cougar 2.0.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		389523B38F671132CFBC1F5394E81FD1 /* Pods-Hungry Cougar 2.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Hungry Cougar 2.0.modulemap"; sourceTree = "<group>"; };
 		3A82907E3A2853E22F9682D04F85E185 /* Pods-Hungry Cougar 2.0UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hungry Cougar 2.0UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		443885669DCF1EF1F86697924FD953E6 /* Pods-Hungry Cougar 2.0UITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hungry Cougar 2.0UITests-frameworks.sh"; sourceTree = "<group>"; };
-		44ACC08FF8F9AAE37CA52A1D7220696B /* Pods_Hungry_Cougar_2_0Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hungry_Cougar_2_0Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44ACC08FF8F9AAE37CA52A1D7220696B /* Pods_Hungry_Cougar_2_0Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Hungry_Cougar_2_0Tests.framework; path = "Pods-Hungry Cougar 2.0Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B09EA16B5D0A155168C8971186E8D5 /* Pods-Hungry Cougar 2.0UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Hungry Cougar 2.0UITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		58FE64E6CE306A54332A0BEC3A215AEA /* Pods-Hungry Cougar 2.0Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hungry Cougar 2.0Tests-umbrella.h"; sourceTree = "<group>"; };
 		66E27509D56488E5F1478D833EB90C52 /* Pods-Hungry Cougar 2.0-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hungry Cougar 2.0-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -42,12 +42,12 @@
 		7264980618CE2C9D89FBC91B76D60961 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83309A089DB052E2C832A7AFEF25CD5E /* Pods-Hungry Cougar 2.0UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hungry Cougar 2.0UITests.release.xcconfig"; sourceTree = "<group>"; };
 		8A295693E84196C46083865FD7519DAB /* Pods-Hungry Cougar 2.0Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hungry Cougar 2.0Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9A4E6D60FEE08D04B1E382EC0E45698C /* Pods-Hungry Cougar 2.0Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hungry Cougar 2.0Tests-dummy.m"; sourceTree = "<group>"; };
 		9A95F9C2EE7E8624980127B23F8A2247 /* Pods-Hungry Cougar 2.0.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hungry Cougar 2.0.debug.xcconfig"; sourceTree = "<group>"; };
 		A177720EDC5897B6383396FEBE26B9F2 /* Pods-Hungry Cougar 2.0UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Hungry Cougar 2.0UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A291515B502D0406F43BC37946297158 /* Pods-Hungry Cougar 2.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Hungry Cougar 2.0-dummy.m"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D452BECCC2B0B0DB06B18333FA80AE48 /* Pods-Hungry Cougar 2.0UITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Hungry Cougar 2.0UITests-umbrella.h"; sourceTree = "<group>"; };
 		DF40A276D37FC6B5A4EBF6A9E16C66F2 /* Pods-Hungry Cougar 2.0Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Hungry Cougar 2.0Tests-resources.sh"; sourceTree = "<group>"; };
 		E1C6D4D7EBD55C559B186F6AA02325E2 /* Pods-Hungry Cougar 2.0.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Hungry Cougar 2.0.release.xcconfig"; sourceTree = "<group>"; };
@@ -57,27 +57,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4617F622C5DFB31A79B25DE41B517EAC /* Frameworks */ = {
+		16C211DDCF454B4DB36F8F2CD8B84539 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180D6271493D8253CC617A7BFA482A42 /* Foundation.framework in Frameworks */,
+				AFCCE0844E80680046F87E984AFE79F5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5F9FF4A1053F6F819DBAE63BF88F4268 /* Frameworks */ = {
+		5A67C682F6200557E93A45777942E0AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A83069031EAA4C1F47740AA108F0970B /* Foundation.framework in Frameworks */,
+				5454A8495875F1F32F581F56E15007AC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F32009A377951204DF65B90115522769 /* Frameworks */ = {
+		9801E78C212CDEC8EDE1165712FBF612 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4766A21340966978E5666E3ED437B31 /* Foundation.framework in Frameworks */,
+				73FB9871A90FB82D5E8764D01571E24D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,14 +110,6 @@
 				2A53ADC6A9401CFCF4932841BFEEB8FE /* Pods-Hungry Cougar 2.0UITests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		6DDFF5A237EF672615F61E4D55834B6C /* Pods-Hungry Cougar 2.0Tests */ = {
@@ -156,6 +148,14 @@
 			path = "Target Support Files/Pods-Hungry Cougar 2.0";
 			sourceTree = "<group>";
 		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -169,7 +169,7 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -187,40 +187,57 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		55E38868B7A4756DFC9934AAACFFA8F7 /* Headers */ = {
+		3B86ECA6A0759D4991FE01F16D91020F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CA62057087566B6813FDB2902A11E6C /* Pods-Hungry Cougar 2.0Tests-umbrella.h in Headers */,
+				BB1DE853BFFAC5AF6545B476094F4D74 /* Pods-Hungry Cougar 2.0Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB8E18B2683FD947B30CEA61FEF7C67B /* Headers */ = {
+		83FDF8E5A0A6530B9D41CEAB1C5B36C4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EE2E11E8D8B5C6C9A4FAA3951D780E3 /* Pods-Hungry Cougar 2.0UITests-umbrella.h in Headers */,
+				4CF3D2610CF6E6FA76F6083A7BA17C06 /* Pods-Hungry Cougar 2.0UITests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DDE6AAFCAA2668C043DD8EBFC48EBCDD /* Headers */ = {
+		AA131A7A5CD26A3F448E5228EC7BFC15 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC25091E4D84EBD89B70C476F3138E56 /* Pods-Hungry Cougar 2.0-umbrella.h in Headers */,
+				53C4726E711EF69F55E591E4E850278E /* Pods-Hungry Cougar 2.0-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0700A90321D61FB657457CBE0C725EFC /* Pods-Hungry Cougar 2.0Tests */ = {
+		64D9CB11CDB107DBA3CCE961377328A6 /* Pods-Hungry Cougar 2.0UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F4DA0F7EEADFECE51360A8D7C6C3A33 /* Build configuration list for PBXNativeTarget "Pods-Hungry Cougar 2.0Tests" */;
+			buildConfigurationList = DFFD507BC5FABE50E6566469D542842C /* Build configuration list for PBXNativeTarget "Pods-Hungry Cougar 2.0UITests" */;
 			buildPhases = (
-				C8944DF5297E6DF963577EB4F4C22157 /* Sources */,
-				F32009A377951204DF65B90115522769 /* Frameworks */,
-				55E38868B7A4756DFC9934AAACFFA8F7 /* Headers */,
+				BBC2D68F2AEE1926D4101B5C1266859F /* Sources */,
+				5A67C682F6200557E93A45777942E0AA /* Frameworks */,
+				83FDF8E5A0A6530B9D41CEAB1C5B36C4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Hungry Cougar 2.0UITests";
+			productName = "Pods-Hungry Cougar 2.0UITests";
+			productReference = 09B5A9B4A10F4BF02813C99F72FF3DBF /* Pods_Hungry_Cougar_2_0UITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		834025068D4E31E5871089AA86F0C63E /* Pods-Hungry Cougar 2.0Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 345C5856A638C5BABA7F6ADFA5952FB8 /* Build configuration list for PBXNativeTarget "Pods-Hungry Cougar 2.0Tests" */;
+			buildPhases = (
+				692E4D4B842D80E61B5CAC9D5F0947CC /* Sources */,
+				16C211DDCF454B4DB36F8F2CD8B84539 /* Frameworks */,
+				3B86ECA6A0759D4991FE01F16D91020F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -231,13 +248,13 @@
 			productReference = 44ACC08FF8F9AAE37CA52A1D7220696B /* Pods_Hungry_Cougar_2_0Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1538B4694FD29E14D27B561E9F4794F3 /* Pods-Hungry Cougar 2.0 */ = {
+		CAAD092089EC1FDC4BDF56898E2A9ADF /* Pods-Hungry Cougar 2.0 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 315F11A5843069BF61EF9B533AE8ECFA /* Build configuration list for PBXNativeTarget "Pods-Hungry Cougar 2.0" */;
+			buildConfigurationList = 25AF23339CAEB82C2917B89FC2AEBF5E /* Build configuration list for PBXNativeTarget "Pods-Hungry Cougar 2.0" */;
 			buildPhases = (
-				682C91C11EF2EB8CE4156D8B3127D66C /* Sources */,
-				5F9FF4A1053F6F819DBAE63BF88F4268 /* Frameworks */,
-				DDE6AAFCAA2668C043DD8EBFC48EBCDD /* Headers */,
+				06583DA0B06D593D7CCD79838467CC1B /* Sources */,
+				9801E78C212CDEC8EDE1165712FBF612 /* Frameworks */,
+				AA131A7A5CD26A3F448E5228EC7BFC15 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -246,23 +263,6 @@
 			name = "Pods-Hungry Cougar 2.0";
 			productName = "Pods-Hungry Cougar 2.0";
 			productReference = 37BFC7F57C4F301DF670D400126B086D /* Pods_Hungry_Cougar_2_0.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		3BF7CDD91ECD24F137422273102B8C25 /* Pods-Hungry Cougar 2.0UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6EB128184CF3A4F8BB1A5DCA5ED52555 /* Build configuration list for PBXNativeTarget "Pods-Hungry Cougar 2.0UITests" */;
-			buildPhases = (
-				527B62452B3CBB8F0E452C828AD958E6 /* Sources */,
-				4617F622C5DFB31A79B25DE41B517EAC /* Frameworks */,
-				BB8E18B2683FD947B30CEA61FEF7C67B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-Hungry Cougar 2.0UITests";
-			productName = "Pods-Hungry Cougar 2.0UITests";
-			productReference = 09B5A9B4A10F4BF02813C99F72FF3DBF /* Pods_Hungry_Cougar_2_0UITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -286,112 +286,42 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1538B4694FD29E14D27B561E9F4794F3 /* Pods-Hungry Cougar 2.0 */,
-				0700A90321D61FB657457CBE0C725EFC /* Pods-Hungry Cougar 2.0Tests */,
-				3BF7CDD91ECD24F137422273102B8C25 /* Pods-Hungry Cougar 2.0UITests */,
+				CAAD092089EC1FDC4BDF56898E2A9ADF /* Pods-Hungry Cougar 2.0 */,
+				834025068D4E31E5871089AA86F0C63E /* Pods-Hungry Cougar 2.0Tests */,
+				64D9CB11CDB107DBA3CCE961377328A6 /* Pods-Hungry Cougar 2.0UITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		527B62452B3CBB8F0E452C828AD958E6 /* Sources */ = {
+		06583DA0B06D593D7CCD79838467CC1B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				120074921291D0AD0FFE89A65887D2C6 /* Pods-Hungry Cougar 2.0UITests-dummy.m in Sources */,
+				0E807895B6D34FBF95C6EABD7D0CEDFB /* Pods-Hungry Cougar 2.0-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		682C91C11EF2EB8CE4156D8B3127D66C /* Sources */ = {
+		692E4D4B842D80E61B5CAC9D5F0947CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE1BFF43BE87B42639E1C029F9CA841A /* Pods-Hungry Cougar 2.0-dummy.m in Sources */,
+				09A8615834FA09FC4FFDB76C8811DEE6 /* Pods-Hungry Cougar 2.0Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C8944DF5297E6DF963577EB4F4C22157 /* Sources */ = {
+		BBC2D68F2AEE1926D4101B5C1266859F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1DF1E2B4A62F569D3E6C89ABD512DDA /* Pods-Hungry Cougar 2.0Tests-dummy.m in Sources */,
+				7D48D8BEA4FA8875348E97F6449F0BF4 /* Pods-Hungry Cougar 2.0UITests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		49511916CE6E9D9F4FC6E88189EB272B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A95F9C2EE7E8624980127B23F8A2247 /* Pods-Hungry Cougar 2.0.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Hungry Cougar 2.0/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hungry Cougar 2.0/Pods-Hungry Cougar 2.0.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Hungry_Cougar_2_0;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		4BD2B3198A4F41992A05731C5D90C153 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 83309A089DB052E2C832A7AFEF25CD5E /* Pods-Hungry Cougar 2.0UITests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Hungry Cougar 2.0UITests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hungry Cougar 2.0UITests/Pods-Hungry Cougar 2.0UITests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Hungry_Cougar_2_0UITests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4DA577694B7998FA1F932D992042D14F /* Release */ = {
+		350160747EDC258143649E1D93A359D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E1C6D4D7EBD55C559B186F6AA02325E2 /* Pods-Hungry Cougar 2.0.release.xcconfig */;
 			buildSettings = {
@@ -426,9 +356,44 @@
 			};
 			name = Release;
 		};
-		55253CF63BB49FA5F6F78DF2C4FACF58 /* Debug */ = {
+		3E521305ADBD0FC8556A4B8EA49B98FB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3A82907E3A2853E22F9682D04F85E185 /* Pods-Hungry Cougar 2.0UITests.debug.xcconfig */;
+			baseConfigurationReference = E551EF81DFC94002796325ED78B8F14B /* Pods-Hungry Cougar 2.0Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Hungry Cougar 2.0Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hungry Cougar 2.0Tests/Pods-Hungry Cougar 2.0Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Hungry_Cougar_2_0Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		51DB258ABAF5F156D3CF106522C95751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15675A1BA5A8D8B159F629C7362B90F2 /* Pods-Hungry Cougar 2.0Tests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -441,18 +406,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Hungry Cougar 2.0UITests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hungry Cougar 2.0Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hungry Cougar 2.0UITests/Pods-Hungry Cougar 2.0UITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Hungry Cougar 2.0Tests/Pods-Hungry Cougar 2.0Tests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Hungry_Cougar_2_0UITests;
+				PRODUCT_NAME = Pods_Hungry_Cougar_2_0Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -505,9 +470,9 @@
 			};
 			name = Debug;
 		};
-		9B25137B7BFA28E6A1E0631A29A8532F /* Debug */ = {
+		7A26E7C9BC73AA462B5BC5932FD7787A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15675A1BA5A8D8B159F629C7362B90F2 /* Pods-Hungry Cougar 2.0Tests.debug.xcconfig */;
+			baseConfigurationReference = 3A82907E3A2853E22F9682D04F85E185 /* Pods-Hungry Cougar 2.0UITests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -520,18 +485,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Hungry Cougar 2.0Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hungry Cougar 2.0UITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hungry Cougar 2.0Tests/Pods-Hungry Cougar 2.0Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Hungry Cougar 2.0UITests/Pods-Hungry Cougar 2.0UITests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Hungry_Cougar_2_0Tests;
+				PRODUCT_NAME = Pods_Hungry_Cougar_2_0UITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -580,9 +545,44 @@
 			};
 			name = Release;
 		};
-		D507E78168E44CEF8E273D99E367DF0B /* Release */ = {
+		E23149ECE3DEE87A22913474E425E474 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E551EF81DFC94002796325ED78B8F14B /* Pods-Hungry Cougar 2.0Tests.release.xcconfig */;
+			baseConfigurationReference = 9A95F9C2EE7E8624980127B23F8A2247 /* Pods-Hungry Cougar 2.0.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Hungry Cougar 2.0/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Hungry Cougar 2.0/Pods-Hungry Cougar 2.0.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Hungry_Cougar_2_0;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FF4D3AE1DA213C72057FE153D16C4A66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83309A089DB052E2C832A7AFEF25CD5E /* Pods-Hungry Cougar 2.0UITests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -595,18 +595,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Hungry Cougar 2.0Tests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Hungry Cougar 2.0UITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Hungry Cougar 2.0Tests/Pods-Hungry Cougar 2.0Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Hungry Cougar 2.0UITests/Pods-Hungry Cougar 2.0UITests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Hungry_Cougar_2_0Tests;
+				PRODUCT_NAME = Pods_Hungry_Cougar_2_0UITests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -618,11 +618,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F4DA0F7EEADFECE51360A8D7C6C3A33 /* Build configuration list for PBXNativeTarget "Pods-Hungry Cougar 2.0Tests" */ = {
+		25AF23339CAEB82C2917B89FC2AEBF5E /* Build configuration list for PBXNativeTarget "Pods-Hungry Cougar 2.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B25137B7BFA28E6A1E0631A29A8532F /* Debug */,
-				D507E78168E44CEF8E273D99E367DF0B /* Release */,
+				E23149ECE3DEE87A22913474E425E474 /* Debug */,
+				350160747EDC258143649E1D93A359D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -636,20 +636,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		315F11A5843069BF61EF9B533AE8ECFA /* Build configuration list for PBXNativeTarget "Pods-Hungry Cougar 2.0" */ = {
+		345C5856A638C5BABA7F6ADFA5952FB8 /* Build configuration list for PBXNativeTarget "Pods-Hungry Cougar 2.0Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				49511916CE6E9D9F4FC6E88189EB272B /* Debug */,
-				4DA577694B7998FA1F932D992042D14F /* Release */,
+				51DB258ABAF5F156D3CF106522C95751 /* Debug */,
+				3E521305ADBD0FC8556A4B8EA49B98FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6EB128184CF3A4F8BB1A5DCA5ED52555 /* Build configuration list for PBXNativeTarget "Pods-Hungry Cougar 2.0UITests" */ = {
+		DFFD507BC5FABE50E6566469D542842C /* Build configuration list for PBXNativeTarget "Pods-Hungry Cougar 2.0UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				55253CF63BB49FA5F6F78DF2C4FACF58 /* Debug */,
-				4BD2B3198A4F41992A05731C5D90C153 /* Release */,
+				7A26E7C9BC73AA462B5BC5932FD7787A /* Debug */,
+				FF4D3AE1DA213C72057FE153D16C4A66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

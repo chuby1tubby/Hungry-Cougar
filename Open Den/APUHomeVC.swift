@@ -137,7 +137,6 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
     var count = 0
     func parseHTML(html: String) {
         count += 1
-        print(count)
         //Parses for the index Of specific location in the HTML
         let fontString = "font-weight: bold;\">"
         
@@ -171,6 +170,11 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
                 myFinalDouble = 0.0
                 shouldRepeat = false
                 didReceievePointsVal = true
+                
+                // Store dining points in UserDefaults
+                let defaults = UserDefaults.standard
+                defaults.set("0.00", forKey: "userDiningPointsDefaults")
+                
                 if let navController = self.navigationController {
                     navController.popViewController(animated: true)
                 }
@@ -179,9 +183,16 @@ class APUHomeVC: UIViewController, WKNavigationDelegate, WKUIDelegate, UIWebView
                     newString.append(char)
                 }
                 myFinalDouble = Double(newString)!
-                //Instead of print, add this to a global variable or something.
                 shouldRepeat = false
                 didReceievePointsVal = true
+                
+                // Update current dining points balance label
+                let textNum = String(format: "%.2f", arguments: [myFinalDouble])
+                
+                // Store dining points in UserDefaults
+                let defaults = UserDefaults.standard
+                defaults.set(textNum, forKey: "userDiningPointsDefaults")
+                
                 if let navController = self.navigationController {
                     navController.popViewController(animated: true)
                 }

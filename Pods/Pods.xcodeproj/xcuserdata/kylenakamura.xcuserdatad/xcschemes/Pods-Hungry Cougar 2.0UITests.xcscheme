@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3BF7CDD91ECD24F137422273102B8C25"
+               BlueprintIdentifier = "64D9CB11CDB107DBA3CCE961377328A6"
                BuildableName = "Pods_Hungry_Cougar_2_0UITests.framework"
                BlueprintName = "Pods-Hungry Cougar 2.0UITests"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3BF7CDD91ECD24F137422273102B8C25"
+            BlueprintIdentifier = "64D9CB11CDB107DBA3CCE961377328A6"
             BuildableName = "Pods_Hungry_Cougar_2_0UITests.framework"
             BlueprintName = "Pods-Hungry Cougar 2.0UITests"
             ReferencedContainer = "container:Pods.xcodeproj">
